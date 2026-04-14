@@ -1,0 +1,45 @@
+name: Weekly Outreach List
+
+on:
+  schedule:
+    - cron: '0 7 * * 1'   # Every Monday at 7:00am UTC
+  workflow_dispatch:        # Also run manually from the Actions tab any time
+
+jobs:
+  build-outreach-list:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120    # Allow up to 2 hours for large domain lists
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run pipeline
+        env:
+          AHREFS_API_KEY: ${{ secrets.AHREFS_API_KEY }}
+        run: python run_pipeline.py
+
+      - name: Upload Excel output
+        uses: actions/upload-artifact@v4
+        with:
+          name: outreach-list-${{ github.run_number }}
+          path: output/*.xlsx
+          retention-days: 90   # File available to download for 90 days
+
+      # Commit the updated contacts CSV back to the repo so the daily email
+      # sender can read it on subsequent runs.
+      - name: Commit outreach contacts to repo
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/outreach_contacts.csv || true
+          git diff --staged --quiet || git commit -m "chore: update outreach contacts [skip ci]"
+          git push || true
