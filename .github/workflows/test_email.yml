@@ -1,0 +1,24 @@
+name: Test Email
+
+on:
+  workflow_dispatch:   # Manual trigger only — run from Actions tab any time
+
+jobs:
+  send-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Send test email
+        env:
+          SMTP_USER_1: ${{ secrets.SMTP_USER_1 }}
+          SMTP_PASS_1: ${{ secrets.SMTP_PASS_1 }}
+        run: python test_email.py
