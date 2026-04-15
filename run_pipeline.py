@@ -1,16 +1,17 @@
 """
-32red.com — Backlink Outreach Pipeline
-=======================================
+Backlink Outreach Pipeline
+===========================
 Runs weekly (or on demand) via GitHub Actions.
 
 Flow:
   1. Pull competitor referring domains from Ahrefs API
-  2. Pull 32red.com existing referring domains
-  3. Gap analysis (in competitors but NOT in 32red)
-  4. Filter: DR 10+, Traffic 1000+, not spam
-  5. Score topical relevance against accepted topic list
-  6. Scrape emails + phones from contact/advertise pages
-  7. Output Excel file to /output/
+  2. Pull target domain's existing referring domains
+  3. Load existing publisher database (database.csv) as blocklist
+  4. Gap analysis — in competitors but NOT in target and NOT in database
+  5. Filter: DR 10+, Traffic 1000+, not spam
+  6. Score topical relevance against accepted topic list
+  7. Scrape emails + phones from contact/advertise pages
+  8. Output Excel file to /output/
 
 Environment variables required:
   AHREFS_API_KEY  — your Ahrefs API v3 key
@@ -32,6 +33,11 @@ from openpyxl.utils import get_column_letter
 AHREFS_API_KEY = os.environ.get("AHREFS_API_KEY", "")
 TARGET_DOMAIN  = "32red.com"
 OUTPUT_DIR     = "output"
+
+# Path to your existing publisher database CSV (exported from Google Sheets).
+# Domains in this file are treated as already-known and excluded from outreach.
+# Upload a fresh export whenever your team updates the sheet.
+DATABASE_CSV   = "database.csv"
 
 # Top 10 competitors (from Ahrefs Competing Domains, sorted by common keywords)
 COMPETITORS = [
@@ -129,6 +135,35 @@ PHONE_RE = re.compile(
 
 
 # ══════════════════════════════════════════════════════════════════════════════
+# DATABASE BLOCKLIST
+# ══════════════════════════════════════════════════════════════════════════════
+
+def load_database_domains() -> set:
+    """
+    Read database.csv (your existing publisher database exported from Google Sheets)
+    and return a set of domains to exclude from outreach.
+    If the file doesn't exist, returns an empty set and continues normally.
+    """
+    if not os.path.exists(DATABASE_CSV):
+        print(f"  [info] No database.csv found — skipping database filter.")
+        return set()
+
+    domains = set()
+    with open(DATABASE_CSV, newline="", encoding="utf-8-sig") as f:
+        reader = csv.DictReader(f)
+        # Normalise headers (strip whitespace + newlines from multi-line headers)
+        reader.fieldnames = [h.replace("\n", " ").strip() for h in reader.fieldnames]
+        for row in reader:
+            row = {k.replace("\n", " ").strip(): v for k, v in row.items()}
+            domain = row.get("Domain", "").strip().lower()
+            if domain:
+                domains.add(domain)
+
+    print(f"  [database] Loaded {len(domains)} existing domains to exclude")
+    return domains
+
+
+# ══════════════════════════════════════════════════════════════════════════════
 # AHREFS API
 # ══════════════════════════════════════════════════════════════════════════════
 
@@ -172,16 +207,23 @@ def get_referring_domains(domain, limit=500):
 def build_gap_list():
     """
     Pull competitor + target referring domains, return gap domains
-    (in competitors but NOT already linking to 32red.com).
+    (in competitors but NOT already linking to the target, and NOT in the database).
     """
-    print("\n[1/4] Pulling 32red.com existing referring domains...")
+    print("\n[1/5] Loading existing publisher database...")
+    database_domains = load_database_domains()
+
+    print(f"\n[2/5] Pulling {TARGET_DOMAIN} existing referring domains...")
     target_domains = {
         r["domain"]
         for r in get_referring_domains(TARGET_DOMAIN, limit=ROWS_TARGET_DOMAIN)
     }
-    print(f"      32red.com has {len(target_domains)} qualifying referring domains")
+    print(f"      {TARGET_DOMAIN} has {len(target_domains)} qualifying referring domains")
 
-    print("\n[2/4] Pulling competitor referring domains...")
+    # Combined exclusion set: existing links + database + generic blocklist
+    exclude = target_domains | database_domains | DOMAIN_BLOCKLIST
+    print(f"      Total exclusions: {len(exclude)} domains")
+
+    print("\n[3/5] Pulling competitor referring domains...")
     competitor_map = {}   # domain -> {domain_rating, traffic_domain}
     for comp in COMPETITORS:
         rows = get_referring_domains(comp, limit=ROWS_PER_COMPETITOR)
@@ -198,11 +240,10 @@ def build_gap_list():
         print(f"      {comp}: {len(rows)} domains pulled")
         time.sleep(0.5)
 
-    # Gap = in competitors, NOT in target, NOT in blocklist
+    # Gap = in competitors, NOT in exclusion set (target + database + blocklist)
     gap = [
         v for k, v in competitor_map.items()
-        if k not in target_domains
-        and k not in DOMAIN_BLOCKLIST
+        if k not in exclude
     ]
 
     # Sort by DR desc
@@ -553,8 +594,8 @@ def main():
     # Step 1–2: Gap analysis via Ahrefs
     gap_domains = build_gap_list()
 
-    # Step 3: Scrape emails concurrently
-    print(f"\n[3/4] Scraping {len(gap_domains)} domains for contact data...")
+    # Step 4: Scrape emails concurrently
+    print(f"\n[4/5] Scraping {len(gap_domains)} domains for contact data...")
     results = []
     with ThreadPoolExecutor(max_workers=SCRAPE_WORKERS) as pool:
         futures = {pool.submit(scrape_domain, d): d["domain"] for d in gap_domains}
@@ -573,8 +614,8 @@ def main():
     # Sort: has email first, then by DR
     results.sort(key=lambda x: (-int(x["has_email"]), -x["domain_rating"]))
 
-    # Step 4: Write Excel
-    print(f"\n[4/4] Writing Excel output...")
+    # Step 5: Write Excel
+    print(f"\n[5/5] Writing Excel output...")
     date_str  = datetime.now().strftime("%Y-%m-%d")
     out_path  = os.path.join(OUTPUT_DIR, f"32red_outreach_{date_str}.xlsx")
     write_excel(results, out_path)
