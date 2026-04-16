@@ -2,12 +2,8 @@ name: Daily Outreach Emails
 
 on:
   schedule:
-    # Runs Tuesday–Friday at 8:00am UTC
-    # Monday is skipped — the scrape job runs then and updates the contacts list
-    - cron: '0 8 * * 2'   # Tuesday
-    - cron: '0 8 * * 3'   # Wednesday
-    - cron: '0 8 * * 4'   # Thursday
-    - cron: '0 8 * * 5'   # Friday
+    # Runs Monday–Friday at 8:00am UTC
+    - cron: '0 8 * * 1-5'
   workflow_dispatch:        # Also triggerable manually any time from the Actions tab
 
 jobs:
