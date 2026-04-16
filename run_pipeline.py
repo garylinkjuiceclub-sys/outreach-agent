@@ -677,26 +677,52 @@ def write_excel(results, filepath):
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# MAIN
+# CSV LIST INPUT (bypass Ahrefs)
 # ══════════════════════════════════════════════════════════════════════════════
 
-def main():
-    if not AHREFS_API_KEY:
-        raise ValueError("AHREFS_API_KEY environment variable not set.")
+SCRAPE_LIST_CSV = os.environ.get("SCRAPE_LIST", "scrape_list.csv")
 
-    print("=" * 60)
-    print("  32red.com Outreach Pipeline")
-    print(f"  {datetime.now().strftime('%A %d %B %Y, %H:%M')}")
-    print("=" * 60)
+def load_domains_from_csv(csv_path: str) -> list:
+    """
+    Read a pre-prepared domain list from CSV.
+    Expected columns: domain  (required)
+    Optional columns: domain_rating, monthly_traffic, market, source_keyword
+    This completely bypasses the Ahrefs API — no credits used.
+    """
+    if not os.path.exists(csv_path):
+        raise FileNotFoundError(f"Scrape list not found: {csv_path}")
 
-    # Step 1–2: Gap analysis via Ahrefs
-    gap_domains = build_gap_list()
+    domains = []
+    seen = set()
+    with open(csv_path, newline="", encoding="utf-8-sig") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            domain = row.get("domain", "").strip().lower()
+            if not domain or domain in seen or domain in DOMAIN_BLOCKLIST:
+                continue
+            seen.add(domain)
+            domains.append({
+                "domain":          domain,
+                "domain_rating":   int(row.get("domain_rating", 0) or 0),
+                "traffic_domain":  int(row.get("monthly_traffic", 0) or 0),
+                "competitors_found_on": [],
+            })
 
-    # Step 4: Scrape emails concurrently
-    print(f"\n[4/5] Scraping {len(gap_domains)} domains for contact data...")
+    print(f"  [csv] Loaded {len(domains)} unique domains from {csv_path}")
+    return domains
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# SCRAPE + OUTPUT (shared by both modes)
+# ══════════════════════════════════════════════════════════════════════════════
+
+def scrape_and_output(domain_list: list, label: str = "outreach"):
+    """Scrape contact data for a list of domains and write Excel + CSV output."""
+
+    print(f"\n[scrape] Scraping {len(domain_list)} domains for contact data...")
     results = []
     with ThreadPoolExecutor(max_workers=SCRAPE_WORKERS) as pool:
-        futures = {pool.submit(scrape_domain, d): d["domain"] for d in gap_domains}
+        futures = {pool.submit(scrape_domain, d): d["domain"] for d in domain_list}
         done = 0
         for future in as_completed(futures):
             done += 1
@@ -705,25 +731,88 @@ def main():
                 result = futures[future] = future.result()
                 results.append(result)
                 em = "✓" if result["has_email"] else "–"
-                print(f"  [{done:>4}/{len(gap_domains)}] {em} {domain:35s}  {result['topic_category']}")
+                print(f"  [{done:>4}/{len(domain_list)}] {em} {domain:35s}  {result['topic_category']}")
             except Exception as ex:
-                print(f"  [{done:>4}/{len(gap_domains)}] ✗ {domain}: {ex}")
+                print(f"  [{done:>4}/{len(domain_list)}] ✗ {domain}: {ex}")
 
     # Sort: has email first, then by DR
     results.sort(key=lambda x: (-int(x["has_email"]), -x["domain_rating"]))
 
-    # Step 5: Write Excel
-    print(f"\n[5/5] Writing Excel output...")
+    # Write Excel
+    print(f"\n[output] Writing Excel...")
     date_str  = datetime.now().strftime("%Y-%m-%d")
-    out_path  = os.path.join(OUTPUT_DIR, f"32red_outreach_{date_str}.xlsx")
+    out_path  = os.path.join(OUTPUT_DIR, f"{label}_{date_str}.xlsx")
     write_excel(results, out_path)
 
+    # Write outreach_contacts.csv for send_emails.py
+    contacts_path = os.path.join(OUTPUT_DIR, "outreach_contacts.csv")
+    email_rows = [r for r in results if r["has_email"]]
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    with open(contacts_path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=[
+            "domain", "best_email", "topic_category", "domain_rating",
+            "monthly_traffic", "emails", "phones", "opportunity_type",
+        ])
+        writer.writeheader()
+        for r in email_rows:
+            writer.writerow({
+                "domain":           r["domain"],
+                "best_email":       r["best_email"],
+                "topic_category":   r["topic_category"],
+                "domain_rating":    r["domain_rating"],
+                "monthly_traffic":  r["monthly_traffic"],
+                "emails":           r["emails"],
+                "phones":           r["phones"],
+                "opportunity_type": r["opportunity_type"],
+            })
+    print(f"  ✓ Contacts CSV → {contacts_path}  ({len(email_rows)} with email)")
+
     # Summary
-    with_email = sum(1 for r in results if r["has_email"])
+    with_email = len(email_rows)
     print(f"\n{'=' * 60}")
     print(f"  DONE  |  {len(results)} domains  |  {with_email} with email")
     print(f"  File  →  {out_path}")
     print(f"{'=' * 60}\n")
+
+    return results
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# MAIN
+# ══════════════════════════════════════════════════════════════════════════════
+
+def main():
+    import sys
+
+    mode = os.environ.get("PIPELINE_MODE", "auto").lower()
+
+    # If a CSV path is passed as argument, or PIPELINE_MODE=csv, use CSV mode
+    if len(sys.argv) > 1 or mode == "csv":
+        csv_path = sys.argv[1] if len(sys.argv) > 1 else SCRAPE_LIST_CSV
+        print("=" * 60)
+        print("  Outreach Pipeline — CSV List Mode (no Ahrefs credits)")
+        print(f"  {datetime.now().strftime('%A %d %B %Y, %H:%M')}")
+        print(f"  Source: {csv_path}")
+        print("=" * 60)
+
+        domain_list = load_domains_from_csv(csv_path)
+        scrape_and_output(domain_list, label="outreach")
+
+    else:
+        # Original Ahrefs gap-analysis mode
+        if not AHREFS_API_KEY:
+            raise ValueError(
+                "AHREFS_API_KEY not set and no CSV list provided.\n"
+                "Either set AHREFS_API_KEY or run:  python run_pipeline.py scrape_list.csv"
+            )
+
+        print("=" * 60)
+        print("  Outreach Pipeline — Ahrefs Gap Analysis Mode")
+        print(f"  {datetime.now().strftime('%A %d %B %Y, %H:%M')}")
+        print("=" * 60)
+
+        gap_domains = build_gap_list()
+        scrape_and_output(gap_domains, label="32red_outreach")
 
 
 if __name__ == "__main__":

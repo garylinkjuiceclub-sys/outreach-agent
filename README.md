@@ -1,4 +1,4 @@
-# Backlink Outreach Pipeline
+# 32red.com — Backlink Outreach Pipeline
 
 Automated weekly system that:
 1. Pulls competitor backlink gap data from Ahrefs (every Monday)

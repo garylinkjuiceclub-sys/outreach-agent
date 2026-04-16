@@ -201,8 +201,8 @@ def main():
             email  = contact.get("best_email", "").strip()
             topic  = contact.get("topic_category", "Unknown")
 
-            template       = get_template(topic)
-            subject, body  = render(template, domain, account["name"], account["email"])
+            template       = get_template(topic, domain)
+            subject, body  = render(template, domain, account["name"], account["email"], topic)
 
             success = send_email(account, email, subject, body)
             status  = "sent" if success else "failed"
