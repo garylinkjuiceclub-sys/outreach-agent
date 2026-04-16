@@ -68,12 +68,23 @@ DELAY_MIN        = 0.3      # Polite delay between requests (seconds)
 DELAY_MAX        = 0.8
 
 CONTACT_PATHS = [
-    "/contact", "/contact-us", "/contact_us",
+    # English
+    "/contact", "/contacts", "/contact-us", "/contact_us",
     "/advertise", "/advertise-with-us", "/advertising",
     "/write-for-us", "/write-for-us/", "/contribute",
     "/partnerships", "/sponsored", "/about", "/about-us",
     "/press", "/media", "/work-with-us",
+    # Polish
+    "/kontakt", "/kontakt/", "/kontakty", "/kontakty/",
+    "/reklama", "/reklama/", "/o-nas", "/o-nas/",
+    "/wspolpraca", "/wspolpraca/",
 ]
+
+# Stop scraping contact paths once we have found emails (saves ~60% of requests)
+EARLY_EXIT_ON_EMAIL = True
+
+# Minimum relevance score to bother scraping contact pages (0 = scrape everything)
+MIN_RELEVANCE = 0
 
 HEADERS = {
     "User-Agent": (
@@ -276,25 +287,29 @@ def score_topic(domain, title="", description=""):
 
 
 def fetch_meta(domain):
-    """Fetch homepage title and meta description for topic scoring."""
-    try:
-        r = requests.get(
-            f"https://{domain}",
-            headers=HEADERS,
-            timeout=REQUEST_TIMEOUT,
-            allow_redirects=True
-        )
-        if r.status_code == 200:
-            soup = BeautifulSoup(r.text[:8000], "lxml")
-            title = soup.title.string.strip() if soup.title else ""
-            meta  = ""
-            meta_tag = soup.find("meta", attrs={"name": re.compile("description", re.I)})
-            if meta_tag:
-                meta = meta_tag.get("content", "")
-            return title, meta
-    except Exception:
-        pass
-    return "", ""
+    """Fetch homepage title, meta description, and nav text for topic scoring.
+    Returns (title, combined_text, soup_or_None) — soup is reused for link crawling."""
+    for url in (f"https://{domain}", f"http://{domain}"):
+        try:
+            r = requests.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT, allow_redirects=True)
+            if r.status_code == 200 and "text/html" in r.headers.get("Content-Type", ""):
+                soup  = BeautifulSoup(r.text[:20000], "lxml")
+                title = soup.title.string.strip() if soup.title else ""
+                meta  = ""
+                meta_tag = soup.find("meta", attrs={"name": re.compile("description", re.I)})
+                if meta_tag:
+                    meta = meta_tag.get("content", "")
+                # Pull visible nav/header text for richer topic scoring
+                nav_text = " ".join(
+                    t.get_text(" ", strip=True)
+                    for t in soup.find_all(["nav", "header", "h1", "h2"])
+                )[:500]
+                return title, f"{meta} {nav_text}", soup
+        except requests.exceptions.SSLError:
+            continue
+        except Exception:
+            break
+    return "", "", None
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -314,20 +329,42 @@ def clean_email(e):
 
 
 def fetch_page(url):
-    try:
-        r = requests.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT, allow_redirects=True)
-        if r.status_code == 200 and "text/html" in r.headers.get("Content-Type", ""):
-            return BeautifulSoup(r.text, "lxml"), r.url
-    except Exception:
-        pass
+    """Fetch a page, automatically falling back from https:// to http:// on SSL errors."""
+    for attempt_url in _url_variants(url):
+        try:
+            r = requests.get(attempt_url, headers=HEADERS, timeout=REQUEST_TIMEOUT, allow_redirects=True)
+            if r.status_code == 200 and "text/html" in r.headers.get("Content-Type", ""):
+                return BeautifulSoup(r.text, "lxml"), r.url
+            return None, None   # got a non-200; don't retry on http
+        except requests.exceptions.SSLError:
+            continue            # SSL failure — try http fallback
+        except Exception:
+            return None, None
     return None, None
 
+
+def _url_variants(url):
+    """Yield https then http fallback for the same URL."""
+    yield url
+    if url.startswith("https://"):
+        yield "http://" + url[8:]
+
+
+OBFUSCATED_AT_RE = re.compile(
+    r"[a-zA-Z0-9._%+\-]+\s*(?:\(at\)|\[at\]|&#64;| at )\s*[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}",
+    re.I,
+)
 
 def extract_contacts(soup):
     text    = soup.get_text(" ")
     raw_em  = set(EMAIL_RE.findall(text))
+    # mailto: href links
     for tag in soup.find_all("a", href=re.compile(r"^mailto:", re.I)):
         raw_em.add(tag["href"].replace("mailto:", "").split("?")[0])
+    # Obfuscated (at) / [at] addresses
+    for match in OBFUSCATED_AT_RE.findall(text):
+        normalised = re.sub(r"\s*(?:\(at\)|\[at\]|&#64;| at )\s*", "@", match, flags=re.I)
+        raw_em.add(normalised)
     emails  = {clean_email(e) for e in raw_em} - {None}
     phones  = {p.strip() for p in PHONE_RE.findall(text) if len(re.sub(r"\D", "", p)) >= 9}
     return emails, phones
@@ -346,20 +383,81 @@ def classify_opportunity(pages_hit):
     return "Unknown"
 
 
+CONTACT_LINK_RE = re.compile(
+    r"contact|advertis|sponsor|partner|write.for|contribut|media|press|work.with",
+    re.I,
+)
+
+def _crawl_homepage_links(soup, base_domain):
+    """Return extra URL paths found in the homepage nav/footer that look like contact pages."""
+    if not soup:
+        return []
+    extra = []
+    seen  = set(CONTACT_PATHS)
+    for tag in soup.find_all("a", href=True):
+        href = tag["href"].strip()
+        text = (tag.get_text(" ", strip=True) + " " + href).lower()
+        if not CONTACT_LINK_RE.search(text):
+            continue
+        # Only keep same-domain relative or absolute paths
+        if href.startswith("/"):
+            path = href.split("?")[0].rstrip("")
+        elif href.startswith(("http://","https://")):
+            parsed = urlparse(href)
+            if base_domain not in parsed.netloc:
+                continue
+            path = parsed.path.split("?")[0]
+        else:
+            continue
+        if path and path not in seen:
+            seen.add(path)
+            extra.append(path)
+    return extra[:8]   # cap at 8 extra paths to avoid runaway scraping
+
+
 def scrape_domain(entry):
     domain = entry["domain"]
     base   = f"https://{domain}"
 
-    # Score topic relevance via homepage meta
-    title, meta = fetch_meta(domain)
+    # 1. Fetch homepage for topic scoring + link discovery
+    title, meta, homepage_soup = fetch_meta(domain)
     topic, relevance_score = score_topic(domain, title, meta)
     time.sleep(random.uniform(DELAY_MIN, DELAY_MAX))
 
+    # 2. Skip contact scraping entirely for irrelevant sites
+    if MIN_RELEVANCE > 0 and relevance_score < MIN_RELEVANCE:
+        return {
+            "domain":           domain,
+            "domain_rating":    entry["domain_rating"],
+            "monthly_traffic":  entry["traffic_domain"],
+            "topic_category":   topic,
+            "relevance_score":  relevance_score,
+            "competitors_on":   ", ".join(entry.get("competitors_found_on", [])),
+            "emails": "", "best_email": "", "phones": "",
+            "pages_hit": "skipped (low relevance)",
+            "opportunity_type": "Unknown",
+            "has_email": False,
+            "outreach_status": "Not Started",
+        }
+
+    # 3. Build path list: fixed paths + homepage-discovered links
+    extra_paths = _crawl_homepage_links(homepage_soup, domain)
+    paths_to_check = CONTACT_PATHS + extra_paths
+
+    # 4. Also check homepage itself for emails
     all_emails, all_phones = set(), set()
     pages_hit = []
+    if homepage_soup:
+        e, p = extract_contacts(homepage_soup)
+        if e or p:
+            pages_hit.append("/ (homepage)")
+            all_emails |= e
+            all_phones |= p
 
-    # Scrape contact paths
-    for path in CONTACT_PATHS:
+    # 5. Scrape contact paths with optional early exit
+    for path in paths_to_check:
+        if EARLY_EXIT_ON_EMAIL and all_emails:
+            break
         soup, _ = fetch_page(base + path)
         if soup:
             e, p = extract_contacts(soup)
