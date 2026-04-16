@@ -70,6 +70,7 @@ ROWS_TARGET_DOMAIN  = 2000  # Pull existing 32red links to exclude
 
 # Quality filters
 MIN_DR      = 10
+MAX_DR      = 70
 MIN_TRAFFIC = 1000
 
 # Scraping
@@ -211,6 +212,7 @@ def get_referring_domains(domain, limit=500):
         "where": json.dumps({
             "and": [
                 {"field": "domain_rating",  "is": ["gte", MIN_DR]},
+                {"field": "domain_rating",  "is": ["lte", MAX_DR]},
                 {"field": "traffic_domain", "is": ["gte", MIN_TRAFFIC]},
                 {"field": "is_spam",        "is": ["eq", 0]},
             ]
