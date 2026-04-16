@@ -1205,7 +1205,16 @@ def get_template(topic: str, domain: str = "") -> dict:
     body = random.choice(lang_data["variants"])
     return {"subject": lang_data["subject"], "body": body}
 
-
+def _build_signature(name: str, email: str) -> str:
+      """Return a plain-text signature block for the given sender."""
+      return (
+                "--\n"
+                f"{name}\n"
+                "Account Manager | Link Juice Club\n"
+                "Website: https://www.linkjuiceclub.com\n"
+                f"Email: {email}"
+      )
+  
 def render(template: dict, domain: str, sender_name: str, sender_email: str, topic: str = "") -> tuple[str, str]:
     """Fill in variables and return (subject, body).
     Note: sender_email is accepted for backward compatibility but not used
@@ -1220,4 +1229,5 @@ def render(template: dict, domain: str, sender_name: str, sender_email: str, top
     }
     subject = template["subject"].format(**variables)
     body    = template["body"].format(**variables)
+      body = body + "\n\n" + _build_signature(sender_name, sender_email)
     return subject, body
