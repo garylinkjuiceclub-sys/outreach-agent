@@ -1,10 +1,7 @@
 name: Daily Outreach Emails
 
 on:
-  schedule:
-    # Runs Monday–Friday at 8:00am UTC
-    - cron: '0 8 * * 1-5'
-  workflow_dispatch:        # Also triggerable manually any time from the Actions tab
+  workflow_dispatch:        # Manual trigger only — Gary approves the contact list first
 
 jobs:
   send-emails:
