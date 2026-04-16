@@ -3,18 +3,29 @@ Backlink Outreach Pipeline
 ===========================
 Runs weekly (or on demand) via GitHub Actions.
 
-Flow:
-  1. Pull competitor referring domains from Ahrefs API
-  2. Pull target domain's existing referring domains
-  3. Load existing publisher database (database.csv) as blocklist
-  4. Gap analysis — in competitors but NOT in target and NOT in database
-  5. Filter: DR 10+, Traffic 1000+, not spam
-  6. Score topical relevance against accepted topic list
-  7. Scrape emails + phones from contact/advertise pages
-  8. Output Excel file to /output/
+Three operating modes:
+  csv     — Read pre-prepared domain list from CSV (no Ahrefs credits)
+  ahrefs  — Pull referring domains from competitor sites via Ahrefs API,
+             deduplicate against database.csv + outreach_contacts.csv,
+             optionally scrape Kadaza for FI/DK markets
+  gap     — Full gap analysis: competitor vs target referring domains
 
-Environment variables required:
-  AHREFS_API_KEY  — your Ahrefs API v3 key
+Flow:
+  1. Load domains (from CSV, Ahrefs, or gap analysis)
+  2. Load existing publisher database (database.csv) as blocklist
+  3. Deduplicate against database + outreach_contacts + blocklist
+  4. Filter: DR 10+, Traffic 1000+, not spam
+  5. Score topical relevance against accepted topic list
+  6. Scrape emails + phones from contact/advertise pages
+  7. Output Excel file + outreach_contacts.csv to /output/
+
+Environment variables:
+  AHREFS_API_KEY        — Ahrefs API v3 key (required for ahrefs/gap modes)
+  PIPELINE_MODE         — csv | ahrefs | gap (default: auto-detect)
+  SCRAPE_LIST           — CSV file path (csv mode)
+  COMPETITOR_DOMAINS    — Comma-separated competitor domains (ahrefs mode)
+  MARKET                — Market code e.g. FI, DK, UK (ahrefs mode, optional)
+  ROWS_PER_COMPETITOR   — Rows to pull per competitor (default 500)
 """
 
 import os, re, csv, time, random, json, requests
@@ -262,6 +273,180 @@ def build_gap_list():
 
     print(f"\n      Gap list: {len(gap)} unique domains after filtering")
     return gap
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# KADAZA SCRAPING (for FI / DK markets)
+# ══════════════════════════════════════════════════════════════════════════════
+
+KADAZA_URLS = {
+    "FI": "https://www.kadaza.fi/",
+    "DK": "https://www.kadaza.dk/",
+}
+
+def scrape_kadaza(market: str) -> list:
+    """
+    Scrape Kadaza directory for a given market (FI or DK) to find news/media
+    site domains that could be outreach targets.
+    Returns a list of domain dicts compatible with the pipeline.
+    """
+    market = market.upper()
+    url = KADAZA_URLS.get(market)
+    if not url:
+        print(f"  [kadaza] No Kadaza URL for market '{market}', skipping")
+        return []
+
+    print(f"  [kadaza] Scraping Kadaza for market {market}: {url}")
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=15)
+        r.raise_for_status()
+        soup = BeautifulSoup(r.text, "lxml")
+    except Exception as ex:
+        print(f"  [kadaza] Failed to fetch {url}: {ex}")
+        return []
+
+    domains = []
+    seen = set()
+    for link in soup.find_all("a", href=True):
+        href = link["href"].strip()
+        if not href.startswith(("http://", "https://")):
+            continue
+        parsed = urlparse(href)
+        domain = parsed.netloc.lower().lstrip("www.")
+        if not domain or domain in seen:
+            continue
+        # Skip Kadaza's own domains and social media
+        if any(skip in domain for skip in ["kadaza", "google", "facebook", "twitter", "instagram", "youtube"]):
+            continue
+        if domain in DOMAIN_BLOCKLIST:
+            continue
+        seen.add(domain)
+        domains.append({
+            "domain": domain,
+            "domain_rating": 0,
+            "traffic_domain": 0,
+            "competitors_found_on": [f"kadaza-{market}"],
+        })
+
+    print(f"  [kadaza] Found {len(domains)} unique domains from Kadaza {market}")
+    return domains
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# OPTION 2: AHREFS REFERRING DOMAINS MODE
+# ══════════════════════════════════════════════════════════════════════════════
+
+def load_outreach_contacts_domains() -> set:
+    """
+    Load domains already in outreach_contacts.csv (already scraped/queued).
+    Returns a set of domain strings to exclude from new lists.
+    """
+    contacts_path = os.path.join(OUTPUT_DIR, "outreach_contacts.csv")
+    if not os.path.exists(contacts_path):
+        return set()
+
+    domains = set()
+    with open(contacts_path, newline="", encoding="utf-8-sig") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            domain = row.get("domain", "").strip().lower()
+            if domain:
+                domains.add(domain)
+
+    print(f"  [contacts] Loaded {len(domains)} existing outreach contacts to exclude")
+    return domains
+
+
+def load_sent_log_domains() -> set:
+    """Load domains already emailed from sent_log.csv."""
+    sent_path = os.path.join(OUTPUT_DIR, "sent_log.csv")
+    if not os.path.exists(sent_path):
+        return set()
+
+    domains = set()
+    with open(sent_path, newline="", encoding="utf-8-sig") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            domain = row.get("domain", "").strip().lower()
+            if domain:
+                domains.add(domain)
+
+    print(f"  [sent_log] Loaded {len(domains)} already-emailed domains to exclude")
+    return domains
+
+
+def build_refdomains_list(competitors: list, market: str = "") -> list:
+    """
+    Option 2: Pull referring domains from specified competitors via Ahrefs API.
+    For FI/DK markets, also scrape Kadaza for additional news/media domains.
+    Deduplicates against database.csv, outreach_contacts.csv, sent_log.csv,
+    and the global blocklist.
+
+    Args:
+        competitors: List of competitor domain strings
+        market: Optional market code (FI, DK, UK, etc.)
+
+    Returns:
+        Deduplicated list of domain dicts ready for scraping
+    """
+    print("\n[1/4] Loading exclusion lists...")
+    database_domains = load_database_domains()
+    outreach_domains = load_outreach_contacts_domains()
+    sent_domains = load_sent_log_domains()
+
+    # Combined exclusion set
+    exclude = database_domains | outreach_domains | sent_domains | DOMAIN_BLOCKLIST
+    print(f"      Total exclusions: {len(exclude)} domains")
+
+    print(f"\n[2/4] Pulling referring domains from {len(competitors)} competitors...")
+    rows_per = int(os.environ.get("ROWS_PER_COMPETITOR", ROWS_PER_COMPETITOR))
+    competitor_map = {}
+    for comp in competitors:
+        comp = comp.strip().lower()
+        if not comp:
+            continue
+        try:
+            rows = get_referring_domains(comp, limit=rows_per)
+            for r in rows:
+                d = r["domain"]
+                if d not in competitor_map:
+                    competitor_map[d] = {
+                        "domain": d,
+                        "domain_rating": r["domain_rating"],
+                        "traffic_domain": r["traffic_domain"],
+                        "competitors_found_on": [],
+                    }
+                competitor_map[d]["competitors_found_on"].append(comp)
+            print(f"      {comp}: {len(rows)} referring domains pulled")
+            time.sleep(0.5)
+        except Exception as ex:
+            print(f"      {comp}: ERROR — {ex}")
+
+    print(f"      Raw total: {len(competitor_map)} unique referring domains")
+
+    # [3/4] Kadaza for FI/DK markets
+    kadaza_domains = []
+    if market.upper() in ("FI", "DK"):
+        print(f"\n[3/4] Scraping Kadaza for {market.upper()} market...")
+        kadaza_domains = scrape_kadaza(market)
+        for kd in kadaza_domains:
+            d = kd["domain"]
+            if d not in competitor_map:
+                competitor_map[d] = kd
+            else:
+                competitor_map[d]["competitors_found_on"].extend(kd["competitors_found_on"])
+        print(f"      Total after Kadaza: {len(competitor_map)} domains")
+    else:
+        print(f"\n[3/4] Kadaza scraping skipped (market: {market or 'not specified'})")
+
+    # [4/4] Deduplicate
+    print(f"\n[4/4] Deduplicating against {len(exclude)} known domains...")
+    clean = [v for k, v in competitor_map.items() if k not in exclude]
+    clean.sort(key=lambda x: x["domain_rating"], reverse=True)
+
+    print(f"      Clean list: {len(clean)} domains after deduplication")
+    print(f"      Removed: {len(competitor_map) - len(clean)} duplicates")
+    return clean
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -688,19 +873,32 @@ def load_domains_from_csv(csv_path: str) -> list:
     Expected columns: domain  (required)
     Optional columns: domain_rating, monthly_traffic, market, source_keyword
     This completely bypasses the Ahrefs API — no credits used.
+
+    NOTE: Option 1 lists are assumed to be pre-deduplicated against database.csv
+    by the team before upload. We still dedup against outreach_contacts.csv
+    and sent_log.csv to avoid re-scraping/re-emailing.
     """
     if not os.path.exists(csv_path):
         raise FileNotFoundError(f"Scrape list not found: {csv_path}")
 
+    # Load exclusion sets
+    outreach_domains = load_outreach_contacts_domains()
+    sent_domains = load_sent_log_domains()
+    exclude = outreach_domains | sent_domains | DOMAIN_BLOCKLIST
+
     domains = []
     seen = set()
+    skipped = 0
     with open(csv_path, newline="", encoding="utf-8-sig") as f:
         reader = csv.DictReader(f)
         for row in reader:
             domain = row.get("domain", "").strip().lower()
-            if not domain or domain in seen or domain in DOMAIN_BLOCKLIST:
+            if not domain or domain in seen:
                 continue
             seen.add(domain)
+            if domain in exclude:
+                skipped += 1
+                continue
             domains.append({
                 "domain":          domain,
                 "domain_rating":   int(row.get("domain_rating", 0) or 0),
@@ -709,6 +907,8 @@ def load_domains_from_csv(csv_path: str) -> list:
             })
 
     print(f"  [csv] Loaded {len(domains)} unique domains from {csv_path}")
+    if skipped:
+        print(f"  [csv] Skipped {skipped} domains (already in outreach/sent/blocklist)")
     return domains
 
 
@@ -786,7 +986,7 @@ def main():
 
     mode = os.environ.get("PIPELINE_MODE", "auto").lower()
 
-    # If a CSV path is passed as argument, or PIPELINE_MODE=csv, use CSV mode
+    # ── Mode 1: CSV list (no Ahrefs credits) ────────────────────────────────
     if len(sys.argv) > 1 or mode == "csv":
         csv_path = sys.argv[1] if len(sys.argv) > 1 else SCRAPE_LIST_CSV
         print("=" * 60)
@@ -798,12 +998,39 @@ def main():
         domain_list = load_domains_from_csv(csv_path)
         scrape_and_output(domain_list, label="outreach")
 
-    else:
-        # Original Ahrefs gap-analysis mode
+    # ── Mode 2: Ahrefs referring domains (configurable competitors) ─────────
+    elif mode == "ahrefs":
         if not AHREFS_API_KEY:
             raise ValueError(
-                "AHREFS_API_KEY not set and no CSV list provided.\n"
-                "Either set AHREFS_API_KEY or run:  python run_pipeline.py scrape_list.csv"
+                "AHREFS_API_KEY not set. Required for Ahrefs referring domains mode."
+            )
+
+        comp_str = os.environ.get("COMPETITOR_DOMAINS", "")
+        if not comp_str:
+            raise ValueError(
+                "COMPETITOR_DOMAINS not set. Provide comma-separated competitor domains.\n"
+                "Example: COMPETITOR_DOMAINS=paddypower.com,betfair.com,williamhill.com"
+            )
+
+        competitors = [c.strip() for c in comp_str.split(",") if c.strip()]
+        market = os.environ.get("MARKET", "").strip()
+
+        print("=" * 60)
+        print("  Outreach Pipeline — Ahrefs Referring Domains Mode")
+        print(f"  {datetime.now().strftime('%A %d %B %Y, %H:%M')}")
+        print(f"  Competitors: {', '.join(competitors)}")
+        if market:
+            print(f"  Market: {market.upper()}")
+        print("=" * 60)
+
+        domain_list = build_refdomains_list(competitors, market)
+        scrape_and_output(domain_list, label=f"refdomains_{market or 'global'}")
+
+    # ── Mode 3: Full gap analysis (original 32red mode) ─────────────────────
+    elif mode == "gap":
+        if not AHREFS_API_KEY:
+            raise ValueError(
+                "AHREFS_API_KEY not set. Required for gap analysis mode."
             )
 
         print("=" * 60)
@@ -813,6 +1040,27 @@ def main():
 
         gap_domains = build_gap_list()
         scrape_and_output(gap_domains, label="32red_outreach")
+
+    # ── Auto-detect ─────────────────────────────────────────────────────────
+    else:
+        # If AHREFS_API_KEY is set, default to gap analysis; otherwise error
+        if AHREFS_API_KEY:
+            print("  [auto] AHREFS_API_KEY found — running gap analysis mode")
+            main_with_mode("gap")
+        else:
+            raise ValueError(
+                "No mode specified and AHREFS_API_KEY not set.\n"
+                "Options:\n"
+                "  1. CSV mode:    python run_pipeline.py scrape_list.csv\n"
+                "  2. Ahrefs mode: PIPELINE_MODE=ahrefs COMPETITOR_DOMAINS=... python run_pipeline.py\n"
+                "  3. Gap mode:    PIPELINE_MODE=gap AHREFS_API_KEY=... python run_pipeline.py"
+            )
+
+
+def main_with_mode(mode):
+    """Helper to re-enter main with a specific mode."""
+    os.environ["PIPELINE_MODE"] = mode
+    main()
 
 
 if __name__ == "__main__":
