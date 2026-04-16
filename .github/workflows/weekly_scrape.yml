@@ -34,6 +34,67 @@ jobs:
           path: output/*.xlsx
           retention-days: 90   # File available to download for 90 days
 
+
+      - name: Email approval request to Gary
+        env:
+          SMTP_USER_1: ${{ secrets.SMTP_USER_1 }}
+          SMTP_PASS_1: ${{ secrets.SMTP_PASS_1 }}
+        run: |
+          python - <<'PYEOF'
+          import smtplib, os, glob
+          from email.mime.multipart import MIMEMultipart
+          from email.mime.text import MIMEText
+          from email.mime.base import MIMEBase
+          from email import encoders
+
+          smtp_user = os.environ["SMTP_USER_1"]
+          smtp_pass = os.environ["SMTP_PASS_1"]
+          to_addr   = "gary@linkjuiceclub.com"
+
+          files = glob.glob("output/*.xlsx")
+          if not files:
+              print("No Excel file found — skipping approval email.")
+              exit(0)
+
+          msg = MIMEMultipart()
+          msg["From"]    = smtp_user
+          msg["To"]      = to_addr
+          msg["Subject"] = "[Action Required] Outreach List Ready for Approval"
+
+          body = """Hi Gary,
+
+The weekly outreach contact list has been generated and is attached for your review.
+
+Please check the list and, when happy with it, go to GitHub Actions and manually
+trigger the 'Daily Outreach Emails' workflow:
+https://github.com/garylinkjuiceclub-sys/outreach-agent/actions/workflows/send_emails.yml
+
+Click 'Run workflow' to start sending. Do NOT trigger it until you have reviewed
+and approved the list.
+
+Best,
+Outreach Pipeline"""
+
+          msg.attach(MIMEText(body, "plain"))
+
+          for filepath in files:
+              with open(filepath, "rb") as f:
+                  part = MIMEBase("application", "octet-stream")
+                  part.set_payload(f.read())
+                  encoders.encode_base64(part)
+                  filename = os.path.basename(filepath)
+                  part.add_header("Content-Disposition", f'attachment; filename="{filename}"')
+                  msg.attach(part)
+
+          with smtplib.SMTP("smtp.office365.com", 587) as server:
+              server.ehlo()
+              server.starttls()
+              server.login(smtp_user, smtp_pass)
+              server.sendmail(smtp_user, to_addr, msg.as_string())
+
+          print(f"Approval email sent to {to_addr} with {len(files)} attachment(s).")
+          PYEOF
+
       # Commit the updated contacts CSV back to the repo so the daily email
       # sender can read it on subsequent runs.
       - name: Commit outreach contacts to repo
