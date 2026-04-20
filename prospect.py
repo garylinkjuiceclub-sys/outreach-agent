@@ -40,6 +40,8 @@ KADAZA_URLS = {
     "FI": "https://www.kadaza.fi",
 }
 
+HR = "-" * 50
+
 # ── Google Sheets (via Apps Script) ──────────────────────────────────────────
 
 def sheets_get(action, **kwargs):
@@ -59,7 +61,7 @@ def read_config():
     data   = sheets_get("config")
     rows   = data.get("config", [])
     active = [r for r in rows if str(r.get("Active", "")).upper() == "TRUE"]
-    print(f"\u2192 {len(active)} active market(s)")
+    print(f"-> {len(active)} active market(s)")
     return active
 
 
@@ -67,7 +69,7 @@ def get_existing_domains():
     print("Fetching existing domains for deduplication...")
     data    = sheets_post("get_existing_domains")
     domains = set(d.strip().lower() for d in data.get("domains", []) if d.strip())
-    print(f"\u2192 {len(domains)} domain(s) already in sheet")
+    print(f"-> {len(domains)} domain(s) already in sheet")
     return domains
 
 
@@ -100,7 +102,7 @@ def search_duckduckgo(query, max_results=20):
                     domains.append(domain)
             if len(domains) >= max_results:
                 break
-        print(f"    DuckDuckGo '{query}' \u2192 {len(domains)} seed(s)")
+        print(f"    DuckDuckGo '{query}' -> {len(domains)} seed(s)")
     except Exception as e:
         print(f"    DuckDuckGo failed: {e}")
     return domains
@@ -122,7 +124,7 @@ def get_kadaza_seeds(market, max_seeds=60):
                     seeds.append(domain)
             if len(seeds) >= max_seeds:
                 break
-        print(f"    Kadaza {market} \u2192 {len(seeds)} seed(s)")
+        print(f"    Kadaza {market} -> {len(seeds)} seed(s)")
     except Exception as e:
         print(f"    Kadaza failed for {market}: {e}")
     return seeds
@@ -162,7 +164,7 @@ def get_referring_domains(seed, dr_min, dr_max, traffic_min):
             )
 
             if resp.status_code == 429:
-                print("    Rate limited \u2014 waiting 60s...")
+                print("    Rate limited -- waiting 60s...")
                 time.sleep(60)
                 continue
 
@@ -180,7 +182,7 @@ def get_referring_domains(seed, dr_min, dr_max, traffic_min):
             # Try both possible response keys
             domains = data.get("refdomains") or data.get("referring_domains") or []
 
-            # If still empty, check if data itself is a list or has other keys
+            # If still empty, scan all keys for any list value
             if not domains and isinstance(data, dict):
                 for k, v in data.items():
                     if isinstance(v, list) and len(v) > 0:
@@ -199,7 +201,7 @@ def get_referring_domains(seed, dr_min, dr_max, traffic_min):
                     results.append({"domain": domain, "dr": dr, "traffic": traffic})
                     passed += 1
 
-            print(f"    \u2192 {passed} passed filters (DR {dr_min}-{dr_max}, traffic {traffic_min}+), {len(results)} total")
+            print(f"    -> {passed} passed filters (DR {dr_min}-{dr_max}, traffic {traffic_min}+), {len(results)} total")
 
             if len(domains) < limit:
                 break
@@ -235,9 +237,9 @@ def run():
         dr_max       = int(cfg.get("DR_Max",      80))
         traffic_min  = int(cfg.get("Traffic_Min", 1000))
 
-        print(f"\n{'\u2500'*50}")
-        print(f"  Market: {market}  |  DR: {dr_min}\u2013{dr_max}  |  Traffic: {traffic_min}+")
-        print(f"{'\u2500'*50}")
+        print(f"\n{HR}")
+        print(f"  Market: {market}  |  DR: {dr_min}-{dr_max}  |  Traffic: {traffic_min}+")
+        print(HR)
 
         seeds = list(manual_seeds)
         if market in KADAZA_URLS:
@@ -248,16 +250,16 @@ def run():
         seeds = list(dict.fromkeys(seeds))
 
         if not seeds:
-            print(f"  \u26a0 No seeds found for {market} \u2014 skipping")
+            print(f"  [!] No seeds found for {market} -- skipping")
             continue
 
-        print(f"  \u2192 {len(seeds)} seed(s) to process")
+        print(f"  -> {len(seeds)} seed(s) to process")
 
         market_seen = set()
         market_rows = []
 
         for seed in seeds:
-            print(f"  \u21b3 Ahrefs: {seed} ...")
+            print(f"  [>] Ahrefs: {seed} ...")
             domains = get_referring_domains(seed, dr_min, dr_max, traffic_min)
             for d in domains:
                 domain = d["domain"]
@@ -278,15 +280,15 @@ def run():
                 ])
             time.sleep(1)
 
-        print(f"  \u2713 {len(market_rows)} new domain(s) for {market}")
+        print(f"  [+] {len(market_rows)} new domain(s) for {market}")
         all_new_rows.extend(market_rows)
 
     if all_new_rows:
-        print(f"\n\u2192 Writing {len(all_new_rows)} new domain(s) to Google Sheets...")
+        print(f"\n-> Writing {len(all_new_rows)} new domain(s) to Google Sheets...")
         write_domains(all_new_rows)
-        print("\u2713 Done!")
+        print("[+] Done!")
     else:
-        print("\n\u2192 No new domains found.")
+        print("\n-> No new domains found.")
 
     print("\n" + "=" * 60)
     print("  PROSPECTING AGENT COMPLETE")
