@@ -42,6 +42,22 @@ KADAZA_URLS = {
 
 HR = "-" * 50
 
+# ── TLD matching ──────────────────────────────────────────────────────────────
+# For country-specific TLD markets, only accept domains that match the TLD.
+# UK accepts .co.uk or .uk. US (.com) accepts anything.
+# Set to empty string or ".com" in Config to skip TLD filtering.
+
+SKIP_TLD_FILTER = {"", ".com"}
+
+def tld_matches(domain, tld):
+    """Return True if domain belongs to the expected TLD for this market."""
+    if not tld or tld in SKIP_TLD_FILTER:
+        return True
+    if tld == ".co.uk":
+        return domain.endswith(".co.uk") or domain.endswith(".uk")
+    return domain.endswith(tld)
+
+
 # ── Google Sheets (via Apps Script) ──────────────────────────────────────────
 
 def sheets_get(action, **kwargs):
@@ -132,14 +148,15 @@ def get_kadaza_seeds(market, max_seeds=60):
 
 # ── Ahrefs API ────────────────────────────────────────────────────────────────
 
-def get_referring_domains(seed, dr_min, dr_max, traffic_min):
+def get_referring_domains(seed, dr_min, dr_max, traffic_min, tld):
     """
     Fetches referring domains using Ahrefs API v3.
-    Filtering is done in Python after fetch to avoid server-side filter issues.
+    All filtering (DR, traffic, TLD) is done in Python after fetch.
     """
-    results = []
-    offset  = 0
-    limit   = 1000
+    results    = []
+    offset     = 0
+    limit      = 1000
+    tld_filter = tld and tld not in SKIP_TLD_FILTER
 
     while True:
         headers = {
@@ -169,39 +186,41 @@ def get_referring_domains(seed, dr_min, dr_max, traffic_min):
                 continue
 
             if resp.status_code != 200:
-                print(f"    Ahrefs error {resp.status_code}: {resp.text[:500]}")
+                print(f"    Ahrefs error {resp.status_code}: {resp.text[:300]}")
                 break
 
-            data = resp.json()
-
-            if offset == 0:
-                # Log full response structure on first call for debugging
-                print(f"    RAW RESPONSE KEYS: {list(data.keys())}")
-                print(f"    RAW SAMPLE: {json.dumps(data)[:500]}")
-
-            # Try both possible response keys
+            data    = resp.json()
             domains = data.get("refdomains") or data.get("referring_domains") or []
 
-            # If still empty, scan all keys for any list value
             if not domains and isinstance(data, dict):
                 for k, v in data.items():
                     if isinstance(v, list) and len(v) > 0:
-                        print(f"    Found list under key '{k}': {len(v)} items")
                         domains = v
                         break
 
-            print(f"    Page offset={offset}: {len(domains)} raw domains returned")
+            if offset == 0:
+                tld_label = tld if tld_filter else "any"
+                print(f"    Fetched {len(domains)} raw | filters: DR {dr_min}-{dr_max}, traffic {traffic_min}+, TLD={tld_label}")
 
             passed = 0
             for d in domains:
                 domain  = d.get("domain", "").lower().strip()
                 dr      = int(d.get("domain_rating", 0) or 0)
                 traffic = int(d.get("traffic_domain", 0) or 0)
-                if domain and dr_min <= dr <= dr_max and traffic >= traffic_min:
-                    results.append({"domain": domain, "dr": dr, "traffic": traffic})
-                    passed += 1
 
-            print(f"    -> {passed} passed filters (DR {dr_min}-{dr_max}, traffic {traffic_min}+), {len(results)} total")
+                if not domain:
+                    continue
+                if not (dr_min <= dr <= dr_max):
+                    continue
+                if traffic < traffic_min:
+                    continue
+                if tld_filter and not tld_matches(domain, tld):
+                    continue
+
+                results.append({"domain": domain, "dr": dr, "traffic": traffic})
+                passed += 1
+
+            print(f"    -> {passed} passed, {len(results)} total so far")
 
             if len(domains) < limit:
                 break
@@ -230,15 +249,16 @@ def run():
 
     for cfg in configs:
         market       = cfg["Market"]
-        tld          = cfg["TLD"]
+        tld          = str(cfg.get("TLD", "")).strip()
         query        = str(cfg.get("Search_Query", "")).strip()
         manual_seeds = [s.strip() for s in str(cfg.get("Seeds", "")).split(",") if s.strip()]
         dr_min       = int(cfg.get("DR_Min",      10))
         dr_max       = int(cfg.get("DR_Max",      80))
-        traffic_min  = int(cfg.get("Traffic_Min", 1000))
+        traffic_min  = int(cfg.get("Traffic_Min", 100))
 
+        tld_label = tld if (tld and tld not in SKIP_TLD_FILTER) else "any TLD"
         print(f"\n{HR}")
-        print(f"  Market: {market}  |  DR: {dr_min}-{dr_max}  |  Traffic: {traffic_min}+")
+        print(f"  Market: {market}  |  TLD: {tld_label}  |  DR: {dr_min}-{dr_max}  |  Traffic: {traffic_min}+")
         print(HR)
 
         seeds = list(manual_seeds)
@@ -260,7 +280,7 @@ def run():
 
         for seed in seeds:
             print(f"  [>] Ahrefs: {seed} ...")
-            domains = get_referring_domains(seed, dr_min, dr_max, traffic_min)
+            domains = get_referring_domains(seed, dr_min, dr_max, traffic_min, tld)
             for d in domains:
                 domain = d["domain"]
                 if not domain or domain in existing or domain in market_seen:
@@ -284,7 +304,7 @@ def run():
         all_new_rows.extend(market_rows)
 
     if all_new_rows:
-        print(f"\n-> Writing {len(all_new_rows)} new domain(s) to Google Sheets...")
+        print(f"\n-> Writing {len(all_new_rows)} total new domain(s) to Google Sheets...")
         write_domains(all_new_rows)
         print("[+] Done!")
     else:
