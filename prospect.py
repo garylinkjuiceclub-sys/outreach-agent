@@ -23,6 +23,7 @@ AHREFS_KEY     = os.environ["AHREFS_API_KEY"]
 SHEETS_URL     = os.environ["SHEETS_API_URL"]      # Apps Script web app URL
 SHEETS_TOKEN   = os.environ["SHEETS_API_TOKEN"]    # Secret token from setup()
 
+# Ahrefs v3 API
 AHREFS_API_BASE = "https://api.ahrefs.com/v3"
 
 HEADERS = {
@@ -131,72 +132,48 @@ def get_kadaza_seeds(market, max_seeds=60):
 
 def get_referring_domains(seed, dr_min, dr_max, traffic_min):
     """
-    Fetches referring domains from Ahrefs API without complex where filters
-    (filtering is done in Python after fetching for reliability).
+    Fetches referring domains using Ahrefs API v3.
+    No 'select' filter — returns all fields so we can log field names
+    and confirm which ones to use for DR and traffic filtering.
     """
     results = []
     offset  = 0
-    limit   = 1000
+    limit   = 10   # Small limit on first run to debug field names cheaply
 
-    while True:
-        params = {
-            "target":   seed,
-            "mode":     "domain",
-            "limit":    limit,
-            "offset":   offset,
-            "select":   "referring_domain,domain_rating_source,org_traffic",
-            "order_by": "domain_rating_source:desc",
-        }
-        headers = {
-            "Authorization": f"Bearer {AHREFS_KEY}",
-            "Accept":        "application/json",
-        }
-        try:
-            resp = requests.get(
-                f"{AHREFS_API_BASE}/site-explorer/referring-domains",
-                headers=headers,
-                params=params,
-                timeout=30,
-            )
+    params = {
+        "target": seed,
+        "mode":   "domain",
+        "limit":  limit,
+        "offset": offset,
+    }
+    headers = {
+        "Authorization": f"Bearer {AHREFS_KEY}",
+        "Accept":        "application/json",
+    }
 
-            # Full debug output on first failure to help diagnose API issues
-            if resp.status_code == 429:
-                print("    Rate limited — waiting 60s...")
-                time.sleep(60)
-                continue
-            if resp.status_code != 200:
-                print(f"    Ahrefs error {resp.status_code}")
-                print(f"    URL: {resp.url}")
-                print(f"    Response: {resp.text[:500]}")
-                break
+    try:
+        resp = requests.get(
+            f"{AHREFS_API_BASE}/site-explorer/referring-domains",
+            headers=headers,
+            params=params,
+            timeout=30,
+        )
 
-            data    = resp.json()
-            domains = data.get("referring_domains", [])
+        print(f"    Status: {resp.status_code}")
+        print(f"    Response (first 1000 chars): {resp.text[:1000]}")
 
-            # Filter by DR and traffic in Python
-            for d in domains:
-                dr      = d.get("domain_rating_source", 0) or 0
-                traffic = d.get("org_traffic", 0) or 0
-                domain  = d.get("referring_domain", "").lower().strip()
-                if not domain:
-                    continue
-                if int(dr_min) <= dr <= int(dr_max) and traffic >= int(traffic_min):
-                    results.append({
-                        "domain":  domain,
-                        "dr":      dr,
-                        "traffic": traffic,
-                    })
+        if resp.status_code == 200:
+            data = resp.json()
+            # Log top-level keys
+            print(f"    Top-level keys: {list(data.keys())}")
+            # Log first item keys if available
+            for key, val in data.items():
+                if isinstance(val, list) and len(val) > 0:
+                    print(f"    Fields in '{key}[0]': {list(val[0].keys())}")
+                    break
 
-            print(f"    → page offset={offset}: {len(domains)} fetched, {len(results)} passing filters so far")
-
-            if len(domains) < limit:
-                break
-            offset += limit
-            time.sleep(0.5)
-
-        except Exception as e:
-            print(f"    Exception for {seed}: {e}")
-            break
+    except Exception as e:
+        print(f"    Exception: {e}")
 
     return results
 
