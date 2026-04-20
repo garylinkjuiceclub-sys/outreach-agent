@@ -1,0 +1,35 @@
+name: Prospecting Agent
+
+on:
+  # ── Manual trigger ─────────────────────────────────────────────────────────
+  # Go to GitHub → Actions → Prospecting Agent → Run workflow
+  workflow_dispatch:
+
+  # ── Automatic schedule ─────────────────────────────────────────────────────
+  # Runs every Monday at 6:00 AM UTC
+  # To pause: turn off this flow in Power Automate OR comment out the lines below
+  schedule:
+    - cron: '0 6 * * 1'
+
+jobs:
+  prospect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120   # Max 2 hours before auto-cancel
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements-prospect.txt
+
+      - name: Run Prospecting Agent
+        env:
+          AHREFS_API_KEY:             ${{ secrets.AHREFS_API_KEY }}
+          GOOGLE_SHEETS_CREDENTIALS:  ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
+        run: python prospect.py
