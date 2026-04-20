@@ -30,6 +30,7 @@ jobs:
 
       - name: Run Prospecting Agent
         env:
-          AHREFS_API_KEY:             ${{ secrets.AHREFS_API_KEY }}
-          GOOGLE_SHEETS_CREDENTIALS:  ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
+          AHREFS_API_KEY:    ${{ secrets.AHREFS_API_KEY }}
+          SHEETS_API_URL:    ${{ secrets.SHEETS_API_URL }}
+          SHEETS_API_TOKEN:  ${{ secrets.SHEETS_API_TOKEN }}
         run: python prospect.py
