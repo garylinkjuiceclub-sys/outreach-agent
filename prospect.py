@@ -149,9 +149,9 @@ def get_referring_domains(seed, dr_min, dr_max, traffic_min):
         # Build params — select and where are both required in v3
         where_clause = json.dumps({
             "and": [
-                {"field": "domain_rating_source", "is": ["gte", int(dr_min)]},
-                {"field": "domain_rating_source", "is": ["lte", int(dr_max)]},
-                {"field": "org_traffic",          "is": ["gte", int(traffic_min)]},
+                {"field": "domain_rating", "is": ["gte", int(dr_min)]},
+                {"field": "domain_rating", "is": ["lte", int(dr_max)]},
+                {"field": "traffic_domain", "is": ["gte", int(traffic_min)]},
             ]
         })
 
@@ -160,9 +160,9 @@ def get_referring_domains(seed, dr_min, dr_max, traffic_min):
             "mode":     "domain",
             "limit":    limit,
             "offset":   offset,
-            "select":   "referring_domain,domain_rating_source,org_traffic",
+            "select":   "domain,domain_rating,traffic_domain",
             "where":    where_clause,
-            "order_by": "domain_rating_source:desc",
+            "order_by": "domain_rating:desc",
         }
 
         try:
@@ -186,9 +186,9 @@ def get_referring_domains(seed, dr_min, dr_max, traffic_min):
             domains = data.get("referring_domains", [])
 
             for d in domains:
-                domain  = d.get("referring_domain", "").lower().strip()
-                dr      = d.get("domain_rating_source", 0) or 0
-                traffic = d.get("org_traffic", 0) or 0
+                domain  = d.get("domain", "").lower().strip()
+                dr      = d.get("domain_rating", 0) or 0
+                traffic = d.get("traffic_domain", 0) or 0
                 if domain:
                     results.append({"domain": domain, "dr": dr, "traffic": traffic})
 
