@@ -130,6 +130,10 @@ def get_kadaza_seeds(market, max_seeds=60):
 # ── Ahrefs API ────────────────────────────────────────────────────────────────
 
 def get_referring_domains(seed, dr_min, dr_max, traffic_min):
+    """
+    Fetches referring domains from Ahrefs API without complex where filters
+    (filtering is done in Python after fetching for reliability).
+    """
     results = []
     offset  = 0
     limit   = 1000
@@ -141,13 +145,6 @@ def get_referring_domains(seed, dr_min, dr_max, traffic_min):
             "limit":    limit,
             "offset":   offset,
             "select":   "referring_domain,domain_rating_source,org_traffic",
-            "where":    json.dumps({
-                "and": [
-                    {"field": "domain_rating_source", "is": ["gte", int(dr_min)]},
-                    {"field": "domain_rating_source", "is": ["lte", int(dr_max)]},
-                    {"field": "org_traffic",          "is": ["gte", int(traffic_min)]},
-                ]
-            }),
             "order_by": "domain_rating_source:desc",
         }
         headers = {
@@ -161,25 +158,42 @@ def get_referring_domains(seed, dr_min, dr_max, traffic_min):
                 params=params,
                 timeout=30,
             )
+
+            # Full debug output on first failure to help diagnose API issues
             if resp.status_code == 429:
                 print("    Rate limited — waiting 60s...")
                 time.sleep(60)
                 continue
             if resp.status_code != 200:
-                print(f"    Ahrefs error {resp.status_code}: {resp.text[:200]}")
+                print(f"    Ahrefs error {resp.status_code}")
+                print(f"    URL: {resp.url}")
+                print(f"    Response: {resp.text[:500]}")
                 break
+
             data    = resp.json()
             domains = data.get("referring_domains", [])
+
+            # Filter by DR and traffic in Python
             for d in domains:
-                results.append({
-                    "domain":  d.get("referring_domain", "").lower().strip(),
-                    "dr":      d.get("domain_rating_source", 0),
-                    "traffic": d.get("org_traffic", 0),
-                })
+                dr      = d.get("domain_rating_source", 0) or 0
+                traffic = d.get("org_traffic", 0) or 0
+                domain  = d.get("referring_domain", "").lower().strip()
+                if not domain:
+                    continue
+                if int(dr_min) <= dr <= int(dr_max) and traffic >= int(traffic_min):
+                    results.append({
+                        "domain":  domain,
+                        "dr":      dr,
+                        "traffic": traffic,
+                    })
+
+            print(f"    → page offset={offset}: {len(domains)} fetched, {len(results)} passing filters so far")
+
             if len(domains) < limit:
                 break
             offset += limit
             time.sleep(0.5)
+
         except Exception as e:
             print(f"    Exception for {seed}: {e}")
             break
