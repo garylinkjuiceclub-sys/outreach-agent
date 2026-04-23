@@ -1,0 +1,33 @@
+name: Email Scraper Agent
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 7 * * 2'
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements-scraper.txt
+
+      - name: Run Email Scraper Agent
+        run: python email_scraper.py
+
+      - name: Upload results as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: emails-output-${{ github.run_number }}
+          path: emails_output.csv
+          retention-days: 30
