@@ -1,265 +1,289 @@
-#!/usr/bin/env python3
 """
-Email Scraper Agent (Agent 2)
-------------------------------
-INPUT:  domains_input.csv  — one domain per line, no header needed
-OUTPUT: emails_output.csv  — domain, email, status, date_scraped
+LJC Outreach - Deep Email Scraper v2.0
+========================================
+Checks homepage + up to 15 contact-type pages per domain.
+Follows contact/about/advertise links found on homepage.
+Extracts ALL emails, ranks by outreach relevance.
 
-To use:
-  1. Edit domains_input.csv (paste your list of domains)
-  2. Commit the file to GitHub
-  3. Go to Actions → Email Scraper Agent → Run workflow
-  4. Download emails_output.csv from the run's Artifacts section
-
-Status values:
-  scraped  = real email found on the site
-  pattern  = no email found, using info@ fallback (unverified)
-  error    = could not reach the site
+OUTPUT: domain, primary_email, email_2, email_3, all_emails, pages_checked, status, date_scraped
 """
 
 import csv
-import os
 import re
 import time
+import logging
 from datetime import datetime
-from urllib.parse import urlparse
+from urllib.parse import urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
 
-# ── Config ────────────────────────────────────────────────────────────────────
 INPUT_FILE  = "domains_input.csv"
 OUTPUT_FILE = "emails_output.csv"
+
+TIMEOUT       = 12
+MAX_PAGES     = 15
+REQUEST_DELAY = 0.8
 
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/120.0.0.0 Safari/537.36"
-    )
+        "Chrome/124.0.0.0 Safari/537.36"
+    ),
+    "Accept-Language": "en-GB,en;q=0.9",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 }
 
-# Pages checked on every domain, in order
 CONTACT_PATHS = [
-    "/contact",
-    "/contact-us",
-    "/about",
-    "/about-us",
-    "/advertise",
-    "/advertise-with-us",
-    "/write-for-us",
-    "/submit-guest-post",
-    "/guest-post",
-    "/contribute",
-    "/team",
-    "/",
+    "/contact", "/contact-us", "/contact_us", "/contactus",
+    "/about", "/about-us", "/about_us", "/aboutus",
+    "/advertise", "/advertise-with-us", "/advertising",
+    "/partnerships", "/editorial", "/editorial-team",
+    "/team", "/our-team", "/staff", "/writers",
+    "/contribute", "/write-for-us", "/submit",
+    "/press", "/media", "/media-kit",
+    "/info", "/reach-us", "/get-in-touch",
+    "/nous-contacter", "/contactez-nous", "/a-propos",
+    "/publicite", "/redaction", "/annonceurs",
 ]
 
-EMAIL_RE = re.compile(
-    r"[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}",
-    re.IGNORECASE
-)
+CONTACT_LINK_KEYWORDS = [
+    "contact", "about", "advertise", "advertising", "editorial",
+    "team", "staff", "press", "media", "partner", "write for",
+    "contribute", "submit", "reach", "get in touch", "redaction",
+    "publicite", "annonce", "nous contacter", "a propos", "equipe",
+    "info", "newsletter",
+]
 
-# These domains are never a real contact email
-JUNK_DOMAINS = {
-    "example.com", "sentry.io", "wixpress.com", "cloudflare.com",
-    "google.com", "facebook.com", "twitter.com", "instagram.com",
-    "jquery.com", "w3.org", "schema.org", "linkedin.com", "youtube.com",
-    "amazonaws.com", "wp.com", "wordpress.com", "gravatar.com",
-}
-
-HR = "-" * 55
+EMAIL_RE = re.compile(r"[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}")
 
 
-# ── Helpers ───────────────────────────────────────────────────────────────────
+def score_email(email):
+    local = email.split("@")[0].lower()
+    domain = email.split("@")[1].lower() if "@" in email else ""
+
+    BLACKLIST_LOCALS = {
+        "noreply", "no-reply", "donotreply", "do-not-reply",
+        "mailer-daemon", "postmaster", "bounce", "bounces",
+        "unsubscribe", "notifications", "notify", "alert", "alerts",
+        "newsletter", "newsletters", "subscribe", "subscriptions",
+        "feedback", "survey", "abuse", "spam", "security",
+        "privacy", "legal", "careers", "jobs", "recruitment",
+        "hr", "finance", "accounts", "billing", "invoice",
+        "orders", "sales", "shop", "store", "ecommerce",
+        "example", "test", "demo", "votre", "your",
+    }
+    BLACKLIST_DOMAINS = {
+        "example.com", "test.com", "domain.com", "email.com",
+        "sentry.io", "wixpress.com", "squarespace.com",
+        "google.com", "facebook.com", "twitter.com",
+        "schema.org", "w3.org",
+    }
+
+    if local in BLACKLIST_LOCALS:
+        return -999
+    if domain in BLACKLIST_DOMAINS:
+        return -999
+    if re.search(r"\.(png|jpg|gif|svg|webp|css|js)$", local):
+        return -999
+
+    TIER1 = [
+        "editor", "editorial", "partnerships", "partnership", "partner",
+        "advertise", "advertising", "ads", "advert",
+        "media", "press", "pr", "links", "seo",
+        "contribute", "contributions", "submit", "tips",
+        "news", "newsroom", "newsdesk", "redaction", "desk",
+    ]
+    for kw in TIER1:
+        if kw in local:
+            return 100
+
+    TIER2 = ["contact", "hello", "hi", "reach", "enquir", "inquir",
+             "general", "mail", "administration", "admin", "webmaster", "staff"]
+    for kw in TIER2:
+        if kw in local:
+            return 60
+
+    TIER3 = ["info", "office", "team", "write"]
+    for kw in TIER3:
+        if kw in local:
+            return 30
+
+    if "gmail.com" in domain or "yahoo." in domain or "outlook." in domain:
+        return 20
+
+    return 10
+
+
+def extract_emails(text):
+    raw = EMAIL_RE.findall(text)
+    cleaned = []
+    for e in raw:
+        e = e.strip(".,;:'\"><)(").lower()
+        if len(e) > 6 and "." in e.split("@")[-1]:
+            cleaned.append(e)
+    return list(set(cleaned))
+
+
+def fetch(url, session):
+    try:
+        resp = session.get(url, timeout=TIMEOUT, headers=HEADERS, allow_redirects=True)
+        if resp.status_code == 200:
+            return resp.text
+        return None
+    except Exception:
+        return None
+
+
+def find_contact_links(html, base_url):
+    soup = BeautifulSoup(html, "lxml")
+    found = []
+    for a in soup.find_all("a", href=True):
+        href = a["href"].strip()
+        text = a.get_text(strip=True).lower()
+        combined = (href + " " + text).lower()
+        if any(kw in combined for kw in CONTACT_LINK_KEYWORDS):
+            abs_url = urljoin(base_url, href)
+            if urlparse(abs_url).netloc == urlparse(base_url).netloc:
+                found.append(abs_url)
+    seen = set()
+    unique = []
+    for u in found:
+        if u not in seen:
+            seen.add(u)
+            unique.append(u)
+    return unique
+
+
+def scrape_domain(domain, session):
+    domain = re.sub(r"^https?://", "", domain.strip().lower())
+    domain = re.sub(r"^www\.", "", domain).rstrip("/")
+
+    base = f"https://www.{domain}"
+    all_emails = {}
+    pages_checked = []
+    status = "error"
+
+    def add_emails(text):
+        for e in extract_emails(text):
+            s = score_email(e)
+            if s > -999:
+                all_emails[e] = max(all_emails.get(e, s), s)
+
+    # Step 1: homepage
+    html = fetch(base, session) or fetch(f"https://{domain}", session) or fetch(f"http://www.{domain}", session)
+    if html:
+        add_emails(html)
+        pages_checked.append(base)
+        status = "scraped"
+        contact_links = find_contact_links(html, base)
+    else:
+        contact_links = []
+
+    checked = set(pages_checked)
+
+    # Step 2: known contact paths
+    for path in CONTACT_PATHS:
+        if len(pages_checked) >= MAX_PAGES:
+            break
+        url = base + path
+        if url in checked:
+            continue
+        time.sleep(REQUEST_DELAY * 0.4)
+        h = fetch(url, session)
+        if h:
+            add_emails(h)
+            pages_checked.append(url)
+            checked.add(url)
+
+    # Step 3: contact links from homepage
+    for url in contact_links:
+        if len(pages_checked) >= MAX_PAGES:
+            break
+        if url in checked:
+            continue
+        time.sleep(REQUEST_DELAY * 0.4)
+        h = fetch(url, session)
+        if h:
+            add_emails(h)
+            pages_checked.append(url)
+            checked.add(url)
+
+    ranked = [e for e, _ in sorted(all_emails.items(), key=lambda x: x[1], reverse=True)]
+
+    if not ranked and status == "scraped":
+        status = "no_email_found"
+
+    return {
+        "domain":        domain,
+        "primary_email": ranked[0] if len(ranked) > 0 else "",
+        "email_2":       ranked[1] if len(ranked) > 1 else "",
+        "email_3":       ranked[2] if len(ranked) > 2 else "",
+        "all_emails":    " | ".join(ranked),
+        "pages_checked": len(pages_checked),
+        "status":        status if not ranked else "scraped",
+        "date_scraped":  datetime.now().strftime("%d/%m/%Y"),
+    }
+
 
 def load_domains(path):
-    """Read domains from a CSV file. Accepts one domain per line or a
-    column called 'domain' (case-insensitive). Strips http(s):// if present."""
     domains = []
     try:
         with open(path, newline="", encoding="utf-8-sig") as f:
-            sample = f.read(1024)
-            f.seek(0)
-            has_header = any(
-                h in sample.lower()
-                for h in ("domain", "url", "website", "site")
-            )
-            reader = csv.DictReader(f) if has_header else csv.reader(f)
-            for row in reader:
-                raw = (
-                    row.get("domain") or row.get("Domain") or
-                    row.get("url") or row.get("URL") or
-                    row.get("website") or row.get("Website") or
-                    (list(row.values())[0] if isinstance(row, dict) else row[0])
-                )
-                if not raw:
+            for i, row in enumerate(csv.reader(f)):
+                if not row:
                     continue
-                # Strip protocol and trailing slashes
-                domain = (
-                    raw.strip()
-                    .lower()
-                    .replace("https://", "")
-                    .replace("http://", "")
-                    .rstrip("/")
-                )
-                if domain:
-                    domains.append(domain)
+                cell = row[0].strip()
+                if i == 0 and cell.lower() in ("domain", "domains", "website", "url"):
+                    continue
+                if cell:
+                    domains.append(cell)
     except FileNotFoundError:
-        print(f"[!] Input file not found: {path}")
+        logging.error(f"Input file not found: {path}")
     return domains
 
 
-def clean_email(email):
-    email = email.lower().strip().rstrip(".")
-    if not email or "@" not in email:
-        return None
-    domain = email.split("@")[-1]
-    if any(j in domain for j in JUNK_DOMAINS):
-        return None
-    if len(email) > 80 or len(domain) < 4:
-        return None
-    if re.search(r"\.(png|jpg|gif|svg|css|js|ico|woff|ttf)$", domain):
-        return None
-    return email
-
-
-def extract_emails(html):
-    soup = BeautifulSoup(html, "html.parser")
-    found = set()
-
-    # 1. mailto: links — highest confidence
-    for a in soup.find_all("a", href=True):
-        if a["href"].lower().startswith("mailto:"):
-            email = a["href"][7:].split("?")[0].strip()
-            c = clean_email(email)
-            if c:
-                found.add(c)
-
-    # 2. Visible text
-    for m in EMAIL_RE.findall(soup.get_text(" ")):
-        c = clean_email(m)
-        if c:
-            found.add(c)
-
-    # 3. Raw HTML (catches obfuscated/data-attr emails)
-    for m in EMAIL_RE.findall(html):
-        c = clean_email(m)
-        if c:
-            found.add(c)
-
-    return found
-
-
-def fetch(url, timeout=10):
-    try:
-        r = requests.get(url, headers=HEADERS, timeout=timeout,
-                         allow_redirects=True)
-        if r.status_code == 200 and "text/html" in r.headers.get("Content-Type", ""):
-            return r.text
-    except Exception:
-        pass
-    return None
-
-
-def scrape(domain):
-    """Returns (email, status)."""
-    base        = f"https://{domain}"
-    domain_root = re.sub(r"^www\.", "", domain)
-    pool        = set()
-
-    for path in CONTACT_PATHS:
-        html = fetch(base + path)
-        if html:
-            pool.update(extract_emails(html))
-        time.sleep(0.3)
-
-    # Prefer emails that belong to this exact domain
-    own = {e for e in pool if domain_root in e.split("@")[-1]}
-
-    if own:
-        for prefix in ["editor", "editorial", "contact", "hello", "info", "admin"]:
-            for e in sorted(own):
-                if e.startswith(prefix + "@"):
-                    return e, "scraped"
-        return sorted(own)[0], "scraped"
-
-    if pool:
-        return sorted(pool)[0], "scraped"
-
-    # Fallback pattern — unverified
-    return f"info@{domain_root}", "pattern"
-
-
-# ── Main ──────────────────────────────────────────────────────────────────────
-
-def run():
-    print("=" * 55)
-    print("  EMAIL SCRAPER AGENT")
-    print(f"  {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    print("=" * 55)
-
+def main():
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s  %(message)s", datefmt="%H:%M:%S")
     domains = load_domains(INPUT_FILE)
     if not domains:
-        print(f"\n[!] No domains found in {INPUT_FILE}. Exiting.")
+        logging.error("No domains found. Exiting.")
         return
 
-    # Remove duplicates while preserving order
-    seen     = set()
-    unique   = [d for d in domains if not (d in seen or seen.add(d))]
-    print(f"\n-> {len(unique)} unique domain(s) loaded from {INPUT_FILE}")
+    logging.info(f"Loaded {len(domains)} domains")
+    fieldnames = ["domain", "primary_email", "email_2", "email_3",
+                  "all_emails", "pages_checked", "status", "date_scraped"]
 
-    results  = []
-    scraped  = 0
-    pattern  = 0
-    errors   = 0
-
-    print(f"\n{HR}")
-
-    for i, domain in enumerate(unique, 1):
-        print(f"  [{i}/{len(unique)}] {domain} ...", end=" ", flush=True)
-
-        try:
-            email, status = scrape(domain)
-            results.append({
-                "domain":       domain,
-                "email":        email,
-                "status":       status,
-                "date_scraped": datetime.now().strftime("%Y-%m-%d"),
-            })
-            print(f"{'FOUND' if status == 'scraped' else 'pattern'}: {email}")
-            if status == "scraped":
-                scraped += 1
-            else:
-                pattern += 1
-
-        except Exception as e:
-            print(f"ERROR: {e}")
-            results.append({
-                "domain":       domain,
-                "email":        "",
-                "status":       "error",
-                "date_scraped": datetime.now().strftime("%Y-%m-%d"),
-            })
-            errors += 1
-
-        time.sleep(0.5)
-
-    # Write output CSV
-    with open(OUTPUT_FILE, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=["domain", "email", "status", "date_scraped"])
+    with open(OUTPUT_FILE, "w", newline="", encoding="utf-8") as out_f:
+        writer = csv.DictWriter(out_f, fieldnames=fieldnames)
         writer.writeheader()
-        writer.writerows(results)
+        session = requests.Session()
+        session.max_redirects = 5
 
-    print(f"\n{HR}")
-    print(f"  Done. Results saved to: {OUTPUT_FILE}")
-    print(f"  Real emails  : {scraped}")
-    print(f"  Pattern (info@) : {pattern}")
-    print(f"  Errors       : {errors}")
-    print(f"  Total        : {len(unique)}")
-    print("=" * 55)
-    print("\n  Download emails_output.csv from the Actions Artifacts.")
+        for i, domain in enumerate(domains, 1):
+            logging.info(f"[{i}/{len(domains)}] {domain}")
+            try:
+                result = scrape_domain(domain, session)
+            except Exception as e:
+                logging.warning(f"  Error: {e}")
+                result = {"domain": domain, "primary_email": "", "email_2": "",
+                          "email_3": "", "all_emails": "", "pages_checked": 0,
+                          "status": "error", "date_scraped": datetime.now().strftime("%d/%m/%Y")}
+
+            writer.writerow(result)
+            out_f.flush()
+            msg = f"  -> {result['status']}"
+            if result["primary_email"]:
+                msg += f" | {result['primary_email']}"
+                extras = [e for e in [result["email_2"], result["email_3"]] if e]
+                if extras:
+                    msg += f" | also: {', '.join(extras)}"
+            logging.info(msg)
+            time.sleep(REQUEST_DELAY)
+
+    logging.info(f"Done. Saved to {OUTPUT_FILE}")
 
 
 if __name__ == "__main__":
-    run()
+    main()
