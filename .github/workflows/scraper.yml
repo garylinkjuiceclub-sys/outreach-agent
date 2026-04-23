@@ -1,13 +1,7 @@
 name: Email Scraper Agent
 
 on:
-  # ── Manual trigger ─────────────────────────────────────────────────────────
-  # Go to GitHub → Actions → Email Scraper Agent → Run workflow
   workflow_dispatch:
-
-  # ── Automatic schedule ─────────────────────────────────────────────────────
-  # Runs every Tuesday at 7:00 AM UTC
-  # To pause: comment out the two lines below
   schedule:
     - cron: '0 7 * * 2'
 
@@ -26,14 +20,22 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install -r requirements-scraper.txt
+        run: pip install requests beautifulsoup4 lxml
 
       - name: Run Email Scraper Agent
         run: python email_scraper.py
 
-      - name: Upload results
+      - name: Upload results as artifact
         uses: actions/upload-artifact@v4
         with:
-          name: emails-output-${{ github.run_number }}
+          name: emails-output
           path: emails_output.csv
           retention-days: 30
+
+      - name: Commit results back to repo
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add emails_output.csv
+          git diff --staged --quiet || git commit -m "chore: update emails_output"
+          git push
