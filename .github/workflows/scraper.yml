@@ -1,7 +1,13 @@
 name: Email Scraper Agent
 
 on:
+  # ── Manual trigger ─────────────────────────────────────────────────────────
+  # Go to GitHub → Actions → Email Scraper Agent → Run workflow
   workflow_dispatch:
+
+  # ── Automatic schedule ─────────────────────────────────────────────────────
+  # Runs every Tuesday at 7:00 AM UTC
+  # To pause: comment out the two lines below
   schedule:
     - cron: '0 7 * * 2'
 
@@ -25,7 +31,7 @@ jobs:
       - name: Run Email Scraper Agent
         run: python email_scraper.py
 
-      - name: Upload results as artifact
+      - name: Upload results
         uses: actions/upload-artifact@v4
         with:
           name: emails-output-${{ github.run_number }}
