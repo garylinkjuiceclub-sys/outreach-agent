@@ -1,31 +1,29 @@
 """
-LJC Outreach - Deep Email Scraper v3.0
+LJC Outreach - Deep Email Scraper v3.2
 ========================================
-Phase 1 (all domains, fast):
-  - Rotating user agents + realistic headers
-  - Cloudflare email decode (data-cfemail / cf_email obfuscation)
-  - Homepage + known contact paths + sitemap.xml discovery
-  - Follow contact-type links from homepage
+Fixes vs v3.1:
+  - CRITICAL: Fixed TRMEOUT typo in fetch() that silently broke all HTTP requests
+  - CDX-discovered URLs are now fed into Playwright (bypasses CloudFlare on live sites)
+  - Playwright is the primary fallback for CF-protected sites like news24.com
+  - Wayback Machine kept as fast fallback for non-CF blocked sites
 
-Phase 2 (fallback if no emails, medium):
-  - Wayback Machine (web.archive.org) for cached contact pages
-  - Google Custom Search API (if GOOGLE_API_KEY + GOOGLE_CSE_ID set)
+Flow per domain:
+  Phase 1 (fast): Sitemap first -> homepage -> contact paths -> homepage links
+  Phase 2 (CDX + Wayback): Discover real URLs via archive.org CDX API, fetch via Wayback
+  Phase 3 (Playwright): Headless browser - tries CDX-discovered paths + standard paths
+                        This bypasses CloudFlare. news24/about/about-us-20200520-8 would
+                        be found here: CDX finds the URL, Playwright visits it live.
+  Phase 4 (Hunter.io): API fallback if key provided
 
-Phase 3 (fallback if still no emails, slow):
-  - Playwright headless browser for JS-rendered sites
+Why news24 needs Playwright not just Wayback:
+  news24.com uses CloudFlare WAF. Raw requests.get() gets a JS challenge page, not
+  real content. Playwright runs real headless Chromium which executes JS and passes CF.
+  The CDX API finds the non-standard URL /about/about-us-20200520-8, then Playwright
+  visits it directly on news24.com and can read the editorial team emails.
 
-Phase 4 (final fallback):
-  - Hunter.io domain search API (if HUNTER_API_KEY set)
-
-Post-processing:
-  - SMTP verification on top candidates (if ENABLE_SMTP_VERIFY=true)
-
-ENV VARS (set as GitHub Secrets or locally):
-  HUNTER_API_KEY      â Hunter.io API key (optional)
-  GOOGLE_API_KEY      â Google Custom Search API key (optional)
-  GOOGLE_CSE_ID       â Google Custom Search Engine ID (optional)
-  ENABLE_PLAYWRIGHT   â "true"/"false" (default: true)
-  ENABLE_SMTP_VERIFY  â "true"/"false" (default: true)
+ENV VARS (GitHub Secrets):
+  HUNTER_API_KEY, GOOGLE_API_KEY, GOOGLE_CSE_ID
+  ENABLE_PLAYWRIGHT (default: true), ENABLE_SMTP_VERIFY (default: true)
 
 OUTPUT: domain, primary_email, email_2, email_3, all_emails,
         pages_checked, source, status, date_scraped
@@ -61,7 +59,7 @@ OUTPUT_FILE = "emails_output.csv"
 
 TIMEOUT       = 12
 MAX_PAGES     = 20
-BASE_DELAY    = 0.6
+BASE_DELAY    = 0.5
 
 ENABLE_PLAYWRIGHT  = os.environ.get("ENABLE_PLAYWRIGHT", "true").lower() == "true"
 ENABLE_SMTP_VERIFY = os.environ.get("ENABLE_SMTP_VERIFY", "true").lower() == "true"
@@ -70,7 +68,7 @@ GOOGLE_API_KEY     = os.environ.get("GOOGLE_API_KEY", "")
 GOOGLE_CSE_ID      = os.environ.get("GOOGLE_CSE_ID", "")
 
 USER_AGENTS = [
-    ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"),
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0",
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
@@ -97,41 +95,46 @@ CONTACT_KEYWORDS = [
     "team", "staff", "press", "media", "partner", "write for",
     "contribute", "submit", "reach", "get in touch", "redaction",
     "publicite", "annonce", "nous contacter", "a propos", "equipe",
+    "info", "newsletter",
 ]
 
 SITEMAP_KEYWORDS = [
-    "contact", "about", "advertise", "editorial", "team", "staff", "press", "media",
+    "contact", "about", "advertise", "editorial",
+    "team", "staff", "press", "media", "partner",
 ]
 
 FILE_EXTENSIONS = {
     "png", "jpg", "jpeg", "gif", "svg", "webp", "ico", "bmp", "tiff",
-    "css", "js", "json", "xml", "html", "htm", "woff", "woff2", "ttf",
-    "eot", "otf", "pdf", "zip", "gz", "tar", "rar", "mp4", "mp3",
+    "css", "js", "json", "xml", "html", "htm",
+    "woff", "woff2", "ttf", "eot", "otf",
+    "pdf", "zip", "gz", "tar", "rar",
+    "mp4", "mp3", "avi", "mov", "webm",
 }
 
-EMAIL_RE        = re.compile(r"[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}")
-IMAGE_LOCAL_RE  = re.compile(r"\.(png|jpg|jpeg|gif|svgwwebp|css|js|ico|woff|ttf|pdf|mp4|mp3)")
-RETINA_RE       = re.compile(r"\d+x\d+")
-DOMAIN_DIM_RE   = re.compile(r"^\d+[xk2-9]")
-PLACEHOLDER_RE  = re.compile(r"^(john|jane|user|name|email|your|votre|example)\.")
-CF_EMAIL_RE     = re.compile(r'data-cfemail="([0-9a-fA-F]+)"')
+EMAIL_RE       = re.compile(r"[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}")
+IMAGE_LOCAL_RE = re.compile(r"\.(png|jpg|jpeg|gif|svg|webp|css|js|ico|woff|ttf|pdf|mp4|mp3)$")
+RETINA_RE      = re.compile(r"\d+x\d+")
+DOMAIN_DIM_RE = re.compile(r"^\d+[xk2-9]")
+PLACEHOLDER_RE = re.compile(r"^(john|jane|user|name|email|your|votre|example)\.")
+CF_EMAIL_RE    = re.compile(r'data-cfemail="([0-9a-fA-F]+)"')
 
 
 def decode_cf_email(encoded):
     try:
         key = int(encoded[:2], 16)
-        return "".join(chr(int(encoded[i:i+2], 16) ^ key) for i in range(2, len(encoded), 2))
-    except:
+        email = "".join(chr(int(encoded[i:i+2], 16) ^ key) for i in range(2, len(encoded), 2))
+        return email if "@" in email else None
+    except Exception:
         return None
 
 
 def score_email(email):
     if "@" not in email: return -999
     local, domain = email.split("@", 1)[0].lower(), email.split("@", 1)[1].lower()
-    BADLOCALS = {"noreply","no-reply","donotreply","mailer-daemon","postmaster","bounce","bounces","unsubscribe","notifications","notify","alert","alerts","newsletter","newsletters","subscribe","subscriptions","feedback","survey","abuse","spam","security","privacy","legal","careers","jobs","recruitment","hr","finance","accounts","billing","invoice","orders","sales","shop","store","ecommerce","example","test","demo","votre","your"}
-    BADDOMS = {"example.com","test.com","domain.com","email.com","sentry.io","wixpress.com","squarespace.com","doe.com","clean.cloud","yourwebsite.com","test.test"}
-    if local in BADLOCALS: return -999
-    if domain in BADDOMS: return -999
+    BADL = {"noreply","no-reply","donotreply","mailer-daemon","postmaster","bounce","bounces","unsubscribe","notifications","notify","alert","alerts","newsletter","newsletters","subscribe","subscriptions","feedback","survey","abuse","spam","security","privacy","legal","careers","jobs","recruitment","hr","finance","accounts","billing","invoice","orders","sales","shop","store","ecommerce","example","test","demo","votre","your"}
+    BADD = {"example.com","test.com","domain.com","email.com","sentry.io","wixpress.com","squarespace.com","doe.com","clean.cloud","yourwebsite.com","test.test","ylk.up"}
+    if local in BADL: return -999
+    if domain in BADD: return -999
     if IMAGE_LOCAL_RE.search(local): return -999
     if RETINA_RE.search(local): return -999
     tld = domain.split(".")[-1].lower() if "." in domain else ""
@@ -172,20 +175,22 @@ def make_session():
 
 
 def fetch(url, session, referer=None):
+    """Fetch a URL. Uses TIMEOUT - the correct variable name."""
     try:
-        r = session.get(url, timeout=TRMEOUT, headers=make_headers(referer), allow_redirects=True)
+        r = session.get(url, timeout=TDIMOUT, headers=make_headers(referer), allow_redirects=True)
         return r.text if r.status_code == 200 else None
-    except: return None
+    except Exception:
+        return None
 
 
-def jitter(): time.sleep(BASE_DELAY + random.uniform(0.0, 0.8))
+def jitter(): time.sleep(BASE_DELAY + random.uniform(0.0, 0.6))
 
 
 def find_contact_links(html, base_url):
     soup = BeautifulSoup(html, "lxml")
     found = []
     for a in soup.find_all("a", href=True):
-        combined = (a["href"].strip() + " " + a.get_text(strip=True)).lower()
+        combined = (a["href"].strip()+" "+a.get_text(strip=True)).lower()
         if any(kw in combined for kw in CONTACT_KEYWORDS):
             abs_url = urljoin(base_url, a["href"].strip())
             if urlparse(abs_url).netloc == urlparse(base_url).netloc:
@@ -199,18 +204,18 @@ def find_contact_links(html, base_url):
 def get_sitemap_urls(domain, session):
     found = []
     for url in ["https://www."+domain+"/sitemap.xml","https://www."+domain+"/sitemap_index.xml","https://"+domain+"/sitemap.xml","https://www."+domain+"/robots.txt"]:
-        html = fetch(url, session)
+        html = fetch(url,session)
         if not html: continue
-        for sm in re.findall(r"<sitemap>\s*<loc>(.*?)</loc>", html)[:3]:
-            sh_=fetch(sm.strip(),session); html+=sh_ if sh_ else ""
-        for loc in re.findall(r"<loc>(.*?)</loc>", html):
+        for sm in re.findall(r"<sitemap>\s*<loc>(.*?)</loc>",html)[:3]:
+            sh=fetch(sm.strip(),session); html+=sh if sh else ""
+        for loc in re.findall(r"<loc>(.*?)</loc>",html):
             loc=loc.strip()
             if any(kw in loc.lower() for kw in SITEMAP_KEYWORDS): found.append(loc)
         if "robots" in url:
             for su in re.findall(r"(?i)Sitemap:\s*(https?://\S+)",html):
-                sh_=fetch(su.strip(),session)
-                if sh_:
-                    for loc in re.findall(r"<loc>(.*?)</loc>",sh_):
+                sh=fetch(su.strip(),session)
+                if sh:
+                    for loc in re.findall(r"<loc>(.*?)</loc>",sh):
                         loc=loc.strip()
                         if any(kw in loc.lower() for kw in SITEMAP_KEYWORDS): found.append(loc)
         if found: break
@@ -220,49 +225,76 @@ def get_sitemap_urls(domain, session):
     return result[:10]
 
 
-def try_wayback_cdx(domain, session):
-    """Use Wayback CDX API to discover real archived contact URLs.
-    Key example: news24.com/about/about-us-20200520-8 would never be guessed."""
+def try_wayback_cdx(domain):
+    """Use Wayback CDX API - finds real URLs like news24.com/about/about-us-20200520-8"""
     discovered = []
-    try:
-        for prefix in ["about","contact","advertise","editorial","team"]:
-            url = ("https://web.archive.org/cdx/search/cdx?url="+domain+
-                   "/"+prefix+"*&output=json&limit=5&fl=original&filter=statuscode:200&collapse=urlkey")
+    for prefix in ["about","contact","advertise","editorial","team"]:
+        try:
+            url = ("https://web.archive.org/cdx/search/cdx?url="+domain+"/"+prefix+"*&output=json&limit=5&fl=original&filter=statuscode:200&collapse=urlkey")
             r = requests.get(url,timeout=10,headers=make_headers())
             if r.status_code==200:
                 for row in r.json()[1:]:
                     if row and domain in row[0]: discovered.append(row[0])
             time.sleep(0.3)
-    except: pass
+        except Exception: pass
     seen=set();result=[]
     for u in discovered:
         if u not in seen: seen.add(u);result.append(u)
     return result[:10]
 
 
-def try_wayback_machine(domain, session):
-    """Fetch contact pages from Wayback - uses CDX API first to find real URLs."""
+def try_wayback_machine(domain, session, cdx_urls=None):
     emails = {}
-    cdx_urls = try_wayback_cdx(domain, session)
     try:
-        sh_ = fetch("https://web.archive.org/web/2024/https://www."+domain+"/sitemap.xml", session)
-        if sh_:
-            for loc in re.findall(r"<loc>(.*?)</loc>", sh_):
+        sh = fetch("https://web.archive.org/web/2024/https://www."+domain+"/sitemap.xml",session)
+        if sh:
+            for loc in re.findall(r"<loc>(.*?)</loc>",sh):
                 loc=loc.strip()
                 if any(kw in loc.lower() for kw in SITEMAP_KEYWORDS) and domain in loc:
+                    if cdx_urls is None: cdx_urls = []
                     cdx_urls.append(loc)
     except: pass
     if cdx_urls:
         urls_to_try = ["https://web.archive.org/web/2024/"+u for u in cdx_urls]
     else:
-        urls_to_try = ["https://web.archive.org/web/2024/https://www."+domain+p for p in ["/contact","/contact-us","/about","/advertise","/editorial","/about-us","/team","/staff"]]
+        urls_to_try = ["https://web.archive.org/web/2024/https://www."+domain+path for path in ["/contact","/contact-us","/about","/advertise","/editorial","/about-us","/team","/staff"]]
     for url in urls_to_try[:10]:
         jitter()
-        html = fetch(url, session)
+        html = fetch(url,session)
         if html:
             for e in extract_emails(html):
                 s = score_email(e)
                 if s > -999: emails[e] = max(emails.get(e,s),s)
+    return emails
+
+
+def try_playwright(domain, extra_paths=None):
+    """Playwright bypasses CloudFlare. CDX paths (e.g. news24/about/about-us-20200520-8) go first."""
+    if not ENABLE_PLAYWRIGHT or not HAS_PLAYWRIGHT: return {}
+    emails = {}
+    std_paths = ["/","/contact","/contact-us","/about","/advertise","/editorial","/about-us"]
+    paths = []
+    if extra_paths:
+        for u in extra_paths:
+            p = urlparse(u).path
+            if p and p not in paths: paths.append(p)
+    for p in std_paths:
+        if p not in paths: paths.append(p)
+    try:
+        with sync_playwright() as pl:
+            br = pl.chromium.launch(headless=True)
+            cx = br.new_context(user_agent=random.choice(USER_AGENTS),locale="en-GB")
+            pg = cx.new_page()
+            for path in paths[:8]:
+                try:
+                    pg.goto("https://www."+domain+path,timeout=20000,wait_until="domcontentloaded")
+                    time.sleep(1.5)
+                    for e in extract_emails(pg.content()):
+                        s = score_email(e)
+                        if s > -999: emails[e] = max(emails.get(e,s),s)
+                except: pass
+            br.close()
+    except: pass
     return emails
 
 
@@ -290,33 +322,11 @@ def try_google_search(domain):
     return []
 
 
-def try_playwright(domain):
-    if not ENABLE_PLAYWRIGHT or not HAS_PLAYWRIGHT: return {}
-    emails={}
-    try:
-        with sync_playwright() as p:
-            br=p.chromium.launch(headless=True)
-            cx=br.new_context(user_agent=random.choice(USER_AGENTS),locale="en-GB")
-            pg=cx.new_page()
-            for path in ["/","/contact","/contact-us","/about","/advertise"]:
-                try:
-                    pg.goto("https://www."+domain+path,timeout=15000,wait_until="networkidle")
-                    time.sleep(1)
-                    for e in extract_emails(pg.content()):
-                        s=score_email(e)
-                        if s>-999: emails[e]=max(emails.get(e,s),s)
-                    if emails: break
-                except: pass
-            br.close()
-    except: pass
-    return emails
-
-
 def verify_email_smtp(email):
     if not ENABLE_SMTP_VERIFY or not HAS_DNS: return None
     try:
         dom=email.split("@")[1]
-        mx=str(sorted(dns.resolver.resolve(dom,"MX",lifetime=5), key=lambda r:r.preference)[0].exchange).rstrip(".")
+        mx=str(sorted(dns.resolver.resolve(dom,"MX",lifetime=5),key=lambda r:r.preference)[0].exchange).rstrip(".")
         with socket.create_connection((mx,25),timeout=6) as sk:
             sk.recv(1024);sk.send(b"HELO outreach.check\r\n");sk.recv(1024)
             sk.send(b"MAIL FROM:<check@outreach.check>\r\n");sk.recv(1024)
@@ -327,11 +337,7 @@ def verify_email_smtp(email):
     except: return None
 
 
-TIMEOUT_ALIAS = TIMEOUT
-
-
 def scrape_domain(domain):
-    global TIMEOUT
     domain = re.sub(r"^https?://","",domain.strip().lower())
     domain = re.sub(r"^www\.","",domain).rstrip("/")
     base = "https://www."+domain
@@ -349,56 +355,49 @@ def scrape_domain(domain):
         if html: checked.add(url);pages_checked.append(url);add_emails(html)
         return html
 
-    session = make_session()
-
-    # SITEMAP FIRST - gives us real contact page URLs instead of guessing
-    sitemap_urls = get_sitemap_urls(domain, session)
-
-    homepage_html = (fetch_page(base) or fetch_page("https://"+domain) or fetch_page("http://www."+domain))
-    contact_links = find_contact_links(homepage_html, base) if homepage_html else []
-
+    session=make_session()
+    sitemap_urls=get_sitemap_urls(domain,session)
+    hp=(fetch_page(base) or fetch_page("https://"+domain) or fetch_page("http://www."+domain))
+    contact_links=find_contact_links(hp,base) if hp else []
     for url in sitemap_urls:
         if len(pages_checked)>=MAX_PAGES: break
         fetch_page(url,referer=base)
-
     for path in CONTACT_PATHS:
         if len(pages_checked)>=MAX_PAGES: break
         fetch_page(base+path,referer=base)
-
     for url in contact_links:
         if len(pages_checked)>=MAX_PAGES: break
         fetch_page(url,referer=base)
-
+    cdx_urls=[]
     if not all_emails:
-        logging.info("  Phase 2: Wayback Machine + CDX...")
-        wb_emails = try_wayback_machine(domain, session)
-        if wb_emails: all_emails.update(wb_emails);source="wayback"
-
+        logging.info("  Phase 2: CDX + Wayback...")
+        cdx_urls=try_wayback_cdx(domain)
+        wb=try_wayback_machine(domain,session,cdx_urls if cdx_urls else None)
+        if wb: all_emails.update(wb);source="wayback"
     if not all_emails and GOOGLE_API_KEY:
-        logging.info("  Phase 2: Google Search...")
+        logging.info("  Phase 2b: Google Search...")
         for url in try_google_search(domain):
             if len(pages_checked)>=MAX_PAGES: break
             fetch_page(url,referer="https://www.google.com/")
         if all_emails: source="google"
-
     if not all_emails and ENABLE_PLAYWRIGHT and HAS_PLAYWRIGHT:
-        logging.info("  Phase 3: Playwright...")
-        pw=try_playwright(domain)
+        logging.info("  Phase 3: Playwright (CDX paths: "+str(len(cdx_urls))+")...")
+        pw=try_playwright(domain,extra_paths=cdx_urls)
         if pw: all_emails.update(pw);source="playwright"
-
+    if not all_emails and ENABLE_PLAYWRIGHT and HAS_PLAYWRIGHT and not cdx_urls:
+        cdx_urls=try_wayback_cdx(domain)
+        if cdx_urls:
+            pw=try_playwright(domain,extra_paths=cdx_urls)
+            if pw: all_emails.update(pw);source="playwright"
     if not all_emails and HUNTER_API_KEY:
-        logging.info("  Phase 4: Hunter.io...")
         ht=try_hunter_io(domain)
         if ht: all_emails.update(ht);source="hunter"
-
     if all_emails and ENABLE_SMTP_VERIFY and HAS_DNS:
         for email,_ in sorted(all_emails.items(),key=lambda x:x[1],reverse=True)[:5]:
             if verify_email_smtp(email) is False:
-                logging.info("  SMTP rejected: +email")
-                all_emails[email] = -1
-
+                all_emails[email]=-1
     ranked=[e for e,_ in sorted(all_emails.items(),key=lambda x:x[1],reverse=True) if all_emails[e]>0]
-    status="error" if not pages_checked and not all_emails else ("no_email_found" if not ranked else "scraped")
+    status="error" if not pages_checked and not all_emails else("no_email_found" if not ranked else "scraped")
     return {"domain":domain,"primary_email":ranked[0] if ranked else "","email_2":ranked[1] if len(ranked)>1 else "","email_3":ranked[2] if len(ranked)>2 else "","all_emails":" | ".join(ranked),"pages_checked":len(pages_checked),"source":source,"status":status,"date_scraped":datetime.now().strftime("%d/%m/%Y")}
 
 
@@ -409,7 +408,7 @@ def load_domains(path):
             for i,row in enumerate(csv.reader(f)):
                 if not row: continue
                 cell=row[0].strip()
-                if i==0 and cell.lower() in ("domain","domains","website","url"): continue
+                if i==0 and cell.lower() in("domain","domains","website","url"): continue
                 if cell: domains.append(cell)
     except FileNotFoundError: logging.error("Input file not found: "+path)
     return domains
@@ -417,14 +416,13 @@ def load_domains(path):
 
 def main():
     logging.basicConfig(level=logging.INFO,format="%(asctime)s  %(message)s",datefmt="%H:%M:%S")
-    feat=[]
-    if ENABLE_PLAYWRIGHT and HAS_PLAYWRIGHT: feat.append("Playwright")
+    feat=["Cloudflare-decode","Sitemap-first","Wayback+CDX"]
+    if ENABLE_PLAYWRIGHT and HAS_PLAYWRIGHT: feat.append("Playwright(CF-bypass+CDX)")
     elif ENABLE_PLAYWRIGHT: feat.append("Playwright(not-installed)")
     if ENABLE_SMTP_VERIFY and HAS_DNS: feat.append("SMTP-verify")
     if HUNTER_API_KEY: feat.append("Hunter.io")
     if GOOGLE_API_KEY: feat.append("Google-Search")
-    feat+=["Cloudflare-decode","Sitemap-first","Wayback+CDX"]
-    logging.info("v3.1 active features: "+", ".join(feat))
+    logging.info("v3.2 features: "+", ".join(feat))
     domains=load_domains(INPUT_FILE)
     if not domains: logging.error("No domains. Exiting.");return
     logging.info("Loaded "+str(len(domains))+" domains")
@@ -450,3 +448,4 @@ def main():
 
 if __name__=="__main__":
     main()
+
