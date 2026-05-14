@@ -1,7 +1,7 @@
 domain,primary_email,email_2,email_3,all_emails,pages_checked,source,status,date_scraped
-ghanasoccernet.com,,,,,0,scraper,error,13/05/2026
-yardbarker.com,info@yardbarker.com,lb@ylk.up,nib@ylk.up,info@yardbarker.com | lb@ylk.up | nib@ylk.up | ib@ylk.up | 2lb@ylk.up | 2mb@ylk.up | 8b@ylk.up | b@ylk.up | o6b@ylk.up,0,playwright,scraped,13/05/2026
-ghanaweb.com,,,,,0,scraper,error,13/05/2026
-gizmodo.com,,,,,0,scraper,error,13/05/2026
-phonearena.com,sponsorships@phonearena.com,phonearena@phonearena.com,,sponsorships@phonearena.com | phonearena@phonearena.com,0,playwright,scraped,13/05/2026
-news24.com,,,,,0,playwright,no_email_found,13/05/2026
+ghanasoccernet.com,,,,,0,scraper,error,14/05/2026
+yardbarker.com,info@yardbarker.com,,,info@yardbarker.com,0,playwright,scraped,14/05/2026
+ghanaweb.com,info@ghanaweb.com,,,info@ghanaweb.com,0,playwright,scraped,14/05/2026
+gizmodo.com,,,,,0,scraper,error,14/05/2026
+phonearena.com,sponsorships@phonearena.com,phonearena@phonearena.com,,sponsorships@phonearena.com | phonearena@phonearena.com,0,playwright,scraped,14/05/2026
+news24.com,,,,,0,playwright,no_email_found,14/05/2026
