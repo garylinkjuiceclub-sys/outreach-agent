@@ -22,7 +22,7 @@ from bs4 import BeautifulSoup
 TIMEOUT = 15
 MAX_PAGES_PER_DOMAIN = 20
 OUTPUT_FILE = "emails_output.csv"
-DOMAINS_FILE = "domains.txt"
+DOMAINS_FILE = "domains_input.csv"
 WAYBACK_API = "http://web.archive.org/cdx/search/cdx"
 
 CONTACT_PATHS = [
@@ -111,7 +111,7 @@ def fetch(url, session, referer=None):
     except Exception:
         return None
 
-# ── Email extraction ───────────────────────────────────────────────────────────
+# ── Email extraction ───────────────────────────────────────────────────────────────────────────────────
 
 def decode_cloudflare_email(encoded):
     """Decode a Cloudflare data-cfemail encoded string."""
@@ -182,7 +182,7 @@ def extract_emails(html, domain):
 
     return sorted(seen.items(), key=lambda x: -x[1])
 
-# ── Contact form detection ─────────────────────────────────────────────────────
+# ── Contact form detection ─────────────────────────────────────────────────────────────────────────────
 
 def detect_contact_form(html, page_url):
     """
@@ -206,7 +206,7 @@ def detect_contact_form(html, page_url):
 
     return False, None
 
-# ── Phase 1: HTTP scraper ──────────────────────────────────────────────────────
+# ── Phase 1: HTTP scraper ─────────────────────────────────────────────────────────────────────────────
 
 def phase1_http(domain, session):
     """
@@ -275,7 +275,7 @@ def phase1_http(domain, session):
         "contact_form_url": contact_form_url,
     }
 
-# ── Phase 2: Wayback Machine ───────────────────────────────────────────────────
+# ── Phase 2: Wayback Machine ─────────────────────────────────────────────────────────────────────────
 
 def phase2_wayback(domain, session):
     """
@@ -365,7 +365,7 @@ def phase2_wayback(domain, session):
         "contact_form_url": contact_form_url,
     }
 
-# ── Phase 3: SMTP pattern verify ───────────────────────────────────────────────
+# ── Phase 3: SMTP pattern verify ──────────────────────────────────────────────────────────────────────
 
 def phase3_smtp(domain):
     """
@@ -399,7 +399,7 @@ def phase3_smtp(domain):
 
     return sorted(verified, key=lambda x: -x[1])
 
-# ── Row builder ────────────────────────────────────────────────────────────────
+# ── Row builder ──────────────────────────────────────────────────────────────────────────────────────
 
 def build_row(domain, email_list, pages_checked, source,
               contact_form, contact_form_url, wayback_snapshot_date):
@@ -430,7 +430,7 @@ def error_row(domain):
         "wayback_snapshot_date": "", "date_scraped": date.today().strftime("%d/%m/%Y"),
     }
 
-# ── Domain orchestrator ────────────────────────────────────────────────────────
+# ── Domain orchestrator ────────────────────────────────────────────────────────────────────────────────
 
 def scrape_domain(domain, session):
     """Run all phases for a single domain and return a CSV row dict."""
@@ -484,15 +484,19 @@ def scrape_domain(domain, session):
     row["status"] = "no_email_found"
     return row
 
-# ── Entry point ────────────────────────────────────────────────────────────────
+# ── Entry point ──────────────────────────────────────────────────────────────────────────────────────
 
 def load_domains():
     if not os.path.exists(DOMAINS_FILE):
         print("ERROR: " + DOMAINS_FILE + " not found.")
         return []
     with open(DOMAINS_FILE, encoding="utf-8") as f:
-        lines = [l.strip() for l in f if l.strip() and not l.startswith("#")]
-    return lines
+        reader = csv.reader(f)
+        rows = list(reader)
+    # Skip header row if first cell is "domain"
+    if rows and rows[0] and rows[0][0].strip().lower() == "domain":
+        rows = rows[1:]
+    return [row[0].strip() for row in rows if row and row[0].strip()]
 
 
 def normalise(domain):
@@ -509,7 +513,7 @@ def main():
         print("No domains to process. Add them to " + DOMAINS_FILE)
         return
 
-    print("Starting scraper — " + str(len(domains)) + " domains.")
+    print("Starting scraper \u2014 " + str(len(domains)) + " domains.")
     session = make_session()
 
     with open(OUTPUT_FILE, "w", newline="", encoding="utf-8") as f:
