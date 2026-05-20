@@ -14,10 +14,6 @@ jobs:
     timeout-minutes: 180
 
     env:
-      HUNTER_API_KEY:     ${{ secrets.HUNTER_API_KEY }}
-      GOOGLE_API_KEY:     ${{ secrets.GOOGLE_API_KEY }}
-      GOOGLE_CSE_ID:      ${{ secrets.GOOGLE_CSE_ID }}
-      ENABLE_PLAYWRIGHT:  "true"
       ENABLE_SMTP_VERIFY: "true"
 
     steps:
@@ -30,10 +26,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install Python dependencies
-        run: pip install requests beautifulsoup4 lxml playwright dnspython
-
-      - name: Install Playwright browser
-        run: playwright install --with-deps chromium
+        run: pip install requests beautifulsoup4 lxml dnspython
 
       - name: Run Email Scraper Agent
         run: python email_scraper.py
