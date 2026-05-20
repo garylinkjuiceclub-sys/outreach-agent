@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
-Email Scraper Agent v4.0
-Architecture: HTTP Scraper → Wayback CDX → SMTP Pattern Verify
+Email Scraper Agent v4.1
+Architecture: HTTP Scraper -> Wayback CDX -> SMTP Pattern Verify
 No Playwright. No Hunter.io. Free at any scale.
+Multilingual contact-path coverage: 20+ languages.
 """
 
 import csv
@@ -17,10 +18,10 @@ import dns.resolver
 import requests
 from bs4 import BeautifulSoup
 
-# ── Constants ──────────────────────────────────────────────────────────────────
+# -- Constants ------------------------------------------------------------------
 
 TIMEOUT = 15
-MAX_PAGES_PER_DOMAIN = 20
+MAX_PAGES_PER_DOMAIN = 50
 OUTPUT_FILE = "emails_output.csv"
 DOMAINS_FILE = "domains_input.csv"
 WAYBACK_API = "http://web.archive.org/cdx/search/cdx"
@@ -35,6 +36,134 @@ CONTACT_PATHS = [
     "/press", "/media", "/media-kit",
     "/write-for-us", "/contribute", "/submissions",
     "/work-with-us", "/collaborate",
+]
+
+MULTILINGUAL_PATHS = [
+    # German (de, at, ch)
+    "/kontakt", "/kontaktieren", "/kontakt-uns",
+    "/uber-uns", "/ueber-uns", "/impressum",
+    "/werben", "/werbung", "/mediadaten",
+    "/redaktion", "/presse", "/medien",
+    # French (fr, be, ch, ca)
+    "/contactez-nous", "/nous-contacter",
+    "/a-propos", "/qui-sommes-nous",
+    "/publicite", "/annonceurs",
+    "/redaction", "/equipe",
+    "/partenaires", "/partenariat",
+    # Spanish (es, mx, ar, co, cl, pe, etc.)
+    "/contacto", "/contactenos", "/contactar",
+    "/sobre-nosotros", "/quienes-somos", "/acerca-de",
+    "/publicidad", "/anunciarse", "/anuncios",
+    "/redaccion", "/equipo",
+    "/prensa", "/medios", "/socios", "/colaborar",
+    # Italian (it)
+    "/contatti", "/contattaci",
+    "/chi-siamo",
+    "/pubblicita", "/inserzionisti",
+    "/redazione", "/squadra",
+    "/stampa",
+    # Portuguese (pt, br)
+    "/contato", "/fale-conosco",
+    "/sobre-nos", "/quem-somos",
+    "/publicidade", "/anuncie",
+    "/redacao", "/imprensa", "/parceiros",
+    # Dutch (nl, be)
+    "/over-ons", "/neem-contact-op",
+    "/adverteren", "/reclame",
+    "/redactie", "/pers",
+    # Swedish (se)
+    "/kontakta-oss", "/om-oss",
+    "/annonsera",
+    # Norwegian (no)
+    "/kontakt-oss",
+    "/annonsere", "/redaksjonen",
+    # Danish (dk)
+    "/kontakt-os", "/om-os",
+    "/annoncere",
+    # Finnish (fi)
+    "/yhteystiedot", "/ota-yhteytta",
+    "/meista", "/mainonta", "/toimitus",
+    # Polish (pl)
+    "/o-nas", "/reklama", "/redakcja", "/prasa", "/partnerzy",
+    # Russian (ru) -- romanised
+    "/kontakty", "/o-kompanii", "/reklama", "/redaktsiya", "/press-tsentr",
+    # Turkish (tr)
+    "/iletisim", "/bize-ulasin",
+    "/hakkimizda", "/kurumsal",
+    "/reklam", "/reklam-ver",
+    "/basin", "/medya", "/ortaklik",
+    # Greek (gr) -- romanised
+    "/epikoinonia", "/sxetika-me-mas",
+    "/diafimisi", "/typos",
+    # Czech (cz)
+    "/kontaktujte-nas", "/o-nas",
+    "/inzerce", "/redakce", "/tisk",
+    # Slovak (sk)
+    "/kontaktujte-nas",
+    "/inzercia", "/redakcia",
+    # Hungarian (hu)
+    "/kapcsolat", "/rolunk",
+    "/hirdetes", "/sajto",
+    # Romanian (ro)
+    "/contact", "/despre-noi",
+    "/publicitate", "/presa", "/parteneri",
+    # Bulgarian (bg) -- romanised
+    "/kontakti", "/za-nas",
+    "/reklama", "/medii",
+    # Croatian (hr)
+    "/kontakt", "/o-nama",
+    "/oglasavanje", "/tisak",
+    # Serbian (rs) -- romanised
+    "/kontakt", "/o-nama",
+    "/oglasavanje", "/mediji",
+    # Ukrainian (ua) -- romanised
+    "/kontakty", "/pro-nas",
+    "/reklama", "/redaktsiya",
+    # Catalan (es-cat)
+    "/contacte", "/qui-som",
+    "/publicitat", "/premsa",
+    # Indonesian / Malay (id, my)
+    "/hubungi-kami", "/tentang-kami",
+    "/iklan", "/redaksi", "/pers",
+    "/hubungi", "/mengenai-kami",
+    "/pasang-iklan",
+    # Vietnamese (vn) -- simplified
+    "/lien-he", "/gioi-thieu",
+    "/quang-cao", "/bao-chi",
+    # Arabic -- romanised (ae, sa, eg, ma, etc.)
+    "/ittasal-bina", "/ittisal",
+    "/hawlana", "/man-nahnu",
+    "/ilaan", "/wasail-ilam",
+    # Hebrew -- romanised (il)
+    "/tzor-kesher", "/anachnu",
+    "/prsume",
+    # Japanese -- romanised (jp)
+    "/toiawase", "/otoiawase",
+    "/kaisha-annai", "/koukoku",
+    # Korean -- romanised (kr)
+    "/munuihada", "/hoesa-sogae",
+    "/gwanggo", "/eon-ron",
+    # Chinese -- romanised (cn, tw, hk)
+    "/lianxi-women", "/guanyu-women",
+    "/guanggao", "/xinwen",
+    # Welsh (uk-wales)
+    "/cysylltu", "/amdanom-ni",
+    "/hysbysebu",
+    # Latvian (lv)
+    "/kontakti", "/par-mums",
+    "/reklama", "/prese",
+    # Lithuanian (lt)
+    "/kontaktai", "/apie-mus",
+    "/reklama", "/spauda",
+    # Estonian (ee)
+    "/kontakt", "/meist",
+    "/reklaam", "/ajakirjandus",
+    # Slovenian (si) -- ASCII only
+    "/kontakt", "/o-nas",
+    "/oglasevanje", "/tisk",
+    # Albanian (al)
+    "/kontakt", "/rreth-nesh",
+    "/reklamim", "/shtyp",
 ]
 
 EMAIL_SCORES = {
@@ -55,7 +184,7 @@ EMAIL_REGEX = re.compile(
 
 SKIP_PATTERN = re.compile(
     r'(noreply|no-reply|donotreply|unsubscribe|bounce|spam|test@|'
-    r'\d+x\d+|@2x\.|\.png|\.jpg|\.jpeg|\.gif|\.svg|\.webp|\.ico|'
+    r'\d+x\d+|@2x\.\.png|\.jpg|\.jpeg|\.gif|\.svg|\.webp|\.ico|'
     r'example\.com|sentry\.|wixpress\.com)',
     re.IGNORECASE,
 )
@@ -75,7 +204,7 @@ FIELDNAMES = [
     "wayback_snapshot_date", "date_scraped",
 ]
 
-# ── HTTP helpers ───────────────────────────────────────────────────────────────
+# -- HTTP helpers ---------------------------------------------------------------
 
 def make_session():
     s = requests.Session()
@@ -111,7 +240,7 @@ def fetch(url, session, referer=None):
     except Exception:
         return None
 
-# ── Email extraction ───────────────────────────────────────────────────────────────────────────────────
+# -- Email extraction ----------------------------------------------------------
 
 def decode_cloudflare_email(encoded):
     """Decode a Cloudflare data-cfemail encoded string."""
@@ -135,16 +264,13 @@ def extract_emails(html, domain):
 
     soup = BeautifulSoup(html, "lxml")
 
-    # Decode Cloudflare email protection
     for el in soup.find_all(attrs={"data-cfemail": True}):
         decoded = decode_cloudflare_email(el.get("data-cfemail", ""))
         if decoded:
             el.string = decoded
 
-    # Collect raw text
     text = soup.get_text(separator=" ")
 
-    # Also harvest mailto: links directly
     for a in soup.find_all("a", href=True):
         href = a["href"]
         if href.lower().startswith("mailto:"):
@@ -156,43 +282,29 @@ def extract_emails(html, domain):
     seen = {}
     for email in raw_emails:
         email = email.lower().strip(".")
-
         if email in seen:
             continue
-
-        # Skip known junk patterns
         if SKIP_PATTERN.search(email):
             continue
-
-        # Skip if TLD looks like a file extension
         tld = email.rsplit(".", 1)[-1]
         if tld in BAD_TLDS:
             continue
-
-        # Score by local part keywords
         local = email.split("@")[0]
         score = 0
         for keyword, s in EMAIL_SCORES.items():
             if keyword in local:
                 score = max(score, s)
         if score == 0:
-            score = 10  # valid but unknown role
-
+            score = 10
         seen[email] = score
 
     return sorted(seen.items(), key=lambda x: -x[1])
 
-# ── Contact form detection ─────────────────────────────────────────────────────────────────────────────
+# -- Contact form detection ----------------------------------------------------
 
 def detect_contact_form(html, page_url):
-    """
-    Detect a contact form on the page.
-    Returns (True, url) if found, (False, None) otherwise.
-    A contact form must have at least 2 text/email/textarea inputs.
-    """
     if not html:
         return False, None
-
     soup = BeautifulSoup(html, "lxml")
     for form in soup.find_all("form"):
         inputs = form.find_all(["input", "textarea"])
@@ -203,16 +315,11 @@ def detect_contact_form(html, page_url):
         ]
         if len(relevant) >= 2:
             return True, page_url
-
     return False, None
 
-# ── Phase 1: HTTP scraper ─────────────────────────────────────────────────────────────────────────────
+# -- Phase 1: HTTP scraper -----------------------------------------------------
 
 def phase1_http(domain, session):
-    """
-    HTTP scraper: sitemap discovery then homepage then standard contact paths.
-    Returns dict with emails, pages_checked, contact_form, contact_form_url.
-    """
     base_url = "https://" + domain
     checked_urls = set()
     all_emails = {}
@@ -242,7 +349,7 @@ def phase1_http(domain, session):
                 contact_form = "Yes"
                 contact_form_url = furl
 
-    # 1a. Sitemap — find topical pages
+    # Sitemap
     sitemap_hits = []
     for sm_path in ["/sitemap.xml", "/sitemap_index.xml", "/sitemap-index.xml"]:
         sm_html = try_fetch(base_url + sm_path)
@@ -255,12 +362,18 @@ def phase1_http(domain, session):
             if locs:
                 break
 
-    # 1b. Homepage
+    # Homepage
     hp_html = try_fetch(base_url)
     absorb(hp_html, base_url)
 
-    # 1c. Sitemap-discovered pages first, then standard paths
-    priority_urls = sitemap_hits + [base_url + p for p in CONTACT_PATHS]
+    # Sitemap hits -> English paths -> multilingual paths, deduplicated
+    seen_paths = set()
+    priority_urls = []
+    for p in sitemap_hits + [base_url + p for p in CONTACT_PATHS + MULTILINGUAL_PATHS]:
+        if p not in seen_paths:
+            seen_paths.add(p)
+            priority_urls.append(p)
+
     for url in priority_urls:
         if pages_checked >= MAX_PAGES_PER_DOMAIN:
             break
@@ -275,23 +388,16 @@ def phase1_http(domain, session):
         "contact_form_url": contact_form_url,
     }
 
-# ── Phase 2: Wayback Machine ─────────────────────────────────────────────────────────────────────────
+# -- Phase 2: Wayback Machine --------------------------------------------------
 
 def phase2_wayback(domain, session):
-    """
-    Wayback CDX: find snapshots of contact/about/advertise pages, fetch from archive.org.
-    Emails marked wayback_unsure. Contact forms marked Unsure.
-    Returns dict with emails, pages_checked, snapshot_date, contact_form, contact_form_url.
-    """
     all_emails = {}
     pages_checked = 0
     snapshot_date = ""
     contact_form = ""
     contact_form_url = ""
+    cdx_results = []
 
-    cdx_results = []  # list of (orig_url, timestamp)
-
-    # Query CDX for topical pages
     kw_queries = ["contact", "about", "advertise", "editorial", "press"]
     for kw in kw_queries[:4]:
         try:
@@ -311,7 +417,6 @@ def phase2_wayback(domain, session):
         except Exception:
             pass
 
-    # Also query the homepage itself
     try:
         params = {
             "url": domain,
@@ -329,27 +434,22 @@ def phase2_wayback(domain, session):
     except Exception:
         pass
 
-    # Fetch from Wayback — deduplicate by original URL
     seen_orig = set()
     for orig_url, timestamp in cdx_results[:8]:
         if orig_url in seen_orig:
             continue
         seen_orig.add(orig_url)
-
         wayback_url = "https://web.archive.org/web/" + timestamp + "/" + orig_url
         html = fetch(wayback_url, session)
         pages_checked += 1
-
         if html:
             if not snapshot_date and len(timestamp) >= 8:
                 ts = timestamp[:8]
                 snapshot_date = ts[:4] + "-" + ts[4:6] + "-" + ts[6:8]
-
             emails = extract_emails(html, domain)
             for email, score in emails:
                 if email not in all_emails or score > all_emails[email]:
                     all_emails[email] = score
-
             if not contact_form:
                 found, _ = detect_contact_form(html, orig_url)
                 if found:
@@ -365,13 +465,9 @@ def phase2_wayback(domain, session):
         "contact_form_url": contact_form_url,
     }
 
-# ── Phase 3: SMTP pattern verify ──────────────────────────────────────────────────────────────────────
+# -- Phase 3: SMTP pattern verify ----------------------------------------------
 
 def phase3_smtp(domain):
-    """
-    Try common email patterns via SMTP RCPT TO verification.
-    Returns list of (email, score) for addresses that return 250.
-    """
     try:
         mx_records = dns.resolver.resolve(domain, "MX")
         mx_host = str(
@@ -399,7 +495,7 @@ def phase3_smtp(domain):
 
     return sorted(verified, key=lambda x: -x[1])
 
-# ── Row builder ──────────────────────────────────────────────────────────────────────────────────────
+# -- Row builder ---------------------------------------------------------------
 
 def build_row(domain, email_list, pages_checked, source,
               contact_form, contact_form_url, wayback_snapshot_date):
@@ -430,16 +526,14 @@ def error_row(domain):
         "wayback_snapshot_date": "", "date_scraped": date.today().strftime("%d/%m/%Y"),
     }
 
-# ── Domain orchestrator ────────────────────────────────────────────────────────────────────────────────
+# -- Domain orchestrator -------------------------------------------------------
 
 def scrape_domain(domain, session):
-    """Run all phases for a single domain and return a CSV row dict."""
     contact_form = ""
     contact_form_url = ""
     wayback_snapshot_date = ""
     total_pages = 0
 
-    # Phase 1
     print("[" + domain + "] Phase 1: HTTP scraper...")
     p1 = phase1_http(domain, session)
     total_pages += p1["pages_checked"]
@@ -453,7 +547,6 @@ def scrape_domain(domain, session):
         return build_row(domain, p1["emails"], total_pages, "scraper",
                          contact_form, contact_form_url, "")
 
-    # Phase 2
     print("[" + domain + "] Phase 2: Wayback Machine...")
     p2 = phase2_wayback(domain, session)
     total_pages += p2["pages_checked"]
@@ -468,7 +561,6 @@ def scrape_domain(domain, session):
         return build_row(domain, p2["emails"], total_pages, "wayback_unsure",
                          contact_form, contact_form_url, wayback_snapshot_date)
 
-    # Phase 3
     enable_smtp = os.environ.get("ENABLE_SMTP_VERIFY", "false").lower() == "true"
     if enable_smtp:
         print("[" + domain + "] Phase 3: SMTP pattern verify...")
@@ -478,13 +570,12 @@ def scrape_domain(domain, session):
             return build_row(domain, p3, total_pages, "smtp_verified",
                              contact_form, contact_form_url, wayback_snapshot_date)
 
-    # Nothing found
     print("[" + domain + "] No emails found.")
     row = build_row(domain, [], total_pages, "", contact_form, contact_form_url, wayback_snapshot_date)
     row["status"] = "no_email_found"
     return row
 
-# ── Entry point ──────────────────────────────────────────────────────────────────────────────────────
+# -- Entry point ---------------------------------------------------------------
 
 def load_domains():
     if not os.path.exists(DOMAINS_FILE):
@@ -493,7 +584,6 @@ def load_domains():
     with open(DOMAINS_FILE, encoding="utf-8") as f:
         reader = csv.reader(f)
         rows = list(reader)
-    # Skip header row if first cell is "domain"
     if rows and rows[0] and rows[0][0].strip().lower() == "domain":
         rows = rows[1:]
     return [row[0].strip() for row in rows if row and row[0].strip()]
@@ -513,7 +603,7 @@ def main():
         print("No domains to process. Add them to " + DOMAINS_FILE)
         return
 
-    print("Starting scraper \u2014 " + str(len(domains)) + " domains.")
+    print("Starting scraper -- " + str(len(domains)) + " domains.")
     session = make_session()
 
     with open(OUTPUT_FILE, "w", newline="", encoding="utf-8") as f:
