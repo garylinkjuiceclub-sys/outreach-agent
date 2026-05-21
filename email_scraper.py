@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """
-Email Scraper Agent v4.1
-Architecture: HTTP Scraper -> Wayback CDX -> SMTP Pattern Verify
+Email Scraper Agent v4.2
+Architecture: Phase0 Relevance Filter -> HTTP Scraper -> Wayback CDX -> SMTP Pattern Verify
 No Playwright. No Hunter.io. Free at any scale.
-Multilingual contact-path coverage: 20+ languages.
+Multilingual contact-path coverage: 30+ languages.
+Niche blocklist: skips irrelevant domains before scraping starts.
 """
 
 import csv
@@ -184,7 +185,7 @@ EMAIL_REGEX = re.compile(
 
 SKIP_PATTERN = re.compile(
     r'(noreply|no-reply|donotreply|unsubscribe|bounce|spam|test@|'
-    r'\d+x\d+|@2x\.\.png|\.jpg|\.jpeg|\.gif|\.svg|\.webp|\.ico|'
+    r'\d+x\d+|@2x\.|\.png|\.jpg|\.jpeg|\.gif|\.svg|\.webp|\.ico|'
     r'example\.com|sentry\.|wixpress\.com)',
     re.IGNORECASE,
 )
@@ -202,6 +203,110 @@ FIELDNAMES = [
     "pages_checked", "source", "status",
     "contact_form", "contact_form_url",
     "wayback_snapshot_date", "date_scraped",
+]
+
+# Niche blocklist — if any keyword is found in a domain's homepage title,
+# meta description, or h1, it is skipped before scraping starts.
+# Status in CSV will be "skipped_irrelevant" with the matched niche in "source".
+# Add/remove keywords here to tune the filter.
+SKIP_NICHE_KEYWORDS = [
+    # Education / Schools
+    "primary school", "secondary school", "elementary school", "middle school",
+    "high school", "kindergarten", "preschool", "nursery school", "infant school",
+    "junior school", "boarding school", "grammar school",
+    # Government
+    "government website", "official government", "city council", "town council",
+    "county council", "borough council", "district council", "parish council",
+    "town hall", "city hall", "ministry of", "department of", "municipal website",
+    # Health / Clinics / Hospitals
+    "hospital", "nhs trust", "medical center", "medical centre", "health centre",
+    "health center", "dental surgery", "dental practice", "gp surgery",
+    "physiotherapy clinic", "healthcare provider",
+    # Community / Municipality
+    "community centre", "community center", "local authority",
+    # Funeral Services
+    "funeral home", "funeral director", "funeral services", "crematorium",
+    "burial services", "memorial chapel",
+    # Restaurants / Fast food
+    "restaurant", "takeaway", "fast food", "pizza delivery",
+    "book a table", "reserve a table",
+    # Online shops (e-commerce signals)
+    "add to cart", "add to basket", "shopping cart", "online shop", "online store",
+    # Telephone services
+    "mobile network", "mobile operator", "broadband provider",
+    "internet service provider", "sim only", "phone contract",
+    # Religion / Church
+    "church of", "parish church", "roman catholic", "mosque", "synagogue",
+    "buddhist temple", "hindu temple", "diocese", "place of worship",
+    # Politics / Parliament
+    "political party", "member of parliament", "election campaign",
+    "constituency", "senator for",
+    # Research centres / Forums
+    "research institute", "research center", "research centre", "think tank",
+    "academic journal",
+    # Public transport
+    "bus timetable", "train timetable", "public transport", "transit authority",
+    # Weather forecasts
+    "weather forecast", "weather service", "meteorological office",
+    # Gardening
+    "garden centre", "garden center", "plant nursery", "gardening supplies",
+    # Construction / Building services
+    "building contractor", "construction company", "roofing contractor",
+    "plumbing company", "electrical contractor",
+    # Hair Salon / Beauty
+    "hair salon", "hair & beauty", "hairdresser", "barbershop", "barber shop",
+    "beauty salon", "nail salon",
+    # Law / Legal
+    "law firm", "solicitors", "barristers", "attorneys at law",
+    "legal services", "law office",
+    # Flight booking agencies
+    "ryanair", "wizzair", "wizz air", "easyjet", "flight booking",
+    "book flights", "cheap flights",
+    # Storage rooms
+    "self storage", "self-storage", "storage units", "storage facility",
+    # Hotels / Accommodation
+    "hotel", "motel", "bed and breakfast", "book a room", "hostel",
+    # Children's Entertainment
+    "children's entertainment", "kids entertainment", "amusement park",
+    "soft play", "play centre", "play center",
+    # Security services
+    "security company", "security guard", "cctv installation",
+    "alarm installation", "private security",
+    # Museums
+    "museum", "art gallery", "heritage site",
+    # Gyms / Fitness
+    "fitness centre", "fitness center", "health club", "gym membership",
+    "yoga studio", "pilates studio",
+    # Job searching portals
+    "job portal", "job board", "find jobs", "job listings", "recruitment agency",
+    "staffing agency",
+    # Insurance companies
+    "insurance company", "insurance broker", "insurance quote",
+    "insurance provider",
+    # Pharmacy / Chemist
+    "pharmacy", "pharmacist", "chemist", "drugstore",
+    # University / Higher education
+    "university", "higher education", "undergraduate courses",
+    "postgraduate", "student union",
+    # Police / Law enforcement
+    "police service", "police force", "law enforcement", "constabulary",
+    "police department",
+    # Festival
+    "music festival", "arts festival", "cultural festival", "festival lineup",
+    "festival tickets",
+    # Zoo / Wildlife
+    "zoo", "wildlife park", "aquarium", "safari park", "zoological",
+    # Events / Conference venues
+    "event venue", "conference centre", "conference center", "convention centre",
+    "exhibition centre",
+    # Show / Artist
+    "official artist", "tour dates", "concert tickets", "discography",
+    # Shopping Centre / Mall
+    "shopping centre", "shopping center", "shopping mall", "retail park",
+    "outlet mall",
+    # Bar / Pub
+    "nightclub", "cocktail bar", "taproom", "gastropub", "craft brewery",
+    " pub", "pub ",
 ]
 
 # -- HTTP helpers ---------------------------------------------------------------
@@ -239,6 +344,45 @@ def fetch(url, session, referer=None):
         return None
     except Exception:
         return None
+
+# -- Phase 0: Relevance filter -------------------------------------------------
+
+def phase0_relevance(domain, session):
+    """
+    Quick pre-scrape check. Fetches the homepage and looks for niche blocklist
+    keywords in the title, meta description, and h1 tags.
+    Returns (True, "") if the domain looks relevant (proceed with scraping),
+    or (False, "niche (matched keyword)") if it should be skipped.
+    On connection failure, returns True so phase1 can try properly.
+    """
+    base_url = "https://" + domain
+    try:
+        resp = session.get(base_url, timeout=8, allow_redirects=True)
+        html = resp.text if resp.status_code == 200 else None
+    except Exception:
+        return True, ""
+
+    if not html:
+        return True, ""
+
+    soup = BeautifulSoup(html, "lxml")
+
+    signals = []
+    if soup.title and soup.title.string:
+        signals.append(soup.title.string)
+    meta_desc = soup.find("meta", attrs={"name": "description"})
+    if meta_desc and meta_desc.get("content"):
+        signals.append(meta_desc["content"])
+    for h1 in soup.find_all("h1")[:3]:
+        signals.append(h1.get_text())
+
+    combined = " ".join(signals).lower()
+
+    for kw in SKIP_NICHE_KEYWORDS:
+        if kw.lower() in combined:
+            return False, kw.strip()
+
+    return True, ""
 
 # -- Email extraction ----------------------------------------------------------
 
@@ -526,6 +670,19 @@ def error_row(domain):
         "wayback_snapshot_date": "", "date_scraped": date.today().strftime("%d/%m/%Y"),
     }
 
+
+def skip_row(domain, matched_keyword):
+    """Row written when phase0 determines the domain is an irrelevant niche."""
+    return {
+        "domain": domain,
+        "primary_email": "", "email_2": "", "email_3": "", "all_emails": "",
+        "pages_checked": 0,
+        "source": "blocked:" + matched_keyword,
+        "status": "skipped_irrelevant",
+        "contact_form": "", "contact_form_url": "",
+        "wayback_snapshot_date": "", "date_scraped": date.today().strftime("%d/%m/%Y"),
+    }
+
 # -- Domain orchestrator -------------------------------------------------------
 
 def scrape_domain(domain, session):
@@ -533,6 +690,12 @@ def scrape_domain(domain, session):
     contact_form_url = ""
     wayback_snapshot_date = ""
     total_pages = 0
+
+    # Phase 0: quick niche-relevance check — skip before any real scraping
+    relevant, matched_kw = phase0_relevance(domain, session)
+    if not relevant:
+        print("[" + domain + "] SKIPPED — irrelevant niche: " + matched_kw)
+        return skip_row(domain, matched_kw)
 
     print("[" + domain + "] Phase 1: HTTP scraper...")
     p1 = phase1_http(domain, session)
@@ -603,7 +766,7 @@ def main():
         print("No domains to process. Add them to " + DOMAINS_FILE)
         return
 
-    print("Starting scraper -- " + str(len(domains)) + " domains.")
+    print("Starting scraper v4.2 -- " + str(len(domains)) + " domains.")
     session = make_session()
 
     with open(OUTPUT_FILE, "w", newline="", encoding="utf-8") as f:
