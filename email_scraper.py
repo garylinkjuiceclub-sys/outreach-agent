@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """
-Email Scraper Agent v4.2
+Email Scraper Agent v4.3
 Architecture: Phase0 Relevance Filter -> HTTP Scraper -> Wayback CDX -> SMTP Pattern Verify
 No Playwright. No Hunter.io. Free at any scale.
 Multilingual contact-path coverage: 30+ languages.
 Niche blocklist: skips irrelevant domains before scraping starts.
+Niche column: CSV now includes 'niche' column showing blocked category.
 """
 
 import csv
@@ -200,114 +201,186 @@ SMTP_PATTERNS = [
 
 FIELDNAMES = [
     "domain", "primary_email", "email_2", "email_3", "all_emails",
-    "pages_checked", "source", "status",
+    "pages_checked", "source", "status", "niche",
     "contact_form", "contact_form_url",
     "wayback_snapshot_date", "date_scraped",
 ]
 
-# Niche blocklist — if any keyword is found in a domain's homepage title,
-# meta description, or h1, it is skipped before scraping starts.
-# Status in CSV will be "skipped_irrelevant" with the matched niche in "source".
+# Niche blocklist — organised by category.
+# phase0_relevance() checks homepage title, meta description, and h1 tags.
+# Skipped domains appear in CSV as status=skipped_irrelevant, niche=<Category>.
 # Add/remove keywords here to tune the filter.
-SKIP_NICHE_KEYWORDS = [
-    # Education / Schools
-    "primary school", "secondary school", "elementary school", "middle school",
-    "high school", "kindergarten", "preschool", "nursery school", "infant school",
-    "junior school", "boarding school", "grammar school",
-    # Government
-    "government website", "official government", "city council", "town council",
-    "county council", "borough council", "district council", "parish council",
-    "town hall", "city hall", "ministry of", "department of", "municipal website",
-    # Health / Clinics / Hospitals
-    "hospital", "nhs trust", "medical center", "medical centre", "health centre",
-    "health center", "dental surgery", "dental practice", "gp surgery",
-    "physiotherapy clinic", "healthcare provider",
-    # Community / Municipality
-    "community centre", "community center", "local authority",
-    # Funeral Services
-    "funeral home", "funeral director", "funeral services", "crematorium",
-    "burial services", "memorial chapel",
-    # Restaurants / Fast food
-    "restaurant", "takeaway", "fast food", "pizza delivery",
-    "book a table", "reserve a table",
-    # Online shops (e-commerce signals)
-    "add to cart", "add to basket", "shopping cart", "online shop", "online store",
-    # Telephone services
-    "mobile network", "mobile operator", "broadband provider",
-    "internet service provider", "sim only", "phone contract",
-    # Religion / Church
-    "church of", "parish church", "roman catholic", "mosque", "synagogue",
-    "buddhist temple", "hindu temple", "diocese", "place of worship",
-    # Politics / Parliament
-    "political party", "member of parliament", "election campaign",
-    "constituency", "senator for",
-    # Research centres / Forums
-    "research institute", "research center", "research centre", "think tank",
-    "academic journal",
-    # Public transport
-    "bus timetable", "train timetable", "public transport", "transit authority",
-    # Weather forecasts
-    "weather forecast", "weather service", "meteorological office",
-    # Gardening
-    "garden centre", "garden center", "plant nursery", "gardening supplies",
-    # Construction / Building services
-    "building contractor", "construction company", "roofing contractor",
-    "plumbing company", "electrical contractor",
-    # Hair Salon / Beauty
-    "hair salon", "hair & beauty", "hairdresser", "barbershop", "barber shop",
-    "beauty salon", "nail salon",
-    # Law / Legal
-    "law firm", "solicitors", "barristers", "attorneys at law",
-    "legal services", "law office",
-    # Flight booking agencies
-    "ryanair", "wizzair", "wizz air", "easyjet", "flight booking",
-    "book flights", "cheap flights",
-    # Storage rooms
-    "self storage", "self-storage", "storage units", "storage facility",
-    # Hotels / Accommodation
-    "hotel", "motel", "bed and breakfast", "book a room", "hostel",
-    # Children's Entertainment
-    "children's entertainment", "kids entertainment", "amusement park",
-    "soft play", "play centre", "play center",
-    # Security services
-    "security company", "security guard", "cctv installation",
-    "alarm installation", "private security",
-    # Museums
-    "museum", "art gallery", "heritage site",
-    # Gyms / Fitness
-    "fitness centre", "fitness center", "health club", "gym membership",
-    "yoga studio", "pilates studio",
-    # Job searching portals
-    "job portal", "job board", "find jobs", "job listings", "recruitment agency",
-    "staffing agency",
-    # Insurance companies
-    "insurance company", "insurance broker", "insurance quote",
-    "insurance provider",
-    # Pharmacy / Chemist
-    "pharmacy", "pharmacist", "chemist", "drugstore",
-    # University / Higher education
-    "university", "higher education", "undergraduate courses",
-    "postgraduate", "student union",
-    # Police / Law enforcement
-    "police service", "police force", "law enforcement", "constabulary",
-    "police department",
-    # Festival
-    "music festival", "arts festival", "cultural festival", "festival lineup",
-    "festival tickets",
-    # Zoo / Wildlife
-    "zoo", "wildlife park", "aquarium", "safari park", "zoological",
-    # Events / Conference venues
-    "event venue", "conference centre", "conference center", "convention centre",
-    "exhibition centre",
-    # Show / Artist
-    "official artist", "tour dates", "concert tickets", "discography",
-    # Shopping Centre / Mall
-    "shopping centre", "shopping center", "shopping mall", "retail park",
-    "outlet mall",
-    # Bar / Pub
-    "nightclub", "cocktail bar", "taproom", "gastropub", "craft brewery",
-    " pub", "pub ",
-]
+SKIP_NICHE_CATEGORIES = {
+    "Education": [
+        "primary school", "secondary school", "elementary school", "middle school",
+        "high school", "kindergarten", "preschool", "nursery school", "infant school",
+        "junior school", "boarding school", "grammar school",
+    ],
+    "Government": [
+        "government website", "official government", "city council", "town council",
+        "county council", "borough council", "district council", "parish council",
+        "town hall", "city hall", "ministry of", "department of", "municipal website",
+    ],
+    "Health / Medical": [
+        # Hospitals & broad health
+        "hospital", "nhs trust", "medical center", "medical centre",
+        "health centre", "health center", "healthcare provider",
+        "medical practice", "family medicine", "family health",
+        "women's health", "men's health",
+        # Clinics (was missing — caught physio, dental, GP etc.)
+        "clinic",
+        # Dental (was missing — major gap in v4.2)
+        "dental", "dentist", "dentistry", "dental surgery", "dental practice",
+        # Doctors & physicians
+        "doctor", "physician", "gp surgery",
+        # Therapy
+        "physical therapy", "physiotherapy", "physiotherapy clinic",
+        "occupational therapy", "speech therapy",
+        # Mental health
+        "psychologist", "psychological", "psychology", "psychiatry", "psychiatrist",
+        "mental health clinic", "counselling centre", "counseling center",
+        # Specialties
+        "pediatrics", "pediatric", "paediatrics", "paediatric",
+        "radiology", "radiologist",
+        "optometry", "optometrist",
+        "chiropractic", "chiropractor",
+        "allergy clinic", "allergist",
+        "urgent care",
+        # Rehab / addiction
+        "rehabilitation center", "rehabilitation centre",
+        "rehab center", "rehab centre",
+        "addiction treatment", "recovery center", "recovery centre",
+        "detox center", "detox centre",
+        # Pharma
+        "pharmaceutical", "pharma",
+    ],
+    "Community / Municipality": [
+        "community centre", "community center", "local authority",
+    ],
+    "Funeral Services": [
+        "funeral home", "funeral director", "funeral services", "crematorium",
+        "burial services", "memorial chapel",
+    ],
+    "Restaurants / Food": [
+        "restaurant", "takeaway", "fast food", "pizza delivery",
+        "book a table", "reserve a table",
+    ],
+    "E-commerce / Online Shops": [
+        "add to cart", "add to basket", "shopping cart", "online shop", "online store",
+    ],
+    "Telephone / ISP": [
+        "mobile network", "mobile operator", "broadband provider",
+        "internet service provider", "sim only", "phone contract",
+    ],
+    "Religion": [
+        "church of", "parish church", "roman catholic", "mosque", "synagogue",
+        "buddhist temple", "hindu temple", "diocese", "place of worship",
+    ],
+    "Politics": [
+        "political party", "member of parliament", "election campaign",
+        "constituency", "senator for",
+    ],
+    "Research / Academia": [
+        "research institute", "research center", "research centre",
+        "think tank", "academic journal",
+    ],
+    "Public Transport": [
+        "bus timetable", "train timetable", "public transport", "transit authority",
+    ],
+    "Weather": [
+        "weather forecast", "weather service", "meteorological office",
+    ],
+    "Gardening": [
+        "garden centre", "garden center", "plant nursery", "gardening supplies",
+    ],
+    "Construction / Trades": [
+        "building contractor", "construction company", "roofing contractor",
+        "plumbing company", "electrical contractor",
+        "restoration contractor", "restoration services",
+        "exterior contractor", "siding contractor",
+        "hvac contractor", "hvac company",
+    ],
+    "Hair / Beauty": [
+        "hair salon", "hair & beauty", "hairdresser", "barbershop", "barber shop",
+        "beauty salon", "nail salon", "tanning salon",
+        "hair studio", "beauty studio", "day spa",
+    ],
+    "Law / Legal": [
+        "law firm", "solicitors", "barristers", "attorneys at law",
+        "legal services", "law office",
+        "attorney", "attorneys", "personal injury lawyer",
+        "criminal defense", "criminal defence",
+        "family law", "immigration lawyer",
+    ],
+    "Flight Booking": [
+        "ryanair", "wizzair", "wizz air", "easyjet",
+        "flight booking", "book flights", "cheap flights",
+    ],
+    "Storage": [
+        "self storage", "self-storage", "storage units", "storage facility",
+    ],
+    "Hotels / Accommodation": [
+        "hotel", "motel", "bed and breakfast", "book a room", "hostel",
+        "resort", "boutique hotel", "luxury resort",
+        "book your stay", "check-in date", "room rates",
+    ],
+    "Children's Entertainment": [
+        "children's entertainment", "kids entertainment", "amusement park",
+        "soft play", "play centre", "play center",
+    ],
+    "Security": [
+        "security company", "security guard", "cctv installation",
+        "alarm installation", "private security",
+    ],
+    "Museums / Culture": [
+        "museum", "art gallery", "heritage site",
+    ],
+    "Gyms / Fitness": [
+        "fitness centre", "fitness center", "health club", "gym membership",
+        "yoga studio", "pilates studio",
+    ],
+    "Job Portals": [
+        "job portal", "job board", "find jobs", "job listings",
+        "recruitment agency", "staffing agency",
+    ],
+    "Insurance": [
+        "insurance company", "insurance broker", "insurance quote",
+        "insurance provider",
+    ],
+    "Pharmacy": [
+        "pharmacy", "pharmacist", "chemist", "drugstore",
+    ],
+    "University": [
+        "university", "higher education", "undergraduate courses",
+        "postgraduate", "student union",
+    ],
+    "Police / Law Enforcement": [
+        "police service", "police force", "law enforcement",
+        "constabulary", "police department",
+    ],
+    "Festival": [
+        "music festival", "arts festival", "cultural festival",
+        "festival lineup", "festival tickets",
+    ],
+    "Zoo / Wildlife": [
+        "zoo", "wildlife park", "aquarium", "safari park", "zoological",
+    ],
+    "Events / Venues": [
+        "event venue", "conference centre", "conference center",
+        "convention centre", "exhibition centre",
+    ],
+    "Artists / Shows": [
+        "official artist", "tour dates", "concert tickets", "discography",
+    ],
+    "Shopping Mall": [
+        "shopping centre", "shopping center", "shopping mall",
+        "retail park", "outlet mall",
+    ],
+    "Bar / Pub": [
+        "nightclub", "cocktail bar", "taproom", "gastropub", "craft brewery",
+        " pub", "pub ",
+    ],
+}
 
 # -- HTTP helpers ---------------------------------------------------------------
 
@@ -351,8 +424,8 @@ def phase0_relevance(domain, session):
     """
     Quick pre-scrape check. Fetches the homepage and looks for niche blocklist
     keywords in the title, meta description, and h1 tags.
-    Returns (True, "") if the domain looks relevant (proceed with scraping),
-    or (False, "niche (matched keyword)") if it should be skipped.
+    Returns (True, "", "") if the domain looks relevant (proceed with scraping),
+    or (False, matched_keyword, category_name) if it should be skipped.
     On connection failure, returns True so phase1 can try properly.
     """
     base_url = "https://" + domain
@@ -360,10 +433,10 @@ def phase0_relevance(domain, session):
         resp = session.get(base_url, timeout=8, allow_redirects=True)
         html = resp.text if resp.status_code == 200 else None
     except Exception:
-        return True, ""
+        return True, "", ""
 
     if not html:
-        return True, ""
+        return True, "", ""
 
     soup = BeautifulSoup(html, "lxml")
 
@@ -378,11 +451,12 @@ def phase0_relevance(domain, session):
 
     combined = " ".join(signals).lower()
 
-    for kw in SKIP_NICHE_KEYWORDS:
-        if kw.lower() in combined:
-            return False, kw.strip()
+    for category, keywords in SKIP_NICHE_CATEGORIES.items():
+        for kw in keywords:
+            if kw.lower() in combined:
+                return False, kw.strip(), category
 
-    return True, ""
+    return True, "", ""
 
 # -- Email extraction ----------------------------------------------------------
 
@@ -654,6 +728,7 @@ def build_row(domain, email_list, pages_checked, source,
         "pages_checked": pages_checked,
         "source":        source,
         "status":        status,
+        "niche":         "",
         "contact_form":  contact_form,
         "contact_form_url": contact_form_url,
         "wayback_snapshot_date": wayback_snapshot_date,
@@ -665,13 +740,13 @@ def error_row(domain):
     return {
         "domain": domain,
         "primary_email": "", "email_2": "", "email_3": "", "all_emails": "",
-        "pages_checked": 0, "source": "", "status": "error",
+        "pages_checked": 0, "source": "", "status": "error", "niche": "",
         "contact_form": "", "contact_form_url": "",
         "wayback_snapshot_date": "", "date_scraped": date.today().strftime("%d/%m/%Y"),
     }
 
 
-def skip_row(domain, matched_keyword):
+def skip_row(domain, matched_keyword, niche_category):
     """Row written when phase0 determines the domain is an irrelevant niche."""
     return {
         "domain": domain,
@@ -679,6 +754,7 @@ def skip_row(domain, matched_keyword):
         "pages_checked": 0,
         "source": "blocked:" + matched_keyword,
         "status": "skipped_irrelevant",
+        "niche": niche_category,
         "contact_form": "", "contact_form_url": "",
         "wayback_snapshot_date": "", "date_scraped": date.today().strftime("%d/%m/%Y"),
     }
@@ -692,10 +768,10 @@ def scrape_domain(domain, session):
     total_pages = 0
 
     # Phase 0: quick niche-relevance check — skip before any real scraping
-    relevant, matched_kw = phase0_relevance(domain, session)
+    relevant, matched_kw, niche_cat = phase0_relevance(domain, session)
     if not relevant:
-        print("[" + domain + "] SKIPPED — irrelevant niche: " + matched_kw)
-        return skip_row(domain, matched_kw)
+        print("[" + domain + "] SKIPPED — " + niche_cat + " (" + matched_kw + ")")
+        return skip_row(domain, matched_kw, niche_cat)
 
     print("[" + domain + "] Phase 1: HTTP scraper...")
     p1 = phase1_http(domain, session)
@@ -766,7 +842,7 @@ def main():
         print("No domains to process. Add them to " + DOMAINS_FILE)
         return
 
-    print("Starting scraper v4.2 -- " + str(len(domains)) + " domains.")
+    print("Starting scraper v4.3 -- " + str(len(domains)) + " domains.")
     session = make_session()
 
     with open(OUTPUT_FILE, "w", newline="", encoding="utf-8") as f:
