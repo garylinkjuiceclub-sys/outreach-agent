@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Email Scraper Agent v4.5
+Email Scraper Agent v4.6
 Architecture: Phase0 Relevance Filter -> HTTP Scraper -> Wayback CDX -> SMTP Pattern Verify
 No Playwright. No Hunter.io. Free at any scale.
 Multilingual contact-path coverage: 30+ languages.
@@ -397,6 +397,74 @@ SKIP_NICHE_CATEGORIES = {
     ],
 }
 
+# Positive niche classifier — applied to domains that PASS the blocklist.
+# Checks the same homepage HTML already fetched in phase0 (no extra requests).
+# If a domain matches, its niche is stored in the CSV niche column.
+# If nothing matches, falls back to "General / Other".
+NICHE_CATEGORIES = {
+    "Blog / Content Site": [
+        "blog", "our blog", "latest posts", "content creator", "blogger",
+        "read our posts", "written by", "authored by",
+    ],
+    "News / Media": [
+        "breaking news", "latest news", "news and updates", "newsroom",
+        "editorial", "journalist", "publication", "media outlet",
+        "press release", "reporter",
+    ],
+    "Magazine": [
+        "magazine", "digital magazine", "online magazine",
+        "subscribe to our magazine", "latest issue",
+    ],
+    "Review Site": [
+        "review", "reviews", "best of", "top 10", "buying guide",
+        "comparison", "rated", "our verdict", "pros and cons",
+    ],
+    "Technology": [
+        "tech blog", "technology blog", "software", "startup",
+        "developer blog", "tech news", "saas", "app review",
+    ],
+    "Finance / Business": [
+        "finance", "business news", "personal finance", "investing",
+        "money tips", "entrepreneur", "financial tips",
+    ],
+    "Travel": [
+        "travel blog", "travel guide", "travel tips", "destination",
+        "wanderlust", "travel and adventure",
+    ],
+    "Food & Drink": [
+        "food blog", "recipes", "cooking tips", "culinary",
+        "food and drink", "foodie", "recipe",
+    ],
+    "Health & Wellness": [
+        "wellness blog", "healthy living", "nutrition tips", "fitness tips",
+        "health blog", "wellbeing", "mindfulness",
+    ],
+    "Lifestyle": [
+        "lifestyle blog", "fashion", "style guide", "home decor",
+        "living tips", "life tips", "parenting",
+    ],
+    "Sports": [
+        "sports blog", "sports news", "match report", "athletics",
+        "football blog", "sports tips",
+    ],
+    "Entertainment": [
+        "entertainment", "celebrity news", "movies", "tv shows",
+        "pop culture", "film review",
+    ],
+    "Education / Resources": [
+        "how-to guide", "tutorial", "tips and tricks",
+        "online course", "learning resources", "free guide",
+    ],
+    "Pets": [
+        "pet blog", "dog blog", "cat blog", "pet care tips",
+        "animal lover", "pet owner",
+    ],
+    "Environment / Green": [
+        "sustainability", "eco-friendly", "green living",
+        "environment blog", "climate", "zero waste",
+    ],
+}
+
 # -- HTTP helpers ---------------------------------------------------------------
 
 def make_session():
@@ -439,19 +507,22 @@ def phase0_relevance(domain, session):
     """
     Quick pre-scrape check. Fetches the homepage and looks for niche blocklist
     keywords in the title, meta description, and h1 tags.
-    Returns (True, "", "") if the domain looks relevant (proceed with scraping),
-    or (False, matched_keyword, category_name) if it should be skipped.
-    On connection failure, returns True so phase1 can try properly.
+    Returns (relevant, matched_kw, skip_category, detected_niche).
+      - If blocked:  (False, matched_keyword, skip_category, "")
+      - If relevant: (True,  "",              "",            detected_niche)
+    detected_niche is drawn from NICHE_CATEGORIES (positive classifier) using
+    the same HTML — no extra HTTP requests. Falls back to "General / Other".
+    On connection failure, returns (True, "", "", "") so phase1 can try properly.
     """
     base_url = "https://" + domain
     try:
         resp = session.get(base_url, timeout=8, allow_redirects=True)
         html = resp.text if resp.status_code == 200 else None
     except Exception:
-        return True, "", ""
+        return True, "", "", ""
 
     if not html:
-        return True, "", ""
+        return True, "", "", ""
 
     soup = BeautifulSoup(html, "lxml")
 
@@ -466,12 +537,23 @@ def phase0_relevance(domain, session):
 
     combined = " ".join(signals).lower()
 
+    # Blocklist check first
     for category, keywords in SKIP_NICHE_CATEGORIES.items():
         for kw in keywords:
             if kw.lower() in combined:
-                return False, kw.strip(), category
+                return False, kw.strip(), category, ""
 
-    return True, "", ""
+    # Positive niche classification (same HTML, no extra requests)
+    detected_niche = "General / Other"
+    for category, keywords in NICHE_CATEGORIES.items():
+        for kw in keywords:
+            if kw.lower() in combined:
+                detected_niche = category
+                break
+        if detected_niche != "General / Other":
+            break
+
+    return True, "", "", detected_niche
 
 # -- Email extraction ----------------------------------------------------------
 
@@ -598,6 +680,18 @@ def phase1_http(domain, session):
     # Homepage
     hp_html = try_fetch(base_url)
     absorb(hp_html, base_url)
+
+    # Sitemap hits -> English paths -> multilingual paths, deduplicated
+    seen_paths = set()
+    priority_urls = []
+    for p in sitemap_hits + [base_url + p for p in CONTACT_PATHS + MULTILINGUAL_PATHS]:
+        if p not in seen_paths:
+            seen_paths.add(p)
+            priority_urls.append(p)
+
+    for url in priority_urls:
+        if pages_checked >= MAX_PAGES_PER_DOMAIN:
+            break
         html = try_fetch(url)
         absorb(html, url)
 
@@ -746,7 +840,7 @@ def phase3_smtp(domain):
 
 def build_row(domain, email_list, pages_checked, source,
               contact_form, contact_form_url, wayback_snapshot_date,
-              confidence="", review_flag=""):
+              confidence="", review_flag="", niche=""):
     emails = [e for e, _ in email_list]
     status = "scraped" if emails else "no_email_found"
     return {
@@ -758,7 +852,7 @@ def build_row(domain, email_list, pages_checked, source,
         "pages_checked": pages_checked,
         "source":        source,
         "status":        status,
-        "niche":         "",
+        "niche":         niche,
         "confidence":    confidence,
         "review_flag":   review_flag,
         "contact_form":  contact_form,
@@ -802,11 +896,12 @@ def scrape_domain(domain, session):
     total_pages = 0
 
     # Phase 0: quick niche-relevance check — skip before any real scraping
-    relevant, matched_kw, niche_cat = phase0_relevance(domain, session)
+    relevant, matched_kw, niche_cat, detected_niche = phase0_relevance(domain, session)
     if not relevant:
         print("[" + domain + "] SKIPPED — " + niche_cat + " (" + matched_kw + ")")
         return skip_row(domain, matched_kw, niche_cat)
 
+    print("[" + domain + "] Niche: " + detected_niche)
     print("[" + domain + "] Phase 1: HTTP scraper...")
     p1 = phase1_http(domain, session)
     total_pages += p1["pages_checked"]
@@ -819,7 +914,7 @@ def scrape_domain(domain, session):
         print("[" + domain + "] Phase 1 found " + str(len(p1["emails"])) + " emails.")
         return build_row(domain, p1["emails"], total_pages, "scraper",
                          contact_form, contact_form_url, "",
-                         confidence="high", review_flag="")
+                         confidence="high", review_flag="", niche=detected_niche)
 
     print("[" + domain + "] Phase 2: Wayback Machine...")
     p2 = phase2_wayback(domain, session)
@@ -834,7 +929,7 @@ def scrape_domain(domain, session):
         print("[" + domain + "] Phase 2 found " + str(len(p2["emails"])) + " emails.")
         return build_row(domain, p2["emails"], total_pages, "wayback_unsure",
                          contact_form, contact_form_url, wayback_snapshot_date,
-                         confidence="medium", review_flag="")
+                         confidence="medium", review_flag="", niche=detected_niche)
 
     enable_smtp = os.environ.get("ENABLE_SMTP_VERIFY", "false").lower() == "true"
     if enable_smtp:
@@ -844,17 +939,18 @@ def scrape_domain(domain, session):
             print("[" + domain + "] Catch-all domain — flagging for manual review.")
             row = build_row(domain, [], total_pages, "smtp_catchall",
                             contact_form, contact_form_url, wayback_snapshot_date,
-                            confidence="low", review_flag="yes")
+                            confidence="low", review_flag="yes", niche=detected_niche)
             row["status"] = "no_email_found"
             return row
         if p3["emails"]:
             print("[" + domain + "] Phase 3 verified " + str(len(p3["emails"])) + " emails.")
             return build_row(domain, p3["emails"], total_pages, "smtp_verified",
                              contact_form, contact_form_url, wayback_snapshot_date,
-                             confidence="medium", review_flag="")
+                             confidence="medium", review_flag="", niche=detected_niche)
 
     print("[" + domain + "] No emails found.")
-    row = build_row(domain, [], total_pages, "", contact_form, contact_form_url, wayback_snapshot_date)
+    row = build_row(domain, [], total_pages, "", contact_form, contact_form_url,
+                    wayback_snapshot_date, niche=detected_niche)
     row["status"] = "no_email_found"
     return row
 
@@ -886,7 +982,7 @@ def main():
         print("No domains to process. Add them to " + DOMAINS_FILE)
         return
 
-    print("Starting scraper v4.5 -- " + str(len(domains)) + " domains.")
+    print("Starting scraper v4.6 -- " + str(len(domains)) + " domains.")
     session = make_session()
 
     with open(OUTPUT_FILE, "w", newline="", encoding="utf-8") as f:
