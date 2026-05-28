@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Email Scraper Agent v4.4
+Email Scraper Agent v4.5
 Architecture: Phase0 Relevance Filter -> HTTP Scraper -> Wayback CDX -> SMTP Pattern Verify
 No Playwright. No Hunter.io. Free at any scale.
 Multilingual contact-path coverage: 30+ languages.
@@ -345,6 +345,18 @@ SKIP_NICHE_CATEGORIES = {
     "Job Portals": [
         "job portal", "job board", "find jobs", "job listings",
         "recruitment agency", "staffing agency",
+        "care careers", "healthcare careers", "healthcare jobs",
+        "nursing careers", "nursing jobs", "care jobs",
+        "jobs in care", "jobs in healthcare", "apply for jobs",
+        "browse jobs", "search jobs", "submit your cv",
+    ],
+    "Cannabis / Dispensary": [
+        "cannabis", "marijuana", "dispensary", "cannabis dispensary",
+        "cannabis farm", "cannabis delivery", "weed delivery",
+        "thc", "cbd shop", "cbd store", "cbd products",
+        "hemp farm", "hemp products", "cannabis club",
+        "medical marijuana", "recreational cannabis",
+        "pot shop", "cannabis retail",
     ],
     "Insurance": [
         "insurance company", "insurance broker", "insurance quote",
@@ -586,18 +598,6 @@ def phase1_http(domain, session):
     # Homepage
     hp_html = try_fetch(base_url)
     absorb(hp_html, base_url)
-
-    # Sitemap hits -> English paths -> multilingual paths, deduplicated
-    seen_paths = set()
-    priority_urls = []
-    for p in sitemap_hits + [base_url + p for p in CONTACT_PATHS + MULTILINGUAL_PATHS]:
-        if p not in seen_paths:
-            seen_paths.add(p)
-            priority_urls.append(p)
-
-    for url in priority_urls:
-        if pages_checked >= MAX_PAGES_PER_DOMAIN:
-            break
         html = try_fetch(url)
         absorb(html, url)
 
@@ -886,7 +886,7 @@ def main():
         print("No domains to process. Add them to " + DOMAINS_FILE)
         return
 
-    print("Starting scraper v4.4 -- " + str(len(domains)) + " domains.")
+    print("Starting scraper v4.5 -- " + str(len(domains)) + " domains.")
     session = make_session()
 
     with open(OUTPUT_FILE, "w", newline="", encoding="utf-8") as f:
