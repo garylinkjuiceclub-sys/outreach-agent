@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 """
-Email Scraper Agent v4.3
+Email Scraper Agent v4.4
 Architecture: Phase0 Relevance Filter -> HTTP Scraper -> Wayback CDX -> SMTP Pattern Verify
 No Playwright. No Hunter.io. Free at any scale.
 Multilingual contact-path coverage: 30+ languages.
 Niche blocklist: skips irrelevant domains before scraping starts.
-Niche column: CSV now includes 'niche' column showing blocked category.
+Niche column: CSV includes 'niche' showing blocked category.
+Confidence column: high (scraped live), medium (wayback/smtp), low (smtp catch-all).
+Review flag: 'yes' on catch-all domains so manual team can verify before sending.
 """
 
 import csv
@@ -202,6 +204,7 @@ SMTP_PATTERNS = [
 FIELDNAMES = [
     "domain", "primary_email", "email_2", "email_3", "all_emails",
     "pages_checked", "source", "status", "niche",
+    "confidence", "review_flag",
     "contact_form", "contact_form_url",
     "wayback_snapshot_date", "date_scraped",
 ]
@@ -686,14 +689,40 @@ def phase2_wayback(domain, session):
 # -- Phase 3: SMTP pattern verify ----------------------------------------------
 
 def phase3_smtp(domain):
+    """
+    Returns dict: {"emails": [...], "catch_all": bool}
+    Catch-all detection: probes a deliberately random address first.
+    If the server accepts it (250), the domain accepts everything and
+    SMTP pattern results cannot be trusted — catch_all is set True
+    and no pattern emails are returned.
+    """
     try:
         mx_records = dns.resolver.resolve(domain, "MX")
         mx_host = str(
             sorted(mx_records, key=lambda r: r.preference)[0].exchange
         ).rstrip(".")
     except Exception:
-        return []
+        return {"emails": [], "catch_all": False}
 
+    # --- Catch-all probe ---
+    catch_all = False
+    try:
+        with smtplib.SMTP(timeout=10) as smtp:
+            smtp.connect(mx_host, 25)
+            smtp.helo("linkjuiceclub.com")
+            smtp.mail("verify@linkjuiceclub.com")
+            probe = "xzqmverify_no_exist_99@" + domain
+            code, _ = smtp.rcpt(probe)
+            if code == 250:
+                catch_all = True
+            smtp.quit()
+    except Exception:
+        pass
+
+    if catch_all:
+        return {"emails": [], "catch_all": True}
+
+    # --- Pattern verification (only on non-catch-all domains) ---
     verified = []
     for pattern in SMTP_PATTERNS:
         email = pattern + "@" + domain
@@ -711,12 +740,13 @@ def phase3_smtp(domain):
             pass
         time.sleep(0.3)
 
-    return sorted(verified, key=lambda x: -x[1])
+    return {"emails": sorted(verified, key=lambda x: -x[1]), "catch_all": False}
 
 # -- Row builder ---------------------------------------------------------------
 
 def build_row(domain, email_list, pages_checked, source,
-              contact_form, contact_form_url, wayback_snapshot_date):
+              contact_form, contact_form_url, wayback_snapshot_date,
+              confidence="", review_flag=""):
     emails = [e for e, _ in email_list]
     status = "scraped" if emails else "no_email_found"
     return {
@@ -729,6 +759,8 @@ def build_row(domain, email_list, pages_checked, source,
         "source":        source,
         "status":        status,
         "niche":         "",
+        "confidence":    confidence,
+        "review_flag":   review_flag,
         "contact_form":  contact_form,
         "contact_form_url": contact_form_url,
         "wayback_snapshot_date": wayback_snapshot_date,
@@ -741,6 +773,7 @@ def error_row(domain):
         "domain": domain,
         "primary_email": "", "email_2": "", "email_3": "", "all_emails": "",
         "pages_checked": 0, "source": "", "status": "error", "niche": "",
+        "confidence": "", "review_flag": "",
         "contact_form": "", "contact_form_url": "",
         "wayback_snapshot_date": "", "date_scraped": date.today().strftime("%d/%m/%Y"),
     }
@@ -755,6 +788,7 @@ def skip_row(domain, matched_keyword, niche_category):
         "source": "blocked:" + matched_keyword,
         "status": "skipped_irrelevant",
         "niche": niche_category,
+        "confidence": "", "review_flag": "",
         "contact_form": "", "contact_form_url": "",
         "wayback_snapshot_date": "", "date_scraped": date.today().strftime("%d/%m/%Y"),
     }
@@ -784,7 +818,8 @@ def scrape_domain(domain, session):
     if p1["emails"]:
         print("[" + domain + "] Phase 1 found " + str(len(p1["emails"])) + " emails.")
         return build_row(domain, p1["emails"], total_pages, "scraper",
-                         contact_form, contact_form_url, "")
+                         contact_form, contact_form_url, "",
+                         confidence="high", review_flag="")
 
     print("[" + domain + "] Phase 2: Wayback Machine...")
     p2 = phase2_wayback(domain, session)
@@ -798,16 +833,25 @@ def scrape_domain(domain, session):
     if p2["emails"]:
         print("[" + domain + "] Phase 2 found " + str(len(p2["emails"])) + " emails.")
         return build_row(domain, p2["emails"], total_pages, "wayback_unsure",
-                         contact_form, contact_form_url, wayback_snapshot_date)
+                         contact_form, contact_form_url, wayback_snapshot_date,
+                         confidence="medium", review_flag="")
 
     enable_smtp = os.environ.get("ENABLE_SMTP_VERIFY", "false").lower() == "true"
     if enable_smtp:
         print("[" + domain + "] Phase 3: SMTP pattern verify...")
         p3 = phase3_smtp(domain)
-        if p3:
-            print("[" + domain + "] Phase 3 verified " + str(len(p3)) + " emails.")
-            return build_row(domain, p3, total_pages, "smtp_verified",
-                             contact_form, contact_form_url, wayback_snapshot_date)
+        if p3["catch_all"]:
+            print("[" + domain + "] Catch-all domain — flagging for manual review.")
+            row = build_row(domain, [], total_pages, "smtp_catchall",
+                            contact_form, contact_form_url, wayback_snapshot_date,
+                            confidence="low", review_flag="yes")
+            row["status"] = "no_email_found"
+            return row
+        if p3["emails"]:
+            print("[" + domain + "] Phase 3 verified " + str(len(p3["emails"])) + " emails.")
+            return build_row(domain, p3["emails"], total_pages, "smtp_verified",
+                             contact_form, contact_form_url, wayback_snapshot_date,
+                             confidence="medium", review_flag="")
 
     print("[" + domain + "] No emails found.")
     row = build_row(domain, [], total_pages, "", contact_form, contact_form_url, wayback_snapshot_date)
@@ -842,7 +886,7 @@ def main():
         print("No domains to process. Add them to " + DOMAINS_FILE)
         return
 
-    print("Starting scraper v4.3 -- " + str(len(domains)) + " domains.")
+    print("Starting scraper v4.4 -- " + str(len(domains)) + " domains.")
     session = make_session()
 
     with open(OUTPUT_FILE, "w", newline="", encoding="utf-8") as f:
