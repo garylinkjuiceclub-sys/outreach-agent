@@ -1,101 +1,101 @@
 domain,primary_email,email_2,email_3,all_emails,pages_checked,source,status,niche,confidence,review_flag,contact_form,contact_form_url,wayback_snapshot_date,date_scraped
-dkosmiles.com,,,,,51,,no_email_found,,,,Unsure,https://dkosmiles.com/,2020-08-04,28/05/2026
-plateauexcavation.com,info@plateauexcavation.com,,,info@plateauexcavation.com,51,smtp_verified,scraped,,medium,,Yes,https://plateauexcavation.com/contact,2008-07-07,28/05/2026
-themetricmate.com,info@themetricmate.com,,,info@themetricmate.com,50,scraper,scraped,,high,,,,,28/05/2026
+dkosmiles.com,,,,,51,,no_email_found,General / Other,,,Yes,https://dkosmiles.com,2020-08-04,28/05/2026
+plateauexcavation.com,info@plateauexcavation.com,,,info@plateauexcavation.com,51,smtp_verified,scraped,General / Other,medium,,Yes,https://plateauexcavation.com/contact,2008-07-07,28/05/2026
+themetricmate.com,info@themetricmate.com,,,info@themetricmate.com,50,scraper,scraped,General / Other,high,,,,,28/05/2026
 osrphysicaltherapy.com,,,,,0,blocked:physical therapy,skipped_irrelevant,Health / Medical,,,,,,28/05/2026
-penguinair.com,info@penguinair.com,,,info@penguinair.com,50,scraper,scraped,,high,,Yes,https://penguinair.com,,28/05/2026
-millerfuneralandcremationservices.com,,,,,51,smtp_catchall,no_email_found,,low,yes,Unsure,http://millerfuneralandcremationservices.com,2013-07-04,28/05/2026
-chrisjerichocruise.com,chrisjerichocruise@sixthman.net,,,chrisjerichocruise@sixthman.net,50,scraper,scraped,,high,,Yes,https://chrisjerichocruise.com/contact,,28/05/2026
-bowkerafricanhunts.com,info@bowkerafricanhunts.com,marketing@bowkerafricanhunts.com,henry@riflepermits.com,info@bowkerafricanhunts.com | marketing@bowkerafricanhunts.com | henry@riflepermits.com,50,scraper,scraped,,high,,Yes,https://bowkerafricanhunts.com/contact-us,,28/05/2026
-davidherganmd.com,info@davidherganmd.com,,,info@davidherganmd.com,51,smtp_verified,scraped,,medium,,,,2012-01-27,28/05/2026
-shnhbeauty.com,,,,,51,,no_email_found,,,,,,2004-02-12,28/05/2026
+penguinair.com,info@penguinair.com,,,info@penguinair.com,50,scraper,scraped,General / Other,high,,Yes,https://penguinair.com,,28/05/2026
+millerfuneralandcremationservices.com,,,,,0,blocked:funeral home,skipped_irrelevant,Funeral Services,,,,,,28/05/2026
+chrisjerichocruise.com,chrisjerichocruise@sixthman.net,,,chrisjerichocruise@sixthman.net,50,scraper,scraped,General / Other,high,,Yes,https://chrisjerichocruise.com/contact,,28/05/2026
+bowkerafricanhunts.com,info@bowkerafricanhunts.com,marketing@bowkerafricanhunts.com,henry@riflepermits.com,info@bowkerafricanhunts.com | marketing@bowkerafricanhunts.com | henry@riflepermits.com,50,scraper,scraped,General / Other,high,,Yes,https://bowkerafricanhunts.com/contact-us,,28/05/2026
+davidherganmd.com,info@davidherganmd.com,,,info@davidherganmd.com,50,smtp_verified,scraped,General / Other,medium,,,,,28/05/2026
+shnhbeauty.com,,,,,50,,no_email_found,General / Other,,,Yes,https://shnhbeauty.com,,28/05/2026
 advancedrad.com,,,,,0,blocked:radiology,skipped_irrelevant,Health / Medical,,,,,,28/05/2026
 corumpharmacy.com,,,,,0,blocked:pharma,skipped_irrelevant,Health / Medical,,,,,,28/05/2026
 mendcolorado.com,,,,,0,blocked:physical therapy,skipped_irrelevant,Health / Medical,,,,,,28/05/2026
-wendle.com,,,,,51,,no_email_found,,,,,,1996-12-30,28/05/2026
-firstcarewomensclinic.com,info@firstcarewomensclinic.com,,,info@firstcarewomensclinic.com,51,wayback_unsure,scraped,,medium,,,,2017-05-22,28/05/2026
+wendle.com,,,,,50,,no_email_found,,,,,,,28/05/2026
+firstcarewomensclinic.com,info@firstcarewomensclinic.com,,,info@firstcarewomensclinic.com,50,scraper,scraped,General / Other,high,,,,,28/05/2026
 thewellnessconnection.com,,,,,0,blocked:health center,skipped_irrelevant,Health / Medical,,,,,,28/05/2026
-injuryverdicts.com,,,,,51,,no_email_found,,,,Yes,https://injuryverdicts.com,2008-08-22,28/05/2026
+injuryverdicts.com,,,,,51,,no_email_found,General / Other,,,Yes,https://injuryverdicts.com,2008-08-22,28/05/2026
 ktdoctor.com,,,,,0,blocked:clinic,skipped_irrelevant,Health / Medical,,,,,,28/05/2026
-pathpresenter.com,contact@pathpresenter.com,info@pathpresenter.com,,contact@pathpresenter.com | info@pathpresenter.com,51,smtp_verified,scraped,,medium,,,,2017-06-07,28/05/2026
-procana.com,admin@procana.com,,,admin@procana.com,50,scraper,scraped,,high,,Yes,https://procana.com/contact-us,,28/05/2026
-aroundambler.com,kevin@burbmedia.com,,,kevin@burbmedia.com,50,scraper,scraped,,high,,Yes,https://aroundambler.com,,28/05/2026
+pathpresenter.com,contact@pathpresenter.com,info@pathpresenter.com,,contact@pathpresenter.com | info@pathpresenter.com,50,smtp_verified,scraped,General / Other,medium,,,,,28/05/2026
+procana.com,,,,,0,blocked:hemp products,skipped_irrelevant,Cannabis / Dispensary,,,,,,28/05/2026
+aroundambler.com,kevin@burbmedia.com,,,kevin@burbmedia.com,50,scraper,scraped,General / Other,high,,Yes,https://aroundambler.com,,28/05/2026
 21stcb.com,contact@21stcb.com,,,contact@21stcb.com,50,smtp_verified,scraped,,medium,,,,,28/05/2026
-gunnauto.com,,,,,50,,no_email_found,,,,,,,28/05/2026
-justalittlecreativity.com,,,,,51,,no_email_found,,,,,,2012-02-29,28/05/2026
-michiganmetalartwork.com,support@michiganmetalartwork.com,,,support@michiganmetalartwork.com,50,scraper,scraped,,high,,Yes,https://michiganmetalartwork.com,,28/05/2026
-whiteoakkitchen.com,info@whiteoakkitchen.com,michael@whiteoakkitchen.com,,info@whiteoakkitchen.com | michael@whiteoakkitchen.com,50,scraper,scraped,,high,,Yes,https://www.whiteoakkitchen.com/contact,,28/05/2026
+gunnauto.com,,,,,51,,no_email_found,,,,,,1997-04-08,28/05/2026
+justalittlecreativity.com,,,,,51,,no_email_found,Blog / Content Site,,,,,2012-02-29,28/05/2026
+michiganmetalartwork.com,support@michiganmetalartwork.com,,,support@michiganmetalartwork.com,50,scraper,scraped,General / Other,high,,Yes,https://michiganmetalartwork.com,,28/05/2026
+whiteoakkitchen.com,info@whiteoakkitchen.com,michael@whiteoakkitchen.com,,info@whiteoakkitchen.com | michael@whiteoakkitchen.com,50,scraper,scraped,Travel,high,,Yes,https://www.whiteoakkitchen.com/contact,,28/05/2026
 chandlerparkdentalcare.com,,,,,0,blocked:dental,skipped_irrelevant,Health / Medical,,,,,,28/05/2026
-lpsdental.com,,,,,51,smtp_catchall,no_email_found,,low,yes,,,2023-10-02,28/05/2026
-prestonsprinkle.com,news@prestonsprinkle.com,,,news@prestonsprinkle.com,51,smtp_verified,scraped,,medium,,,,2011-06-25,28/05/2026
-caringplaces.com,,,,,51,,no_email_found,,,,,,2004-04-14,28/05/2026
+lpsdental.com,,,,,0,blocked:dental,skipped_irrelevant,Health / Medical,,,,,,28/05/2026
+prestonsprinkle.com,news@prestonsprinkle.com,,,news@prestonsprinkle.com,50,smtp_verified,scraped,General / Other,medium,,,,,28/05/2026
+caringplaces.com,info@caringplaces.com,sms@caringplaces.com,,info@caringplaces.com | sms@caringplaces.com,50,scraper,scraped,General / Other,high,,Yes,https://caringplaces.com/contact-us/,,28/05/2026
 maddoxandgerock.com,,,,,0,blocked:attorney,skipped_irrelevant,Law / Legal,,,,,,28/05/2026
-mcadamfa.com,consultation@mcadamfa.com,,,consultation@mcadamfa.com,50,scraper,scraped,,high,,Yes,https://mcadamfa.com,,28/05/2026
+mcadamfa.com,consultation@mcadamfa.com,,,consultation@mcadamfa.com,50,scraper,scraped,General / Other,high,,Yes,https://mcadamfa.com,,28/05/2026
 immersionrecovery.com,,,,,0,blocked:addiction treatment,skipped_irrelevant,Health / Medical,,,,,,28/05/2026
-wildicebotanicals.com,contact@wildicebotanicals.com,hello@wildicebotanicals.com,info@wildicebotanicals.com,contact@wildicebotanicals.com | hello@wildicebotanicals.com | info@wildicebotanicals.com,51,smtp_verified,scraped,,medium,,Unsure,https://www.wildicebotanicals.com/,2021-09-20,28/05/2026
-savorista.com,,,,,51,smtp_catchall,no_email_found,,low,yes,,,2011-11-14,28/05/2026
-signatureexteriorsinc.com,info@signatureexteriorsinc.com,,,info@signatureexteriorsinc.com,50,scraper,scraped,,high,,Yes,https://signatureexteriorsinc.com,,28/05/2026
-appliedhearingaz.com,answers@appliedhearingaz.com,,,answers@appliedhearingaz.com,50,scraper,scraped,,high,,Yes,https://appliedhearingaz.com/contact,,28/05/2026
-johngeigerco.com,press@johngeigerco.com,info@johngeigerco.com,,press@johngeigerco.com | info@johngeigerco.com,51,smtp_verified,scraped,,medium,,,,2016-08-16,28/05/2026
-kellyepowers.com,hello@kellyepowers.com,,,hello@kellyepowers.com,50,scraper,scraped,,high,,,,,28/05/2026
+wildicebotanicals.com,contact@wildicebotanicals.com,hello@wildicebotanicals.com,info@wildicebotanicals.com,contact@wildicebotanicals.com | hello@wildicebotanicals.com | info@wildicebotanicals.com,51,smtp_verified,scraped,General / Other,medium,,Unsure,https://www.wildicebotanicals.com/,2021-09-20,28/05/2026
+savorista.com,,,,,50,smtp_catchall,no_email_found,General / Other,low,yes,,,,28/05/2026
+signatureexteriorsinc.com,info@signatureexteriorsinc.com,,,info@signatureexteriorsinc.com,50,scraper,scraped,General / Other,high,,Yes,https://signatureexteriorsinc.com,,28/05/2026
+appliedhearingaz.com,answers@appliedhearingaz.com,,,answers@appliedhearingaz.com,50,scraper,scraped,Review Site,high,,Yes,https://appliedhearingaz.com/contact,,28/05/2026
+johngeigerco.com,press@johngeigerco.com,info@johngeigerco.com,,press@johngeigerco.com | info@johngeigerco.com,51,smtp_verified,scraped,General / Other,medium,,,,2016-08-16,28/05/2026
+kellyepowers.com,hello@kellyepowers.com,,,hello@kellyepowers.com,50,scraper,scraped,Food & Drink,high,,,,,28/05/2026
 rite4justice.com,,,,,0,blocked:attorney,skipped_irrelevant,Law / Legal,,,,,,28/05/2026
-bestofutahmoving.com,contact@bestofutahmoving.com,,,contact@bestofutahmoving.com,51,smtp_verified,scraped,,medium,,,,2013-07-18,28/05/2026
-groovygreenliving.com,lori@groovygreenliving.com,,,lori@groovygreenliving.com,50,scraper,scraped,,high,,Yes,https://groovygreenliving.com,,28/05/2026
-danishhomes.com,email@danskboligformidling.dk,jv@danishhomes.com,peter@danskboligformidling.dk,email@danskboligformidling.dk | jv@danishhomes.com | peter@danskboligformidling.dk | ve@danishhomes.com | philip@danskboligformidling.dk | ms@danishhomes.com | mw@danishhomes.com | sk@danishhomes.com | isabella@danskboligformidling.dk | axel@danskboligformidling.dk,50,scraper,scraped,,high,,Yes,https://danishhomes.com,,28/05/2026
+bestofutahmoving.com,contact@bestofutahmoving.com,,,contact@bestofutahmoving.com,50,scraper,scraped,Review Site,high,,Yes,https://bestofutahmoving.com,,28/05/2026
+groovygreenliving.com,lori@groovygreenliving.com,,,lori@groovygreenliving.com,50,scraper,scraped,Environment / Green,high,,Yes,https://groovygreenliving.com,,28/05/2026
+danishhomes.com,email@danskboligformidling.dk,jv@danishhomes.com,peter@danskboligformidling.dk,email@danskboligformidling.dk | jv@danishhomes.com | peter@danskboligformidling.dk | ve@danishhomes.com | philip@danskboligformidling.dk | ms@danishhomes.com | mw@danishhomes.com | sk@danishhomes.com | isabella@danskboligformidling.dk | axel@danskboligformidling.dk,50,scraper,scraped,General / Other,high,,Yes,https://danishhomes.com,,28/05/2026
 theplacencia.com,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,28/05/2026
 spokaneroofing.com,,,,,0,blocked:roofing contractor,skipped_irrelevant,Construction / Trades,,,,,,28/05/2026
-lightningrestorationfla.com,,,,,51,,no_email_found,,,,Unsure,http://lightningrestorationfla.com/,2013-01-11,28/05/2026
+lightningrestorationfla.com,,,,,0,blocked:restoration services,skipped_irrelevant,Construction / Trades,,,,,,28/05/2026
 bononiandbononi.com,,,,,0,blocked:attorney,skipped_irrelevant,Law / Legal,,,,,,28/05/2026
 allergyaffiliates.com,,,,,0,blocked:allergist,skipped_irrelevant,Health / Medical,,,,,,28/05/2026
-rainierdoor.com,info@rainierdoor.com,,,info@rainierdoor.com,51,smtp_verified,scraped,,medium,,Yes,https://rainierdoor.com/contact,2004-03-23,28/05/2026
-thrivepestcontrol.com,,,,,51,smtp_catchall,no_email_found,,low,yes,,,2019-10-15,28/05/2026
+rainierdoor.com,info@rainierdoor.com,,,info@rainierdoor.com,51,smtp_verified,scraped,General / Other,medium,,Yes,https://rainierdoor.com/contact,2004-03-23,28/05/2026
+thrivepestcontrol.com,,,,,50,smtp_catchall,no_email_found,Review Site,low,yes,,,,28/05/2026
 wildliferemoval.com,,,,,51,,no_email_found,,,,,,2001-04-01,28/05/2026
-merit-kitchens.com,,,,,51,smtp_catchall,no_email_found,,low,yes,Yes,https://merit-kitchens.com,1996-12-30,28/05/2026
-renovohealthandbeauty.com,,,,,50,smtp_catchall,no_email_found,,low,yes,Yes,https://renovohealthandbeauty.com,,28/05/2026
-shapedbycharlotte.com,,,,,51,smtp_catchall,no_email_found,,low,yes,,,2018-08-05,28/05/2026
+merit-kitchens.com,,,,,50,smtp_catchall,no_email_found,General / Other,low,yes,Yes,https://merit-kitchens.com,,28/05/2026
+renovohealthandbeauty.com,,,,,50,smtp_catchall,no_email_found,General / Other,low,yes,Yes,https://renovohealthandbeauty.com,,28/05/2026
+shapedbycharlotte.com,,,,,50,smtp_catchall,no_email_found,,low,yes,,,,28/05/2026
 mapleheightsbehavioral.com,,,,,0,blocked:hospital,skipped_irrelevant,Health / Medical,,,,,,28/05/2026
-12steptoolkit.com,,,,,51,smtp_catchall,no_email_found,,low,yes,Yes,https://12steptoolkit.com/contacts,2016-07-31,28/05/2026
-katrinkles.com,hello@katrinkles.com,info@katrinkles.com,,hello@katrinkles.com | info@katrinkles.com,51,smtp_verified,scraped,,medium,,,,2016-01-13,28/05/2026
-gorillasafaridiscovery.com,info@gorillasafaridiscovery.com,,,info@gorillasafaridiscovery.com,50,scraper,scraped,,high,,Yes,https://gorillasafaridiscovery.com/contact,,28/05/2026
+12steptoolkit.com,,,,,51,smtp_catchall,no_email_found,General / Other,low,yes,Yes,https://12steptoolkit.com/contacts,2016-07-31,28/05/2026
+katrinkles.com,hello@katrinkles.com,info@katrinkles.com,,hello@katrinkles.com | info@katrinkles.com,51,smtp_verified,scraped,General / Other,medium,,,,2016-01-13,28/05/2026
+gorillasafaridiscovery.com,info@gorillasafaridiscovery.com,,,info@gorillasafaridiscovery.com,50,scraper,scraped,General / Other,high,,Yes,https://gorillasafaridiscovery.com/contact,,28/05/2026
 trilliumclinic.com,,,,,0,blocked:clinic,skipped_irrelevant,Health / Medical,,,,,,28/05/2026
-novafamilyhealth.com,info@novafamilyhealth.com,,,info@novafamilyhealth.com,51,wayback_unsure,scraped,,medium,,,,2013-07-30,28/05/2026
-cozyproducts.com,customerservice@cozyproducts.com,,,customerservice@cozyproducts.com,50,scraper,scraped,,high,,,,,28/05/2026
+novafamilyhealth.com,,,,,0,blocked:family health,skipped_irrelevant,Health / Medical,,,,,,28/05/2026
+cozyproducts.com,customerservice@cozyproducts.com,,,customerservice@cozyproducts.com,50,scraper,scraped,General / Other,high,,,,,28/05/2026
 townestorage.com,,,,,0,blocked:self storage,skipped_irrelevant,Storage,,,,,,28/05/2026
 estadtpsychological.com,,,,,0,blocked:psychological,skipped_irrelevant,Health / Medical,,,,,,28/05/2026
-clinicahispanarubymed.com,hola@rubymed.org,records@rubymed.org,,hola@rubymed.org | records@rubymed.org,50,scraper,scraped,,high,,Yes,https://clinicahispanarubymed.com,,28/05/2026
-navonarecords.com,info@navonarecords.com,,,info@navonarecords.com,51,wayback_unsure,scraped,,medium,,,,2009-01-22,28/05/2026
-gemologyproject.com,,,,,51,,no_email_found,,,,,,2008-07-06,28/05/2026
-applydigital.com,partnerships@applydigital.com,content@applydigital.com,hello@applydigital.com,partnerships@applydigital.com | content@applydigital.com | hello@applydigital.com | info@applydigital.com,51,smtp_verified,scraped,,medium,,,,2004-09-30,28/05/2026
-unplannedpregnancy.com,,,,,51,smtp_catchall,no_email_found,,low,yes,,,2001-02-20,28/05/2026
-crodapharma.com,,,,,50,,no_email_found,,,,,,,28/05/2026
-imaginelifestyles.com,reservations@imaginelifestyles.com,,,reservations@imaginelifestyles.com,50,scraper,scraped,,high,,,,,28/05/2026
-sterlingestates.com,,,,,50,,no_email_found,,,,Yes,https://sterlingestates.com,,28/05/2026
-laerdalglobalhealth.com,,,,,51,,no_email_found,,,,,,2011-09-26,28/05/2026
-cryobankamerica.com,info@cryobankamerica.com,,,info@cryobankamerica.com,50,scraper,scraped,,high,,Yes,https://cryobankamerica.com,,28/05/2026
-rethinkobesity.com,,,,,51,,no_email_found,,,,,,2015-03-15,28/05/2026
-holycityfarms.com,yourfriends@holycityfarms.com,care@reytheme.com,,yourfriends@holycityfarms.com | care@reytheme.com,50,scraper,scraped,,high,,Yes,https://holycityfarms.com/contact,,28/05/2026
-steinres.com,concierge@steineriksenresidences.com,,,concierge@steineriksenresidences.com,51,wayback_unsure,scraped,,medium,,Unsure,https://steinres.com/,2019-10-24,28/05/2026
-johnsoncomfort.com,,,,,51,,no_email_found,,,,Yes,https://johnsoncomfort.com/contact,2009-02-02,28/05/2026
-360haz.com,info@360haz.com,,,info@360haz.com,51,smtp_verified,scraped,,medium,,,,2021-11-25,28/05/2026
+clinicahispanarubymed.com,hola@rubymed.org,records@rubymed.org,,hola@rubymed.org | records@rubymed.org,50,scraper,scraped,General / Other,high,,Yes,https://clinicahispanarubymed.com,,28/05/2026
+navonarecords.com,info@navonarecords.com,,,info@navonarecords.com,51,smtp_verified,scraped,,medium,,,,,28/05/2026
+gemologyproject.com,,,,,50,,no_email_found,,,,,,,28/05/2026
+applydigital.com,partnerships@applydigital.com,content@applydigital.com,hello@applydigital.com,partnerships@applydigital.com | content@applydigital.com | hello@applydigital.com | info@applydigital.com,50,smtp_verified,scraped,General / Other,medium,,,,,28/05/2026
+unplannedpregnancy.com,,,,,51,smtp_catchall,no_email_found,Lifestyle,low,yes,,,2001-02-20,28/05/2026
+crodapharma.com,,,,,0,blocked:pharmaceutical,skipped_irrelevant,Health / Medical,,,,,,28/05/2026
+imaginelifestyles.com,reservations@imaginelifestyles.com,,,reservations@imaginelifestyles.com,50,scraper,scraped,Travel,high,,,,,28/05/2026
+sterlingestates.com,,,,,51,,no_email_found,General / Other,,,Yes,https://sterlingestates.com,,28/05/2026
+laerdalglobalhealth.com,,,,,51,,no_email_found,General / Other,,,,,,28/05/2026
+cryobankamerica.com,info@cryobankamerica.com,,,info@cryobankamerica.com,50,scraper,scraped,General / Other,high,,Yes,https://cryobankamerica.com,,28/05/2026
+rethinkobesity.com,,,,,51,,no_email_found,General / Other,,,,,,28/05/2026
+holycityfarms.com,,,,,0,blocked:cbd products,skipped_irrelevant,Cannabis / Dispensary,,,,,,28/05/2026
+steinres.com,,,,,50,,no_email_found,,,,,,,28/05/2026
+johnsoncomfort.com,,,,,51,,no_email_found,Review Site,,,Yes,https://johnsoncomfort.com/contact,,28/05/2026
+360haz.com,info@360haz.com,,,info@360haz.com,51,smtp_verified,scraped,General / Other,medium,,,,,28/05/2026
 cigalar.com,info@cigalar.com,,,info@cigalar.com,51,smtp_verified,scraped,,medium,,Unsure,https://cigalar.com/,2021-05-21,28/05/2026
-healthjobsnationwide.com,,,,,51,smtp_catchall,no_email_found,,low,yes,Unsure,http://www.healthjobsnationwide.com:80/,2008-08-28,28/05/2026
-sublimesamana.com,info@sublimesamana.com,,,info@sublimesamana.com,51,smtp_verified,scraped,,medium,,,,2012-02-12,28/05/2026
+healthjobsnationwide.com,,,,,51,smtp_catchall,no_email_found,General / Other,low,yes,,,,28/05/2026
+sublimesamana.com,,,,,0,blocked:resort,skipped_irrelevant,Hotels / Accommodation,,,,,,28/05/2026
 masscenters.com,,,,,0,blocked:addiction treatment,skipped_irrelevant,Health / Medical,,,,,,28/05/2026
-tumlove.com,,,,,51,smtp_catchall,no_email_found,,low,yes,,,2021-12-27,28/05/2026
-jynneos.com,medical.information_na@bavarian-nordic.com,,,medical.information_na@bavarian-nordic.com,50,scraper,scraped,,high,,,,,28/05/2026
-oaklandmarathon.com,info@runlocalevents.com,,,info@runlocalevents.com,50,scraper,scraped,,high,,,,,28/05/2026
-cissiegrahamlynch.com,,,,,51,,no_email_found,,,,,,2010-12-27,28/05/2026
-lajaunies.com,,,,,51,,no_email_found,,,,,,2011-02-02,28/05/2026
-caringcareersstarthere.com,vdefor@winona.edu,,,vdefor@winona.edu,51,wayback_unsure,scraped,,medium,,,,2020-08-04,28/05/2026
-srhythm.com,socialmedia@srhythm.com,service@srhythm.com,business@srhythm.com,socialmedia@srhythm.com | service@srhythm.com | business@srhythm.com,50,scraper,scraped,,high,,,,,28/05/2026
-egofitwalker.com,info@egofitwalker.com,,,info@egofitwalker.com,51,wayback_unsure,scraped,,medium,,,,2019-08-19,28/05/2026
-zingashome.com,info@zingashome.com,,,info@zingashome.com,51,smtp_verified,scraped,,medium,,Yes,https://zingashome.com/contact-us/,2016-03-14,28/05/2026
+tumlove.com,,,,,51,smtp_catchall,no_email_found,General / Other,low,yes,,,2021-12-27,28/05/2026
+jynneos.com,medical.information_na@bavarian-nordic.com,,,medical.information_na@bavarian-nordic.com,50,scraper,scraped,General / Other,high,,,,,28/05/2026
+oaklandmarathon.com,info@runlocalevents.com,,,info@runlocalevents.com,50,scraper,scraped,General / Other,high,,,,,28/05/2026
+cissiegrahamlynch.com,,,,,51,,no_email_found,General / Other,,,,,2010-12-27,28/05/2026
+lajaunies.com,,,,,50,,no_email_found,,,,,,,28/05/2026
+caringcareersstarthere.com,info@mncarecareers.com,info@leadingagemn.org,information@careproviders.org,info@mncarecareers.com | info@leadingagemn.org | information@careproviders.org,50,scraper,scraped,General / Other,high,,Yes,https://caringcareersstarthere.com/contact,,28/05/2026
+srhythm.com,socialmedia@srhythm.com,service@srhythm.com,business@srhythm.com,socialmedia@srhythm.com | service@srhythm.com | business@srhythm.com,50,scraper,scraped,General / Other,high,,,,,28/05/2026
+egofitwalker.com,info@egofitwalker.com,,,info@egofitwalker.com,50,smtp_verified,scraped,General / Other,medium,,,,,28/05/2026
+zingashome.com,info@zingashome.com,,,info@zingashome.com,51,smtp_verified,scraped,General / Other,medium,,Yes,https://zingashome.com/contact-us/,,28/05/2026
 dentaloncentral.com,,,,,0,blocked:dental,skipped_irrelevant,Health / Medical,,,,,,28/05/2026
-logomatcentral.com,sales@logomatcentral.com,,,sales@logomatcentral.com,50,scraper,scraped,,high,,,,,28/05/2026
-lunamagic.com,,,,,51,,no_email_found,,,,Yes,https://lunamagic.com,2001-05-18,28/05/2026
-relogistics.com,info@relogistics.com,,,info@relogistics.com,50,scraper,scraped,,high,,,,,28/05/2026
-dreambigchildren.com,info@dreambigchildren.com,,,info@dreambigchildren.com,50,scraper,scraped,,high,,Yes,https://dreambigchildren.com/contact,,28/05/2026
-shopjayne.com,info@shopjayne.com,,,info@shopjayne.com,51,smtp_verified,scraped,,medium,,,,2018-08-06,28/05/2026
-brentrayfraser.com,,,,,51,,no_email_found,,,,,,2009-04-08,28/05/2026
-theduplexchicago.com,marketing@theduplexchicago.com,,,marketing@theduplexchicago.com,51,wayback_unsure,scraped,,medium,,Unsure,http://theduplexchicago.com/,2021-08-08,28/05/2026
+logomatcentral.com,sales@logomatcentral.com,,,sales@logomatcentral.com,50,scraper,scraped,General / Other,high,,,,,28/05/2026
+lunamagic.com,,,,,51,,no_email_found,Review Site,,,Yes,https://lunamagic.com,,28/05/2026
+relogistics.com,info@relogistics.com,,,info@relogistics.com,50,scraper,scraped,General / Other,high,,,,,28/05/2026
+dreambigchildren.com,info@dreambigchildren.com,,,info@dreambigchildren.com,50,scraper,scraped,General / Other,high,,Yes,https://dreambigchildren.com/contact,,28/05/2026
+shopjayne.com,info@shopjayne.com,,,info@shopjayne.com,51,smtp_verified,scraped,General / Other,medium,,,,,28/05/2026
+brentrayfraser.com,editor@brentrayfraser.com,editorial@brentrayfraser.com,advertising@brentrayfraser.com,editor@brentrayfraser.com | editorial@brentrayfraser.com | advertising@brentrayfraser.com | advertise@brentrayfraser.com | partnerships@brentrayfraser.com | press@brentrayfraser.com | media@brentrayfraser.com | news@brentrayfraser.com | contact@brentrayfraser.com | hello@brentrayfraser.com | info@brentrayfraser.com,51,smtp_verified,scraped,General / Other,medium,,,,,28/05/2026
+theduplexchicago.com,,,,,51,,no_email_found,General / Other,,,,,,28/05/2026
 charlottesvillepeds.com,,,,,0,blocked:pediatric,skipped_irrelevant,Health / Medical,,,,,,28/05/2026
