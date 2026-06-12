@@ -1,16 +1,33 @@
 #!/usr/bin/env python3
 """
-Email Scraper Agent v4.6
+Email Scraper Agent v4.7
 Architecture: Phase0 Relevance Filter -> HTTP Scraper -> Wayback CDX -> SMTP Pattern Verify
 No Playwright. No Hunter.io. Free at any scale.
 Multilingual contact-path coverage: 30+ languages.
-Niche blocklist: skips irrelevant domains before scraping starts.
-Niche column: CSV includes 'niche' showing blocked category.
-Confidence column: high (scraped live), medium (wayback/smtp), low (smtp catch-all).
-Review flag: 'yes' on catch-all domains so manual team can verify before sending.
+
+v4.7 changes (reliability overhaul):
+- STRICT VERIFICATION: only emails found on the LIVE site whose domain matches
+  the site domain get status=verified / confidence=high.
+  Everything else (Wayback, SMTP guesses, off-domain emails) is recorded but
+  gets status=needs_manual_check + review_flag=yes + review_reason.
+- email_source_url column: the exact page where the primary email was found,
+  so the team can verify any email in one click.
+- review_reason column: why a row needs manual review
+  (wayback_archive / smtp_guess / smtp_catchall / domain_mismatch /
+   unclassified_niche / no_email_found).
+- Obfuscated-email decoding: "info [at] domain [dot] com" patterns.
+- Phase 0 relevance filter now scans title/meta/og/h1/h2 (strong zone) PLUS
+  nav/footer links and body text (weak zone, needs 2+ keyword hits to block,
+  to avoid false positives). Sites whose title/meta positively identify them
+  as content sites are never weak-zone blocked.
+- New blocklist categories: Invoicing / Payroll, Forums, Visiting Places /
+  Attractions, Local Events. Expanded keywords across existing categories.
+- Domains that match no positive content niche ("General / Other") are still
+  scraped but review_flag=yes (review_reason=unclassified_niche).
 """
 
 import csv
+import json
 import os
 import re
 import smtplib
@@ -29,6 +46,10 @@ MAX_PAGES_PER_DOMAIN = 50
 OUTPUT_FILE = "emails_output.csv"
 DOMAINS_FILE = "domains_input.csv"
 WAYBACK_API = "http://web.archive.org/cdx/search/cdx"
+
+# Weak-zone (nav/footer/body) blocklist matches need this many DISTINCT
+# keyword hits in the same category before a domain is skipped.
+WEAK_BLOCK_MIN_HITS = 2
 
 CONTACT_PATHS = [
     "/contact", "/contact-us", "/contact_us", "/contactus",
@@ -186,6 +207,10 @@ EMAIL_REGEX = re.compile(
     r'\b[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}\b'
 )
 
+# Obfuscated email patterns: "info [at] domain [dot] com", "info (at) domain.com"
+OBFUSCATED_AT = re.compile(r'\s*[\[\(\{]\s*(?:at|@)\s*[\]\)\}]\s*', re.IGNORECASE)
+OBFUSCATED_DOT = re.compile(r'\s*[\[\(\{]\s*(?:dot)\s*[\]\)\}]\s*', re.IGNORECASE)
+
 SKIP_PATTERN = re.compile(
     r'(noreply|no-reply|donotreply|unsubscribe|bounce|spam|test@|'
     r'\d+x\d+|@2x\.|\.png|\.jpg|\.jpeg|\.gif|\.svg|\.webp|\.ico|'
@@ -203,14 +228,25 @@ SMTP_PATTERNS = [
 
 FIELDNAMES = [
     "domain", "primary_email", "email_2", "email_3", "all_emails",
+    "email_source_url",
     "pages_checked", "source", "status", "niche",
-    "confidence", "review_flag",
+    "confidence", "review_flag", "review_reason",
     "contact_form", "contact_form_url",
     "wayback_snapshot_date", "date_scraped",
 ]
 
+# Second-level public suffixes for registrable-domain comparison.
+SECOND_LEVEL_TLDS = {
+    "co", "com", "org", "net", "ac", "gov", "edu", "or", "ne", "go",
+}
+
 # Niche blocklist — organised by category.
-# phase0_relevance() checks homepage title, meta description, and h1 tags.
+# phase0_relevance() checks two zones:
+#   STRONG zone (title, meta description/keywords, og:* tags, h1/h2):
+#     a single keyword match blocks the domain.
+#   WEAK zone (nav/footer link text, first 4000 chars of body text):
+#     needs WEAK_BLOCK_MIN_HITS distinct keyword matches in the same
+#     category to block (avoids false positives from passing mentions).
 # Skipped domains appear in CSV as status=skipped_irrelevant, niche=<Category>.
 # Add/remove keywords here to tune the filter.
 SKIP_NICHE_CATEGORIES = {
@@ -230,12 +266,22 @@ SKIP_NICHE_CATEGORIES = {
         "health centre", "health center", "healthcare provider",
         "medical practice", "family medicine", "family health",
         "women's health", "men's health",
-        # Clinics (was missing — caught physio, dental, GP etc.)
+        # Clinics
         "clinic",
-        # Dental (was missing — major gap in v4.2)
+        # Dental
         "dental", "dentist", "dentistry", "dental surgery", "dental practice",
         # Doctors & physicians
         "doctor", "physician", "gp surgery",
+        "surgeon", "orthopedic", "orthopaedic", "m.d.", ", md",
+        # Hearing / audiology (v4.7 — caught appliedhearingaz.com-style sites)
+        "hearing aid", "hearing aids", "audiology", "audiologist", "hearing care",
+        "hearing test",
+        # Fertility / reproductive (v4.7 — caught cryobankamerica.com-style sites)
+        "fertility", "sperm bank", "cryobank", "ivf", "women's clinic",
+        "womens clinic",
+        # Patient-facing signals (v4.7)
+        "patient portal", "telehealth", "primary care", "book an appointment",
+        "request an appointment",
         # Therapy
         "physical therapy", "physiotherapy", "physiotherapy clinic",
         "occupational therapy", "speech therapy",
@@ -254,22 +300,29 @@ SKIP_NICHE_CATEGORIES = {
         "rehab center", "rehab centre",
         "addiction treatment", "recovery center", "recovery centre",
         "detox center", "detox centre",
-        # Pharma
-        "pharmaceutical", "pharma",
+        # Pharma (v4.7 — caught jynneos.com-style drug/vaccine sites)
+        "pharmaceutical", "pharma", "vaccine", "prescribing information",
+        "prescription medicine", "fda approved", "side effects",
     ],
     "Community / Municipality": [
         "community centre", "community center", "local authority",
     ],
     "Funeral Services": [
         "funeral home", "funeral director", "funeral services", "crematorium",
-        "burial services", "memorial chapel",
+        "burial services", "memorial chapel", "cremation services",
     ],
     "Restaurants / Food": [
         "restaurant", "takeaway", "fast food", "pizza delivery",
-        "book a table", "reserve a table",
+        "book a table", "reserve a table", "our menu", "order online",
+        "lunch menu", "dinner menu", "brunch menu",
     ],
     "E-commerce / Online Shops": [
         "add to cart", "add to basket", "shopping cart", "online shop", "online store",
+        # v4.7 — caught shopjayne.com / cozyproducts.com-style storefronts
+        "shop now", "free shipping", "add to bag", "buy now",
+        "powered by shopify", "your cart", "view cart",
+        "best sellers", "new arrivals", "shop all", "free returns",
+        "checkout",
     ],
     "Telephone / ISP": [
         "mobile network", "mobile operator", "broadband provider",
@@ -287,11 +340,20 @@ SKIP_NICHE_CATEGORIES = {
         "research institute", "research center", "research centre",
         "think tank", "academic journal",
     ],
+    "Forums": [
+        "discussion forum", "community forum", "message board",
+        "discussion board", "phpbb", "vbulletin", "forum index",
+    ],
     "Public Transport": [
         "bus timetable", "train timetable", "public transport", "transit authority",
     ],
     "Weather": [
         "weather forecast", "weather service", "meteorological office",
+    ],
+    "Invoicing / Payroll": [
+        "invoicing software", "invoice generator", "invoicing",
+        "payroll", "payroll services", "payroll software",
+        "bookkeeping services", "accounting software",
     ],
     "Gardening": [
         "garden centre", "garden center", "plant nursery", "gardening supplies",
@@ -302,6 +364,11 @@ SKIP_NICHE_CATEGORIES = {
         "restoration contractor", "restoration services",
         "exterior contractor", "siding contractor",
         "hvac contractor", "hvac company",
+        # v4.7 — caught penguinair.com / plateauexcavation.com-style sites
+        "hvac", "air conditioning", "heating and cooling", "heating & cooling",
+        "garage door", "garage doors", "excavation",
+        "plumbing services", "roofing services", "general contractor",
+        "pest control",
     ],
     "Hair / Beauty": [
         "hair salon", "hair & beauty", "hairdresser", "barbershop", "barber shop",
@@ -316,7 +383,7 @@ SKIP_NICHE_CATEGORIES = {
         "family law", "immigration lawyer",
     ],
     "Flight Booking": [
-        "ryanair", "wizzair", "wizz air", "easyjet",
+        "ryanair", "wizzair", "wizz air", "easyjet", "kiwi.com",
         "flight booking", "book flights", "cheap flights",
     ],
     "Storage": [
@@ -338,6 +405,15 @@ SKIP_NICHE_CATEGORIES = {
     "Museums / Culture": [
         "museum", "art gallery", "heritage site",
     ],
+    "Visiting Places / Attractions": [
+        "tourist attraction", "visitor attraction", "plan your visit",
+        "things to do in", "visitor centre", "visitor center",
+        "opening times", "buy tickets",
+    ],
+    "Local Events": [
+        "upcoming events", "events calendar", "event calendar",
+        "event tickets", "what's on", "whats on",
+    ],
     "Gyms / Fitness": [
         "fitness centre", "fitness center", "health club", "gym membership",
         "yoga studio", "pilates studio",
@@ -353,7 +429,7 @@ SKIP_NICHE_CATEGORIES = {
     "Cannabis / Dispensary": [
         "cannabis", "marijuana", "dispensary", "cannabis dispensary",
         "cannabis farm", "cannabis delivery", "weed delivery",
-        "thc", "cbd shop", "cbd store", "cbd products",
+        "thc", "cbd", "cbd shop", "cbd store", "cbd products",
         "hemp farm", "hemp products", "cannabis club",
         "medical marijuana", "recreational cannabis",
         "pot shop", "cannabis retail",
@@ -393,14 +469,16 @@ SKIP_NICHE_CATEGORIES = {
     ],
     "Bar / Pub": [
         "nightclub", "cocktail bar", "taproom", "gastropub", "craft brewery",
-        " pub", "pub ",
+        " pub", "pub ", "bar & grill", "bar and grill", "cabaret",
+        "happy hour", "live music venue",
     ],
 }
 
 # Positive niche classifier — applied to domains that PASS the blocklist.
 # Checks the same homepage HTML already fetched in phase0 (no extra requests).
-# If a domain matches, its niche is stored in the CSV niche column.
-# If nothing matches, falls back to "General / Other".
+# Strong-zone hits count double; the highest-scoring category wins.
+# If nothing matches, falls back to "General / Other" AND the row is
+# review-flagged (unclassified_niche) so the team checks relevance manually.
 NICHE_CATEGORIES = {
     "Blog / Content Site": [
         "blog", "our blog", "latest posts", "content creator", "blogger",
@@ -501,18 +579,51 @@ def fetch(url, session, referer=None):
     except Exception:
         return None
 
+# -- Domain matching -------------------------------------------------------------
+
+def registrable_domain(host):
+    """Best-effort registrable domain: example.com, example.co.uk."""
+    parts = host.lower().strip(".").split(".")
+    if len(parts) >= 3 and parts[-2] in SECOND_LEVEL_TLDS:
+        return ".".join(parts[-3:])
+    if len(parts) >= 2:
+        return ".".join(parts[-2:])
+    return host.lower()
+
+
+def email_matches_domain(email, domain):
+    """True if the email's domain belongs to the same site as `domain`."""
+    if "@" not in email:
+        return False
+    email_dom = email.rsplit("@", 1)[1].lower()
+    site_dom = domain.lower()
+    if email_dom == site_dom:
+        return True
+    if email_dom.endswith("." + site_dom) or site_dom.endswith("." + email_dom):
+        return True
+    return registrable_domain(email_dom) == registrable_domain(site_dom)
+
 # -- Phase 0: Relevance filter -------------------------------------------------
 
 def phase0_relevance(domain, session):
     """
-    Quick pre-scrape check. Fetches the homepage and looks for niche blocklist
-    keywords in the title, meta description, and h1 tags.
+    Quick pre-scrape check using only the homepage (one HTTP request).
+
+    Two signal zones:
+      STRONG: title, meta description/keywords, og:* tags, first 8 h1/h2 —
+              one blocklist keyword match here skips the domain.
+      WEAK:   nav/footer link text + first 4000 chars of visible body text —
+              needs WEAK_BLOCK_MIN_HITS distinct keyword matches in the same
+              category to skip (avoids blocking a blog that merely mentions
+              a hotel once).
+
+    A domain whose STRONG zone positively identifies it as a content site
+    (NICHE_CATEGORIES match in title/meta/h1) is never weak-zone blocked.
+
     Returns (relevant, matched_kw, skip_category, detected_niche).
-      - If blocked:  (False, matched_keyword, skip_category, "")
-      - If relevant: (True,  "",              "",            detected_niche)
-    detected_niche is drawn from NICHE_CATEGORIES (positive classifier) using
-    the same HTML — no extra HTTP requests. Falls back to "General / Other".
-    On connection failure, returns (True, "", "", "") so phase1 can try properly.
+      - Blocked:  (False, matched_keyword(s), skip_category, "")
+      - Passing:  (True,  "", "", detected_niche)   # may be "General / Other"
+      - On connection failure: (True, "", "", "") so phase1 can try properly.
     """
     base_url = "https://" + domain
     try:
@@ -526,34 +637,66 @@ def phase0_relevance(domain, session):
 
     soup = BeautifulSoup(html, "lxml")
 
-    signals = []
+    # --- STRONG zone ---
+    strong_parts = []
     if soup.title and soup.title.string:
-        signals.append(soup.title.string)
-    meta_desc = soup.find("meta", attrs={"name": "description"})
-    if meta_desc and meta_desc.get("content"):
-        signals.append(meta_desc["content"])
-    for h1 in soup.find_all("h1")[:3]:
-        signals.append(h1.get_text())
+        strong_parts.append(soup.title.string)
+    for name in ("description", "keywords"):
+        tag = soup.find("meta", attrs={"name": name})
+        if tag and tag.get("content"):
+            strong_parts.append(tag["content"])
+    for prop in ("og:title", "og:description", "og:site_name", "og:type"):
+        tag = soup.find("meta", attrs={"property": prop})
+        if tag and tag.get("content"):
+            strong_parts.append(tag["content"])
+    for h in soup.find_all(["h1", "h2"])[:8]:
+        strong_parts.append(h.get_text(" "))
+    strong_text = " ".join(strong_parts).lower()
 
-    combined = " ".join(signals).lower()
+    # --- WEAK zone ---
+    weak_parts = []
+    for container in soup.find_all(["nav", "footer"]):
+        for a in container.find_all("a"):
+            weak_parts.append(a.get_text(" "))
+    for tag in soup(["script", "style", "noscript"]):
+        tag.decompose()
+    weak_parts.append(soup.get_text(" ")[:4000])
+    weak_text = " ".join(weak_parts).lower()
 
-    # Blocklist check first
+    # 1. Strong-zone blocklist: single hit blocks.
     for category, keywords in SKIP_NICHE_CATEGORIES.items():
         for kw in keywords:
-            if kw.lower() in combined:
+            if kw.lower() in strong_text:
                 return False, kw.strip(), category, ""
 
-    # Positive niche classification (same HTML, no extra requests)
-    detected_niche = "General / Other"
+    # 2. Strong-zone positive ID: trusted, skip weak-zone blocking.
+    strong_positive = ""
     for category, keywords in NICHE_CATEGORIES.items():
         for kw in keywords:
-            if kw.lower() in combined:
-                detected_niche = category
+            if kw.lower() in strong_text:
+                strong_positive = category
                 break
-        if detected_niche != "General / Other":
+        if strong_positive:
             break
+    if strong_positive:
+        return True, "", "", strong_positive
 
-    return True, "", "", detected_niche
+    # 3. Weak-zone blocklist: needs >= WEAK_BLOCK_MIN_HITS distinct hits.
+    for category, keywords in SKIP_NICHE_CATEGORIES.items():
+        hits = [kw for kw in keywords if kw.lower() in weak_text]
+        if len(hits) >= WEAK_BLOCK_MIN_HITS:
+            matched = "+".join(k.strip() for k in hits[:2])
+            return False, matched, category, ""
+
+    # 4. Weak-zone positive classification: highest hit count wins.
+    best_cat = "General / Other"
+    best_score = 0
+    for category, keywords in NICHE_CATEGORIES.items():
+        score = sum(1 for kw in keywords if kw.lower() in weak_text)
+        if score > best_score:
+            best_cat, best_score = category, score
+
+    return True, "", "", best_cat
 
 # -- Email extraction ----------------------------------------------------------
 
@@ -569,10 +712,18 @@ def decode_cloudflare_email(encoded):
         return ""
 
 
+def deobfuscate(text):
+    """Turn 'info [at] domain [dot] com' style obfuscation into real emails."""
+    text = OBFUSCATED_AT.sub("@", text)
+    text = OBFUSCATED_DOT.sub(".", text)
+    return text
+
+
 def extract_emails(html, domain):
     """
     Extract emails from HTML. Returns list of (email, score) sorted by score desc.
-    Decodes Cloudflare obfuscation, checks mailto: links, filters false positives.
+    Decodes Cloudflare obfuscation, '[at]/[dot]' obfuscation, checks mailto:
+    links and JSON-LD blocks, filters false positives.
     """
     if not html:
         return []
@@ -591,6 +742,13 @@ def extract_emails(html, domain):
         if href.lower().startswith("mailto:"):
             email_part = href[7:].split("?")[0].strip()
             text += " " + email_part
+
+    # JSON-LD structured data often carries a contact email.
+    for script in soup.find_all("script", attrs={"type": "application/ld+json"}):
+        if script.string:
+            text += " " + script.string
+
+    text = deobfuscate(text)
 
     raw_emails = EMAIL_REGEX.findall(text)
 
@@ -637,7 +795,7 @@ def detect_contact_form(html, page_url):
 def phase1_http(domain, session):
     base_url = "https://" + domain
     checked_urls = set()
-    all_emails = {}
+    all_emails = {}        # email -> (score, source_url)
     pages_checked = 0
     contact_form = ""
     contact_form_url = ""
@@ -656,8 +814,8 @@ def phase1_http(domain, session):
             return
         emails = extract_emails(html, domain)
         for email, score in emails:
-            if email not in all_emails or score > all_emails[email]:
-                all_emails[email] = score
+            if email not in all_emails or score > all_emails[email][0]:
+                all_emails[email] = (score, page_url)
         if not contact_form:
             found, furl = detect_contact_form(html, page_url)
             if found:
@@ -695,7 +853,11 @@ def phase1_http(domain, session):
         html = try_fetch(url)
         absorb(html, url)
 
-    emails_sorted = sorted(all_emails.items(), key=lambda x: -x[1])
+    # -> list of (email, score, source_url) sorted by score desc
+    emails_sorted = sorted(
+        [(e, s, u) for e, (s, u) in all_emails.items()],
+        key=lambda x: -x[1],
+    )
     return {
         "emails": emails_sorted,
         "pages_checked": pages_checked,
@@ -706,7 +868,7 @@ def phase1_http(domain, session):
 # -- Phase 2: Wayback Machine --------------------------------------------------
 
 def phase2_wayback(domain, session):
-    all_emails = {}
+    all_emails = {}        # email -> (score, source_url)
     pages_checked = 0
     snapshot_date = ""
     contact_form = ""
@@ -763,15 +925,18 @@ def phase2_wayback(domain, session):
                 snapshot_date = ts[:4] + "-" + ts[4:6] + "-" + ts[6:8]
             emails = extract_emails(html, domain)
             for email, score in emails:
-                if email not in all_emails or score > all_emails[email]:
-                    all_emails[email] = score
+                if email not in all_emails or score > all_emails[email][0]:
+                    all_emails[email] = (score, wayback_url)
             if not contact_form:
                 found, _ = detect_contact_form(html, orig_url)
                 if found:
                     contact_form = "Unsure"
                     contact_form_url = orig_url
 
-    emails_sorted = sorted(all_emails.items(), key=lambda x: -x[1])
+    emails_sorted = sorted(
+        [(e, s, u) for e, (s, u) in all_emails.items()],
+        key=lambda x: -x[1],
+    )
     return {
         "emails": emails_sorted,
         "pages_checked": pages_checked,
@@ -789,6 +954,8 @@ def phase3_smtp(domain):
     If the server accepts it (250), the domain accepts everything and
     SMTP pattern results cannot be trusted — catch_all is set True
     and no pattern emails are returned.
+    NOTE (v4.7): SMTP results are GUESSES — they are deliverable addresses,
+    not addresses found on the site. They always get needs_manual_check.
     """
     try:
         mx_records = dns.resolver.resolve(domain, "MX")
@@ -828,7 +995,7 @@ def phase3_smtp(domain):
                 code, _ = smtp.rcpt(email)
                 if code == 250:
                     score = EMAIL_SCORES.get(pattern, 10)
-                    verified.append((email, score))
+                    verified.append((email, score, ""))
                 smtp.quit()
         except Exception:
             pass
@@ -840,21 +1007,27 @@ def phase3_smtp(domain):
 
 def build_row(domain, email_list, pages_checked, source,
               contact_form, contact_form_url, wayback_snapshot_date,
-              confidence="", review_flag="", niche=""):
-    emails = [e for e, _ in email_list]
-    status = "scraped" if emails else "no_email_found"
+              confidence="", review_flag="", review_reason="", niche="",
+              status=None):
+    """email_list entries are (email, score, source_url) tuples."""
+    emails = [e[0] for e in email_list]
+    source_urls = [e[2] if len(e) > 2 else "" for e in email_list]
+    if status is None:
+        status = "verified" if emails else "no_email_found"
     return {
         "domain": domain,
         "primary_email": emails[0] if len(emails) > 0 else "",
         "email_2":       emails[1] if len(emails) > 1 else "",
         "email_3":       emails[2] if len(emails) > 2 else "",
         "all_emails":    " | ".join(emails),
+        "email_source_url": source_urls[0] if source_urls else "",
         "pages_checked": pages_checked,
         "source":        source,
         "status":        status,
         "niche":         niche,
         "confidence":    confidence,
         "review_flag":   review_flag,
+        "review_reason": review_reason,
         "contact_form":  contact_form,
         "contact_form_url": contact_form_url,
         "wayback_snapshot_date": wayback_snapshot_date,
@@ -866,8 +1039,9 @@ def error_row(domain):
     return {
         "domain": domain,
         "primary_email": "", "email_2": "", "email_3": "", "all_emails": "",
+        "email_source_url": "",
         "pages_checked": 0, "source": "", "status": "error", "niche": "",
-        "confidence": "", "review_flag": "",
+        "confidence": "", "review_flag": "", "review_reason": "",
         "contact_form": "", "contact_form_url": "",
         "wayback_snapshot_date": "", "date_scraped": date.today().strftime("%d/%m/%Y"),
     }
@@ -878,11 +1052,12 @@ def skip_row(domain, matched_keyword, niche_category):
     return {
         "domain": domain,
         "primary_email": "", "email_2": "", "email_3": "", "all_emails": "",
+        "email_source_url": "",
         "pages_checked": 0,
         "source": "blocked:" + matched_keyword,
         "status": "skipped_irrelevant",
         "niche": niche_category,
-        "confidence": "", "review_flag": "",
+        "confidence": "", "review_flag": "", "review_reason": "",
         "contact_form": "", "contact_form_url": "",
         "wayback_snapshot_date": "", "date_scraped": date.today().strftime("%d/%m/%Y"),
     }
@@ -901,7 +1076,11 @@ def scrape_domain(domain, session):
         print("[" + domain + "] SKIPPED — " + niche_cat + " (" + matched_kw + ")")
         return skip_row(domain, matched_kw, niche_cat)
 
-    print("[" + domain + "] Niche: " + detected_niche)
+    # Domains with no positive niche match always get a review flag.
+    unclassified = detected_niche in ("", "General / Other")
+    base_reasons = ["unclassified_niche"] if unclassified else []
+
+    print("[" + domain + "] Niche: " + (detected_niche or "unknown (homepage unreachable)"))
     print("[" + domain + "] Phase 1: HTTP scraper...")
     p1 = phase1_http(domain, session)
     total_pages += p1["pages_checked"]
@@ -911,10 +1090,28 @@ def scrape_domain(domain, session):
         contact_form_url = p1["contact_form_url"]
 
     if p1["emails"]:
-        print("[" + domain + "] Phase 1 found " + str(len(p1["emails"])) + " emails.")
-        return build_row(domain, p1["emails"], total_pages, "scraper",
+        # Same-domain emails first; off-domain emails kept but never verified.
+        same_dom = [e for e in p1["emails"] if email_matches_domain(e[0], domain)]
+        off_dom = [e for e in p1["emails"] if not email_matches_domain(e[0], domain)]
+        ordered = same_dom + off_dom
+
+        if same_dom:
+            status = "verified"
+            confidence = "high"
+            reasons = list(base_reasons)
+        else:
+            status = "needs_manual_check"
+            confidence = "medium"
+            reasons = base_reasons + ["domain_mismatch"]
+
+        review_flag = "yes" if reasons else ""
+        print("[" + domain + "] Phase 1 found " + str(len(ordered)) + " emails"
+              + " (" + str(len(same_dom)) + " on-domain) -> " + status)
+        return build_row(domain, ordered, total_pages, "scraper",
                          contact_form, contact_form_url, "",
-                         confidence="high", review_flag="", niche=detected_niche)
+                         confidence=confidence, review_flag=review_flag,
+                         review_reason="; ".join(reasons), niche=detected_niche,
+                         status=status)
 
     print("[" + domain + "] Phase 2: Wayback Machine...")
     p2 = phase2_wayback(domain, session)
@@ -926,10 +1123,15 @@ def scrape_domain(domain, session):
         contact_form_url = p2["contact_form_url"]
 
     if p2["emails"]:
-        print("[" + domain + "] Phase 2 found " + str(len(p2["emails"])) + " emails.")
+        # Archive emails may be stale — NEVER verified.
+        reasons = base_reasons + ["wayback_archive"]
+        print("[" + domain + "] Phase 2 found " + str(len(p2["emails"]))
+              + " emails (archive) -> needs_manual_check")
         return build_row(domain, p2["emails"], total_pages, "wayback_unsure",
                          contact_form, contact_form_url, wayback_snapshot_date,
-                         confidence="medium", review_flag="", niche=detected_niche)
+                         confidence="low", review_flag="yes",
+                         review_reason="; ".join(reasons), niche=detected_niche,
+                         status="needs_manual_check")
 
     enable_smtp = os.environ.get("ENABLE_SMTP_VERIFY", "false").lower() == "true"
     if enable_smtp:
@@ -937,22 +1139,29 @@ def scrape_domain(domain, session):
         p3 = phase3_smtp(domain)
         if p3["catch_all"]:
             print("[" + domain + "] Catch-all domain — flagging for manual review.")
-            row = build_row(domain, [], total_pages, "smtp_catchall",
-                            contact_form, contact_form_url, wayback_snapshot_date,
-                            confidence="low", review_flag="yes", niche=detected_niche)
-            row["status"] = "no_email_found"
-            return row
-        if p3["emails"]:
-            print("[" + domain + "] Phase 3 verified " + str(len(p3["emails"])) + " emails.")
-            return build_row(domain, p3["emails"], total_pages, "smtp_verified",
+            reasons = base_reasons + ["smtp_catchall"]
+            return build_row(domain, [], total_pages, "smtp_catchall",
                              contact_form, contact_form_url, wayback_snapshot_date,
-                             confidence="medium", review_flag="", niche=detected_niche)
+                             confidence="low", review_flag="yes",
+                             review_reason="; ".join(reasons), niche=detected_niche,
+                             status="no_email_found")
+        if p3["emails"]:
+            # SMTP results are deliverable GUESSES, not on-site emails — NEVER verified.
+            reasons = base_reasons + ["smtp_guess"]
+            print("[" + domain + "] Phase 3 verified " + str(len(p3["emails"]))
+                  + " deliverable guesses -> needs_manual_check")
+            return build_row(domain, p3["emails"], total_pages, "smtp_guess",
+                             contact_form, contact_form_url, wayback_snapshot_date,
+                             confidence="low", review_flag="yes",
+                             review_reason="; ".join(reasons), niche=detected_niche,
+                             status="needs_manual_check")
 
-    print("[" + domain + "] No emails found.")
-    row = build_row(domain, [], total_pages, "", contact_form, contact_form_url,
-                    wayback_snapshot_date, niche=detected_niche)
-    row["status"] = "no_email_found"
-    return row
+    print("[" + domain + "] No emails found -> manual check.")
+    reasons = base_reasons + ["no_email_found"]
+    return build_row(domain, [], total_pages, "", contact_form, contact_form_url,
+                     wayback_snapshot_date,
+                     review_flag="yes", review_reason="; ".join(reasons),
+                     niche=detected_niche, status="no_email_found")
 
 # -- Entry point ---------------------------------------------------------------
 
@@ -982,7 +1191,7 @@ def main():
         print("No domains to process. Add them to " + DOMAINS_FILE)
         return
 
-    print("Starting scraper v4.6 -- " + str(len(domains)) + " domains.")
+    print("Starting scraper v4.7 -- " + str(len(domains)) + " domains.")
     session = make_session()
 
     with open(OUTPUT_FILE, "w", newline="", encoding="utf-8") as f:
