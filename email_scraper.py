@@ -1,9 +1,27 @@
 #!/usr/bin/env python3
 """
-Email Scraper Agent v4.7
+Email Scraper Agent v4.8
 Architecture: Phase0 Relevance Filter -> HTTP Scraper -> Wayback CDX -> SMTP Pattern Verify
 No Playwright. No Hunter.io. Free at any scale.
 Multilingual contact-path coverage: 30+ languages.
+
+v4.8 changes (throughput overhaul — large batches no longer hit the 6h cap):
+- DOMAIN-LEVEL CONCURRENCY: domains are now scraped in parallel via a
+  ThreadPoolExecutor (default 10 workers, override with MAX_WORKERS env var).
+  Each domain still scrapes its own pages sequentially, so per-domain results
+  are byte-for-byte identical to v4.7 — only the wall-clock time changes.
+  Each worker uses its own requests.Session; output is written under a lock
+  and flushed per row (resilient to mid-run termination). NOTE: output rows are
+  now in completion order, not input order (every row is still labelled by
+  domain). verified/needs_manual_check classification is unchanged.
+- SMTP FAIL-FAST + CONNECTION REUSE: phase3_smtp now opens ONE connection
+  (connect/HELO/MAIL once) and reuses it for the catch-all probe and all
+  pattern RCPTs, instead of reconnecting 13 times. If the MX cannot be reached
+  at all (e.g. port 25 blocked), it returns immediately instead of looping
+  every pattern against a dead socket. SMTP timeout lowered 10s -> 7s.
+  SMTP results are still deliverable GUESSES -> always needs_manual_check.
+- Wayback CDX queries gained light retry/backoff to protect Phase 2 recall
+  when many workers hit web.archive.org at once.
 
 v4.7 changes (reliability overhaul):
 - STRICT VERIFICATION: only emails found on the LIVE site whose domain matches
@@ -26,11 +44,13 @@ v4.7 changes (reliability overhaul):
   scraped but review_flag=yes (review_reason=unclassified_niche).
 """
 
+import concurrent.futures
 import csv
 import json
 import os
 import re
 import smtplib
+import threading
 import time
 from datetime import date
 from urllib.parse import urljoin, urlparse
@@ -42,7 +62,11 @@ from bs4 import BeautifulSoup
 # -- Constants ------------------------------------------------------------------
 
 TIMEOUT = 15
+SMTP_TIMEOUT = 7          # v4.8: was 10; conservative enough for slow MX servers
 MAX_PAGES_PER_DOMAIN = 50
+# v4.8: number of domains scraped in parallel. Kept moderate by default so we
+# don't hammer shared endpoints (esp. web.archive.org). Override with env var.
+MAX_WORKERS = int(os.environ.get("MAX_WORKERS", "10"))
 OUTPUT_FILE = "emails_output.csv"
 DOMAINS_FILE = "domains_input.csv"
 WAYBACK_API = "http://web.archive.org/cdx/search/cdx"
@@ -867,6 +891,27 @@ def phase1_http(domain, session):
 
 # -- Phase 2: Wayback Machine --------------------------------------------------
 
+def wayback_cdx(session, params):
+    """
+    Query the Wayback CDX API with light retry/backoff.
+    v4.8: under domain-level concurrency many workers hit web.archive.org at
+    once; it throttles (429/503) and drops connections. Retrying a couple of
+    times with backoff protects Phase 2 recall. Returns parsed JSON or None.
+    """
+    for attempt in range(3):
+        try:
+            resp = session.get(WAYBACK_API, params=params, timeout=TIMEOUT)
+            if resp.status_code == 200:
+                return resp.json()
+            if resp.status_code in (429, 503):
+                time.sleep(1.5 * (attempt + 1))
+                continue
+            return None
+        except Exception:
+            time.sleep(1.0 * (attempt + 1))
+    return None
+
+
 def phase2_wayback(domain, session):
     all_emails = {}        # email -> (score, source_url)
     pages_checked = 0
@@ -877,39 +922,31 @@ def phase2_wayback(domain, session):
 
     kw_queries = ["contact", "about", "advertise", "editorial", "press"]
     for kw in kw_queries[:4]:
-        try:
-            params = {
-                "url": domain + "/*" + kw + "*",
-                "output": "json",
-                "fl": "original,timestamp",
-                "filter": "statuscode:200",
-                "limit": "3",
-                "collapse": "urlkey",
-            }
-            resp = session.get(WAYBACK_API, params=params, timeout=TIMEOUT)
-            if resp.status_code == 200:
-                data = resp.json()
-                for row in data[1:]:
-                    cdx_results.append((row[0], row[1]))
-        except Exception:
-            pass
-
-    try:
         params = {
-            "url": domain,
+            "url": domain + "/*" + kw + "*",
             "output": "json",
             "fl": "original,timestamp",
             "filter": "statuscode:200",
-            "limit": "2",
+            "limit": "3",
             "collapse": "urlkey",
         }
-        resp = session.get(WAYBACK_API, params=params, timeout=TIMEOUT)
-        if resp.status_code == 200:
-            data = resp.json()
+        data = wayback_cdx(session, params)
+        if data:
             for row in data[1:]:
                 cdx_results.append((row[0], row[1]))
-    except Exception:
-        pass
+
+    params = {
+        "url": domain,
+        "output": "json",
+        "fl": "original,timestamp",
+        "filter": "statuscode:200",
+        "limit": "2",
+        "collapse": "urlkey",
+    }
+    data = wayback_cdx(session, params)
+    if data:
+        for row in data[1:]:
+            cdx_results.append((row[0], row[1]))
 
     seen_orig = set()
     for orig_url, timestamp in cdx_results[:8]:
@@ -950,12 +987,20 @@ def phase2_wayback(domain, session):
 def phase3_smtp(domain):
     """
     Returns dict: {"emails": [...], "catch_all": bool}
-    Catch-all detection: probes a deliberately random address first.
-    If the server accepts it (250), the domain accepts everything and
-    SMTP pattern results cannot be trusted — catch_all is set True
-    and no pattern emails are returned.
-    NOTE (v4.7): SMTP results are GUESSES — they are deliverable addresses,
-    not addresses found on the site. They always get needs_manual_check.
+
+    Catch-all detection: probes a deliberately random address first. If the
+    server accepts it (250), the domain accepts everything and SMTP pattern
+    results cannot be trusted — catch_all=True and no pattern emails returned.
+
+    v4.8 (throughput): opens ONE connection (connect/HELO/MAIL once) and reuses
+    it for the catch-all probe and every pattern RCPT, instead of reconnecting
+    13 times. FAIL-FAST: if the MX cannot be reached at all (e.g. outbound
+    port 25 is blocked, as on GitHub-hosted runners), return immediately rather
+    than looping every pattern against a dead socket. Timeout lowered to
+    SMTP_TIMEOUT. Result semantics are unchanged from v4.7.
+
+    NOTE: SMTP results are GUESSES — deliverable addresses, not addresses found
+    on the site. They always get needs_manual_check.
     """
     try:
         mx_records = dns.resolver.resolve(domain, "MX")
@@ -965,43 +1010,54 @@ def phase3_smtp(domain):
     except Exception:
         return {"emails": [], "catch_all": False}
 
-    # --- Catch-all probe ---
-    catch_all = False
+    # --- Open a single SMTP session; bail out fast if it can't be established ---
+    smtp = None
     try:
-        with smtplib.SMTP(timeout=10) as smtp:
-            smtp.connect(mx_host, 25)
-            smtp.helo("linkjuiceclub.com")
-            smtp.mail("verify@linkjuiceclub.com")
-            probe = "xzqmverify_no_exist_99@" + domain
-            code, _ = smtp.rcpt(probe)
-            if code == 250:
-                catch_all = True
-            smtp.quit()
+        smtp = smtplib.SMTP(timeout=SMTP_TIMEOUT)
+        smtp.connect(mx_host, 25)
+        smtp.helo("linkjuiceclub.com")
+        smtp.mail("verify@linkjuiceclub.com")
     except Exception:
-        pass
+        if smtp is not None:
+            try:
+                smtp.close()
+            except Exception:
+                pass
+        return {"emails": [], "catch_all": False}
 
-    if catch_all:
-        return {"emails": [], "catch_all": True}
-
-    # --- Pattern verification (only on non-catch-all domains) ---
-    verified = []
-    for pattern in SMTP_PATTERNS:
-        email = pattern + "@" + domain
+    try:
+        # --- Catch-all probe on the live connection ---
         try:
-            with smtplib.SMTP(timeout=10) as smtp:
-                smtp.connect(mx_host, 25)
-                smtp.helo("linkjuiceclub.com")
-                smtp.mail("verify@linkjuiceclub.com")
+            code, _ = smtp.rcpt("xzqmverify_no_exist_99@" + domain)
+            if code == 250:
+                return {"emails": [], "catch_all": True}
+        except Exception:
+            # Connection died mid-probe — unverifiable, fail fast.
+            return {"emails": [], "catch_all": False}
+
+        # --- Pattern verification (reusing the same connection) ---
+        verified = []
+        for pattern in SMTP_PATTERNS:
+            email = pattern + "@" + domain
+            try:
                 code, _ = smtp.rcpt(email)
                 if code == 250:
                     score = EMAIL_SCORES.get(pattern, 10)
                     verified.append((email, score, ""))
-                smtp.quit()
-        except Exception:
-            pass
-        time.sleep(0.3)
+            except Exception:
+                # Server dropped the connection — stop, don't reconnect 12x.
+                break
+            time.sleep(0.2)
 
-    return {"emails": sorted(verified, key=lambda x: -x[1]), "catch_all": False}
+        return {"emails": sorted(verified, key=lambda x: -x[1]), "catch_all": False}
+    finally:
+        try:
+            smtp.quit()
+        except Exception:
+            try:
+                smtp.close()
+            except Exception:
+                pass
 
 # -- Row builder ---------------------------------------------------------------
 
@@ -1185,32 +1241,66 @@ def normalise(domain):
     return domain.rstrip("/")
 
 
+def scrape_one(raw_domain):
+    """
+    Worker entry point: scrape a single domain with its own session.
+    Each worker gets an isolated requests.Session (Sessions are not designed to
+    be shared across threads). Never raises — a fatal error becomes an
+    error_row so one bad domain can't take down the pool.
+    """
+    domain = normalise(raw_domain)
+    session = make_session()
+    try:
+        return scrape_domain(domain, session)
+    except Exception as exc:
+        print("[" + domain + "] Fatal: " + str(exc))
+        return error_row(domain)
+    finally:
+        try:
+            session.close()
+        except Exception:
+            pass
+
+
 def main():
     domains = load_domains()
     if not domains:
         print("No domains to process. Add them to " + DOMAINS_FILE)
         return
 
-    print("Starting scraper v4.7 -- " + str(len(domains)) + " domains.")
-    session = make_session()
+    total = len(domains)
+    print("Starting scraper v4.8 -- " + str(total) + " domains, "
+          + str(MAX_WORKERS) + " parallel workers.")
+
+    # v4.8: domains run in parallel. Output is written under a lock and flushed
+    # per row (resilient if the job is killed). Rows are in COMPLETION order,
+    # not input order — each row is still labelled by its domain.
+    write_lock = threading.Lock()
+    done = 0
 
     with open(OUTPUT_FILE, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=FIELDNAMES)
         writer.writeheader()
+        f.flush()
 
-        for idx, raw_domain in enumerate(domains, 1):
-            domain = normalise(raw_domain)
-            print("\n[" + str(idx) + "/" + str(len(domains)) + "] " + domain)
-            try:
-                row = scrape_domain(domain, session)
-                writer.writerow(row)
-                f.flush()
-            except Exception as exc:
-                print("[" + domain + "] Fatal: " + str(exc))
-                writer.writerow(error_row(domain))
-                f.flush()
-
-            time.sleep(1)
+        with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+            future_to_domain = {
+                executor.submit(scrape_one, raw_domain): raw_domain
+                for raw_domain in domains
+            }
+            for future in concurrent.futures.as_completed(future_to_domain):
+                raw_domain = future_to_domain[future]
+                try:
+                    row = future.result()
+                except Exception as exc:
+                    print("[" + normalise(raw_domain) + "] Fatal: " + str(exc))
+                    row = error_row(normalise(raw_domain))
+                with write_lock:
+                    writer.writerow(row)
+                    f.flush()
+                    done += 1
+                    print("[" + str(done) + "/" + str(total) + "] "
+                          + row.get("domain", "") + " -> " + row.get("status", ""))
 
     print("\nDone. Results saved to " + OUTPUT_FILE)
 
