@@ -1,9 +1,20 @@
 #!/usr/bin/env python3
 """
-Email Scraper Agent v4.8
+Email Scraper Agent v4.9
 Architecture: Phase0 Relevance Filter -> HTTP Scraper -> Wayback CDX -> SMTP Pattern Verify
 No Playwright. No Hunter.io. Free at any scale.
 Multilingual contact-path coverage: 30+ languages.
+
+v4.9 changes (per-domain time bounds — fixes large batches STILL hitting 6h):
+- Run #24 (v4.8) processed only 732/874 domains in 6h (~5 min/domain). Root
+  cause: Phase 1 tried up to 50 pages at a 15s timeout against slow/dead
+  foreign sites — up to ~12 min wasted on a single hanging domain. Concurrency
+  alone could not outrun that.
+- MAX_PAGES_PER_DOMAIN 50 -> 12; TIMEOUT 15s -> 8s.
+- HARD PER-DOMAIN BUDGETS: Phase 1 capped at PHASE1_BUDGET_SEC, Phase 2 at
+  PHASE2_BUDGET_SEC, checked inside the fetch loops so one slow site can't tie
+  up a worker for minutes. Wayback archive fetches 8 -> 4, CDX retries 3 -> 2.
+- Default MAX_WORKERS 10 -> 16.
 
 v4.8 changes (throughput overhaul — large batches no longer hit the 6h cap):
 - DOMAIN-LEVEL CONCURRENCY: domains are now scraped in parallel via a
@@ -61,12 +72,16 @@ from bs4 import BeautifulSoup
 
 # -- Constants ------------------------------------------------------------------
 
-TIMEOUT = 15
+TIMEOUT = 8              # v4.9: was 15; dead/slow pages fail ~2x faster
 SMTP_TIMEOUT = 7          # v4.8: was 10; conservative enough for slow MX servers
-MAX_PAGES_PER_DOMAIN = 50
-# v4.8: number of domains scraped in parallel. Kept moderate by default so we
-# don't hammer shared endpoints (esp. web.archive.org). Override with env var.
-MAX_WORKERS = int(os.environ.get("MAX_WORKERS", "10"))
+MAX_PAGES_PER_DOMAIN = 12   # v4.9: was 50 — contact info lives on the first few pages
+# v4.9: hard per-domain time budgets so one slow/hanging site can't tie up a
+# worker for minutes. Checked inside the Phase 1 and Phase 2 fetch loops.
+PHASE1_BUDGET_SEC = 45
+PHASE2_BUDGET_SEC = 35
+# v4.8: domains scraped in parallel; v4.9 default raised 10 -> 16.
+# Override with the MAX_WORKERS env var.
+MAX_WORKERS = int(os.environ.get("MAX_WORKERS", "16"))
 OUTPUT_FILE = "emails_output.csv"
 DOMAINS_FILE = "domains_input.csv"
 WAYBACK_API = "http://web.archive.org/cdx/search/cdx"
@@ -818,6 +833,7 @@ def detect_contact_form(html, page_url):
 
 def phase1_http(domain, session):
     base_url = "https://" + domain
+    t_start = time.time()
     checked_urls = set()
     all_emails = {}        # email -> (score, source_url)
     pages_checked = 0
@@ -874,6 +890,8 @@ def phase1_http(domain, session):
     for url in priority_urls:
         if pages_checked >= MAX_PAGES_PER_DOMAIN:
             break
+        if time.time() - t_start > PHASE1_BUDGET_SEC:
+            break
         html = try_fetch(url)
         absorb(html, url)
 
@@ -898,7 +916,7 @@ def wayback_cdx(session, params):
     once; it throttles (429/503) and drops connections. Retrying a couple of
     times with backoff protects Phase 2 recall. Returns parsed JSON or None.
     """
-    for attempt in range(3):
+    for attempt in range(2):
         try:
             resp = session.get(WAYBACK_API, params=params, timeout=TIMEOUT)
             if resp.status_code == 200:
@@ -913,6 +931,7 @@ def wayback_cdx(session, params):
 
 
 def phase2_wayback(domain, session):
+    t_start = time.time()
     all_emails = {}        # email -> (score, source_url)
     pages_checked = 0
     snapshot_date = ""
@@ -949,9 +968,11 @@ def phase2_wayback(domain, session):
             cdx_results.append((row[0], row[1]))
 
     seen_orig = set()
-    for orig_url, timestamp in cdx_results[:8]:
+    for orig_url, timestamp in cdx_results[:4]:
         if orig_url in seen_orig:
             continue
+        if time.time() - t_start > PHASE2_BUDGET_SEC:
+            break
         seen_orig.add(orig_url)
         wayback_url = "https://web.archive.org/web/" + timestamp + "/" + orig_url
         html = fetch(wayback_url, session)
@@ -1269,7 +1290,7 @@ def main():
         return
 
     total = len(domains)
-    print("Starting scraper v4.8 -- " + str(total) + " domains, "
+    print("Starting scraper v4.9 -- " + str(total) + " domains, "
           + str(MAX_WORKERS) + " parallel workers.")
 
     # v4.8: domains run in parallel. Output is written under a lock and flushed
