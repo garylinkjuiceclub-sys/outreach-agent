@@ -1,9 +1,21 @@
 #!/usr/bin/env python3
 """
-Email Scraper Agent v4.9
+Email Scraper Agent v5.0
 Architecture: Phase0 Relevance Filter -> HTTP Scraper -> Wayback CDX -> SMTP Pattern Verify
 No Playwright. No Hunter.io. Free at any scale.
 Multilingual contact-path coverage: 30+ languages.
+
+v5.0 changes (niche accuracy + placeholder-email filter):
+- NICHE CLASSIFIER is now MULTILINGUAL. v4.9 left ~41% of a German-heavy batch
+  as "General / Other" because the positive keywords were English-only. Added
+  German (plus some FR/ES/IT/NL) keywords across every category, and real Sports
+  coverage (fussball, eishockey, bundesliga, ...).
+- BEST-SCORE classification in BOTH zones (strong-zone hits count double); the
+  highest-scoring category wins (was: first keyword match in the strong zone).
+  Topical categories (Sports, Food, ...) are ordered ahead of format categories
+  (Magazine, Review, Blog) so they win ties — a basketball magazine -> Sports.
+- PLACEHOLDER-EMAIL FILTER: template addresses like yourmail@mail.com,
+  your@email.com and wunschname@anbieter.de are dropped during extraction.
 
 v4.9 changes (per-domain time bounds — fixes large batches STILL hitting 6h):
 - Run #24 (v4.8) processed only 732/874 domains in 6h (~5 min/domain). Root
@@ -258,6 +270,25 @@ SKIP_PATTERN = re.compile(
 )
 
 BAD_TLDS = {"png", "jpg", "jpeg", "gif", "svg", "webp", "ico", "css", "js", "xml"}
+
+# v5.0: template / example addresses that appear on sites as placeholders rather
+# than real contacts (e.g. "yourmail@mail.com", German "wunschname@anbieter.de").
+PLACEHOLDER_LOCALPARTS = {
+    "your", "yourname", "yourmail", "youremail", "your-email", "your_email",
+    "yourbusiness", "yourcompany", "name", "firstname", "lastname",
+    "vorname", "nachname", "wunschname", "ihrname", "ihrename", "deinname",
+    "mustermann", "maxmustermann", "max.mustermann", "erika.mustermann",
+    "example", "beispiel", "sample", "muster", "demo", "placeholder",
+    "fakename", "johndoe", "john.doe", "janedoe", "jane.doe", "username",
+}
+PLACEHOLDER_DOMAINS = {
+    "example.com", "example.org", "example.net", "example.edu",
+    "domain.com", "domain.tld", "domain.de", "yourdomain.com", "yourdomain.de",
+    "yoursite.com", "yoursite.de", "mysite.com", "sitename.com",
+    "yourcompany.com", "company.com", "yourbusiness.com",
+    "email.com", "mail.com", "anbieter.de", "beispiel.de", "mustermann.de",
+    "ihredomain.de", "provider.com", "test.com", "sample.com",
+}
 
 SMTP_PATTERNS = [
     "editor", "editorial", "advertising", "advertise",
@@ -519,66 +550,101 @@ SKIP_NICHE_CATEGORIES = {
 # If nothing matches, falls back to "General / Other" AND the row is
 # review-flagged (unclassified_niche) so the team checks relevance manually.
 NICHE_CATEGORIES = {
-    "Blog / Content Site": [
-        "blog", "our blog", "latest posts", "content creator", "blogger",
-        "read our posts", "written by", "authored by",
-    ],
     "News / Media": [
         "breaking news", "latest news", "news and updates", "newsroom",
-        "editorial", "journalist", "publication", "media outlet",
-        "press release", "reporter",
-    ],
-    "Magazine": [
-        "magazine", "digital magazine", "online magazine",
-        "subscribe to our magazine", "latest issue",
-    ],
-    "Review Site": [
-        "review", "reviews", "best of", "top 10", "buying guide",
-        "comparison", "rated", "our verdict", "pros and cons",
+        "press release", "media outlet", "reporter", "journalist",
+        "nachrichten", "aktuelles", "neuigkeiten", "schlagzeilen", "meldungen",
+        "lokalnachrichten", "regionalnachrichten", "stadtnachrichten",
+        "citynews", "tageszeitung", "lokalzeitung", "pressemitteilung",
+        "actualités", "noticias", "actualidad", "notizie", "nieuws",
     ],
     "Technology": [
-        "tech blog", "technology blog", "software", "startup",
-        "developer blog", "tech news", "saas", "app review",
+        "tech blog", "technology", "software", "startup", "developer",
+        "saas", "gadgets", "programming",
+        "technik", "computer", "elektronik", "digital", "smartphone",
+        "künstliche intelligenz", "technologie",
+        "tecnología", "tecnologia", "informatique",
     ],
     "Finance / Business": [
-        "finance", "business news", "personal finance", "investing",
-        "money tips", "entrepreneur", "financial tips",
+        "personal finance", "investing", "entrepreneur", "stock market",
+        "finanzen", "wirtschaft", "geld verdienen", "geldanlage", "börse",
+        "unternehmen", "investieren", "steuern",
+        "finanzas", "finanza", "économie",
     ],
     "Travel": [
         "travel blog", "travel guide", "travel tips", "destination",
-        "wanderlust", "travel and adventure",
+        "wanderlust",
+        "reiseblog", "reisetipps", "reiseführer", "reisebericht", "urlaub",
+        "reisen", "reiseziele", "fernweh",
+        "voyage", "viajes", "viaggi",
     ],
     "Food & Drink": [
-        "food blog", "recipes", "cooking tips", "culinary",
-        "food and drink", "foodie", "recipe",
+        "food blog", "recipes", "recipe", "cooking", "culinary", "foodie",
+        "rezepte", "rezept", "kochen", "küche", "kulinarisch", "gourmet",
+        "grillen", "backen", "foodblog", "essen und trinken",
+        "recettes", "cucina", "ricette",
     ],
     "Health & Wellness": [
-        "wellness blog", "healthy living", "nutrition tips", "fitness tips",
-        "health blog", "wellbeing", "mindfulness",
+        "healthy living", "nutrition", "wellbeing", "mindfulness",
+        "gesundheit", "wellness", "ernährung", "abnehmen", "gesund leben",
+        "fitnessblog", "achtsamkeit",
+        "santé", "bienestar", "benessere",
     ],
     "Lifestyle": [
-        "lifestyle blog", "fashion", "style guide", "home decor",
-        "living tips", "life tips", "parenting",
+        "lifestyle", "fashion", "style guide", "home decor", "parenting",
+        "modeblog", "modetrends", "wohnen", "einrichtung", "beauty",
+        "schönheit", "lebensstil", "dekoration", "interior",
+        "estilo de vida", "stile di vita",
     ],
     "Sports": [
-        "sports blog", "sports news", "match report", "athletics",
-        "football blog", "sports tips",
+        "sports blog", "sports news", "match report",
+        "sportnews", "sportnachrichten", "fußball", "fussball", "eishockey",
+        "basketball", "handball", "boxen", "bundesliga", "sportverein",
+        "kampfsport", "radsport", "leichtathletik", "wrestling", "sportler",
+        "deportes", "calcio",
     ],
     "Entertainment": [
-        "entertainment", "celebrity news", "movies", "tv shows",
-        "pop culture", "film review",
+        "entertainment", "celebrity", "movies", "tv shows", "pop culture",
+        "gaming", "video games",
+        "unterhaltung", "musik", "kino", "filme", "serien", "promis",
+        "comedy", "videospiele", "fernsehen", "radiosender",
+        "espectáculos", "spettacolo", "divertissement",
     ],
     "Education / Resources": [
-        "how-to guide", "tutorial", "tips and tricks",
-        "online course", "learning resources", "free guide",
+        "how-to guide", "tutorial", "tips and tricks", "online course",
+        "learning resources",
+        "anleitung", "tutorials", "online kurs", "lernplattform",
+        "ratgeber", "lerntipps", "nachhilfe", "weiterbildung",
+        "tutoriel", "curso online",
     ],
     "Pets": [
-        "pet blog", "dog blog", "cat blog", "pet care tips",
-        "animal lover", "pet owner",
+        "pet blog", "pet care", "dog blog", "cat blog",
+        "haustier", "haustiere", "hundeblog", "katzen", "tierblog",
+        "hunde", "tierfreund",
+        "mascotas", "animali domestici",
     ],
     "Environment / Green": [
-        "sustainability", "eco-friendly", "green living",
-        "environment blog", "climate", "zero waste",
+        "sustainability", "eco-friendly", "green living", "zero waste",
+        "nachhaltigkeit", "nachhaltig", "umwelt", "klimaschutz",
+        "umweltschutz",
+        "durabilité", "sostenibilidad",
+    ],
+    "Magazine": [
+        "magazine", "online magazine", "digital magazine", "latest issue",
+        "magazin", "onlinemagazin", "das magazin", "stadtmagazin",
+        "webmagazin", "e-magazin", "revista", "rivista",
+    ],
+    "Review Site": [
+        "buying guide", "product review", "best of", "top 10", "our verdict",
+        "pros and cons", "comparison",
+        "testbericht", "testberichte", "im test", "getestet", "produkttest",
+        "erfahrungsbericht", "erfahrungen", "vergleich", "kaufberatung",
+        "bewertungen", "im vergleich",
+        "comparatif", "comparativa", "recensioni",
+    ],
+    "Blog / Content Site": [
+        "blog", "our blog", "latest posts", "blogger", "written by",
+        "blogartikel", "neueste beiträge", "kolumne", "weblog",
     ],
 }
 
@@ -644,6 +710,43 @@ def email_matches_domain(email, domain):
 
 # -- Phase 0: Relevance filter -------------------------------------------------
 
+def is_placeholder_email(email):
+    """True for template/example addresses (yourmail@mail.com, name@domain.com,
+    wunschname@anbieter.de, ...) that are not real contacts. v5.0."""
+    local, _, dom = email.lower().partition("@")
+    if not dom:
+        return False
+    if dom in PLACEHOLDER_DOMAINS or registrable_domain(dom) in PLACEHOLDER_DOMAINS:
+        return True
+    return local in PLACEHOLDER_LOCALPARTS
+
+
+def classify_niche(strong_text, weak_text):
+    """
+    v5.0: score every positive niche category over both zones. Strong-zone
+    keyword hits count double, weak-zone hits single; the highest-scoring
+    category wins. Returns (best_category, strong_hit); best_category is "" if
+    nothing matched, strong_hit True if ANY positive keyword hit the strong zone
+    (marks the domain a trusted content site). Categories are ordered topical-
+    first so topics beat formats (Magazine/Review/Blog) on ties.
+    """
+    best_cat = ""
+    best_score = 0
+    strong_hit = False
+    for category, keywords in NICHE_CATEGORIES.items():
+        score = 0
+        for kw in keywords:
+            k = kw.lower()
+            if k in strong_text:
+                score += 2
+                strong_hit = True
+            if k in weak_text:
+                score += 1
+        if score > best_score:
+            best_cat, best_score = category, score
+    return best_cat, strong_hit
+
+
 def phase0_relevance(domain, session):
     """
     Quick pre-scrape check using only the homepage (one HTTP request).
@@ -708,17 +811,12 @@ def phase0_relevance(domain, session):
             if kw.lower() in strong_text:
                 return False, kw.strip(), category, ""
 
-    # 2. Strong-zone positive ID: trusted, skip weak-zone blocking.
-    strong_positive = ""
-    for category, keywords in NICHE_CATEGORIES.items():
-        for kw in keywords:
-            if kw.lower() in strong_text:
-                strong_positive = category
-                break
-        if strong_positive:
-            break
-    if strong_positive:
-        return True, "", "", strong_positive
+    # 2. Positive niche classification (multilingual, best-score). A keyword in
+    #    the STRONG zone marks this a trusted content site and skips weak-zone
+    #    blocking (same intent as prior versions, but best-score, not first-hit).
+    niche, strong_hit = classify_niche(strong_text, weak_text)
+    if strong_hit:
+        return True, "", "", niche or "General / Other"
 
     # 3. Weak-zone blocklist: needs >= WEAK_BLOCK_MIN_HITS distinct hits.
     for category, keywords in SKIP_NICHE_CATEGORIES.items():
@@ -727,15 +825,8 @@ def phase0_relevance(domain, session):
             matched = "+".join(k.strip() for k in hits[:2])
             return False, matched, category, ""
 
-    # 4. Weak-zone positive classification: highest hit count wins.
-    best_cat = "General / Other"
-    best_score = 0
-    for category, keywords in NICHE_CATEGORIES.items():
-        score = sum(1 for kw in keywords if kw.lower() in weak_text)
-        if score > best_score:
-            best_cat, best_score = category, score
-
-    return True, "", "", best_cat
+    # 4. Otherwise use the best-scoring category from the weak zone (or none).
+    return True, "", "", niche or "General / Other"
 
 # -- Email extraction ----------------------------------------------------------
 
@@ -800,6 +891,8 @@ def extract_emails(html, domain):
             continue
         tld = email.rsplit(".", 1)[-1]
         if tld in BAD_TLDS:
+            continue
+        if is_placeholder_email(email):
             continue
         local = email.split("@")[0]
         score = 0
@@ -1290,7 +1383,7 @@ def main():
         return
 
     total = len(domains)
-    print("Starting scraper v4.9 -- " + str(total) + " domains, "
+    print("Starting scraper v5.0 -- " + str(total) + " domains, "
           + str(MAX_WORKERS) + " parallel workers.")
 
     # v4.8: domains run in parallel. Output is written under a lock and flushed
