@@ -1,70 +1,875 @@
 domain,primary_email,email_2,email_3,all_emails,email_source_url,pages_checked,source,status,niche,confidence,review_flag,review_reason,contact_form,contact_form_url,wayback_snapshot_date,date_scraped
-dkosmiles.com,,,,,,0,blocked:doctor,skipped_irrelevant,Health / Medical,,,,,,,12/06/2026
-plateauexcavation.com,,,,,,0,blocked:excavation,skipped_irrelevant,Construction / Trades,,,,,,,12/06/2026
-themetricmate.com,info@themetricmate.com,,,info@themetricmate.com,https://www.themetricmate.com/contact,50,scraper,verified,General / Other,high,yes,unclassified_niche,,,,12/06/2026
-osrphysicaltherapy.com,,,,,,0,blocked:physical therapy,skipped_irrelevant,Health / Medical,,,,,,,12/06/2026
-penguinair.com,,,,,,0,blocked:hvac,skipped_irrelevant,Construction / Trades,,,,,,,12/06/2026
-millerfuneralandcremationservices.com,,,,,,0,blocked:funeral home,skipped_irrelevant,Funeral Services,,,,,,,12/06/2026
-chrisjerichocruise.com,chrisjerichocruise@sixthman.net,,,chrisjerichocruise@sixthman.net,https://chrisjerichocruise.com,50,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,Yes,https://chrisjerichocruise.com/contact,,12/06/2026
-bowkerafricanhunts.com,info@bowkerafricanhunts.com,marketing@bowkerafricanhunts.com,henry@riflepermits.com,info@bowkerafricanhunts.com | marketing@bowkerafricanhunts.com | henry@riflepermits.com,https://bowkerafricanhunts.com,50,scraper,verified,Review Site,high,,,Yes,https://bowkerafricanhunts.com/contact-us,,12/06/2026
-davidherganmd.com,,,,,,0,blocked:surgeon,skipped_irrelevant,Health / Medical,,,,,,,12/06/2026
-shnhbeauty.com,,,,,,50,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://shnhbeauty.com,,12/06/2026
-advancedrad.com,,,,,,0,blocked:radiology,skipped_irrelevant,Health / Medical,,,,,,,12/06/2026
-corumpharmacy.com,,,,,,0,blocked:pharma,skipped_irrelevant,Health / Medical,,,,,,,12/06/2026
-mendcolorado.com,,,,,,0,blocked:physical therapy,skipped_irrelevant,Health / Medical,,,,,,,12/06/2026
-wendle.com,,,,,,51,,no_email_found,,,yes,unclassified_niche; no_email_found,,,1996-12-30,12/06/2026
-firstcarewomensclinic.com,,,,,,0,blocked:clinic,skipped_irrelevant,Health / Medical,,,,,,,12/06/2026
-thewellnessconnection.com,,,,,,0,blocked:health center,skipped_irrelevant,Health / Medical,,,,,,,12/06/2026
-injuryverdicts.com,,,,,,0,blocked:attorney,skipped_irrelevant,Law / Legal,,,,,,,12/06/2026
-ktdoctor.com,,,,,,0,blocked:clinic,skipped_irrelevant,Health / Medical,,,,,,,12/06/2026
-pathpresenter.com,contact@pathpresenter.com,info@pathpresenter.com,,contact@pathpresenter.com | info@pathpresenter.com,,51,smtp_guess,needs_manual_check,Review Site,low,yes,smtp_guess,,,2017-06-07,12/06/2026
-procana.com,,,,,,0,blocked:buy now,skipped_irrelevant,E-commerce / Online Shops,,,,,,,12/06/2026
-aroundambler.com,,,,,,0,blocked:funeral home+funeral director,skipped_irrelevant,Funeral Services,,,,,,,12/06/2026
-21stcb.com,,,,,,51,,no_email_found,,,yes,unclassified_niche; no_email_found,,,2010-01-23,12/06/2026
-gunnauto.com,,,,,,51,,no_email_found,,,yes,unclassified_niche; no_email_found,,,1997-04-08,12/06/2026
-justalittlecreativity.com,,,,,,51,,no_email_found,Blog / Content Site,,yes,no_email_found,,,2012-02-29,12/06/2026
-michiganmetalartwork.com,,,,,,0,blocked:free shipping+powered by shopify,skipped_irrelevant,E-commerce / Online Shops,,,,,,,12/06/2026
-whiteoakkitchen.com,info@whiteoakkitchen.com,michael@whiteoakkitchen.com,,info@whiteoakkitchen.com | michael@whiteoakkitchen.com,https://www.whiteoakkitchen.com/posts/join-the-team,50,scraper,verified,Travel,high,,,Yes,https://www.whiteoakkitchen.com/contact,,12/06/2026
-chandlerparkdentalcare.com,,,,,,0,blocked:dental,skipped_irrelevant,Health / Medical,,,,,,,12/06/2026
-lpsdental.com,,,,,,0,blocked:dental,skipped_irrelevant,Health / Medical,,,,,,,12/06/2026
-prestonsprinkle.com,news@prestonsprinkle.com,,,news@prestonsprinkle.com,,51,smtp_guess,needs_manual_check,Blog / Content Site,low,yes,smtp_guess,,,2011-06-25,12/06/2026
-caringplaces.com,info@caringplaces.com,sms@caringplaces.com,,info@caringplaces.com | sms@caringplaces.com,https://caringplaces.com,50,scraper,verified,Blog / Content Site,high,,,Yes,https://caringplaces.com/contact-us/,,12/06/2026
-maddoxandgerock.com,,,,,,0,blocked:law firm,skipped_irrelevant,Law / Legal,,,,,,,12/06/2026
-mcadamfa.com,consultation@mcadamfa.com,,,consultation@mcadamfa.com,https://mcadamfa.com,50,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://mcadamfa.com,,12/06/2026
-immersionrecovery.com,,,,,,0,blocked:addiction treatment,skipped_irrelevant,Health / Medical,,,,,,,12/06/2026
-wildicebotanicals.com,,,,,,50,,no_email_found,Review Site,,yes,no_email_found,,,,12/06/2026
-savorista.com,,,,,,0,blocked:shop now+best sellers,skipped_irrelevant,E-commerce / Online Shops,,,,,,,12/06/2026
-signatureexteriorsinc.com,,,,,,0,blocked:roofing contractor,skipped_irrelevant,Construction / Trades,,,,,,,12/06/2026
-appliedhearingaz.com,,,,,,0,blocked:clinic,skipped_irrelevant,Health / Medical,,,,,,,12/06/2026
-johngeigerco.com,,,,,,0,blocked:new arrivals,skipped_irrelevant,E-commerce / Online Shops,,,,,,,12/06/2026
-kellyepowers.com,hello@kellyepowers.com,,,hello@kellyepowers.com,https://kellyepowers.com/contact,50,scraper,verified,Food & Drink,high,,,,,,12/06/2026
-rite4justice.com,,,,,,0,blocked:attorney,skipped_irrelevant,Law / Legal,,,,,,,12/06/2026
-bestofutahmoving.com,contact@bestofutahmoving.com,,,contact@bestofutahmoving.com,https://bestofutahmoving.com,50,scraper,verified,Review Site,high,,,Yes,https://bestofutahmoving.com,,12/06/2026
-groovygreenliving.com,lori@groovygreenliving.com,,,lori@groovygreenliving.com,https://groovygreenliving.com/contact,50,scraper,verified,Environment / Green,high,,,Yes,https://groovygreenliving.com,,12/06/2026
-danishhomes.com,jv@danishhomes.com,ve@danishhomes.com,ms@danishhomes.com,jv@danishhomes.com | ve@danishhomes.com | ms@danishhomes.com | mw@danishhomes.com | sk@danishhomes.com | email@danskboligformidling.dk | peter@danskboligformidling.dk | philip@danskboligformidling.dk | isabella@danskboligformidling.dk | axel@danskboligformidling.dk,https://danishhomes.com/contact-us,50,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://danishhomes.com,,12/06/2026
-theplacencia.com,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,12/06/2026
-spokaneroofing.com,,,,,,0,blocked:roofing contractor,skipped_irrelevant,Construction / Trades,,,,,,,12/06/2026
-lightningrestorationfla.com,,,,,,0,blocked:restoration services,skipped_irrelevant,Construction / Trades,,,,,,,12/06/2026
-bononiandbononi.com,,,,,,0,blocked:attorney,skipped_irrelevant,Law / Legal,,,,,,,12/06/2026
-allergyaffiliates.com,,,,,,0,blocked:doctor,skipped_irrelevant,Health / Medical,,,,,,,12/06/2026
-rainierdoor.com,,,,,,0,blocked:garage door,skipped_irrelevant,Construction / Trades,,,,,,,12/06/2026
-thrivepestcontrol.com,,,,,,0,blocked:pest control,skipped_irrelevant,Construction / Trades,,,,,,,12/06/2026
-wildliferemoval.com,,,,,,51,,no_email_found,,,yes,unclassified_niche; no_email_found,,,2001-04-01,12/06/2026
-merit-kitchens.com,,,,,,51,smtp_catchall,no_email_found,Magazine,low,yes,smtp_catchall,Yes,https://merit-kitchens.com,1996-12-30,12/06/2026
-renovohealthandbeauty.com,,,,,,0,blocked:clinic,skipped_irrelevant,Health / Medical,,,,,,,12/06/2026
-shapedbycharlotte.com,,,,,,51,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,2018-08-05,12/06/2026
-mapleheightsbehavioral.com,,,,,,0,blocked:hospital,skipped_irrelevant,Health / Medical,,,,,,,12/06/2026
-12steptoolkit.com,,,,,,0,blocked:doctor+physician,skipped_irrelevant,Health / Medical,,,,,,,12/06/2026
-katrinkles.com,,,,,,0,blocked:your cart,skipped_irrelevant,E-commerce / Online Shops,,,,,,,12/06/2026
-gorillasafaridiscovery.com,info@gorillasafaridiscovery.com,,,info@gorillasafaridiscovery.com,https://gorillasafaridiscovery.com,50,scraper,verified,Blog / Content Site,high,,,Yes,https://gorillasafaridiscovery.com/contact,,12/06/2026
-trilliumclinic.com,,,,,,0,blocked:clinic,skipped_irrelevant,Health / Medical,,,,,,,12/06/2026
-novafamilyhealth.com,,,,,,0,blocked:family medicine,skipped_irrelevant,Health / Medical,,,,,,,12/06/2026
-cozyproducts.com,,,,,,0,blocked:your cart,skipped_irrelevant,E-commerce / Online Shops,,,,,,,12/06/2026
-townestorage.com,,,,,,0,blocked:self storage,skipped_irrelevant,Storage,,,,,,,12/06/2026
-estadtpsychological.com,,,,,,0,blocked:psychological,skipped_irrelevant,Health / Medical,,,,,,,12/06/2026
-clinicahispanarubymed.com,,,,,,0,blocked:clinic,skipped_irrelevant,Health / Medical,,,,,,,12/06/2026
-navonarecords.com,info@navonarecords.com,,,info@navonarecords.com,,51,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,12/06/2026
-gemologyproject.com,,,,,,51,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,12/06/2026
-applydigital.com,partnerships@applydigital.com,content@applydigital.com,hello@applydigital.com,partnerships@applydigital.com | content@applydigital.com | hello@applydigital.com | info@applydigital.com,,51,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,12/06/2026
-unplannedpregnancy.com,,,,,,51,smtp_catchall,no_email_found,Lifestyle,low,yes,smtp_catchall,,,2001-02-20,12/06/2026
-crodapharma.com,,,,,,0,blocked:pharmaceutical,skipped_irrelevant,Health / Medical,,,,,,,12/06/2026
+help-tourists-in-paris.com,,,,,,0,blocked:hotel+hostel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+kraftmahl.de,kontakt@kraftmahl.de,fehlerhinweis@kraftmahl.de,redaktion@kraftmahl.de,kontakt@kraftmahl.de | fehlerhinweis@kraftmahl.de | redaktion@kraftmahl.de,https://kraftmahl.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://kraftmahl.de/contact,,17/06/2026
+globocam.de,info@globocam.de,marketing@globocam.de,,info@globocam.de | marketing@globocam.de,https://www.globocam.de/impressum,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+miet24.de,info@miet24.de,webmaster@miet24.de,service@miet24.de,info@miet24.de | webmaster@miet24.de | service@miet24.de | datenschutz@miet24.de | widerruf@miet24.de | dsa@miet24.de,https://miet24.de/presse,12,scraper,verified,Review Site,high,,,Yes,https://miet24.de,,17/06/2026
+food-detektiv.de,drwatsonfooddetective@substack.com,,,drwatsonfooddetective@substack.com,https://food-detektiv.de/fr/contact/,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+wrestling-infos.de,jens.m@wrestling-infos.de,julian.e@wrestling-infos.de,thomas.w@wrestling-infos.de,jens.m@wrestling-infos.de | julian.e@wrestling-infos.de | thomas.w@wrestling-infos.de | markus.p@wrestling-infos.de | marvin.w@wrestling-infos.de | florian.s@wrestling-infos.de,https://wrestling-infos.de,12,scraper,verified,Entertainment,high,,,,,,17/06/2026
+perspektiveausland.com,kontakt@perspektiveausland.com,,,kontakt@perspektiveausland.com,https://perspektiveausland.com,12,scraper,verified,News / Media,high,,,,,,17/06/2026
+eu-schwerbehinderung.eu,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://eu-schwerbehinderung.eu,,17/06/2026
+brettspielblog.ch,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+laufschuhkauf.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+sparneuwagen.de,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,17/06/2026
+aftermarket-update.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+weihnachtsstadt.de,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+provita-deutschland.de,info@provita-deutschland.de,,,info@provita-deutschland.de,https://provita-deutschland.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://provita-deutschland.de,,17/06/2026
+babyforum.at,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+soundground.de,info@soundground.de,,,info@soundground.de,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+berghasen.com,kochhermann2@gmail.com,,,kochhermann2@gmail.com,https://berghasen.com/about,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,Yes,https://berghasen.com,,17/06/2026
+kfzgutachterhamburg.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://kfzgutachterhamburg.com,,17/06/2026
+ausbilderschein24.de,info@ausbilderschein24.de,service@jungwirbtgut.de,,info@ausbilderschein24.de | service@jungwirbtgut.de,https://ausbilderschein24.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://ausbilderschein24.de,,17/06/2026
+grenzgaenger-ch.de,,,,,,12,,no_email_found,Review Site,,yes,no_email_found,Yes,https://grenzgaenger-ch.de,,17/06/2026
+lifestylehotels.net,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+wedolo.de,kontakt@wedolo.de,,,kontakt@wedolo.de,https://wedolo.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://wedolo.de,,17/06/2026
+muenchenmitkind.de,,,,,,12,,no_email_found,Review Site,,yes,no_email_found,,,,17/06/2026
+newsflix.at,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+deutscheoptiker.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://deutscheoptiker.de/contact-us,,17/06/2026
+wo-blumenbilder-wachsen.de,mail@verbraucher-schlichter.de,hallo@fiona-amann.de,,mail@verbraucher-schlichter.de | hallo@fiona-amann.de,http://www.wo-blumenbilder-wachsen.de/impressum/,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,Yes,http://www.wo-blumenbilder-wachsen.de/dreamteam-lavendel-vor-sommerwind/,,17/06/2026
+khersondaily.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+schnueffelfreunde.de,kontakt@schnueffelfreunde.de,,,kontakt@schnueffelfreunde.de,https://schnueffelfreunde.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://schnueffelfreunde.de,,17/06/2026
+geheimtippaugsburg.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+radioerzgebirge.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+noahlutz.de,kontakt@noahlutz.de,,,kontakt@noahlutz.de,https://noahlutz.de,12,scraper,verified,Blog / Content Site,high,,,Yes,https://noahlutz.de,,17/06/2026
+mizine.de,,,,,,12,smtp_catchall,no_email_found,Blog / Content Site,low,yes,smtp_catchall,,,,17/06/2026
+grosseltern.de,info@grosseltern.de,,,info@grosseltern.de,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+praemie-direkt.de,office-dach@awardit.com,,,office-dach@awardit.com,https://praemie-direkt.de,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+lukinski.de,office@lukinski.com,,,office@lukinski.com,https://lukinski.de,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+radiowoche.de,jobboerse@radiowoche.de,fotoredaktion@wdr.de,,jobboerse@radiowoche.de | fotoredaktion@wdr.de,https://radiowoche.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+aufgetischt.net,frisch@aufgetischt.net,,,frisch@aufgetischt.net,https://aufgetischt.net,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+datenrettung360.de,office@datenrettung360.de,,,office@datenrettung360.de,https://datenrettung360.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://datenrettung360.de,,17/06/2026
+gas24.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+freshsingle.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+schlafapnoe.de,info@seegartenklinik.de,,,info@seegartenklinik.de,https://schlafapnoe.de,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,Yes,https://schlafapnoe.de,,17/06/2026
+nerdsheaven.de,kay@nerdsheaven.de,,,kay@nerdsheaven.de,https://nerdsheaven.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://nerdsheaven.de,,17/06/2026
+filmmachen.de,,,,,,12,,no_email_found,Review Site,,yes,no_email_found,,,,17/06/2026
+360football.ch,,,,,,12,smtp_catchall,no_email_found,Blog / Content Site,low,yes,smtp_catchall,,,,17/06/2026
+1-2-family.de,kontakt@1-2-family.de,,,kontakt@1-2-family.de,https://1-2-family.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+geheimtipp-koeln.de,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,17/06/2026
+personalmanagement.info,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+die-geobine.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+vaterfreuden.de,,,,,,12,smtp_catchall,no_email_found,Review Site,low,yes,smtp_catchall,Yes,https://vaterfreuden.de/contact,,17/06/2026
+auslandszeit.de,info@auslandszeit.de,,,info@auslandszeit.de,,12,smtp_guess,needs_manual_check,Blog / Content Site,low,yes,smtp_guess,,,,17/06/2026
+sva01.de,info@sva01.de,,,info@sva01.de,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+happyplates.com,,,,,,12,smtp_catchall,no_email_found,Blog / Content Site,low,yes,smtp_catchall,,,,17/06/2026
+meine-sendungsverfolgung.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+databasecamp.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+grenzenlos-aktiv.de,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+namibia.de,info@diamir.de,k.weber@diamir.de,m.leithold@diamir.de,info@diamir.de | k.weber@diamir.de | m.leithold@diamir.de,https://namibia.de,12,scraper,needs_manual_check,Review Site,medium,yes,domain_mismatch,,,,17/06/2026
+studi.info,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+thailandsun.com,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+blog.vkngjewelry.com,contact@vkngjewelry.com,,,contact@vkngjewelry.com,https://blog.vkngjewelry.com,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+ginspiration.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://ginspiration.de,,17/06/2026
+vintagedriver.de,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+ratgeber-erbengemeinschaft.de,kontakt@ratgeber-erbengemeinschaft.de,presse@hereditas.net,,kontakt@ratgeber-erbengemeinschaft.de | presse@hereditas.net,https://www.ratgeber-erbengemeinschaft.de/impressum/,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+buchenegger-wasserfaelle.de,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,17/06/2026
+fivmagazine.de,office@fivmagazine.com,,,office@fivmagazine.com,https://fivmagazine.de/contact,12,scraper,needs_manual_check,Magazine,medium,yes,domain_mismatch,,,,17/06/2026
+electricar-magazin.de,info@electricar.io,info@nachhaltig-leben-magazin.de,,info@electricar.io | info@nachhaltig-leben-magazin.de,https://electricar-magazin.de,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+wochenmarkt-deutschland.de,info@wochenmarkt-deutschland.de,,,info@wochenmarkt-deutschland.de,https://wochenmarkt-deutschland.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+strikefit.de,info@strikefit.de,,,info@strikefit.de,https://strikefit.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://strikefit.de,,17/06/2026
+derreisefuehrer.com,,,,,,0,blocked:resort,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+rockfm.de,presse@atsw.de,info@atsw.de,info@lfk.de,presse@atsw.de | info@atsw.de | info@lfk.de,https://www.rockfm.de/service/pressekontakt,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+gut-waldhof.de,info@gut-waldhof.de,,,info@gut-waldhof.de,https://gut-waldhof.de,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+garbsen-city-news.de,redaktion@garbsen-city-news.de,,,redaktion@garbsen-city-news.de,https://garbsen-city-news.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+auto.news,info@auto.news,,,info@auto.news,https://auto.news,12,scraper,verified,Environment / Green,high,,,,,,17/06/2026
+italien.info,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,17/06/2026
+kindeshalb.de,,,,,,0,blocked:ivf,skipped_irrelevant,Health / Medical,,,,,,,17/06/2026
+reise-stories.de,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+box-sport.de,redaktion@box-sport.de,,,redaktion@box-sport.de,https://box-sport.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://box-sport.de/contact,,17/06/2026
+bolidenforum.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+mypolacy.de,info@mypolacy.de,,,info@mypolacy.de,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+cmb-kammerjaeger.de,info@cmb-kammerjaeger.de,,,info@cmb-kammerjaeger.de,https://cmb-kammerjaeger.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+dicht-am-fisch.de,info@dicht-am-fisch.de,,,info@dicht-am-fisch.de,https://dicht-am-fisch.de,12,scraper,verified,Blog / Content Site,high,,,Yes,https://dicht-am-fisch.de,,17/06/2026
+scnsoft.de,contact@scnsoft.de,contact@scnsoft.com,,contact@scnsoft.de | contact@scnsoft.com,https://scnsoft.de,12,scraper,verified,Technology,high,,,Yes,https://scnsoft.de,,17/06/2026
+naturkindmagazin.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+hallobabysitter.de,news@hallobabysitter.de,info@hallobabysitter.de,,news@hallobabysitter.de | info@hallobabysitter.de,,12,smtp_guess,needs_manual_check,Blog / Content Site,low,yes,smtp_guess,,,,17/06/2026
+broetchenbursche.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+kredit-zeit.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+siio.de,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+tarif4you.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+allmaxx.de,,,,,,0,blocked:online shop+shop all,skipped_irrelevant,E-commerce / Online Shops,,,,,,,17/06/2026
+mazedonien.de,info@diamir.de,d.clauss@diamir.de,,info@diamir.de | d.clauss@diamir.de,https://mazedonien.de,12,scraper,needs_manual_check,Review Site,medium,yes,domain_mismatch,,,,17/06/2026
+southtraveler.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://southtraveler.de/about,,17/06/2026
+kurklinikverzeichnis.de,infops@reha-team-hannover.de,info@hannover-vital.eu,,infops@reha-team-hannover.de | info@hannover-vital.eu,http://www.kurklinikverzeichnis.de/rehateam-hannover-niedersachsen-deutschland,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,Yes,https://kurklinikverzeichnis.de,,17/06/2026
+formwandler-interactive.com,info@formwandler-interactive.com,anfrage@formwandler-interactive.com,,info@formwandler-interactive.com | anfrage@formwandler-interactive.com,https://formwandler-interactive.com,12,scraper,verified,Review Site,high,,,Yes,https://formwandler-interactive.com,,17/06/2026
+elektro-wandelt.de,kundenservice@elektro-wandelt.de,,,kundenservice@elektro-wandelt.de,https://elektro-wandelt.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+rheinmain4family.de,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,17/06/2026
+sabbatjahr.org,info@sabbatjahr.org,,,info@sabbatjahr.org,,12,smtp_guess,needs_manual_check,Blog / Content Site,low,yes,smtp_guess,,,,17/06/2026
+auslandsaufenthalt.org,info@auslandsaufenthalt.org,,,info@auslandsaufenthalt.org,,12,smtp_guess,needs_manual_check,Blog / Content Site,low,yes,smtp_guess,,,,17/06/2026
+muenster-geht-aus.de,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,17/06/2026
+go-to-ireland.com,,,,,,12,,no_email_found,Travel,,yes,no_email_found,Yes,https://go-to-ireland.com/contact,,17/06/2026
+mabya.de,,,,,,12,,no_email_found,Technology,,yes,no_email_found,Yes,https://mabya.de/contact,,17/06/2026
+planet-mexiko.com,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+wirtschaft-in-sachsen.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+printer-care.de,info@printer-care.de,,,info@printer-care.de,https://printer-care.de,12,scraper,verified,Blog / Content Site,high,,,Yes,https://www.printer-care.de/de/drucker-mfp/samsung-multixpress-x3220nr,,17/06/2026
+jakobsweg-kuestenweg.com,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+news-stadt.de,news@news-stadt.de,info@news-stadt.de,,news@news-stadt.de | info@news-stadt.de,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+ryukoch.com,info@ryukoch.de,,,info@ryukoch.de,https://ryukoch.com,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,,,,17/06/2026
+party-ratgeber.com,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+mysoftware.de,info@mysoftware.de,,,info@mysoftware.de,,12,smtp_guess,needs_manual_check,Technology,low,yes,smtp_guess,,,,17/06/2026
+business-leaders.net,contact@wesendit.io,info@mabewo.com,info@engelvoelkerscapital.com,contact@wesendit.io | info@mabewo.com | info@engelvoelkerscapital.com | info@istraw.tech | info@jdcgroup.de | info@mobilityacademy.de | kontakt@cpitech.io | post@nesgo.de,https://business-leaders.net,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+barbaralicious.com,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://barbaralicious.com,,17/06/2026
+autoteile-markt.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://autoteile-markt.de,,17/06/2026
+twingotuningforum.de,info@twingotuningforum.de,,,info@twingotuningforum.de,https://twingotuningforum.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+golfpunk.de,,,,,,0,blocked:hotel+resort,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+taunus-info.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+kennzeichenheld.de,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+exittheroom.de,muenchen@exittheroom.de,,,muenchen@exittheroom.de,https://www.exittheroom.de/impressum,12,scraper,verified,Review Site,high,,,,,,17/06/2026
+beamten-infoportal.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+zeitundwert.de,info@zeitundwert.de,,,info@zeitundwert.de,https://zeitundwert.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://zeitundwert.de,,17/06/2026
+honeymoments.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+der-augenoptiker.de,,,,,,0,blocked:optometrist,skipped_irrelevant,Health / Medical,,,,,,,17/06/2026
+gigers.com,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+fuerteventurazeitung.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+affiliate-marketing.de,kontaktformular@affiliate-marketing.de,,,kontaktformular@affiliate-marketing.de,https://www.affiliate-marketing.de/impressum,12,scraper,verified,Blog / Content Site,high,,,Yes,https://www.affiliate-marketing.de/impressum,,17/06/2026
+explorertom.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+chiemseegarn.com,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+360-grad-bewerbung.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+modepilot.de,hello@modepilot.com,,,hello@modepilot.com,https://modepilot.de/contact,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,Yes,https://modepilot.de,,17/06/2026
+highenergymind.com,hello@highenergymind.com,,,hello@highenergymind.com,https://highenergymind.com,12,scraper,verified,Blog / Content Site,high,,,Yes,https://highenergymind.com,,17/06/2026
+platinnetz.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+tueftler-und-heimwerker.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+macheete.com,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,17/06/2026
+bleistiftrocker.de,info@bleistiftrocker.de,,,info@bleistiftrocker.de,,12,smtp_guess,needs_manual_check,Review Site,low,yes,smtp_guess,,,,17/06/2026
+olioepasta.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+musical-world.de,,,,,,12,,no_email_found,Review Site,,yes,no_email_found,,,,17/06/2026
+youjoy.de,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,17/06/2026
+akku500.de,info@akku500.de,,,info@akku500.de,,12,smtp_guess,needs_manual_check,Blog / Content Site,low,yes,smtp_guess,Yes,https://akku500.de,,17/06/2026
+travelisto.net,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+fanshelden.de,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,17/06/2026
+pferde-betrieb.de,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,17/06/2026
+kinderoutdoor.de,,,,,,9,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+dv-treff.de,info@dv-treff.de,,,info@dv-treff.de,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+babyspezialist.de,info@babyspezialist.de,,,info@babyspezialist.de,https://babyspezialist.de,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+boatnet.de,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+themepark-central.de,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+philaforum.com,,,,,,12,,no_email_found,Technology,,yes,no_email_found,Yes,https://philaforum.com/contact,,17/06/2026
+gowork.de,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+kunstundreisen.de,info@kunstundreisen.de,,,info@kunstundreisen.de,https://kunstundreisen.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+allgaeu-viehscheid.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+franchisecheck.de,info@franchisecheck.de,,,info@franchisecheck.de,https://franchisecheck.de,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+schwarzwald-aktuell.eu,info@schwarzwald-aktuell.eu,,,info@schwarzwald-aktuell.eu,https://schwarzwald-aktuell.eu,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+schaufenster-mettmann.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://schaufenster-mettmann.de,,17/06/2026
+educheck.de,info@educheck.de,,,info@educheck.de,https://www.educheck.de/impressum/,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+steinedergezeiten.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+bunker-nrw.de,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,17/06/2026
+salsa-und-tango.de,,,,,,12,smtp_catchall,no_email_found,Entertainment,low,yes,smtp_catchall,,,,17/06/2026
+reeperbahn.de,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,17/06/2026
+putzheldenberlin.de,info@putzheldenberlin.de,,,info@putzheldenberlin.de,https://putzheldenberlin.de,12,scraper,verified,Blog / Content Site,high,,,Yes,https://putzheldenberlin.de,,17/06/2026
+mbslk.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+laue-festmoden.de,info@laue-festmoden.de,bea.seliger-mommers@laue-festmoden.de,,info@laue-festmoden.de | bea.seliger-mommers@laue-festmoden.de,https://laue-festmoden.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://laue-festmoden.de,,17/06/2026
+guided.news,,,,,,12,smtp_catchall,no_email_found,Review Site,low,yes,smtp_catchall,,,,17/06/2026
+info-beihilfe.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+ostwest.tv,rent@ostwest.tv,,,rent@ostwest.tv,https://ostwest.tv,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+hueblog.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+surfnomade.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+ahornboden.com,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+hochzeitslocation.de,,,,,,0,blocked:shopping cart,skipped_irrelevant,E-commerce / Online Shops,,,,,,,17/06/2026
+haushaltstipps.com,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+crocodil.at,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+urlaube.info,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+octane-magazin.de,info@octane-magazin.de,,,info@octane-magazin.de,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,Yes,https://octane-magazin.de,,17/06/2026
+lebegeil.de,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+hannover.citynews-online.de,redaktion.hannover@citynews-online.de,,,redaktion.hannover@citynews-online.de,https://hannover.citynews-online.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+pinkmelon.de,info@pinkmelon.de,,,info@pinkmelon.de,,12,smtp_guess,needs_manual_check,Education / Resources,low,yes,smtp_guess,Yes,https://pinkmelon.de,,17/06/2026
+kindaktuell.at,presseeingang@fokuskind.com,,,presseeingang@fokuskind.com,https://kindaktuell.at/impressum.html,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,Yes,https://kindaktuell.at/schwangerschaft-geburt/depressive-schwangerschaft-beeinflusst-die-entwicklung-des-kindes.html,,17/06/2026
+lyricsmagazin.ch,info@lyricsmagazin.ch,drini@sektionzh.ch,,info@lyricsmagazin.ch | drini@sektionzh.ch,https://lyricsmagazin.ch,12,scraper,verified,Review Site,high,,,,,,17/06/2026
+operationauge.de,info@operationauge.de,,,info@operationauge.de,https://operationauge.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+stilvolle-grabsteine.de,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+doppelpunkt.de,info@doppelpunkt.de,,,info@doppelpunkt.de,https://doppelpunkt.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+dieprojektmanager.com,,,,,,12,,no_email_found,Review Site,,yes,no_email_found,,,,17/06/2026
+smavel.com,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,Yes,https://smavel.com,,17/06/2026
+mallorcatipps.com,,,,,,0,blocked:zoo+aquarium,skipped_irrelevant,Zoo / Wildlife,,,,,,,17/06/2026
+conplore.com,info@conplore.com,,,info@conplore.com,https://conplore.com,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+imprintmytravel.com,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://imprintmytravel.com/contact,,17/06/2026
+hobbysfinden.de,,,,,,12,smtp_catchall,no_email_found,Blog / Content Site,low,yes,smtp_catchall,,,,17/06/2026
+love99.de,,,,,,6,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+tischline.de,news@tischline.de,info@tischline.de,,news@tischline.de | info@tischline.de,,12,smtp_guess,needs_manual_check,Blog / Content Site,low,yes,smtp_guess,,,,17/06/2026
+nach-dem-abitur.de,info@nach-dem-abitur.de,,,info@nach-dem-abitur.de,,12,smtp_guess,needs_manual_check,Blog / Content Site,low,yes,smtp_guess,,,,17/06/2026
+sachsen-net.com,,,,,,0,blocked:museum,skipped_irrelevant,Museums / Culture,,,,,,,17/06/2026
+erosa.de,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+passengeronearth.com,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+immobilienpool.de,info@immobilienpool.de,,,info@immobilienpool.de,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+maildienste.de,wunschname@anbieter.de,kontakt@meine-url.de,,wunschname@anbieter.de | kontakt@meine-url.de,https://maildienste.de,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+brain-fit.com,hbenesch@gmx.de,,,hbenesch@gmx.de,https://www.brain-fit.com/training/impressum.html,12,scraper,needs_manual_check,Review Site,medium,yes,domain_mismatch,Yes,https://www.brain-fit.com/training/contact.html,,17/06/2026
+vegan-news.de,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,17/06/2026
+scoredex.com,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://scoredex.com,,17/06/2026
+bsbrandschutz.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://bsbrandschutz.de,,17/06/2026
+germaniamea.ro,info@germaniamea.ro,,,info@germaniamea.ro,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+streitvermittler-mediator.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+mein-italien.info,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+allgaeu-ski.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+karlsruhepuls.de,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,17/06/2026
+isabellas-erotische-hypnose.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://isabellas-erotische-hypnose.com,,17/06/2026
+stil.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+kimbino.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+adamare-singlereisen.de,info@adamare-singlereisen.de,,,info@adamare-singlereisen.de,https://adamare-singlereisen.de,12,scraper,verified,Blog / Content Site,high,,,Yes,https://adamare-singlereisen.de,,17/06/2026
+moovick.com,support@moovick.com,jobs@moovick.com,communications@moovick.com,support@moovick.com | jobs@moovick.com | communications@moovick.com,https://moovick.com,12,scraper,verified,Blog / Content Site,high,,,Yes,https://moovick.com/contact,,17/06/2026
+looping-magazin.de,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+marco-mahling.de,info@marco-mahling.de,anfrage@marco-mahling.de,,info@marco-mahling.de | anfrage@marco-mahling.de,https://marco-mahling.de,12,scraper,verified,Blog / Content Site,high,,,Yes,https://marco-mahling.de,,17/06/2026
+eichhorn.de,info@eichhorn.de,,,info@eichhorn.de,https://eichhorn.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+spritkostenrechner.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+trendraider.de,mail@trend-box.de,,,mail@trend-box.de,https://trendraider.de,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,,,,17/06/2026
+nextg.tv,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,17/06/2026
+jobs-im-suedwesten.de,info@jobs-im-suedwesten.de,,,info@jobs-im-suedwesten.de,https://jobs-im-suedwesten.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+dein-festival.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+rastlos.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+zuhause3.de,,,,,,12,smtp_catchall,no_email_found,Review Site,low,yes,smtp_catchall,Yes,https://zuhause3.de,,17/06/2026
+neuro-depesche.de,info@hcp-publishing.de,finance@hcp-publishing.de,,info@hcp-publishing.de | finance@hcp-publishing.de,https://neuro-depesche.de,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+ep-reisen.de,info@ep-reisen.de,kundenservice@ep-reisen.de,,info@ep-reisen.de | kundenservice@ep-reisen.de,https://ep-reisen.de,12,scraper,verified,Blog / Content Site,high,,,Yes,https://ep-reisen.de,,17/06/2026
+outdoor-renner.de,,,,,,6,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,17/06/2026
+edelweissundenzian.de,,,,,,12,,no_email_found,Review Site,,yes,no_email_found,,,,17/06/2026
+windinfo.eu,info@windinfo.eu,,,info@windinfo.eu,https://windinfo.eu,7,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+baconzumsteak.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+spanien-reisemagazin.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+markenbaumarkt24.de,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,Yes,https://markenbaumarkt24.de,,17/06/2026
+schlaumik.de,support@schlaumik.de,,,support@schlaumik.de,https://schlaumik.de/contact-us/,12,scraper,verified,Blog / Content Site,high,,,Yes,https://schlaumik.de/contact-us/,,17/06/2026
+bbqlove.de,,,,,,12,,no_email_found,Magazine,,yes,no_email_found,,,,17/06/2026
+hanako-koi.de,,,,,,0,blocked:aquarium,skipped_irrelevant,Zoo / Wildlife,,,,,,,17/06/2026
+bremennews.de,lokalredaktion@borgmeier.de,,,lokalredaktion@borgmeier.de,https://bremennews.de,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+bachelor-and-more.de,,,,,,0,blocked:hospital+pharma,skipped_irrelevant,Health / Medical,,,,,,,17/06/2026
+delmenews.de,lokalredaktion@borgmeier.de,,,lokalredaktion@borgmeier.de,https://delmenews.de,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+autohof-guide.de,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+netzangler.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+nacht-waechter.de,info@nacht-waechter.de,,,info@nacht-waechter.de,https://nacht-waechter.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+ultimum.at,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+wrock-tv.com,wiescher@wrock-tv.com,,,wiescher@wrock-tv.com,https://www.wrock-tv.com/impressum/,12,scraper,verified,Review Site,high,,,,,,17/06/2026
+blaulicht-magazin.net,info@blaulicht-magazin.net,,,info@blaulicht-magazin.net,https://blaulicht-magazin.net,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+meckpomm.de,urlaub@meckpomm.de,,,urlaub@meckpomm.de,https://meckpomm.de,12,scraper,verified,Magazine,high,,,,,,17/06/2026
+hausverwalterscout.de,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,17/06/2026
+wellnesshotel24.de,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+neue-gladbecker-zeitung.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+smart-repair.de,news@smart-repair.de,info@smart-repair.de,,news@smart-repair.de | info@smart-repair.de,,12,smtp_guess,needs_manual_check,Technology,low,yes,smtp_guess,,,,17/06/2026
+babynews.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+netbiker.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://netbiker.de/contact,,17/06/2026
+cityseacountry.com,info@cityseacountry.com,,,info@cityseacountry.com,,12,smtp_guess,needs_manual_check,Blog / Content Site,low,yes,smtp_guess,,,,17/06/2026
+journication.de,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+tomaten.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+litauen-info.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+bestofmallorca.de,peter@elephant10.com,michael@elephant10.com,sylvia@elephant10.com,peter@elephant10.com | michael@elephant10.com | sylvia@elephant10.com,https://www.bestofmallorca.de/impressum,12,scraper,needs_manual_check,Review Site,medium,yes,domain_mismatch,,,,17/06/2026
+syndikat-asphaltfieber.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+celticgarden.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+doatrip.de,,,,,,0,blocked:zoo,skipped_irrelevant,Zoo / Wildlife,,,,,,,17/06/2026
+tikonline.de,,,,,,12,,no_email_found,Entertainment,,yes,no_email_found,,,,17/06/2026
+modeopfer110.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+gepacktundlos.com,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+uhren-schmuck.de,mail@renejakob.de,,,mail@renejakob.de,https://uhren-schmuck.de,12,scraper,needs_manual_check,Review Site,medium,yes,domain_mismatch,,,,17/06/2026
+1a-hundefutter.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+ich-will-essen.de,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+freidenker-galerie.de,ostendorf@freidenker-galerie.de,,,ostendorf@freidenker-galerie.de,https://www.freidenker-galerie.de/impressum-datenschutz/,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+canoeguide.net,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+ambiente-mediterran.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+baristaroyal.de,info@baristaroyal.de,,,info@baristaroyal.de,,12,smtp_guess,needs_manual_check,Blog / Content Site,low,yes,smtp_guess,,,,17/06/2026
+kolberg-cafe.de,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+lebenslaufschreiben.com,contact@resumedone.io,,,contact@resumedone.io,https://lebenslaufschreiben.com,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,,,,17/06/2026
+4imedia.com,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,17/06/2026
+ausbilderwelt.de,info@ausbilderwelt.de,,,info@ausbilderwelt.de,https://ausbilderwelt.de,12,scraper,verified,Blog / Content Site,high,,,Yes,https://ausbilderwelt.de,,17/06/2026
+text-center.com,,,,,,9,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+theorie-musik.de,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+boote.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+excel-inside.de,anfrage@excel-inside.de,,,anfrage@excel-inside.de,https://excel-inside.de,12,scraper,verified,Review Site,high,,,,,,17/06/2026
+kinderzeit-bremen.de,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,17/06/2026
+karriere.ms,service@karriere.ms,asc@aschendorff.de,,service@karriere.ms | asc@aschendorff.de,https://karriere.ms,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://karriere.ms,,17/06/2026
+karrierepropeller.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+nippon-classic.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+auswandern-handbuch.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+reimemaschine.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+socialmediaone.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+wellness.info,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+elektrotechnik-fachwissen.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+loving-travel.com,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+main-ding.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+cruisingjournal.com,,,,,,12,smtp_catchall,no_email_found,Review Site,low,yes,smtp_catchall,,,,17/06/2026
+a-modo-mio.at,post@a-modo-mio.at,,,post@a-modo-mio.at,https://a-modo-mio.at/contact,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+holzundleim.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://holzundleim.de,,17/06/2026
+womoblog.ch,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+stratag.de,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,17/06/2026
+robomaeher.de,post@robomaeher.de,,,post@robomaeher.de,https://robomaeher.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+pistenhotels.info,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+kinderparty-onlineshop.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+usedom-insider.de,info@usedom-insider.de,,,info@usedom-insider.de,https://usedom-insider.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+uebersee-maedchen.de,mail@uebersee-maedchen.de,,,mail@uebersee-maedchen.de,https://uebersee-maedchen.de,12,scraper,verified,Blog / Content Site,high,,,Yes,https://uebersee-maedchen.de/about,,17/06/2026
+trading-treff.de,info@trading-treff.de,,,info@trading-treff.de,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+tansania.de,info@diamir.de,h.schierz@diamir.de,u.jeremiasch@diamir.de,info@diamir.de | h.schierz@diamir.de | u.jeremiasch@diamir.de | s.wolff@diamir.de | e.fiedrich@diamir.de | d.mai@diamir.de | m.burkhardt@diamir.de | m.gay@diamir.de | a.furter@diamir.de,https://tansania.de,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+trauer36.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://trauer36.de,,17/06/2026
+alpenjoy.de,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+easy-aquarell.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+peter-zupp.de,kontakt@peter-zupp.de,,,kontakt@peter-zupp.de,https://peter-zupp.de,12,scraper,verified,Review Site,high,,,Yes,https://peter-zupp.de,,17/06/2026
+brooot.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://brooot.de,,17/06/2026
+radioeuropa.fm,radioeuropa@radioeuropa.fm,redaktion@radioeuropa.fm,marketing@radioeuropa.fm,radioeuropa@radioeuropa.fm | redaktion@radioeuropa.fm | marketing@radioeuropa.fm,https://radioeuropa.fm,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://radioeuropa.fm,,17/06/2026
+city-wuerzburg.com,,,,,,12,smtp_catchall,no_email_found,Blog / Content Site,low,yes,smtp_catchall,,,,17/06/2026
+dirtmountainbike.de,info@dirtmountainbike.de,,,info@dirtmountainbike.de,,12,smtp_guess,needs_manual_check,Blog / Content Site,low,yes,smtp_guess,,,,17/06/2026
+proleague.de,info@proleague.de,,,info@proleague.de,,12,smtp_guess,needs_manual_check,News / Media,low,yes,smtp_guess,Yes,https://proleague.de,,17/06/2026
+innenaussen.com,mail@innenaussen.com,,,mail@innenaussen.com,https://innenaussen.com,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+allgaeu-weihnachtsmarkt.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+passport-diary.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://passport-diary.com/contact,,17/06/2026
+eccuro.com,info@eccuro.com,alexander.rosenkranz@eccuro.com,,info@eccuro.com | alexander.rosenkranz@eccuro.com,https://eccuro.com,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://eccuro.com,,17/06/2026
+handballecke.de,info@handballecke.de,,,info@handballecke.de,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,Yes,https://handballecke.de/contact,,17/06/2026
+naturstrolche.de,,,,,,0,blocked:kindergarten,skipped_irrelevant,Education,,,,,,,17/06/2026
+sunitaehlers.de,mail@enfold-spa.com,office@enfold-spa.com,,mail@enfold-spa.com | office@enfold-spa.com,https://sunitaehlers.de/contact,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,Yes,https://sunitaehlers.de/contact,,17/06/2026
+naturzyt.ch,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+erotravel.de,info@erotravel.de,,,info@erotravel.de,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+drawtut.com,,,,,,11,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+kitchengirls.de,,,,,,12,,no_email_found,Review Site,,yes,no_email_found,,,,17/06/2026
+one-million-places.com,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://one-million-places.com/contact,,17/06/2026
+bogensportdeutschland.de,shop@bogensportdeutschland.de,email@bignami.it,,shop@bogensportdeutschland.de | email@bignami.it,https://bogensportdeutschland.de,12,scraper,verified,Blog / Content Site,high,,,Yes,https://www.bogensportdeutschland.de/ausruestung/carbon-express-feldkoecher-bk.html,,17/06/2026
+prag-aktuell.cz,,,,,,0,blocked:hotel+hostel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+scheidegger-wasserfaelle.de,info@scheidegg.de,,,info@scheidegg.de,https://scheidegger-wasserfaelle.de,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+stefaninthailand.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://stefaninthailand.de,,17/06/2026
+petitfute.de,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+lohnanalyse.de,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,17/06/2026
+fitnessdoc.net,team@fitnessdoc.net,,,team@fitnessdoc.net,https://fitnessdoc.net,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+meineeltern.ch,redaktion@meineeltern.ch,werbung@relevanto.ch,,redaktion@meineeltern.ch | werbung@relevanto.ch,https://www.meineeltern.ch/impressum-36,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+papa.de,,,,,,0,blocked:kindergarten,skipped_irrelevant,Education,,,,,,,17/06/2026
+lottafrei.de,,,,,,12,smtp_catchall,no_email_found,Blog / Content Site,low,yes,smtp_catchall,,,,17/06/2026
+mytopdeals.net,info@mytopdeals.net,,,info@mytopdeals.net,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+kfz-fahrtenbuch.de,news@kfz-fahrtenbuch.de,info@kfz-fahrtenbuch.de,,news@kfz-fahrtenbuch.de | info@kfz-fahrtenbuch.de,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+marinas.info,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://marinas.info,,17/06/2026
+dolloro.de,service@obc-company.com,,,service@obc-company.com,https://dolloro.de,12,scraper,needs_manual_check,Magazine,medium,yes,domain_mismatch,,,,17/06/2026
+kinderleicht.berlin,,,,,,0,blocked:zoo+aquarium,skipped_irrelevant,Zoo / Wildlife,,,,,,,17/06/2026
+faszination-kanada.com,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+eishockey.info,redaktion@eishockey.info,,,redaktion@eishockey.info,https://eishockey.info,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+loving-curls.com,laura@loving-curls.com,,,laura@loving-curls.com,https://loving-curls.com/contact,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://loving-curls.com,,17/06/2026
+billardregel.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+casting.de,mail@casting.de,,,mail@casting.de,https://casting.de,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+so-lebt-dresden.de,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,17/06/2026
+drgehl.at,office@drgehl.at,,,office@drgehl.at,https://drgehl.at,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+roevenich-immobilien.de,info@meinzuhause24.com,,,info@meinzuhause24.com,https://roevenich-immobilien.de,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+bahn-und-hotel.de,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+aktive-rentner.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+2onthego.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+digitale.immobilien,immobilien@listenchampion.com,,,immobilien@listenchampion.com,https://www.digitale.immobilien/impressum,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+tierportal-muenchen.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+schwangerinmeinerstadt.de,info@schwangerinmeinerstadt.de,,,info@schwangerinmeinerstadt.de,https://schwangerinmeinerstadt.de,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+webweinschule.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+chaletdorf.info,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://chaletdorf.info/contact,,17/06/2026
+snowboardermbm.de,info@snowboardermbm.de,,,info@snowboardermbm.de,,12,smtp_guess,needs_manual_check,Blog / Content Site,low,yes,smtp_guess,,,,17/06/2026
+ferienpensionen.info,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://ferienpensionen.info/contact,,17/06/2026
+haustier.net,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,17/06/2026
+reisetravel.eu,feedback@reisetravel.eu,,,feedback@reisetravel.eu,https://reisetravel.eu,12,scraper,verified,News / Media,high,,,,,,17/06/2026
+gesundu.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+genussfreak.de,info@genussfreak.de,,,info@genussfreak.de,https://genussfreak.de,12,scraper,verified,Travel,high,,,Yes,https://genussfreak.de/contact,,17/06/2026
+abiturma.de,,,,,,12,smtp_catchall,no_email_found,Blog / Content Site,low,yes,smtp_catchall,,,,17/06/2026
+prospektmaschine.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+aktion-holz.de,info@aktion-holz.de,,,info@aktion-holz.de,https://aktion-holz.de,12,scraper,verified,Blog / Content Site,high,,,Yes,https://aktion-holz.de,,17/06/2026
+bikers-school.de,info@bikers-school.de,,,info@bikers-school.de,https://bikers-school.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+giessen-aktuell.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+mobilitree.net,info@mobilitree.net,,,info@mobilitree.net,https://mobilitree.net/contact,12,scraper,verified,Blog / Content Site,high,,,Yes,https://mobilitree.net/contact,,17/06/2026
+clashroyaleforum.de,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,17/06/2026
+finblog.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://finblog.de,,17/06/2026
+klaeranlagen-vergleich.de,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,17/06/2026
+kreativeseite.com,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+pianobeat.de,info@pianobeat.de,,,info@pianobeat.de,,12,smtp_guess,needs_manual_check,Blog / Content Site,low,yes,smtp_guess,,,,17/06/2026
+vollmond-info.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+derschlafraum.de,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+meerschwein-sein.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+tipps-muenchen.de,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,17/06/2026
+ferienhaus-mit-hunden.de,info@urlaub-auf-pfoten.de,,,info@urlaub-auf-pfoten.de,https://ferienhaus-mit-hunden.de,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,,,,17/06/2026
+beyondpixels.de,,,,,,12,,no_email_found,Entertainment,,yes,no_email_found,,,,17/06/2026
+shiftyourcareer.de,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,17/06/2026
+mein-altaegypten.de,info@mein-altaegypten.de,,,info@mein-altaegypten.de,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+rad-ab.com,,,,,,12,smtp_catchall,no_email_found,Blog / Content Site,low,yes,smtp_catchall,,,,17/06/2026
+tropenwanderer.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+schach-tipps.de,info@schach-tipps.de,,,info@schach-tipps.de,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+polen-pl.eu,,,,,,8,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+shop-saunaloft.de,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+grundschulen.net,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+vietnam.de,info@diamir.de,m.kube@diamir.de,,info@diamir.de | m.kube@diamir.de,https://vietnam.de,12,scraper,needs_manual_check,Review Site,medium,yes,domain_mismatch,,,,17/06/2026
+schwangerschaft.at,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+amicella.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+tischfussball-online.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://www.tischfussball-online.com/threads/suche-doppelpartner-f%C3%BCr-raum-bochum.427/,,17/06/2026
+wunderkessel.de,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+evenses.de,info@evenses.de,,,info@evenses.de,https://evenses.de,12,scraper,verified,Entertainment,high,,,Yes,https://evenses.de,,17/06/2026
+german-adult-news.com,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+starzip.de,info@starzip.de,,,info@starzip.de,https://starzip.de,12,scraper,verified,Lifestyle,high,,,,,,17/06/2026
+beispielhaus.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+african-dreamtravel.de,info@african-dreamtravel.de,,,info@african-dreamtravel.de,https://african-dreamtravel.de,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+wob24.net,info@wob24.net,,,info@wob24.net,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+spielstil.net,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+wg-liste.de,info@wg-liste.de,,,info@wg-liste.de,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+arzt-atlas.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://arzt-atlas.de,,17/06/2026
+nasen-ratgeber.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+reifenlab.de,,,,,,12,smtp_catchall,no_email_found,Blog / Content Site,low,yes,smtp_catchall,Yes,https://reifenlab.de/contact,,17/06/2026
+freizeitfun.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+realportico.de,,,,,,12,,no_email_found,Review Site,,yes,no_email_found,Yes,https://realportico.de,,17/06/2026
+azubis.de,info@azubis.de,,,info@azubis.de,,12,smtp_guess,needs_manual_check,Blog / Content Site,low,yes,smtp_guess,Yes,https://azubis.de,,17/06/2026
+direktflug.de,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+youneeq.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+deutscher-jagdblog.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+strong-magazine.com,info@strong-magazine.com,,,info@strong-magazine.com,https://strong-magazine.com/about,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+vaybee.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+berghuetten-allgaeu.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+it-wegweiser.de,rechtsanwalt-meier-879@gmail.com,,,rechtsanwalt-meier-879@gmail.com,https://it-wegweiser.de,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,17/06/2026
+womobox.de,info@womobox.de,,,info@womobox.de,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+costarica.de,info@diamir.de,v.masias-broecker@diamir.de,,info@diamir.de | v.masias-broecker@diamir.de,https://costarica.de,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+sb-waschanlage.com,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://sb-waschanlage.com,,17/06/2026
+rusverlag.de,redaktion@rusverlag.de,,,redaktion@rusverlag.de,https://rusverlag.de/about,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+hunderassen.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+travelantis.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://travelantis.de,,17/06/2026
+lilligreenshop.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+vorwahl-online.de,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+ruhrpottkids.com,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,17/06/2026
+regionalreporter.de,,,,,,0,blocked:museum,skipped_irrelevant,Museums / Culture,,,,,,,17/06/2026
+usa-reisetipps.net,,,,,,0,blocked:hotel+motel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+dresdner-sc.de,info@dresdner-sc.de,,,info@dresdner-sc.de,http://dresdner-sc.de/impressum/,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+reisedeals.com,,,,,,12,,no_email_found,Review Site,,yes,no_email_found,Yes,https://reisedeals.com,,17/06/2026
+futureplan.de,info@adscads.com,,,info@adscads.com,https://www.futureplan.de/impressum,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,,,,17/06/2026
+eat-drink-go.de,,,,,,0,blocked:online shop,skipped_irrelevant,E-commerce / Online Shops,,,,,,,17/06/2026
+itnator.net,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+fussball-geld.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+butterflyfish.de,,,,,,12,,no_email_found,Lifestyle,,yes,no_email_found,Yes,https://butterflyfish.de,,17/06/2026
+wellnessurlaub.com,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+duesseldorf-wirtschaft.de,info@duesseldorf-wirtschaft.de,,,info@duesseldorf-wirtschaft.de,https://duesseldorf-wirtschaft.de,12,scraper,verified,Lifestyle,high,,,,,,17/06/2026
+gourmet-magazin.de,redaktion@gourmet-magazin.de,,,redaktion@gourmet-magazin.de,https://gourmet-magazin.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+suedamerikatours.de,info@suedamerikatours.de,,,info@suedamerikatours.de,,12,smtp_guess,needs_manual_check,Blog / Content Site,low,yes,smtp_guess,,,,17/06/2026
+scheveningen-strand.de,,,,,,0,blocked:hotel+hostel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+haus-selber-bauen.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+goelds.de,,,,,,0,blocked:buy now,skipped_irrelevant,E-commerce / Online Shops,,,,,,,17/06/2026
+hausbachklamm.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+insideflyer.de,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+russiasexygirls.com,admin@russiasexygirls.com,,,admin@russiasexygirls.com,https://russiasexygirls.com/about,12,scraper,verified,Magazine,high,,,,,,17/06/2026
+foodnewsgermany.de,contact@foodnewsgermany.de,,,contact@foodnewsgermany.de,https://foodnewsgermany.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://foodnewsgermany.de,,17/06/2026
+reisetipps-europa.de,info@reisetipps-europa.de,,,info@reisetipps-europa.de,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+die-wunderfinderin.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+elektroauto-forum.de,giovanni.tinetti@ticino.com,ngiovanni.tinetti@ticino.com,,giovanni.tinetti@ticino.com | ngiovanni.tinetti@ticino.com,https://elektroauto-forum.de/kleinanzeigen/peugeot-partner-electric.59/,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,Yes,https://elektroauto-forum.de,,17/06/2026
+roger24.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+excelvorlage.de,,,,,,13,,no_email_found,Technology,,yes,no_email_found,,,,17/06/2026
+insidetesla.de,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+christianasperger.com,contact@christianasperger.com,,,contact@christianasperger.com,https://christianasperger.com,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+chringles.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+seltenekrankheiten.de,redaktion.de@mediaplanet.com,,,redaktion.de@mediaplanet.com,https://seltenekrankheiten.de,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+smoothie-mixer.de,hallo@smoothie-mixer.de,,,hallo@smoothie-mixer.de,https://smoothie-mixer.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+traufraeulein.de,traudich@traufraeulein.de,,,traudich@traufraeulein.de,https://traufraeulein.de,12,scraper,verified,Blog / Content Site,high,,,Yes,https://traufraeulein.de,,17/06/2026
+alpenjournal.de,verlag@alpenjournal.de,,,verlag@alpenjournal.de,https://alpenjournal.de,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+tmc-reisen.de,buchung@tmc-reisen.de,,,buchung@tmc-reisen.de,https://tmc-reisen.de,12,scraper,verified,Review Site,high,,,Yes,https://tmc-reisen.de,,17/06/2026
+mygoldenpear.com,hello@mygoldenpear.com,,,hello@mygoldenpear.com,,6,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+allroundathletics.de,info@allroundathletics.de,,,info@allroundathletics.de,,12,smtp_guess,needs_manual_check,Sports,low,yes,smtp_guess,,,,17/06/2026
+bungalow.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+panzer-fahren.net,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+quizworld.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://quizworld.de,,17/06/2026
+westpfalz.wiki,kontakt@westpfalz.wiki,,,kontakt@westpfalz.wiki,https://westpfalz.wiki,12,scraper,verified,Review Site,high,,,,,,17/06/2026
+corpusmotum.com,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+cmmodels.de,,,,,,12,,no_email_found,Magazine,,yes,no_email_found,,,,17/06/2026
+immomorgen.de,kundenservice@haas-mediengruppe.de,,,kundenservice@haas-mediengruppe.de,https://immomorgen.de/contact-us,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+secondlifefashion.de,,,,,,0,blocked:online shop,skipped_irrelevant,E-commerce / Online Shops,,,,,,,17/06/2026
+redenwelt.de,info@redenwelt.de,,,info@redenwelt.de,https://redenwelt.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+fussballfieber.de,info@fussballfieber.de,,,info@fussballfieber.de,,12,smtp_guess,needs_manual_check,Entertainment,low,yes,smtp_guess,,,,17/06/2026
+tierheim-cottbus.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+globalisierung-fakten.de,info@globalisierung-fakten.de,,,info@globalisierung-fakten.de,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+dslvergleich.net,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://dslvergleich.net,,17/06/2026
+wirliebenfulda.de,kontakt@heldenzeit.marketing,,,kontakt@heldenzeit.marketing,https://wirliebenfulda.de,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,,,,17/06/2026
+fullbalance.com,info@fullbalance.com,,,info@fullbalance.com,https://fullbalance.com,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+roadcycling.de,info@roadcycling.de,,,info@roadcycling.de,,12,smtp_guess,needs_manual_check,Blog / Content Site,low,yes,smtp_guess,,,,17/06/2026
+alarmbands.com,office@alarmbands.com,,,office@alarmbands.com,https://alarmbands.com,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://alarmbands.com,,17/06/2026
+boardingcompleted.me,ralf@boardingcompleted.me,,,ralf@boardingcompleted.me,https://boardingcompleted.me,12,scraper,verified,Blog / Content Site,high,,,Yes,https://boardingcompleted.me,,17/06/2026
+onlinereisefuehrer.de,info@onlinereisefuehrer.de,,,info@onlinereisefuehrer.de,https://onlinereisefuehrer.de,8,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+expertiger.de,,,,,,12,smtp_catchall,no_email_found,Blog / Content Site,low,yes,smtp_catchall,,,,17/06/2026
+sketche.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+pool-magazin.com,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+travelonboards.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://travelonboards.de,,17/06/2026
+wuerzburgfuerkids.de,,,,,,0,blocked:museum,skipped_irrelevant,Museums / Culture,,,,,,,17/06/2026
+cyberzwerge.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+trauer.ms,familienanzeigen@zeitungsgruppe.ms,,,familienanzeigen@zeitungsgruppe.ms,https://trauer.ms,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,Yes,https://trauer.ms,,17/06/2026
+beauty-guide.de,info@beauty-guide.de,,,info@beauty-guide.de,https://beauty-guide.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://beauty-guide.de,,17/06/2026
+fahrerbewertung.de,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,Yes,https://fahrerbewertung.de,,17/06/2026
+ab-ins-gruene.de,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,17/06/2026
+nails.de,info@nails.de,,,info@nails.de,https://nails.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+bedeutung-von-namen.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+blog-dortmund.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+edeltrips.com,mail@edeltrips.com,,,mail@edeltrips.com,https://www.edeltrips.com/about-us/,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+testen-mit-kopf.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+unternehmerblatt.de,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,17/06/2026
+baage.de,,,,,,0,blocked:ryanair+easyjet,skipped_irrelevant,Flight Booking,,,,,,,17/06/2026
+lovethislook.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+speedheads.de,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,17/06/2026
+geopark-allgaeu.de,,,,,,13,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+forum.milwaukee-vtwin.de,webmaster@milwaukee-vtwin.de,,,webmaster@milwaukee-vtwin.de,https://forum.milwaukee-vtwin.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+lebensidealisten.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+lieblingsstil.com,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+mehr-genuss.de,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,17/06/2026
+allgaeu-wasserfaelle.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+wohin-auswandern.de,info@wohin-auswandern.de,,,info@wohin-auswandern.de,https://www.wohin-auswandern.de/impressum,12,scraper,verified,Blog / Content Site,high,,,Yes,https://www.wohin-auswandern.de/about-us,,17/06/2026
+pfoschdeschuss.de,info@pfoschdeschuss.de,,,info@pfoschdeschuss.de,https://pfoschdeschuss.de,12,scraper,verified,Technology,high,,,,,,17/06/2026
+klosterreisen.de,,,,,,0,blocked:resort,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+wetttipps-heute.com,kontakt@wetttipps-heute.com,,,kontakt@wetttipps-heute.com,https://wetttipps-heute.com,8,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+calamillor.guru,hello@calamillor.guru,,,hello@calamillor.guru,,13,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,Unsure,https://www.calamillor.guru/,2018-11-10,17/06/2026
+gute-reden.org,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+afrika-travel.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+faszination-lateinamerika.de,,,,,,12,smtp_catchall,no_email_found,Blog / Content Site,low,yes,smtp_catchall,,,,17/06/2026
+kickboxen-deutschland.de,info@kickboxen-deutschland.de,,,info@kickboxen-deutschland.de,https://kickboxen-deutschland.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+flugdauer-flugzeit.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+social-media-sales.de,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,17/06/2026
+dorfbaeckerei-ackermann.de,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+kadett-forum.de,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,17/06/2026
+caferacer-forum.de,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+diyinvestor.de,info@diyinvestor.de,,,info@diyinvestor.de,https://diyinvestor.de,12,scraper,verified,Blog / Content Site,high,,,Yes,https://diyinvestor.de,,17/06/2026
+immo4trans.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://immo4trans.de,,17/06/2026
+baucheck.io,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,17/06/2026
+appgemeinde.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+volksfest-grafenwoehr.de,,,,,,12,,no_email_found,Entertainment,,yes,no_email_found,,,,17/06/2026
+die-bunte-christine.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+bademantelgang.de,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+freudenthal.biz,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+uganda.de,info@diamir.de,m.burkhardt@diamir.de,s.dreyer@diamir.de,info@diamir.de | m.burkhardt@diamir.de | s.dreyer@diamir.de,https://uganda.de,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+handarbeitsfrau.de,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,17/06/2026
+kuckuck-magazin.de,,,,,,0,blocked:hotel+resort,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+steuerazubi.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+schweden-urlauber.info,info@schweden-urlauber.info,,,info@schweden-urlauber.info,,12,smtp_guess,needs_manual_check,Blog / Content Site,low,yes,smtp_guess,,,,17/06/2026
+angurten.de,info@angurten.de,,,info@angurten.de,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+toyota-forum.de,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+msh-online.de,redaktion@msh-online.de,,,redaktion@msh-online.de,https://msh-online.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+serafinum.de,service@serafinum.de,,,service@serafinum.de,https://serafinum.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://serafinum.de/contact,,17/06/2026
+raeucherwiki.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+canary-vibes.com,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+otorento.com.tr,info@otorento.com.tr,,,info@otorento.com.tr,https://otorento.com.tr,12,scraper,verified,Blog / Content Site,high,,,Yes,https://otorento.com.tr/contact,,17/06/2026
+uponmylife.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+dermida.de,info@dermida.de,,,info@dermida.de,https://dermida.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+absolute-brightside.de,absolute-brightside@hotmail.de,,,absolute-brightside@hotmail.de,https://absolute-brightside.de/contact,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,Yes,https://absolute-brightside.de,,17/06/2026
+bike-on-tour.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,17/06/2026
+kenia.de,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+nume.ch,hello@nume.ch,,,hello@nume.ch,,13,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,2012-01-13,17/06/2026
+handangeln.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+gluecksgenuss.de,,,,,,13,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://gluecksgenuss.de,2016-08-04,17/06/2026
+uhz-online.de,redaktion@uhz-online.de,,,redaktion@uhz-online.de,https://uhz-online.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+wifirepeater.org,wifirepeater.org@gmail.com,,,wifirepeater.org@gmail.com,https://wifirepeater.org/contact,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,,,,17/06/2026
+bildungsbibel.de,,,,,,13,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,2015-04-15,17/06/2026
+crafting-cafe.de,info@crafting-cafe.de,,,info@crafting-cafe.de,https://crafting-cafe.de,12,scraper,verified,Blog / Content Site,high,,,Yes,https://crafting-cafe.de,,17/06/2026
+das-tee-magazin.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+cubaheute.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://cubaheute.de,,17/06/2026
+sonahundsofern.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+fahrrad-gesundheit.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+wein-welten.com,steffen@wein-welten.com,,,steffen@wein-welten.com,https://wein-welten.com,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+taucher.de,,,,,,12,,no_email_found,Travel,,yes,no_email_found,,,,17/06/2026
+fratuschi.com,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+hiphopholic.de,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+musikiathek.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+vivien-und-erhard.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+coburg-news.de,,,,,,12,,no_email_found,Lifestyle,,yes,no_email_found,,,,17/06/2026
+lovetoytest.net,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+celica-community.de,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+theaterkapelle.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+american-supps.com,info@american-supps.com,,,info@american-supps.com,https://american-supps.com,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://american-supps.com/contact,,17/06/2026
+terrassendielen-lager.de,info@terrassendielen-lager.de,,,info@terrassendielen-lager.de,https://terrassendielen-lager.de,12,scraper,verified,Blog / Content Site,high,,,Yes,https://terrassendielen-lager.de/contact,,17/06/2026
+gekonntgekocht.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+meinbaby123.de,shop@meinbaby123.de,feedback@meinbaby123.de,,shop@meinbaby123.de | feedback@meinbaby123.de,https://meinbaby123.de,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+womoo.de,kontakt@womoo.de,,,kontakt@womoo.de,https://womoo.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+hand-im-glueck.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://hand-im-glueck.de/contact,,17/06/2026
+smilesfromabroad.at,smilesfromabroad@gmail.com,,,smilesfromabroad@gmail.com,https://smilesfromabroad.at/contact,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,,,,17/06/2026
+almanyabulteni.de,habermerkezi@almanyabulteni.de,,,habermerkezi@almanyabulteni.de,https://almanyabulteni.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+kulturtaenzer.com,info@kulturtaenzer.com,,,info@kulturtaenzer.com,https://kulturtaenzer.com/impressum/,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+tt-owners-club.net,info@tt-owners-club.net,,,info@tt-owners-club.net,https://tt-owners-club.net,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+babyduda.com,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+world-of-911.de,info@world-of-911.de,office@world-of-911.de,info@porschetechnik.com,info@world-of-911.de | office@world-of-911.de | info@porschetechnik.com | info@markuzzi-exclusive.de,https://world-of-911.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://www.world-of-911.de/porsche/Gutachter-KFZ-Sachverstaendigenbuero-Wollank--Krueger-und-Partner-15234-Frankfurt---Oder-Deutschland.html,,17/06/2026
+reisezoom.com,,,,,,0,blocked:zoo,skipped_irrelevant,Zoo / Wildlife,,,,,,,17/06/2026
+petra-kaiser.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+lustloszugehen.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+nicoleszuckerwerk.de,nicole@nicoleszuckerwerk.de,,,nicole@nicoleszuckerwerk.de,https://nicoleszuckerwerk.de,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+vidagesund.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+huehnerhaltung.org,fragen@huehnerhaltung.org,,,fragen@huehnerhaltung.org,https://huehnerhaltung.org,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+algarve-entdecker.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+dein-ehering.de,info@dein-ehering.de,,,info@dein-ehering.de,https://dein-ehering.de,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+nutsandblueberries.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+da-oben.de,hallo@da-oben.de,,,hallo@da-oben.de,https://da-oben.de,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+schoenebergtouren.de,,,,,,7,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+schmackofatzo.de,mail@schmackofatzo.de,,,mail@schmackofatzo.de,https://schmackofatzo.de,12,scraper,verified,Magazine,high,,,,,,17/06/2026
+formentera-island.de,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+bauerntuete.de,info@bauerntuete.de,,,info@bauerntuete.de,https://bauerntuete.de,12,scraper,verified,Blog / Content Site,high,,,Yes,https://bauerntuete.de,,17/06/2026
+kreativraum24.de,info@kreativraum24.de,,,info@kreativraum24.de,https://kreativraum24.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+nerd-wiki.de,,,,,,12,,no_email_found,Review Site,,yes,no_email_found,,,,17/06/2026
+ludwigsburg-portal.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+abiunity.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://abiunity.de,,17/06/2026
+offline-einkaufen.com,presse@offline-einkaufen.com,webmaster@offline-einkaufen.com,redaktion@offline-einkaufen.com,presse@offline-einkaufen.com | webmaster@offline-einkaufen.com | redaktion@offline-einkaufen.com,https://www.offline-einkaufen.com/internes/impressum.html,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+italo-welt.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+germansell.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+hayday-forum.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+wo-der-pfeffer-waechst.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+dsble.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://www.dsble.de/partnersuche/neu,,17/06/2026
+kampfkunstwelt.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+garteln.com,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+seegartenklinik.de,info@seegartenklinik.de,mkg@seegartenklinik.de,patikas@seegartenklinik.de,info@seegartenklinik.de | mkg@seegartenklinik.de | patikas@seegartenklinik.de | narkose@seegartenklinik.de,https://seegartenklinik.de,12,scraper,verified,Blog / Content Site,high,,,Yes,https://seegartenklinik.de,,17/06/2026
+schreibmentoren.de,info@schreibmentoren.de,bewerbungen@schreibmentoren.de,,info@schreibmentoren.de | bewerbungen@schreibmentoren.de,https://schreibmentoren.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+blutana.de,,,,,,0,blocked:hotel+resort,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+techsonar.de,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,17/06/2026
+greencarmagazine.de,,,,,,0,blocked:museum,skipped_irrelevant,Museums / Culture,,,,,,,17/06/2026
+swingerclub.eu,info@swingerclub.eu,,,info@swingerclub.eu,https://swingerclub.eu,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+scootervergleich.net,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+vino-culinario.de,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+faszination-berge.de,info@faszination-berge.de,,,info@faszination-berge.de,,12,smtp_guess,needs_manual_check,Blog / Content Site,low,yes,smtp_guess,,,,17/06/2026
+sockstock.net,info@sockstock.net,,,info@sockstock.net,https://sockstock.net,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+trueadventure.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+zimmerpflanzenlexikon.info,harald@zimmerpflanzenlexikon.info,,,harald@zimmerpflanzenlexikon.info,https://www.zimmerpflanzenlexikon.info/impressum,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+tibeo.de,,,,,,12,smtp_catchall,no_email_found,Blog / Content Site,low,yes,smtp_catchall,,,,17/06/2026
+kinder-ferienlager.com,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,17/06/2026
+truckonline.de,,,,,,13,,no_email_found,Blog / Content Site,,yes,no_email_found,,,2000-10-22,17/06/2026
+kindergeburtstag-planen.de,info@kindergeburtstag-planen.de,,,info@kindergeburtstag-planen.de,https://kindergeburtstag-planen.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://kindergeburtstag-planen.de,,17/06/2026
+einbruchschutz-fenster.de,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+cashew-shop.de,info@cashew-shop.de,,,info@cashew-shop.de,,12,smtp_guess,needs_manual_check,Review Site,low,yes,smtp_guess,,,,17/06/2026
+mangoldmuskat.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://mangoldmuskat.de,,17/06/2026
+firstev.de,info@firstev.de,,,info@firstev.de,https://firstev.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://firstev.de,,17/06/2026
+missbonnebonne.com,missbonnebonne@yahoo.de,,,missbonnebonne@yahoo.de,https://missbonnebonne.com/about,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,Yes,https://missbonnebonne.com/about,,17/06/2026
+mallebz.net,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,17/06/2026
+draeger-it.blog,info@draeger-it.blog,,,info@draeger-it.blog,https://draeger-it.blog,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+richtig-fotografiert.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+shopdirect-online.de,info@shopdirect-online.de,,,info@shopdirect-online.de,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+aempf.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+continentale-binner.de,info.binner@continentale.de,,,info.binner@continentale.de,https://continentale-binner.de,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,Yes,https://continentale-binner.de,,17/06/2026
+erotik-toys.de,service@erotik-toys.de,info@medienanstalt-hessen.de,info@js-beauftragter.de,service@erotik-toys.de | info@medienanstalt-hessen.de | info@js-beauftragter.de | care@womanizer.com | customerservice@pipedreamproducts.com,https://www.erotik-toys.de/impressum/,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+mytattoo.com,info@mytattoo.com,,,info@mytattoo.com,https://mytattoo.com,12,scraper,verified,Blog / Content Site,high,,,Yes,https://mytattoo.com,,17/06/2026
+mamasreisehacks.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://mamasreisehacks.de,,17/06/2026
+toyota-supra.de,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+nepal.de,info@diamir.de,o.schau@diamir.de,,info@diamir.de | o.schau@diamir.de,https://nepal.de,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+digital-sales.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+friseur-fragen.de,,,,,,13,,no_email_found,Lifestyle,,yes,no_email_found,,,,17/06/2026
+auto-reise-welt.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+gerne-kochen.de,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+gratis-malvorlagen.de,info@gratis-malvorlagen.de,,,info@gratis-malvorlagen.de,,6,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+strickforum.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+atanango.com,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+myrobotcenter.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+mag-lifestyle-magazin.online,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,17/06/2026
+adventuremo.de,,,,,,12,,no_email_found,Lifestyle,,yes,no_email_found,,,,17/06/2026
+basket.de,redaktion@basket.de,news@avada-magazine.com,info@avada-mag.com,redaktion@basket.de | news@avada-magazine.com | info@avada-mag.com,https://basket.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+clashofclansforum.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+mtb-hotels.info,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+ittweak.de,msonlineservicesteam@microsoftonline.com,,,msonlineservicesteam@microsoftonline.com,https://ittweak.de,12,scraper,needs_manual_check,Review Site,medium,yes,domain_mismatch,,,,17/06/2026
+dsl-ratgeber.net,content_team@selectra.com,aurian.demaupeou@selectra.info,stefanie.schaeffer@selectra.com,content_team@selectra.com | aurian.demaupeou@selectra.info | stefanie.schaeffer@selectra.com,https://dsl-ratgeber.net/impressum,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,Yes,https://dsl-ratgeber.net,,17/06/2026
+buffcoach.net,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+wanderfreak.de,info@wanderfreak.de,,,info@wanderfreak.de,https://wanderfreak.de,12,scraper,verified,Travel,high,,,,,,17/06/2026
+camping-bodensee.de,info@bodensee.de,mail@verbraucher-schlichter.de,verlag@labhard.de,info@bodensee.de | mail@verbraucher-schlichter.de | verlag@labhard.de | datenschutzbeauftragter@bodensee.de,https://www.bodensee.de/ausflugsziele/starkes-team,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+feetastic.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+smile-store.de,service@smile-store.de,,,service@smile-store.de,https://smile-store.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://smile-store.de/contact,,17/06/2026
+travellingcarola.com,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://travellingcarola.com,,17/06/2026
+mamaleben.de,,,,,,9,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+griechenlandreise-blog.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+spanienaufdeutsch.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+auswandern-schweiz.net,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+zeltkinder.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://zeltkinder.de,,17/06/2026
+reisefuehrer-grancanaria.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+watchthusiast.de,info@watchthusiast.de,,,info@watchthusiast.de,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+griechische-rezepte.net,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+kulturgehtweiter.de,info@kulturgehtweiter.de,,,info@kulturgehtweiter.de,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,Yes,https://kulturgehtweiter.de,,17/06/2026
+stgb.de,info@stgb.de,,,info@stgb.de,https://stgb.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+rathenow24.de,,,,,,13,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,2010-04-12,17/06/2026
+zimmerpalmen.net,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+einzelhandel-news.de,,,,,,0,blocked:cbd+cbd shop,skipped_irrelevant,Cannabis / Dispensary,,,,,,,17/06/2026
+ligalive.net,julien@north-star.network,ligalivenetnsn@gmail.com,,julien@north-star.network | ligalivenetnsn@gmail.com,https://ligalive.net,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+mami-bloggt.de,mami.bloggt@yahoo.de,,,mami.bloggt@yahoo.de,https://mami-bloggt.de,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,,,,17/06/2026
+last-minute-flughafen.com,info@reisenavigator.com,,,info@reisenavigator.com,https://last-minute-flughafen.com,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+mermadehair.eu,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+welcome-to-berlin.com,info@welcome-to-berlin.com,,,info@welcome-to-berlin.com,https://welcome-to-berlin.com,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+japan.de,info@diamir.de,d.grading@diamir.de,,info@diamir.de | d.grading@diamir.de,https://japan.de,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+studienscout-nl.de,info@studienscout-nl.de,,,info@studienscout-nl.de,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,Yes,https://studienscout-nl.de,,17/06/2026
+originalo.de,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,17/06/2026
+games-news.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+londonseite.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+sandplatz-tennis.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://sandplatz-tennis.de,,17/06/2026
+incurvy.de,admin@incurvy.de,kontakt@incurvy.de,,admin@incurvy.de | kontakt@incurvy.de,https://incurvy.de,11,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+unternehmer-gesucht.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+signal-wrapping.com,info@signal-wrapping.com,wrapping@signal-design.de,,info@signal-wrapping.com | wrapping@signal-design.de,https://signal-wrapping.com,12,scraper,verified,Blog / Content Site,high,,,Yes,https://signal-wrapping.com,,17/06/2026
+motorzentrale.de,info@motorzentrale.de,partner@motorzentrale.de,platz@halter.de,info@motorzentrale.de | partner@motorzentrale.de | platz@halter.de,https://motorzentrale.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://www.motorzentrale.de/partner-werden/,,17/06/2026
+maremmageheimtipp.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+traden.de,,,,,,12,smtp_catchall,no_email_found,Blog / Content Site,low,yes,smtp_catchall,,,,17/06/2026
+biermap24.de,info@staffelberg-braeu.de,,,info@staffelberg-braeu.de,https://www.biermap24.de/staffelberg-braeu-landbier-hell,12,scraper,needs_manual_check,Review Site,medium,yes,domain_mismatch,,,,17/06/2026
+kummerkasten-chat.de,info@timo-luebke.de,,,info@timo-luebke.de,https://kummerkasten-chat.de,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,Yes,https://kummerkasten-chat.de,,17/06/2026
+nachgeharkt.de,info@nachgeharkt.de,,,info@nachgeharkt.de,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+kindimgepaeck.de,kindimgepaeck@proton.me,,,kindimgepaeck@proton.me,https://www.kindimgepaeck.de/about/,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,,,,17/06/2026
+hardwarejournal.de,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,17/06/2026
+wooco.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+frisch-gebloggt.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+motoroel.de,info@motoroel.de,,,info@motoroel.de,https://motoroel.de,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+baeckerina.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://baeckerina.de,,17/06/2026
+babyahoi.ch,redaktion@babyahoi.ch,werbung@relevanto.ch,,redaktion@babyahoi.ch | werbung@relevanto.ch,https://www.babyahoi.ch/impressum-312,12,scraper,verified,Review Site,high,,,Yes,https://www.babyahoi.ch/schwangerschaft/geburt/ratschlaege-bei-depression-nach-geburt-129,,17/06/2026
+bahnhof-erfurt.de,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+kroatien-reise.at,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+kreuzfahrtschnaeppchen.com,info@kreuzfahrtschnaeppchen.com,,,info@kreuzfahrtschnaeppchen.com,https://kreuzfahrtschnaeppchen.com,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://kreuzfahrtschnaeppchen.com,,17/06/2026
+musical-mit-hotel.de,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+sushirolle.de,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+mirabesque.de,shop@mirabesque.com,,,shop@mirabesque.com,https://mirabesque.de,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,Yes,https://mirabesque.de,,17/06/2026
+topfgartenwelt.com,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+indien.de,info@diamir.de,m.michel@diamir.de,,info@diamir.de | m.michel@diamir.de,https://indien.de,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+smartercamping.de,info@smartercamping.de,,,info@smartercamping.de,,6,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+genussnetzwerk.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+mt09.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+galapagos-ecuador.de,info@diamir.de,s.ehret-sander@diamir.de,,info@diamir.de | s.ehret-sander@diamir.de,https://galapagos-ecuador.de,12,scraper,needs_manual_check,Review Site,medium,yes,domain_mismatch,,,,17/06/2026
+dampfsauger.de,post@dampfsauger.de,post@robomaeher.de,,post@dampfsauger.de | post@robomaeher.de,https://dampfsauger.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+koreanischlernen.net,yourmail@mail.com,,,yourmail@mail.com,https://koreanischlernen.net/contact-us,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,,,,17/06/2026
+putzprofisberlin.de,info@putzprofisberlin.de,,,info@putzprofisberlin.de,https://putzprofisberlin.de,12,scraper,verified,Blog / Content Site,high,,,Yes,https://putzprofisberlin.de,,17/06/2026
+bikesport-emtb.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+laurustico.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+waller-fangen.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+eventreise.de,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+ernaehrungstagebuch-deluxe.de,info@ernaehrungstagebuch-deluxe.de,,,info@ernaehrungstagebuch-deluxe.de,,12,smtp_guess,needs_manual_check,Blog / Content Site,low,yes,smtp_guess,,,,17/06/2026
+sound-art-studio.de,info@sound-art-studio.de,,,info@sound-art-studio.de,https://sound-art-studio.de,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+bszh.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+bruessel-gui.de,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+runup.eu,,,,,,13,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://runup.eu,2016-10-05,17/06/2026
+autoexperience.de,,,,,,12,,no_email_found,Technology,,yes,no_email_found,Yes,https://autoexperience.de,,17/06/2026
+beautyshop24.de,,,,,,0,blocked:online shop,skipped_irrelevant,E-commerce / Online Shops,,,,,,,17/06/2026
+juliasjourneyz.com,jb.theiler@gmail.com,,,jb.theiler@gmail.com,https://juliasjourneyz.com/about,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,,,,17/06/2026
+teichratgeber-garten.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+diffuser.de,info@diffuser.de,,,info@diffuser.de,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+bbfun.de,kontakt@bbfun.de,,,kontakt@bbfun.de,https://bbfun.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+beimfootball.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+andalusien.de,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+stylevamp.de,info@stylevamp.de,,,info@stylevamp.de,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+thetravellette.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+vinoscout.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+madagaskar.de,info@diamir.de,n.schubert@diamir.de,i.mach@diamir.de,info@diamir.de | n.schubert@diamir.de | i.mach@diamir.de,https://madagaskar.de,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+xn--tankstelle-in-der-nhe-o2b.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+co-eltern.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+spanienaktuell.net,foto-@ali-pazani-pexels.com,,,foto-@ali-pazani-pexels.com,https://spanienaktuell.net/wordpress/post-sitemap.xml,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+glutenfrei-urlaub.de,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+sauerland-verzeichnis.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+studienretter.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+la-bretonelle.de,newsletter@la-bretonelle.de,,,newsletter@la-bretonelle.de,https://la-bretonelle.de,12,scraper,verified,Blog / Content Site,high,,,Yes,https://la-bretonelle.de,,17/06/2026
+worthseeing.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+digitaldruck.info,kontakt@digitaldruck.info,,,kontakt@digitaldruck.info,https://www.digitaldruck.info/impressum.html,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://digitaldruck.info,,17/06/2026
+plugins.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+denshub.com,hello@denshub.com,den@denshub.com,your@email.com,hello@denshub.com | den@denshub.com | your@email.com,https://denshub.com,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+alsterkind.com,,,,,,13,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,17/06/2026
+meinschwerte.de,redaktion@meinschwerte.de,,,redaktion@meinschwerte.de,https://meinschwerte.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+campingincorsica.info,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://campingincorsica.info,,17/06/2026
+24baby.de,info@24baby.de,,,info@24baby.de,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,Yes,https://24baby.de,,17/06/2026
+studimup.de,service@studimup.de,,,service@studimup.de,https://www.studimup.de/about/,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+studententarife.org,info@studententarife.org,,,info@studententarife.org,,12,smtp_guess,needs_manual_check,Review Site,low,yes,smtp_guess,,,,17/06/2026
+tractorbook.de,frederic.broecker@tractorbook.de,,,frederic.broecker@tractorbook.de,https://www.tractorbook.de/about/,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+flightradars24.de,,,,,,0,blocked:ryanair+easyjet,skipped_irrelevant,Flight Booking,,,,,,,17/06/2026
+produck.de,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,17/06/2026
+kommunikation-lernen.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+hausbauen24.eu,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+privatklinik-portal.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+asiatica-travel.de,info.de@asiatica.com,,,info.de@asiatica.com,https://asiatica-travel.de,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,,,,17/06/2026
+servervoice.de,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,17/06/2026
+derdualstudent.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+kernastro.de,info@kernastro.de,,,info@kernastro.de,https://kernastro.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+gratis-hausfrau.de,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,17/06/2026
+inistrien.de,info@inistrien.de,inistrien@gmail.com,,info@inistrien.de | inistrien@gmail.com,https://inistrien.de,12,scraper,verified,News / Media,high,,,Yes,https://inistrien.de/contact,,17/06/2026
+djfunkyju.de,info@djfunkyju.de,,,info@djfunkyju.de,https://djfunkyju.de/impressum.html,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+deinerlangen.de,redaktion@deinerlangen.de,,,redaktion@deinerlangen.de,https://deinerlangen.de/impressum,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://deinerlangen.de,,17/06/2026
+danaheidrich.com,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+edelste-weine.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+elba-urlaub.info,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+reise-liebe.com,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+snapfrog.de,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,17/06/2026
+my-lab.com,mail@my-lab.com,,,mail@my-lab.com,https://my-lab.com,12,scraper,verified,Blog / Content Site,high,,,Yes,https://my-lab.com/analytics/b2b/index.php?controller=contact&id_contact=5,,17/06/2026
+naschkater.com,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://naschkater.com/about,,17/06/2026
+superiorhotels.info,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+missforty.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+indenbergen.de,contact@rhb.ch,info@nassfeld.at,info@glacierexpress.ch,contact@rhb.ch | info@nassfeld.at | info@glacierexpress.ch,https://www.indenbergen.de/sehenswuerdigkeiten/94-bernina-express/,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,Yes,https://www.indenbergen.de/sehenswuerdigkeiten/85-pressegger-see/,,17/06/2026
+hh-autos.com,support@hh-autos.com,,,support@hh-autos.com,https://hh-autos.com,12,scraper,verified,Technology,high,,,,,,17/06/2026
+fashionladyloves.com,info@fashionladyloves.com,,,info@fashionladyloves.com,https://fashionladyloves.com/contact,12,scraper,verified,Blog / Content Site,high,,,Yes,https://fashionladyloves.com/about,,17/06/2026
+jetforce-community.de,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+olingua.de,info@olingua.de,,,info@olingua.de,https://olingua.de,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+fernsehplan.de,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,17/06/2026
+urlauberinfos.com,,,,,,12,,no_email_found,Travel,,yes,no_email_found,,,,17/06/2026
+chile.de,info@diamir.de,s.ehret-sander@diamir.de,,info@diamir.de | s.ehret-sander@diamir.de,https://chile.de,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+argentinien.de,info@diamir.de,n.hess@diamir.de,m.delang@diamir.de,info@diamir.de | n.hess@diamir.de | m.delang@diamir.de,https://argentinien.de,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+immostimme.de,mail@immostimme.de,anzeigen@immostimme.de,,mail@immostimme.de | anzeigen@immostimme.de,https://immostimme.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+reve24.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+lustvolle-liebe.de,,,,,,12,,no_email_found,Travel,,yes,no_email_found,,,,17/06/2026
+liveshopping-aktuell.de,,,,,,12,,no_email_found,Technology,,yes,no_email_found,Yes,https://liveshopping-aktuell.de,,17/06/2026
+andalusien.com,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+londonblogger.de,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,17/06/2026
+party-spezial.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+westernstuff.de,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+technikforhome.de,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+amourdesoi.de,cooperation@amourdesoi.de,tina@kreatory.com,,cooperation@amourdesoi.de | tina@kreatory.com,https://amourdesoi.de/contact,12,scraper,verified,,high,yes,unclassified_niche,,,,17/06/2026
+sparwat.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+smarthome-blogger.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://smarthome-blogger.de,,17/06/2026
+xsr900.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+strandurlaub-ostseebad-zingst.de,news@strandurlaub-ostseebad-zingst.de,info@strandurlaub-ostseebad-zingst.de,,news@strandurlaub-ostseebad-zingst.de | info@strandurlaub-ostseebad-zingst.de,,6,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+ergometersport.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+ford-board.de,info@ford-board.de,,,info@ford-board.de,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,Yes,https://ford-board.de,,17/06/2026
+wowplaces.de,wowplacesde@gmail.com,,,wowplacesde@gmail.com,https://wowplaces.de/contact,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,Yes,https://wowplaces.de/contact,,17/06/2026
+volleyball-insider.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+fxempire.de,info@fxempire.com,din.grinshtein@fxempire.com,alex.amdor@fxempire.com,info@fxempire.com | din.grinshtein@fxempire.com | alex.amdor@fxempire.com | roy.schluss@empire.media | ariel.young@fxempire.com,https://fxempire.de/contact,12,scraper,needs_manual_check,Review Site,medium,yes,domain_mismatch,Yes,https://fxempire.de/contact,,17/06/2026
+fitimsitzen.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+elektrischezahnbuerste.org,info@elektrischezahnbuerste.org,,,info@elektrischezahnbuerste.org,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+coogelbahn.de,,,,,,13,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://coogelbahn.de,2019-09-16,17/06/2026
+madame-fernweh.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+marokko.de,info@diamir.de,d.heinrich@diamir.de,,info@diamir.de | d.heinrich@diamir.de,https://marokko.de,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+packwild.de,info@packwild.de,,,info@packwild.de,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+golfhotels.info,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+azoren.eu,info@diamir.de,m.mollik@diamir.de,,info@diamir.de | m.mollik@diamir.de,https://azoren.eu,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+kiwiquest.de,,,,,,12,,no_email_found,Education / Resources,,yes,no_email_found,Yes,https://kiwiquest.de,,17/06/2026
+hamburg-spielt-golf.de,info@tiga-international.de,hotel@gutkaden.de,engelbert.wichelhausen@fcagroup.com,info@tiga-international.de | hotel@gutkaden.de | engelbert.wichelhausen@fcagroup.com | guy.roberts@jsh-hotels.com,https://www.hamburg-spielt-golf.de/golfturniere-hamburg/hamburger-golfwoche/partner/kontaktdaten-unserer-partner,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,Yes,https://hamburg-spielt-golf.de,,17/06/2026
+iran.de,info@diamir.de,k.schau@diamir.de,o.schau@diamir.de,info@diamir.de | k.schau@diamir.de | o.schau@diamir.de,https://iran.de,12,scraper,needs_manual_check,Review Site,medium,yes,domain_mismatch,,,,17/06/2026
+up-tv.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+amsterdam-blog.de,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,17/06/2026
+benzinampel.de,,,,,,6,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,17/06/2026
+cheznu.tv,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+visitirland.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+garnelen-aquarium.com,,,,,,0,blocked:aquarium,skipped_irrelevant,Zoo / Wildlife,,,,,,,17/06/2026
+entdecke-irland.com,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+insel-moen.de,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+magic.freizeitspieler.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+projectlibre.de,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+kinderhotel.de,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+tipsterio.de,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+klads.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+bitcoin-live.de,,,,,,0,blocked:cbd,skipped_irrelevant,Cannabis / Dispensary,,,,,,,17/06/2026
+hamburgerlackprofi.de,va@farbenloewe.de,u003eva@farbenloewe.de,,va@farbenloewe.de | u003eva@farbenloewe.de,https://hamburgerlackprofi.de,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+gameforest.de,info@www.gameforest.de,,,info@www.gameforest.de,https://gameforest.de,12,scraper,verified,Entertainment,high,,,,,,17/06/2026
+kolumbien.de,info@diamir.de,c.petrat@diamir.de,,info@diamir.de | c.petrat@diamir.de,https://kolumbien.de,12,scraper,needs_manual_check,Review Site,medium,yes,domain_mismatch,,,,17/06/2026
+ebikespass.de,info@ebikespass.de,,,info@ebikespass.de,https://ebikespass.de,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+doreenbrumme.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://doreenbrumme.de,,17/06/2026
+deinautoguide.de,info@deinautoguide.de,,,info@deinautoguide.de,https://deinautoguide.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+hausverkauf.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+my-landimmo.de,info@my-landimmo.de,,,info@my-landimmo.de,https://my-landimmo.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://my-landimmo.de,,17/06/2026
+sicheres-englisch.de,info@sicheres-englisch.de,,,info@sicheres-englisch.de,https://www.sicheres-englisch.de/impressum/,12,scraper,verified,Blog / Content Site,high,,,,,,17/06/2026
+kirgistan.de,info@diamir.de,d.kyrgys@diamir.de,,info@diamir.de | d.kyrgys@diamir.de,https://kirgistan.de,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+zweierkette.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+denhaag-holland.de,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,17/06/2026
+hi-shock.de,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+guidenex.de,support@guidenex.de,,,support@guidenex.de,https://guidenex.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+muenchen-spielt-golf.de,,,,,,0,blocked:hotel+resort,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+cnmemory.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+antitranspirante.de,info@netfame.de,,,info@netfame.de,https://antitranspirante.de,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+welt-sehen.de,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,17/06/2026
+fernstudium-wiwi.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+blengaone.de,,,,,,12,,no_email_found,Review Site,,yes,no_email_found,,,,17/06/2026
+seniorenwg-gold.de,info@seniorenwg-gold.de,,,info@seniorenwg-gold.de,https://seniorenwg-gold.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+autolexikon.net,,,,,,9,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+vietnam-asien-tour.de,hello@vietnam-asien-tour.de,,,hello@vietnam-asien-tour.de,https://vietnam-asien-tour.de,12,scraper,verified,Review Site,high,,,,,,17/06/2026
+zambomba.de,contact@zambomba.de,,,contact@zambomba.de,https://zambomba.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://zambomba.de,,17/06/2026
+welches-netz.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+stuffdesk.de,yourmail@mail.com,,,yourmail@mail.com,https://stuffdesk.de/contact-us,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,,,,17/06/2026
+koch-azubi.de,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+printsachen.de,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+porngun.net,,,,,,12,,no_email_found,Review Site,,yes,no_email_found,,,,17/06/2026
+forellenteich-angeln.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+androidliste.de,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+autoverkaufen.net,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+fpvracingdrone.de,info@fpvracingdrone.de,,,info@fpvracingdrone.de,https://fpvracingdrone.de,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://fpvracingdrone.de,,17/06/2026
+deutschland-spielt-golf.de,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,17/06/2026
+amenita.de,,,,,,0,blocked:museum,skipped_irrelevant,Museums / Culture,,,,,,,17/06/2026
+hanseatic-business-school.com,kditz@hanseatic-business-school.com,,,kditz@hanseatic-business-school.com,https://www.hanseatic-business-school.com/about/,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,17/06/2026
+peru.de,info@diamir.de,m.gempp@diamir.de,,info@diamir.de | m.gempp@diamir.de,https://peru.de,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+usbekistan.de,info@diamir.de,k.schau@diamir.de,,info@diamir.de | k.schau@diamir.de,https://usbekistan.de,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+pakistan.de,info@diamir.de,o.schau@diamir.de,,info@diamir.de | o.schau@diamir.de,https://pakistan.de,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,17/06/2026
+bildungsakademie-am-rosental.de,kontakt@bildungsakademie-am-rosental.de,,,kontakt@bildungsakademie-am-rosental.de,https://bildungsakademie-am-rosental.de,9,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://bildungsakademie-am-rosental.de,,17/06/2026
+fsh-info.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://www.fsh-info.de/datenbank/halterlose.php?marke=Compressana,,17/06/2026
+insidertipps-italien.com,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,17/06/2026
+babywelten.ch,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+flughafenmemmingen.eu,,,,,,0,blocked:ryanair+wizz air,skipped_irrelevant,Flight Booking,,,,,,,17/06/2026
+gewohnt-mobil.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+96freunde.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+partnerschaft-lernen.de,info@partnerschaft-lernen.de,,,info@partnerschaft-lernen.de,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,17/06/2026
+goldsparplaene.com,,,,,,12,,no_email_found,Finance / Business,,yes,no_email_found,,,,17/06/2026
+lagerverkaufsmode.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://lagerverkaufsmode.de,,17/06/2026
+import-shopping.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://import-shopping.de,,17/06/2026
+gtaplanet.de,,,,,,12,,no_email_found,Review Site,,yes,no_email_found,,,,17/06/2026
+meinwarschau.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,17/06/2026
+deko-hus.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
+schwalbennest-burg.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+rohrreinigung-berlin.net,info@rohrreinigung-berlin.net,,,info@rohrreinigung-berlin.net,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,Yes,https://rohrreinigung-berlin.net,,17/06/2026
+bendjaontour.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+greek-cuisine.com,,,,,,12,,no_email_found,Magazine,,yes,no_email_found,Yes,https://greek-cuisine.com,,17/06/2026
+gmtimes.de,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+erstewohnung-ratgeber.de,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+rhein-main-blog.de,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+dailythemen.de,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+berlinupdates.de,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+get-it-gay.at,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+weltscope.de,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+theloft-kl.de,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,17/06/2026
+agentur-schoen.de,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,17/06/2026
