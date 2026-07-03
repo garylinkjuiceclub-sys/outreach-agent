@@ -1,432 +1,259 @@
 domain,primary_email,email_2,email_3,all_emails,email_source_url,pages_checked,source,status,niche,confidence,review_flag,review_reason,contact_form,contact_form_url,wayback_snapshot_date,date_scraped
-cakeinn.com,,,,,,0,blocked:buy now,skipped_irrelevant,E-commerce / Online Shops,,,,,,,01/07/2026
-daysoutyorkshire.com,,,,,,0,blocked:events calendar,skipped_irrelevant,Local Events,,,,,,,01/07/2026
-chestnutshotel.com,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,01/07/2026
-diamond-smile.com,,,,,,0,blocked:dental,skipped_irrelevant,Health / Medical,,,,,,,01/07/2026
-thefroggyadventures.com,hello@thefroggyadventures.com,,,hello@thefroggyadventures.com,https://thefroggyadventures.com/contact-us,12,scraper,verified,Travel,high,,,Yes,https://thefroggyadventures.com/contact-us,,01/07/2026
-goexplorescotland.com,,,,,,0,blocked:thc,skipped_irrelevant,Cannabis / Dispensary,,,,,,,01/07/2026
-somersetfoodie.com,hello@somersetfoodie.com,,,hello@somersetfoodie.com,https://somersetfoodie.com,12,scraper,verified,Food & Drink,high,,,,,,01/07/2026
-izziofbaslow.com,,,,,,0,blocked:new arrivals,skipped_irrelevant,E-commerce / Online Shops,,,,,,,01/07/2026
-fellybull.com,hello@fellybull.com,,,hello@fellybull.com,https://fellybull.com,12,scraper,verified,Food & Drink,high,,,,,,01/07/2026
-thebestmanspeech.com,,,,,,0,blocked:pub+pub,skipped_irrelevant,Bar / Pub,,,,,,,01/07/2026
-joybycorrinesmith.com,,,,,,0,blocked:your cart,skipped_irrelevant,E-commerce / Online Shops,,,,,,,01/07/2026
-fountainsolicitors.com,info@fountainsolicitors.com,birmingham@fountainsolicitors.com,newportreception@fountainsolicitors.com,info@fountainsolicitors.com | birmingham@fountainsolicitors.com | newportreception@fountainsolicitors.com | family@fountainsolicitors.com | manchester@fountainsolicitors.com,https://fountainsolicitors.com/contact,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://fountainsolicitors.com/contact,,01/07/2026
-selectoffshore.com,info@selectoffshore.com,,,info@selectoffshore.com,https://selectoffshore.com,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://selectoffshore.com,,01/07/2026
-countysecurityuk.com,,,,,,0,blocked:security guard,skipped_irrelevant,Security,,,,,,,01/07/2026
-wifinity.com,support@wifinity.co.uk,,,support@wifinity.co.uk,https://wifinity.com/contact,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,01/07/2026
-animliving.com,,,,,,0,blocked:online store,skipped_irrelevant,E-commerce / Online Shops,,,,,,,01/07/2026
-beneculture.com,,,,,,0,blocked:shopping cart,skipped_irrelevant,E-commerce / Online Shops,,,,,,,01/07/2026
-ornategarden.com,sales@ornategarden.com,richard.hill@ornategarden.com,,sales@ornategarden.com | richard.hill@ornategarden.com,https://ornategarden.com,12,scraper,verified,Lifestyle,high,,,Yes,https://www.ornategarden.com/contact/,,01/07/2026
-gardenandanimalstructures.com,,,,,,0,blocked:shop now,skipped_irrelevant,E-commerce / Online Shops,,,,,,,01/07/2026
-newellscarajo.com,,,,,,0,blocked:shopping cart,skipped_irrelevant,E-commerce / Online Shops,,,,,,,01/07/2026
-hotellavabeach.com,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,01/07/2026
-burscoughfc.com,jhawkes@burscoughfc.com,kevduffy@burscoughfc.com,secretary@burscoughfc.com,jhawkes@burscoughfc.com | kevduffy@burscoughfc.com | secretary@burscoughfc.com | welfareofficer@burscoughfc.com | commercial@burscoughfc.com | paul@burscoughfc.com | chairman@burscoughfc.com | juniors@burscoughfc.com,https://burscoughfc.com/contact,12,scraper,verified,News / Media,high,,,Yes,https://burscoughfc.com/contact,,01/07/2026
-madescotland.com,info@madescotland.com,,,info@madescotland.com,https://madescotland.com,12,scraper,verified,Lifestyle,high,,,,,,01/07/2026
-alevere.com,,,,,,0,blocked:clinic,skipped_irrelevant,Health / Medical,,,,,,,01/07/2026
-eastbourneauction.com,enquiries@eastbourneauction.com,,,enquiries@eastbourneauction.com,https://eastbourneauction.com,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://www.eastbourneauction.com/contact-us,,01/07/2026
-mortonnapier.com,sales@mortonnapier.com,lettings@mortonnapier.com,,sales@mortonnapier.com | lettings@mortonnapier.com,https://mortonnapier.com,12,scraper,verified,News / Media,high,,,Yes,https://mortonnapier.com,,01/07/2026
-panamoz.com,,,,,,0,blocked:best sellers,skipped_irrelevant,E-commerce / Online Shops,,,,,,,01/07/2026
-customcontrollers.com,,,,,,0,blocked:new arrivals,skipped_irrelevant,E-commerce / Online Shops,,,,,,,01/07/2026
-tongleadershipacademy.com,,,,,,0,blocked:secondary school,skipped_irrelevant,Education,,,,,,,01/07/2026
-debbiefrank.com,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,01/07/2026
-smithymushrooms.com,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,01/07/2026
-travel-galloway.com,info@gallowayeuropean.co.uk,web@gallowayeuropean.co.uk,coachhire@gallowayeuropean.co.uk,info@gallowayeuropean.co.uk | web@gallowayeuropean.co.uk | coachhire@gallowayeuropean.co.uk,https://travel-galloway.com,12,scraper,needs_manual_check,Travel,medium,yes,domain_mismatch,,,,01/07/2026
-sloanecourtclinic.com,,,,,,0,blocked:clinic,skipped_irrelevant,Health / Medical,,,,,,,01/07/2026
-carrhillschool.com,,,,,,0,blocked:high school,skipped_irrelevant,Education,,,,,,,01/07/2026
-nicktart.com,ironbridge@nicktart.com,wolverhampton@nicktart.com,bridgnorth@nicktart.com,ironbridge@nicktart.com | wolverhampton@nicktart.com | bridgnorth@nicktart.com | muchwenlock@nicktart.com | newport@nicktart.com | lettings@nicktart.com,https://nicktart.com,12,scraper,verified,News / Media,high,,,Yes,https://nicktart.com,,01/07/2026
-internationalcraft.com,,,,,,12,,no_email_found,Lifestyle,,yes,no_email_found,Yes,https://internationalcraft.com,,01/07/2026
-themoleinn.com,,,,,,0,blocked:restaurant+book a table,skipped_irrelevant,Restaurants / Food,,,,,,,01/07/2026
-lifeboxhealth.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,01/07/2026
-jrpattesting.com,,,,,,0,blocked:dental+dental practice,skipped_irrelevant,Health / Medical,,,,,,,01/07/2026
-thehungrysoles.com,,,,,,12,,no_email_found,Travel,,yes,no_email_found,,,,01/07/2026
-oche180.com,,,,,,12,smtp_catchall,no_email_found,News / Media,low,yes,smtp_catchall,,,,01/07/2026
-tshirtsunited.com,sales@t34.co.uk,,,sales@t34.co.uk,https://tshirtsunited.com,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,Yes,https://tshirtsunited.com,,01/07/2026
-gladstonesclinic.com,,,,,,0,blocked:clinic,skipped_irrelevant,Health / Medical,,,,,,,01/07/2026
-asksafc.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-bookspeed.com,sales@bookspeed.com,,,sales@bookspeed.com,https://bookspeed.com/contact-us,12,scraper,verified,Lifestyle,high,,,Yes,https://bookspeed.com/contact-us,,01/07/2026
-hockeydirect.com,team@hockeydirect.com,,,team@hockeydirect.com,https://hockeydirect.com,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,01/07/2026
-garagestyleltd.com,,,,,,0,blocked:garage door+garage doors,skipped_irrelevant,Construction / Trades,,,,,,,01/07/2026
-themorbidtourist.com,hello@themorbidtourist.com,louise.joy@hotmail.com,,hello@themorbidtourist.com | louise.joy@hotmail.com,https://themorbidtourist.com/about,9,scraper,verified,Blog / Content Site,high,,,Yes,https://themorbidtourist.com,,01/07/2026
-fibrecompare.com,,,,,,12,,no_email_found,Review Site,,yes,no_email_found,,,,01/07/2026
-babybanz.com,,,,,,0,blocked:your cart,skipped_irrelevant,E-commerce / Online Shops,,,,,,,01/07/2026
-premierestateslimited.com,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,01/07/2026
-kewgardenshotel.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-whatsoninkent.com,hello@whatsoninkent.com,,,hello@whatsoninkent.com,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,01/07/2026
-chatbazaar.com,,,,,,12,smtp_catchall,no_email_found,Review Site,low,yes,smtp_catchall,,,,01/07/2026
-guitarbitz.com,,,,,,0,blocked:shop now+buy now,skipped_irrelevant,E-commerce / Online Shops,,,,,,,01/07/2026
-englandrover.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,01/07/2026
-bootlefc.com,media@bootlefootballclub.co.uk,info@bootlefootballclub.co.uk,,media@bootlefootballclub.co.uk | info@bootlefootballclub.co.uk,https://bootlefc.com,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,01/07/2026
-myomagh.com,,,,,,12,,no_email_found,Lifestyle,,yes,no_email_found,Yes,https://myomagh.com/contact,,01/07/2026
-data-breach.com,,,,,,0,blocked:solicitors,skipped_irrelevant,Law / Legal,,,,,,,01/07/2026
-tecsurgery.com,info@tecsurgery.com,info@cocoraffels.com,info@topkeystore.com,info@tecsurgery.com | info@cocoraffels.com | info@topkeystore.com,https://tecsurgery.com,12,scraper,verified,Technology,high,,,Yes,https://tecsurgery.com/contact-us,,01/07/2026
-milesfunerals.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-chandlergarvey.com,info@chandlergarvey.com,,,info@chandlergarvey.com,https://chandlergarvey.com,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://chandlergarvey.com/contact,,01/07/2026
-thechesterfieldarms.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-midexpro.com,,,,,,0,blocked:hospital,skipped_irrelevant,Health / Medical,,,,,,,01/07/2026
-theleedswarehouse.com,,,,,,0,blocked:upcoming events,skipped_irrelevant,Local Events,,,,,,,01/07/2026
-sportsmaserati.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://sportsmaserati.com,,01/07/2026
-edinburghpractice.com,,,,,,0,blocked:clinic,skipped_irrelevant,Health / Medical,,,,,,,01/07/2026
-thesimonevans.com,mollie@bluebookam.com,oneinasquillion@gmail.com,,mollie@bluebookam.com | oneinasquillion@gmail.com,https://thesimonevans.com,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,Yes,https://thesimonevans.com/contact,,01/07/2026
-bizzigrowin.com,info@bizzigrowin.com,,,info@bizzigrowin.com,,12,smtp_guess,needs_manual_check,Lifestyle,low,yes,smtp_guess,,,,01/07/2026
-littlegreenpapershop.com,,,,,,0,blocked:shop now,skipped_irrelevant,E-commerce / Online Shops,,,,,,,01/07/2026
-lichfieldcathedralschool.com,reception@lichfieldcathedralschool.com,s.hannam@lichfieldcathedralschool.com,n.dawes@lichfieldcathedralschool.com,reception@lichfieldcathedralschool.com | s.hannam@lichfieldcathedralschool.com | n.dawes@lichfieldcathedralschool.com,https://lichfieldcathedralschool.com,12,scraper,verified,News / Media,high,,,,,,01/07/2026
-palletower.com,info@palletower.com,,,info@palletower.com,https://palletower.com,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://palletower.com/contact,,01/07/2026
-3dgroupuk.com,enquiries@3dgroupuk.com,,,enquiries@3dgroupuk.com,https://3dgroupuk.com,12,scraper,verified,Education / Resources,high,,,,,,01/07/2026
-monthlyteeclub.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-onlypollypocket.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-innes-england.com,,,,,,12,smtp_catchall,no_email_found,News / Media,low,yes,smtp_catchall,Yes,https://innes-england.com/contact,,01/07/2026
-wilmingtonclerkenwell.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-lessonslearned.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-railway-training-courses.com,sales@intertrain.biz,,,sales@intertrain.biz,https://railway-training-courses.com,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,01/07/2026
-isitnicked.com,info@isitnicked.com,,,info@isitnicked.com,,12,smtp_guess,needs_manual_check,Technology,low,yes,smtp_guess,Yes,https://isitnicked.com,,01/07/2026
-annalouoflondon.com,hello@annalouoflondon.com,info@annalouoflondon.com,,hello@annalouoflondon.com | info@annalouoflondon.com,,12,smtp_guess,needs_manual_check,Health & Wellness,low,yes,smtp_guess,Yes,https://annalouoflondon.com,,01/07/2026
-premierpropertylawyers.com,info@premierpropertylawyers.com,media@simplify.co.uk,info@myhomemove.com,info@premierpropertylawyers.com | media@simplify.co.uk | info@myhomemove.com,https://premierpropertylawyers.com,12,scraper,verified,Technology,high,,,,,,01/07/2026
-hendongolf.com,admin@hendongolf.com,,,admin@hendongolf.com,https://hendongolf.com/contact,12,scraper,verified,News / Media,high,,,Yes,https://hendongolf.com/contact,,01/07/2026
-londonbusapp.com,,,,,,12,smtp_catchall,no_email_found,Travel,low,yes,smtp_catchall,,,,01/07/2026
-flameport.com,office@flameport.com,,,office@flameport.com,https://flameport.com,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,01/07/2026
-challonershigh.com,,,,,,0,blocked:high school,skipped_irrelevant,Education,,,,,,,01/07/2026
-mysteryjerseyking.com,info@mysteryjerseyking.com,,,info@mysteryjerseyking.com,https://mysteryjerseyking.com,12,scraper,verified,Blog / Content Site,high,,,Yes,https://mysteryjerseyking.com/contact,,01/07/2026
-liverpoolcheesecompany.com,contact@liverpoolcheesecompany.co.uk,,,contact@liverpoolcheesecompany.co.uk,https://liverpoolcheesecompany.com,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,,,,01/07/2026
-woodchurchhigh.com,,,,,,0,blocked:high school,skipped_irrelevant,Education,,,,,,,01/07/2026
-tescotravelmoney.com,,,,,,0,blocked:easyjet,skipped_irrelevant,Flight Booking,,,,,,,01/07/2026
-samebike.com,,,,,,0,blocked:online store,skipped_irrelevant,E-commerce / Online Shops,,,,,,,01/07/2026
-meolebrace.com,admin@meole.co.uk,careersmbs@meole.co.uk,kate.hare@meole.co.uk,admin@meole.co.uk | careersmbs@meole.co.uk | kate.hare@meole.co.uk,https://meolebrace.com,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,01/07/2026
-innotechdigital.com,webenquiries@innotechdigital.com,sales@innotechdigital.com,,webenquiries@innotechdigital.com | sales@innotechdigital.com,https://innotechdigital.com,12,scraper,verified,Technology,high,,,Yes,https://innotechdigital.com/contact,,01/07/2026
-thaibeachclub.com,,,,,,12,,no_email_found,Food & Drink,,yes,no_email_found,,,,01/07/2026
-davidmussonfencing.com,enquiries@davidmussonfencing.com,,,enquiries@davidmussonfencing.com,https://davidmussonfencing.com,12,scraper,verified,Lifestyle,high,,,Yes,https://davidmussonfencing.com/contact,,01/07/2026
-bowmanrebecchi.com,property@bowreb.com,sales@bowreb.com,scottishtransaiddinner@hotmail.com,property@bowreb.com | sales@bowreb.com | scottishtransaiddinner@hotmail.com,https://bowmanrebecchi.com,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,01/07/2026
-samschophouse.com,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,01/07/2026
-forcescarsdirect.com,partnerships@forcescarsdirect.com,info@forcescarsdirect.com,,partnerships@forcescarsdirect.com | info@forcescarsdirect.com,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,01/07/2026
-endofthefork.com,nicole@endofthefork.com,,,nicole@endofthefork.com,https://endofthefork.com/contact,12,scraper,verified,Food & Drink,high,,,,,,01/07/2026
-favershampools.com,reception@favershampools.com,,,reception@favershampools.com,https://favershampools.com/contact,12,scraper,verified,News / Media,high,,,Yes,https://favershampools.com,,01/07/2026
-londonroofingltd.com,,,,,,0,blocked:roofing services,skipped_irrelevant,Construction / Trades,,,,,,,01/07/2026
-juliabradbury.com,info@juliabradbury.com,fogartyoffice@curtisbrown.co.uk,gina@theoutdoorguide.co.uk,info@juliabradbury.com | fogartyoffice@curtisbrown.co.uk | gina@theoutdoorguide.co.uk | designed@markwalling.co.uk,https://juliabradbury.com,12,scraper,verified,Health & Wellness,high,,,,,,01/07/2026
-robbresidential.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-wardandrider.com,,,,,,0,blocked:dental,skipped_irrelevant,Health / Medical,,,,,,,01/07/2026
-livingroomproperty.com,guernsey@livingroomproperty.com,jersey@livingroomproperty.com,,guernsey@livingroomproperty.com | jersey@livingroomproperty.com,https://livingroomproperty.com,12,scraper,verified,Technology,high,,,,,,01/07/2026
-ambrosewilson.com,contact@ambrosewilson.com,,,contact@ambrosewilson.com,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,01/07/2026
-placesplusfaces.com,,,,,,0,blocked:online store,skipped_irrelevant,E-commerce / Online Shops,,,,,,,01/07/2026
-lk-uk.com,sales@lk-uk.com,technical@lk-uk.com,,sales@lk-uk.com | technical@lk-uk.com,https://lk-uk.com,12,scraper,verified,News / Media,high,,,Yes,https://lk-uk.com/contact,,01/07/2026
-treehousesheffield.com,,,,,,0,blocked:opening times,skipped_irrelevant,Visiting Places / Attractions,,,,,,,01/07/2026
-thecorrsofficial.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-poolegrammar.com,,,,,,0,blocked:grammar school,skipped_irrelevant,Education,,,,,,,01/07/2026
-wundagroup.com,techsupport@wundagroup.com,sales@wundagroup.com,plans@wundagroup.com,techsupport@wundagroup.com | sales@wundagroup.com | plans@wundagroup.com,https://wundagroup.com,12,scraper,verified,Technology,high,,,Yes,https://wundagroup.com,,01/07/2026
-dosomethingdifferent.com,contact@dosomethingdifferent.com,info@dosomethingdifferent.com,,contact@dosomethingdifferent.com | info@dosomethingdifferent.com,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,01/07/2026
-fireglassuk.com,info@fireglassuk.com,estimating@fireglassuk.com,technical@fireglassuk.com,info@fireglassuk.com | estimating@fireglassuk.com | technical@fireglassuk.com | richard.bradnick@fireglassuk.com | andrew.hornigold@fireglassuk.com | jade.lashford@fireglassuk.com | gary.mahoney@fireglassuk.com | michael.morton@fireglassuk.com | james.duff@fireglassuk.com | joseph.wakeham@fireglassuk.com,https://fireglassuk.com/contact,12,scraper,verified,Finance / Business,high,,,Yes,https://fireglassuk.com,,01/07/2026
-anthonypepe.com,info@anthonypepe.com,,,info@anthonypepe.com,,12,smtp_guess,needs_manual_check,Blog / Content Site,low,yes,smtp_guess,Yes,https://anthonypepe.com,,01/07/2026
-doyrms.com,reception@doyrms.com,,,reception@doyrms.com,https://doyrms.com,12,scraper,verified,News / Media,high,,,,,,01/07/2026
-smileclinicgroup.com,,,,,,0,blocked:clinic,skipped_irrelevant,Health / Medical,,,,,,,01/07/2026
-ubluk.com,enquiries@ubluk.com,,,enquiries@ubluk.com,https://ubluk.com,12,scraper,verified,News / Media,high,,,Yes,https://ubluk.com/contact,,01/07/2026
-muddyfox.com,info@muddyfox.com,,,info@muddyfox.com,,6,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,01/07/2026
-pugh-auctions.com,paul.thompson@pugh-auctions.com,manchester@propertyauctions.eddisons.com,leeds@propertyauctions.eddisons.com,paul.thompson@pugh-auctions.com | manchester@propertyauctions.eddisons.com | leeds@propertyauctions.eddisons.com | sheffield@propertyauctions.eddisons.com | birmingham@propertyauctions.eddisons.com | bristol@propertyauctions.eddisons.com | cumbria@propertyauctions.eddisons.com | glasgow@propertyauctions.eddisons.com | liverpool@propertyauctions.eddisons.com | london@propertyauctions.eddisons.com | newcastle@propertyauctions.eddisons.com | nottingham@propertyauctions.eddisons.com,https://www.pugh-auctions.com/meet-our-team/paul-thompson,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,01/07/2026
-cairnha.com,enquiries@cairnha.com,ask@spso.uk,,enquiries@cairnha.com | ask@spso.uk,https://cairnha.com,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://cairnha.com/contact,,01/07/2026
-britmusictours.com,info@britmusictours.com,,,info@britmusictours.com,https://britmusictours.com/contact,12,scraper,verified,Blog / Content Site,high,,,Yes,https://britmusictours.com,,01/07/2026
-nomoq.com,hello@nomoq.com,dave@nomoq.com,patrick@nomoq.com,hello@nomoq.com | dave@nomoq.com | patrick@nomoq.com | james@nomoq.com | stefan@nomoq.com | sarah@nomoq.com | kerstin@nomoq.com | andrew@nomoq.com | molly@nomoq.com | gabi@nomoq.com | michael@nomoq.com | nauris@nomoq.com | julian@nomoq.com | tamara@nomoq.com | bjoern@nomoq.com | marvin@nomoq.com | francesco@nomoq.com | sarah.h@nomoq.com | mukayil@nomoq.com | etienne@nomoq.com | linda@nomoq.com | denver@nomoq.com | konstantin@nomoq.com | simon@nomoq.com | amelia@nomoq.com | rob@nomoq.com | peter@nomoq.com | mari@nomoq.com | mike@nomoq.com,https://nomoq.com,12,scraper,verified,Technology,high,,,Yes,https://nomoq.com,,01/07/2026
-wanderlustswingers.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-camshill.com,,,,,,0,blocked:secondary school,skipped_irrelevant,Education,,,,,,,01/07/2026
-avenahotel.com,,,,,,6,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,01/07/2026
-rainhammark.com,,,,,,0,blocked:grammar school,skipped_irrelevant,Education,,,,,,,01/07/2026
-tudorhallschool.com,admissions@tudorhallschool.com,hello@ournameismud.co.uk,,admissions@tudorhallschool.com | hello@ournameismud.co.uk,https://tudorhallschool.com,12,scraper,verified,Travel,high,,,Yes,https://tudorhallschool.com,,01/07/2026
-norfolkbirds.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-insighttracking.com,,,,,,0,blocked:primary school,skipped_irrelevant,Education,,,,,,,01/07/2026
-johnrobins.com,emily.reesjones@mcsaatchimerlin.com,sue@sueterryvoices.com,,emily.reesjones@mcsaatchimerlin.com | sue@sueterryvoices.com,https://johnrobins.com/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,01/07/2026
-mymeglio.com,,,,,,0,blocked:clinic,skipped_irrelevant,Health / Medical,,,,,,,01/07/2026
-a-part-of.com,info@a-part-of.com,yourhostbhm@a-part-of.com,yourhosthay@a-part-of.com,info@a-part-of.com | yourhostbhm@a-part-of.com | yourhosthay@a-part-of.com | yourhostkew@a-part-of.com | yourhostlpl@a-part-of.com | membership@angel-gardens.com | jeffrey@meaningful.agency,https://a-part-of.com/contact,12,scraper,verified,Health & Wellness,high,,,,,,01/07/2026
-cecelia-ahern.com,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,01/07/2026
-cheshirephoenix.com,proteam@cheshirephoenix.com,,,proteam@cheshirephoenix.com,https://cheshirephoenix.com,12,scraper,verified,Sports,high,,,Yes,https://cheshirephoenix.com/contact,,01/07/2026
-indisupplements.com,,,,,,0,blocked:shop now+shop all,skipped_irrelevant,E-commerce / Online Shops,,,,,,,01/07/2026
-aboutfortwilliam.com,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,01/07/2026
-thespicetailor.com,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,01/07/2026
-larkmead-school.com,office@lar.cambrianlt.org,admissions@lar.cambrianlt.org,,office@lar.cambrianlt.org | admissions@lar.cambrianlt.org,https://larkmead-school.com,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,01/07/2026
-joannemcnally.com,rick@offthekerb.co.uk,christina@lisarichards.ie,eavan@lisarichards.ie,rick@offthekerb.co.uk | christina@lisarichards.ie | eavan@lisarichards.ie | tpucciani@wmeagency.com,https://joannemcnally.com/contact,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,01/07/2026
-khoollect.com,,,,,,12,,no_email_found,Lifestyle,,yes,no_email_found,Yes,https://khoollect.com,,01/07/2026
-caferoyaledinburgh.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-jimmygreen.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-janeygodley.com,,,,,,7,,no_email_found,Travel,,yes,no_email_found,Yes,https://janeygodley.com,,01/07/2026
-lotsroad.com,info@lotsroad.com,emma@lotsroad.com,marketing@lotsroad.com,info@lotsroad.com | emma@lotsroad.com | marketing@lotsroad.com,https://lotsroad.com,12,scraper,verified,Lifestyle,high,,,Yes,https://lotsroad.com/contact,,01/07/2026
-springfieldhealthcare.com,,,,,,0,blocked:thc,skipped_irrelevant,Cannabis / Dispensary,,,,,,,01/07/2026
-catchrecovery.com,,,,,,0,blocked:clinic,skipped_irrelevant,Health / Medical,,,,,,,01/07/2026
-jamesmarriottmusic.com,,,,,,0,blocked:your cart,skipped_irrelevant,E-commerce / Online Shops,,,,,,,01/07/2026
-fortheloveofhorroruk.com,,,,,,0,blocked:exhibition centre,skipped_irrelevant,Events / Venues,,,,,,,01/07/2026
-russellandatwell.com,,,,,,0,blocked:your cart,skipped_irrelevant,E-commerce / Online Shops,,,,,,,01/07/2026
-peptidesuk.com,,,,,,0,blocked:best sellers,skipped_irrelevant,E-commerce / Online Shops,,,,,,,01/07/2026
-dblockeurope.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-animeconuk.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-rymanbusiness.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-ojohaven.com,ojo@ojohaven.com,,,ojo@ojohaven.com,https://ojohaven.com,12,scraper,verified,Lifestyle,high,,,,,,01/07/2026
-yogastudiostore.com,,,,,,0,blocked:yoga studio,skipped_irrelevant,Gyms / Fitness,,,,,,,01/07/2026
-gelert.com,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-paydens.com,,,,,,0,blocked:clinic+pharmaceutical,skipped_irrelevant,Health / Medical,,,,,,,01/07/2026
-padeluniteduk.com,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,Yes,https://padeluniteduk.com/contact,,01/07/2026
-donegalcottageholidays.com,,,,,,0,blocked:music festival+arts festival,skipped_irrelevant,Festival,,,,,,,01/07/2026
-urban-tandoor.com,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,01/07/2026
-speedystreetsolutions.com,,,,,,0,blocked:hospital,skipped_irrelevant,Health / Medical,,,,,,,01/07/2026
-georgerussell63.com,harry@gr63.co.uk,enquiries@mercedesamgf1.com,,harry@gr63.co.uk | enquiries@mercedesamgf1.com,https://www.georgerussell63.com/contact,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,Yes,https://www.georgerussell63.com/contact,,01/07/2026
-platinumprint.com,,,,,,0,blocked:pharmaceutical+pharma,skipped_irrelevant,Health / Medical,,,,,,,01/07/2026
-meshcomputers.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-stainternational.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://stainternational.com,,01/07/2026
-logovisual.com,sales@logovisual.com,,,sales@logovisual.com,https://logovisual.com,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://logovisual.com/contact,,01/07/2026
-lovefairs.com,,,,,,13,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,Yes,https://lovefairs.com,2013-10-14,01/07/2026
-roseonlinegame.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-vilamendhoo.com,,,,,,0,blocked:resort,skipped_irrelevant,Hotels / Accommodation,,,,,,,01/07/2026
-johngrayfuneraldirectors.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-skyhookadventure.com,hello@skyhookadventure.com,info@skyhookadventure.com,,hello@skyhookadventure.com | info@skyhookadventure.com,,12,smtp_guess,needs_manual_check,Travel,low,yes,smtp_guess,,,,01/07/2026
-kimboltonschool.com,,,,,,0,blocked:boarding school,skipped_irrelevant,Education,,,,,,,01/07/2026
-fifakitcreator.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-jamesbrownfuneraldirectors.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-callybeaton.com,info@callybeaton.com,hannah@intertalentgroup.com,laytonoffice@intertalentgroup.com,info@callybeaton.com | hannah@intertalentgroup.com | laytonoffice@intertalentgroup.com,http://callybeaton.com/contact/,12,scraper,verified,Entertainment,high,,,Yes,https://callybeaton.com,,01/07/2026
-golf-escapes.com,info@golf-escapes.com,,,info@golf-escapes.com,https://golf-escapes.com,12,scraper,verified,Magazine,high,,,Yes,https://golf-escapes.com,,01/07/2026
-barriobars.com,,,,,,0,blocked:our menu+brunch menu,skipped_irrelevant,Restaurants / Food,,,,,,,01/07/2026
-ggmgroup.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-cobhamhall.com,,,,,,0,blocked:boarding school,skipped_irrelevant,Education,,,,,,,01/07/2026
-bloodbowl-thegame.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,01/07/2026
-dalstons.com,,,,,,0,blocked:nightclub,skipped_irrelevant,Bar / Pub,,,,,,,01/07/2026
-willowcrossley.com,,,,,,0,blocked:your cart,skipped_irrelevant,E-commerce / Online Shops,,,,,,,01/07/2026
-carmarthencameras.com,info@carmarthencameras.com,,,info@carmarthencameras.com,https://carmarthencameras.com,12,scraper,verified,Technology,high,,,,,,01/07/2026
-leightonpark.com,,,,,,0,blocked:boarding school,skipped_irrelevant,Education,,,,,,,01/07/2026
-mmbcreative.com,talent@mmbcreative.com,,,talent@mmbcreative.com,https://mmbcreative.com/contact,12,scraper,verified,Technology,high,,,Yes,https://mmbcreative.com/contact,,01/07/2026
-theundertones.com,news@theundertones.com,undertonescontact@gmail.com,licensing@bmg.com,news@theundertones.com | undertonescontact@gmail.com | licensing@bmg.com | barry@midnightmango.co.uk,https://www.theundertones.com/contact,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,01/07/2026
-sergedenimes.com,,,,,,0,blocked:best sellers,skipped_irrelevant,E-commerce / Online Shops,,,,,,,01/07/2026
-mihigh.com,,,,,,0,blocked:doctor,skipped_irrelevant,Health / Medical,,,,,,,01/07/2026
-flanneryplanthire.com,info@flanneryplant.co.uk,webenquiries@flanneryplant.co.uk,accounts.receivable@flanneryplant.co.uk,info@flanneryplant.co.uk | webenquiries@flanneryplant.co.uk | accounts.receivable@flanneryplant.co.uk,https://flanneryplanthire.com,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,Yes,https://flanneryplanthire.com/contact,,01/07/2026
-somethingaboutrocks.com,contact@somethingaboutrocks.com,boss-@taskpr-139-www.watchshop,,contact@somethingaboutrocks.com | boss-@taskpr-139-www.watchshop,https://somethingaboutrocks.com,12,scraper,verified,Magazine,high,,,Yes,https://somethingaboutrocks.com/contact,,01/07/2026
-planetfigure.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,01/07/2026
-trippz.com,hello@trippz.com,,,hello@trippz.com,https://trippz.com,12,scraper,verified,Technology,high,,,Yes,https://trippz.com/contact-us,,01/07/2026
-djkit.com,sales@djkit.com,,,sales@djkit.com,https://djkit.com,12,scraper,verified,Technology,high,,,Yes,https://djkit.com/contact,,01/07/2026
-southern-charms3.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-fabricuk.com,,,,,,12,,no_email_found,Lifestyle,,yes,no_email_found,,,,01/07/2026
-blme.com,info@blme.com,savings@blme.com,blmecapital@blme.com,info@blme.com | savings@blme.com | blmecapital@blme.com,https://blme.com,12,scraper,verified,Technology,high,,,,,,01/07/2026
-colourshoxton.com,manager@colourshoxton.com,jessye@mothershipgroup.com,marketing@rightclickmedia.co.za,manager@colourshoxton.com | jessye@mothershipgroup.com | marketing@rightclickmedia.co.za | privatehire@mothershipgroup.com | adam@mothershipgroup.com | jack@mothershipgroup.com | anushka@mothershipgroup.com | shelly@foil-events.co.uk,https://colourshoxton.com,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,01/07/2026
-cerebrumiq.com,support@cerebrumiq.com,help@cerebrumiq.com,,support@cerebrumiq.com | help@cerebrumiq.com,https://cerebrumiq.com,12,scraper,verified,Entertainment,high,,,,,,01/07/2026
-soniksports.com,media@soniksports.com,,,media@soniksports.com,https://soniksports.com,12,scraper,verified,Blog / Content Site,high,,,Yes,https://soniksports.com,,01/07/2026
-grimsdyke.com,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,01/07/2026
-wallpaperfromthe70s.com,info@tapetender70er.de,,,info@tapetender70er.de,https://wallpaperfromthe70s.com,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,Yes,https://wallpaperfromthe70s.com/contact,,01/07/2026
-hampdenbank.com,contact@hampdenbank.com,,,contact@hampdenbank.com,https://hampdenbank.com,12,scraper,verified,Technology,high,,,,,,01/07/2026
-colytongrammar.com,,,,,,0,blocked:grammar school,skipped_irrelevant,Education,,,,,,,01/07/2026
-bluemarblepayroll.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-broadwaytravel.com,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,01/07/2026
-traderscale.com,info@traderscale.com,,,info@traderscale.com,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,01/07/2026
-glampitect.com,contact@glampitect.com,contact@glampitect.co.uk,,contact@glampitect.com | contact@glampitect.co.uk,https://glampitect.com,12,scraper,verified,Blog / Content Site,high,,,,,,01/07/2026
-firetrap.com,,,,,,4,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-neckdeepuk.com,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,Yes,https://neckdeepuk.com,,01/07/2026
-tggplc.com,,,,,,0,blocked:gym membership,skipped_irrelevant,Gyms / Fitness,,,,,,,01/07/2026
-lonsdale.com,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-cuaccount.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-ellaresorts.com,info@ellaresorts.com,,,info@ellaresorts.com,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,01/07/2026
-mygorgeousrecipes.com,daniela@mygorgeousrecipes.com,,,daniela@mygorgeousrecipes.com,https://mygorgeousrecipes.com/contact,12,scraper,verified,Food & Drink,high,,,Yes,https://mygorgeousrecipes.com,,01/07/2026
-innovatorinternational.com,,,,,,12,,no_email_found,Finance / Business,,yes,no_email_found,Yes,https://innovatorinternational.com,,01/07/2026
-leedssexualhealth.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,Yes,https://leedssexualhealth.com/contact,,01/07/2026
-curtins.com,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,01/07/2026
-sportlondon.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-continentalhotelbudapest.com,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,01/07/2026
-heylohousing.com,marketing@heylohousing.com,,,marketing@heylohousing.com,https://heylohousing.com/contact-us,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,01/07/2026
-leicestershirefa.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,01/07/2026
-ixomodels.com,info@ixomodels.com,,,info@ixomodels.com,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,01/07/2026
-the-brook.com,,,,,,0,blocked:live music venue,skipped_irrelevant,Bar / Pub,,,,,,,01/07/2026
-nvcuk.com,hello@nvcuk.com,info@nvcuk.com,sales@nvcuk.com,hello@nvcuk.com | info@nvcuk.com | sales@nvcuk.com | technical@nvcuk.com,https://nvcuk.com,12,scraper,verified,Technology,high,,,Yes,https://nvcuk.com,,01/07/2026
-vpgroundforce.com,,,,,,0,blocked:excavation,skipped_irrelevant,Construction / Trades,,,,,,,01/07/2026
-closebrotherspf.com,,,,,,0,blocked:insurance provider,skipped_irrelevant,Insurance,,,,,,,01/07/2026
-jamdoughnut.com,editor@jamdoughnut.com,editorial@jamdoughnut.com,partnerships@jamdoughnut.com,editor@jamdoughnut.com | editorial@jamdoughnut.com | partnerships@jamdoughnut.com,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,Yes,https://jamdoughnut.com/contact-us,,01/07/2026
-clayesmore.com,info@clayesmore.com,,,info@clayesmore.com,,13,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,2002-11-22,01/07/2026
-ozrics.com,,,,,,12,,no_email_found,Technology,,yes,no_email_found,Yes,https://ozrics.com,,01/07/2026
-vue-international.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,01/07/2026
-lqhomes.com,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,01/07/2026
-sainsburysenergy.com,hi@sainsburysenergy.com,,,hi@sainsburysenergy.com,https://www.sainsburysenergy.com/contact-us,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,01/07/2026
-simplygames.com,customer-services@simplygames.com,,,customer-services@simplygames.com,https://simplygames.com,12,scraper,verified,Entertainment,high,,,,,,01/07/2026
-thebeautycrop.com,hello@thebeautycrop.com,info@thebeautycrop.com,,hello@thebeautycrop.com | info@thebeautycrop.com,,12,smtp_guess,needs_manual_check,Lifestyle,low,yes,smtp_guess,,,,01/07/2026
-oneplanetadventure.com,,,,,,0,blocked:visitor centre+visitor center,skipped_irrelevant,Visiting Places / Attractions,,,,,,,01/07/2026
-mastercaller.com,info@mastercaller.com,,,info@mastercaller.com,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,Yes,https://mastercaller.com/contact,,01/07/2026
-adp-architecture.com,,,,,,0,blocked:university+higher education,skipped_irrelevant,University,,,,,,,01/07/2026
-mallcribbs.com,,,,,,0,blocked:retail park,skipped_irrelevant,Shopping Mall,,,,,,,01/07/2026
-equinepremium.com,,,,,,4,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,01/07/2026
-lochduart.com,admin@lochduart.com,sales@lochduart.com,graemet@sprengthomson.com,admin@lochduart.com | sales@lochduart.com | graemet@sprengthomson.com,https://lochduart.com,12,scraper,verified,Food & Drink,high,,,,,,01/07/2026
-5hertfordstreet.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-beeinspiredclothing.com,,,,,,0,blocked:shop now+add to bag,skipped_irrelevant,E-commerce / Online Shops,,,,,,,01/07/2026
-thebelfastempire.com,info@thebelfastempire.com,,,info@thebelfastempire.com,https://thebelfastempire.com,12,scraper,verified,Entertainment,high,,,Yes,https://thebelfastempire.com,,01/07/2026
-puzzler.com,reception@puzzlermedia.com,,,reception@puzzlermedia.com,https://puzzler.com/contact,12,scraper,needs_manual_check,Magazine,medium,yes,domain_mismatch,,,,01/07/2026
-witnesscountyhall.com,customers@kxtickets.com,access@kxtickets.com,,customers@kxtickets.com | access@kxtickets.com,https://witnesscountyhall.com/the-venue/contact-us,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,Yes,https://witnesscountyhall.com,,01/07/2026
-tryatria.com,support@tryatria.com,,,support@tryatria.com,https://tryatria.com,12,scraper,verified,Technology,high,,,,,,01/07/2026
-ultimatepoolgroup.com,info@ultimatepoolgroup.com,,,info@ultimatepoolgroup.com,https://ultimatepoolgroup.com/about,12,scraper,verified,News / Media,high,,,,,,01/07/2026
-cineflixrights.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-hyroxuk.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,Yes,https://hyroxuk.com,,01/07/2026
-cupfulofkale.com,cupfulofkale@outlook.com,,,cupfulofkale@outlook.com,https://cupfulofkale.com/about,12,scraper,needs_manual_check,Food & Drink,medium,yes,domain_mismatch,Yes,https://cupfulofkale.com,,01/07/2026
-davidgamecollege.com,,,,,,0,blocked:boarding school,skipped_irrelevant,Education,,,,,,,01/07/2026
-betzino.com,info@betzino.com,,,info@betzino.com,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,01/07/2026
-brianbilston.com,info@lutyensrubinstein.co.uk,paris@edgestreetlive.com,camilla.elworthy@macmillan.com,info@lutyensrubinstein.co.uk | paris@edgestreetlive.com | camilla.elworthy@macmillan.com,https://brianbilston.com/contact,12,scraper,needs_manual_check,,medium,yes,unclassified_niche; domain_mismatch,,,,01/07/2026
-glastofestfeed.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,01/07/2026
-thepeoplesmovies.com,,,,,,13,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-lillywhites.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-molofinance.com,support@molofinance.com,agnes.zhang@molofinance.com,andrea.gizzy@molofinance.com,support@molofinance.com | agnes.zhang@molofinance.com | andrea.gizzy@molofinance.com | craig.grinsell@molofinance.com | lee.isherwood@molofinance.com | richard.cunningham@molofinance.com | martin.sims@molofinance.com | service@colcap.co.uk | product.transfers@colcap.co.uk | complaints@colcap.co.uk | customercare@aaafin.co.uk,https://molofinance.com,12,scraper,verified,Technology,high,,,Yes,https://molofinance.com,,01/07/2026
-glasswall.com,partnerships@glasswall.com,media@glasswall.com,info@glasswall.com,partnerships@glasswall.com | media@glasswall.com | info@glasswall.com,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,01/07/2026
-westcoastharley.com,info@westcoastharley.com,,,info@westcoastharley.com,https://westcoastharley.com/contact-us,12,scraper,verified,News / Media,high,,,Yes,https://westcoastharley.com/contact-us,,01/07/2026
-juniorpremierleague.com,,,,,,12,,no_email_found,Lifestyle,,yes,no_email_found,,,,01/07/2026
-puckstop.com,,,,,,12,,no_email_found,Lifestyle,,yes,no_email_found,Yes,https://puckstop.com/contact,,01/07/2026
-thelawpages.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-johngrantmusic.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-qahighereducation.com,,,,,,0,blocked:university,skipped_irrelevant,University,,,,,,,01/07/2026
-turtletots.com,info@turtletots.com,marketing@turtletots.com,data@turtletots.com,info@turtletots.com | marketing@turtletots.com | data@turtletots.com,https://turtletots.com,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://turtletots.com/contact-us,,01/07/2026
-experiencesussex.com,press@experiencesussex.com,bizsupport@experiencesussex.com,marketing@experiencesussex.com,press@experiencesussex.com | bizsupport@experiencesussex.com | marketing@experiencesussex.com,https://www.experiencesussex.com/business-support/meet-the-team/,12,scraper,verified,Travel,high,,,,,,01/07/2026
-geomagworld.com,boutique@geomagworld.com,,,boutique@geomagworld.com,https://www.geomagworld.com/en/contact-faq/,12,scraper,verified,Environment / Green,high,,,Yes,https://www.geomagworld.com/en/contact-geomagworld-sa/,,01/07/2026
-corstorphine-wright.com,contact@cw-architects.co.uk,,,contact@cw-architects.co.uk,https://corstorphine-wright.com/contact,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,Yes,https://corstorphine-wright.com/contact,,01/07/2026
-perfectsmile-dental.com,,,,,,0,blocked:dental,skipped_irrelevant,Health / Medical,,,,,,,01/07/2026
-scentered.com,support@scentered.com,,,support@scentered.com,https://scentered.com,12,scraper,verified,Health & Wellness,high,,,,,,01/07/2026
-arenagroup.com,info@arenagroup.com,fencingandbarriers@arenagroup.com,massparticipation@arenagroup.com,info@arenagroup.com | fencingandbarriers@arenagroup.com | massparticipation@arenagroup.com | sales@welldressedtables.co.uk,https://arenagroup.com/contact,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://arenagroup.com,,01/07/2026
-karrimor.com,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-lakegarda42.com,info@lakegarda42.com,info@jubatus.it,info@communicoitalia.com,info@lakegarda42.com | info@jubatus.it | info@communicoitalia.com | giuseppe.martino@ldlcometa.it,https://lakegarda42.com,8,scraper,verified,General / Other,high,yes,unclassified_niche,,,,01/07/2026
-glintpay.com,support_usa@glintpay.com,,,support_usa@glintpay.com,https://glintpay.com,12,scraper,verified,Technology,high,,,,,,01/07/2026
-clipnclimb.com,info@clipnclimb.com,,,info@clipnclimb.com,https://clipnclimb.com/contact,12,scraper,verified,Entertainment,high,,,Yes,https://clipnclimb.com/contact,,01/07/2026
-bio-kult.com,,,,,,0,blocked:shop now,skipped_irrelevant,E-commerce / Online Shops,,,,,,,01/07/2026
-go-ferry.com,support@go-ferry.com,,,support@go-ferry.com,https://go-ferry.com,12,scraper,verified,Travel,high,,,Yes,https://go-ferry.com,,01/07/2026
-ice36.com,support@ice36.com,,,support@ice36.com,https://www.ice36.com/contact/,12,scraper,verified,Technology,high,,,,,,01/07/2026
-gt4europeanseries.com,,,,,,0,blocked:upcoming events,skipped_irrelevant,Local Events,,,,,,,01/07/2026
-sportivebreaks.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-ffordes.com,info@ffordes.com,,,info@ffordes.com,https://ffordes.com,12,scraper,verified,Technology,high,,,Yes,https://ffordes.com,,01/07/2026
-readingroom.com,contact@readingroom.com,hello@readingroom.com,info@readingroom.com,contact@readingroom.com | hello@readingroom.com | info@readingroom.com,,12,smtp_guess,needs_manual_check,Technology,low,yes,smtp_guess,,,,01/07/2026
-synecticsglobal.com,,,,,,0,blocked:hospital,skipped_irrelevant,Health / Medical,,,,,,,01/07/2026
-portakabin.com,press@portakabin.com,contactus@portakabin.com,,press@portakabin.com | contactus@portakabin.com,https://portakabin.com/contact-us,12,scraper,verified,Lifestyle,high,,,Yes,https://portakabin.com/contact-us,,01/07/2026
-modainpelle.com,press@modainpelle.com,hello@modainpelle.com,info@modainpelle.com,press@modainpelle.com | hello@modainpelle.com | info@modainpelle.com,,12,smtp_guess,needs_manual_check,Blog / Content Site,low,yes,smtp_guess,,,,01/07/2026
-nellyduff.com,press@nellyduff.com,hello@nellyduff.com,freshblood@nellyduff.com,press@nellyduff.com | hello@nellyduff.com | freshblood@nellyduff.com,https://nellyduff.com/contact,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://nellyduff.com,,01/07/2026
-davanti-tyres.com,,,,,,0,blocked:dental,skipped_irrelevant,Health / Medical,,,,,,,01/07/2026
-polarisbritain.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,Yes,https://polarisbritain.com/contact-us,,01/07/2026
-uefaacademy.com,academy@uefa.ch,,,academy@uefa.ch,https://uefaacademy.com,12,scraper,needs_manual_check,Environment / Green,medium,yes,domain_mismatch,,,,01/07/2026
-premiermodelmanagement.com,info@premiermodelmanagement.com,safety@premiermodelmanagement.com,accounts@premiermodelmanagement.com,info@premiermodelmanagement.com | safety@premiermodelmanagement.com | accounts@premiermodelmanagement.com,https://premiermodelmanagement.com/contact,12,scraper,verified,Lifestyle,high,,,,,,01/07/2026
-eblue.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-draughtslondon.com,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,01/07/2026
-supadance.com,,,,,,0,blocked:best sellers,skipped_irrelevant,E-commerce / Online Shops,,,,,,,01/07/2026
-supercoinsy.com,info@supercoinsy.com,supercoinsy@supercoinsy.pl,5@gmail.com,info@supercoinsy.com | supercoinsy@supercoinsy.pl | 5@gmail.com | i@onet.eu | n@gmail.com,https://supercoinsy.com,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://supercoinsy.com/contact/cooperation,,01/07/2026
-a-cold-wall.com,,,,,,0,blocked:shop now+shop all,skipped_irrelevant,E-commerce / Online Shops,,,,,,,01/07/2026
-3leggedthing.com,,,,,,0,blocked:your cart,skipped_irrelevant,E-commerce / Online Shops,,,,,,,01/07/2026
-protexin.com,,,,,,12,smtp_catchall,no_email_found,Health & Wellness,low,yes,smtp_catchall,Yes,https://protexin.com/contact,,01/07/2026
-elevatorsound.com,contact@elevatorsound.com,uk@elevatorsound.com,,contact@elevatorsound.com | uk@elevatorsound.com,https://elevatorsound.com/contact,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,01/07/2026
-smartr365.com,info@smartr365.com,,,info@smartr365.com,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,01/07/2026
-impressions-gallery.com,media@impressions-gallery.com,hello@impressions-gallery.com,newfocus@impressions-gallery.com,media@impressions-gallery.com | hello@impressions-gallery.com | newfocus@impressions-gallery.com | learning@impressions-gallery.com | touring@impressions-gallery.com | bookshop@impressions-gallery.com | colin@rosellastudios.com,https://impressions-gallery.com/contact,12,scraper,verified,News / Media,high,,,Yes,https://impressions-gallery.com,,01/07/2026
-racenet.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-landonorris.com,business@landonorris.com,,,business@landonorris.com,https://landonorris.com,12,scraper,verified,News / Media,high,,,,,,01/07/2026
-jpjenkins.com,info@jpjenkins.com,,,info@jpjenkins.com,https://jpjenkins.com,12,scraper,verified,News / Media,high,,,Yes,https://jpjenkins.com/contact,,01/07/2026
-solosholidays.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,01/07/2026
-lordofthedance.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,01/07/2026
-earlymusicshop.com,hello@earlymusicshop.com,sales@earlymusicshop.com,,hello@earlymusicshop.com | sales@earlymusicshop.com,https://earlymusicshop.com,12,scraper,verified,Review Site,high,,,,,,01/07/2026
-amonbet.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,01/07/2026
-kabulnow.com,mail@kabulnow.com,,,mail@kabulnow.com,https://kabulnow.com/contact,12,scraper,verified,News / Media,high,,,Yes,https://kabulnow.com/contact,,01/07/2026
-thankbox.com,support@thankbox.com,,,support@thankbox.com,https://www.thankbox.com/contact,12,scraper,verified,Technology,high,,,,,,01/07/2026
-townhallhotel.com,,,,,,0,blocked:town hall,skipped_irrelevant,Government,,,,,,,01/07/2026
-stamfordartscentre.com,,,,,,0,blocked:art gallery,skipped_irrelevant,Museums / Culture,,,,,,,01/07/2026
-skolcasino.com,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,01/07/2026
-stereoboard.com,,,,,,0,blocked:hospital,skipped_irrelevant,Health / Medical,,,,,,,01/07/2026
-projectscot.com,gary.moug@peeblesmedia.com,craig.quirie@peeblesmedia.com,caroline.maciver@peeblesmedia.com,gary.moug@peeblesmedia.com | craig.quirie@peeblesmedia.com | caroline.maciver@peeblesmedia.com | mark.griston@peeblesmedia.com | jack.gribben@peeblesmedia.com | subs@peeblesmedia.com,https://projectscot.com/contact-us,12,scraper,needs_manual_check,Magazine,medium,yes,domain_mismatch,,,,01/07/2026
-ttcombat.com,info@ttcombat.com,hello@eucompliancepartner.com,,info@ttcombat.com | hello@eucompliancepartner.com,https://ttcombat.com,12,scraper,verified,Entertainment,high,,,,,,01/07/2026
-katedaviesdesigns.com,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,01/07/2026
-scottishstorytellingcentre.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-niallferguson.com,,,,,,0,blocked:university,skipped_irrelevant,University,,,,,,,01/07/2026
-abundanceinvestment.com,support@abundanceinvestment.com,,,support@abundanceinvestment.com,https://abundanceinvestment.com,12,scraper,verified,Finance / Business,high,,,,,,01/07/2026
-thestudentsurvey.com,,,,,,0,blocked:university+higher education,skipped_irrelevant,University,,,,,,,01/07/2026
-megaconlive.com,press@megaconlive.com,content@megaconlive.com,help@megaconlive.com,press@megaconlive.com | content@megaconlive.com | help@megaconlive.com | accessibility@megaconlive.com | cosplay@megaconlive.com | creators@megaconlive.com | industry@megaconlive.com | sales@megaconlive.com | talent@megaconlive.com | traders@megaconlive.com,https://megaconlive.com/contact,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,01/07/2026
-turnstyledesigns.com,us-support@turnstyledesigns.com,sales@turnstyledesigns.com,,us-support@turnstyledesigns.com | sales@turnstyledesigns.com,https://turnstyledesigns.com/contact,12,scraper,verified,Blog / Content Site,high,,,,,,01/07/2026
-newsbywire.com,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,01/07/2026
-manorsgolf.com,,,,,,0,blocked:best sellers,skipped_irrelevant,E-commerce / Online Shops,,,,,,,01/07/2026
-benidormpalace.com,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-griffin.com,press@griffin.com,support@griffin.com,privacy@griffin.com,press@griffin.com | support@griffin.com | privacy@griffin.com,https://griffin.com/contact,12,scraper,verified,Technology,high,,,Yes,https://griffin.com/contact,,01/07/2026
-reflo.com,,,,,,0,blocked:best sellers,skipped_irrelevant,E-commerce / Online Shops,,,,,,,01/07/2026
-trainsimworld.com,info@trainsimworld.com,,,info@trainsimworld.com,,12,smtp_guess,needs_manual_check,News / Media,low,yes,smtp_guess,,,,01/07/2026
-insomniagamingfestival.com,events@insomniagamingfestival.com,,,events@insomniagamingfestival.com,https://insomniagamingfestival.com,12,scraper,verified,Entertainment,high,,,,,,01/07/2026
-margoselby.com,info@margoselby.com,,,info@margoselby.com,https://margoselby.com,12,scraper,verified,Blog / Content Site,high,,,,,,01/07/2026
-jerseyfinance.com,jersey@jerseyfinance.com,london@jerseyfinance.com,jacqueline.price@jerseyfinance.com,jersey@jerseyfinance.com | london@jerseyfinance.com | jacqueline.price@jerseyfinance.com | china@jerseyfinance.com,https://jerseyfinance.com/contact-us,12,scraper,verified,News / Media,high,,,,,,01/07/2026
-mappinandwebb.com,,,,,,0,blocked:new arrivals+shop all,skipped_irrelevant,E-commerce / Online Shops,,,,,,,01/07/2026
-visitnorthwest.com,,,,,,12,smtp_catchall,no_email_found,Travel,low,yes,smtp_catchall,Yes,https://visitnorthwest.com/contact,,01/07/2026
-c-tec.com,sales@c-tec.co.uk,technical@c-tec.co.uk,jeff.pankhurst@c-tec.co.uk,sales@c-tec.co.uk | technical@c-tec.co.uk | jeff.pankhurst@c-tec.co.uk | adam.mason@c-tec.co.uk | simon.griffiths@c-tec.co.uk | james.bradbury@c-tec.co.uk | andy.turner@c-tec.co.uk | amos.hill@c-tec.co.uk | shirley.derbyshire@c-tec.co.uk | riah.winstanley@c-tec.co.uk | afils-design@c-tec.co.uk | stuart.mason@c-tec.co.uk | kirchhoff.dietmar@c-tec-germany.de | xportsales@xportsales.com | marketing@c-tec.co.uk | accounts@c-tec.co.uk | hr@c-tec.co.uk | purchasing@c-tec.co.uk,https://c-tec.com,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,Yes,https://c-tec.com,,01/07/2026
-slazenger.com,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-autogenai.com,press@autogenai.com,contact@autogenai.com,info@autogenai.com,press@autogenai.com | contact@autogenai.com | info@autogenai.com,,13,smtp_guess,needs_manual_check,Technology,low,yes,smtp_guess,Yes,https://autogenai.com,2022-10-14,01/07/2026
-sophielancasterfoundation.com,enquiries@sophielancasterfoundation.com,education@sophielancasterfoundation.com,,enquiries@sophielancasterfoundation.com | education@sophielancasterfoundation.com,https://sophielancasterfoundation.com,7,scraper,verified,,high,yes,unclassified_niche,Yes,https://sophielancasterfoundation.com,,01/07/2026
-caretech-uk.com,info@caretech-uk.com,,,info@caretech-uk.com,https://caretech-uk.com/contact-us,12,scraper,verified,Technology,high,,,Yes,https://caretech-uk.com/contact-us,,01/07/2026
-gopulse.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-bishuk.com,,,,,,12,,no_email_found,Health & Wellness,,yes,no_email_found,,,,01/07/2026
-18montrose.com,info@18montrose.com,,,info@18montrose.com,,6,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,01/07/2026
-algarve-tourist.com,,,,,,12,,no_email_found,Travel,,yes,no_email_found,,,,01/07/2026
-topfapgirlspics.com,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-aberdeenadviser.com,complaint.info@financial-ombudsman.org.uk,aberdeenportfoliosolutions@aberdeenplc.com,mark.hopcroft@aberdeenplc.com,complaint.info@financial-ombudsman.org.uk | aberdeenportfoliosolutions@aberdeenplc.com | mark.hopcroft@aberdeenplc.com | alan.meechan@aberdeenplc.com | james.england@aberdeenplc.com | jim.clay@aberdeenplc.com | wendy.scriven@aberdeenplc.com | customerrelations@aberdeenplc.com | elevate_enquiries@aberdeenplc.com | lse_elevate@aberdeenplc.com | elevate_north@aberdeenplc.com | wrap_servicing@aberdeenplc.com | wrap_sipp@aberdeenplc.com,https://www.aberdeenadviser.com/en-gb/aberdeen-managed-portfolio-service/contact-us,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,01/07/2026
-tottenhamhotspurstadium.com,,,,,,0,blocked:upcoming events,skipped_irrelevant,Local Events,,,,,,,01/07/2026
-brettmartin.com,info@brettmartin.com,building@brettmartin.com,scotland@brettmartin.com,info@brettmartin.com | building@brettmartin.com | scotland@brettmartin.com | bpsales@brettmartin.com | sales@brettmartin.com | technical@brettmartin.com | commercial@brettmartin.com | daylight@brettmartin.com,https://brettmartin.com/contact-us,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://brettmartin.com/contact-us,,01/07/2026
-about-france.com,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,01/07/2026
-fatpirate.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,01/07/2026
-fernox.com,sales@fernox.com,20sales@fernox.com,,sales@fernox.com | 20sales@fernox.com,https://fernox.com,12,scraper,verified,Technology,high,,,,,,01/07/2026
-learningnews.com,,,,,,0,blocked:chemist,skipped_irrelevant,Pharmacy,,,,,,,01/07/2026
-visitislesofscilly.com,,,,,,0,blocked:hotel+book your stay,skipped_irrelevant,Hotels / Accommodation,,,,,,,01/07/2026
-safeandtogetherinstitute.com,connect@safeandtogetherinstitute.com,,,connect@safeandtogetherinstitute.com,https://safeandtogetherinstitute.com,12,scraper,verified,Education / Resources,high,,,,,,01/07/2026
-quordle.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-monkhouse.com,,,,,,0,blocked:shop now,skipped_irrelevant,E-commerce / Online Shops,,,,,,,01/07/2026
-spinland.com,support@spinland.com,20support@spinland.com,,support@spinland.com | 20support@spinland.com,https://spinland.com/contact,12,scraper,verified,Entertainment,high,,,,,,01/07/2026
-classic-sailing.com,skippers@classic-sailing.com,,,skippers@classic-sailing.com,https://classic-sailing.com,12,scraper,verified,Travel,high,,,,,,01/07/2026
-asdagiftcards.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-tikitaka.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,01/07/2026
-sloggi.com,hello@sloggi.com,,,hello@sloggi.com,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,01/07/2026
-paminsight.com,editorial@paminsight.com,news@paminsight.com,info@paminsight.com,editorial@paminsight.com | news@paminsight.com | info@paminsight.com,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,01/07/2026
-akipress.com,akipressenglish@gmail.com,english@akipress.org,,akipressenglish@gmail.com | english@akipress.org,https://akipress.com,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,01/07/2026
-dovecotstudios.com,,,,,,0,blocked:museum,skipped_irrelevant,Museums / Culture,,,,,,,01/07/2026
-farecla.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-swap-commerce.com,contact@swap-commerce.com,,,contact@swap-commerce.com,https://swap-commerce.com,12,scraper,verified,Technology,high,,,Yes,https://swap-commerce.com,,01/07/2026
-jlpjobs.com,recruitment@johnlewis.co.uk,recruitment@partnershipservices.co.uk,,recruitment@johnlewis.co.uk | recruitment@partnershipservices.co.uk,https://jlpjobs.com/contact-us,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,Yes,https://jlpjobs.com,,01/07/2026
-mrpunter.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,01/07/2026
-demon-tweeks.com,sales@demon-tweeks.com,exportsales@demon-tweeks.com,customerservices@demon-tweeks.com,sales@demon-tweeks.com | exportsales@demon-tweeks.com | customerservices@demon-tweeks.com | fittingcentre@demon-tweeks.com,https://demon-tweeks.com/contact-us,12,scraper,verified,Technology,high,,,Yes,https://demon-tweeks.com,,01/07/2026
-recordcollectormag.com,bill.edwards@metropolis.co.uk,,,bill.edwards@metropolis.co.uk,https://recordcollectormag.com/advertise,12,scraper,needs_manual_check,Magazine,medium,yes,domain_mismatch,Yes,https://recordcollectormag.com,,01/07/2026
-ageofsigmar.com,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,01/07/2026
-yesworld.com,hello@yesworld.com,simon@yesworld.com,hello@yesworld-com.stackstaging.com,hello@yesworld.com | simon@yesworld.com | hello@yesworld-com.stackstaging.com | management@qedg.co.uk | peter.pappalardo@artistgrp.com | rod@itb.co.uk | steve@itb.co.uk | vip@onelive.com | jjwilsonesq@aol.com | mark@donenfeldmgmt.com | mschneider@sropr.com | sharon@thepublicityconnection.com | patrick@merch2.net | jjwilsonesq@aol.comaol.com,https://yesworld.com/contact,12,scraper,verified,Technology,high,,,,,,01/07/2026
-codurance.com,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,01/07/2026
-bigant.com,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,01/07/2026
-citizensofsoil.com,,,,,,12,smtp_catchall,no_email_found,Food & Drink,low,yes,smtp_catchall,,,,01/07/2026
-html5gamedevs.com,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,01/07/2026
-smol.com,presse@smol.com,salut@smol.com,press@smolproducts.com,presse@smol.com | salut@smol.com | press@smolproducts.com | impressum@smolproducts.de | help@smolproducts.com | hallo@smolproducts.de,https://smol.com/fr/presse,12,scraper,verified,Entertainment,high,,,,,,01/07/2026
-evouchers.com,contact@evouchers.com,hello@evouchers.com,,contact@evouchers.com | hello@evouchers.com,,12,smtp_guess,needs_manual_check,Technology,low,yes,smtp_guess,,,,01/07/2026
-arqitgroup.com,contactus@arqit.uk,info@cablefree.net,investorrelations@arqit.uk,contactus@arqit.uk | info@cablefree.net | investorrelations@arqit.uk | arqit@gatewayir.com | pr@arqit.uk | arqit@gateway-grp.com,https://arqitgroup.com/resource/press/arqit-selected-by-dcms-for-5g-project-to-provide-security-by-default,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,01/07/2026
-henryaldridge.com,office@henryaldridge.com,,,office@henryaldridge.com,https://henryaldridge.com/contact,12,scraper,verified,Review Site,high,,,Yes,https://henryaldridge.com,,01/07/2026
-creamfields.com,partnerships@livenation.co.uk,press@cream.co.uk,,partnerships@livenation.co.uk | press@cream.co.uk,https://creamfields.com,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,01/07/2026
-quintadolago.com,,,,,,0,blocked:resort,skipped_irrelevant,Hotels / Accommodation,,,,,,,01/07/2026
-autocue.com,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,01/07/2026
-commonwealthfoundation.com,info@commonwealthfoundation.com,,,info@commonwealthfoundation.com,https://commonwealthfoundation.com,12,scraper,verified,Magazine,high,,,,,,01/07/2026
-modoenergy.com,media@modoenergy.com,info@modoenergy.com,,media@modoenergy.com | info@modoenergy.com,,12,smtp_guess,needs_manual_check,Technology,low,yes,smtp_guess,,,,01/07/2026
-britishacademyofsoundtherapy.com,media@britishacademyofsoundtherapy.com,mail@britishacademyofsoundtherapy.com,,media@britishacademyofsoundtherapy.com | mail@britishacademyofsoundtherapy.com,https://britishacademyofsoundtherapy.com/contact-us,12,scraper,verified,Health & Wellness,high,,,Yes,https://britishacademyofsoundtherapy.com,,01/07/2026
-sensoryintegrationeducation.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-heals.com,cservices@heals.co.uk,,,cservices@heals.co.uk,https://heals.com,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,Yes,https://heals.com/contact,,01/07/2026
-thoughtbubblefestival.com,,,,,,12,smtp_catchall,no_email_found,Blog / Content Site,low,yes,smtp_catchall,,,,01/07/2026
-stackmagazines.com,info@stackmagazines.com,support@stackmagazines.com,,info@stackmagazines.com | support@stackmagazines.com,https://stackmagazines.com,12,scraper,verified,Magazine,high,,,,,,01/07/2026
-whitestuff.com,press@whitestuff.com,content@whitestuff.com,hello@whitestuff.com,press@whitestuff.com | content@whitestuff.com | hello@whitestuff.com,,12,smtp_guess,needs_manual_check,Environment / Green,low,yes,smtp_guess,,,,01/07/2026
-beezer.com,support@beezer.com,,,support@beezer.com,https://beezer.com,12,scraper,verified,Education / Resources,high,,,Yes,https://beezer.com/contact,,01/07/2026
-internationalconferencealerts.com,support@internationalconferencealerts.com,,,support@internationalconferencealerts.com,https://internationalconferencealerts.com/contact,12,scraper,verified,Technology,high,,,Yes,https://internationalconferencealerts.com/contact,,01/07/2026
-e-paycapita.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,01/07/2026
-palaceskateboards.com,y@r.in,q@7.np,,y@r.in | q@7.np,https://cdn.shopify.com/s/files/1/0305/3289/files/1773411323-1772555302-pro-team-piped-shell-jacket-grey-1.png?v=1776680822,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,01/07/2026
-survitecgroup.com,info@survitecgroup.com,,,info@survitecgroup.com,,12,smtp_guess,needs_manual_check,Technology,low,yes,smtp_guess,Yes,https://survitecgroup.com,,01/07/2026
-tradenation.com,support.sc@tradenation.com,,,support.sc@tradenation.com,https://tradenation.com,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://tradenation.com,,01/07/2026
-tickets-scotland.com,,,,,,12,smtp_catchall,no_email_found,Entertainment,low,yes,smtp_catchall,,,,01/07/2026
-ymail.com,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,01/07/2026
-teachingexpertise.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-carolinecriadoperez.com,michael@speakingoffice.com,,,michael@speakingoffice.com,https://carolinecriadoperez.com/contact,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,01/07/2026
-teya.com,help@teya.com,,,help@teya.com,https://teya.com,12,scraper,verified,Blog / Content Site,high,,,,,,01/07/2026
-dominomusic.com,vacancy@dominorecordco.com,,,vacancy@dominorecordco.com,https://www.dominomusic.com/news/uk/job-opportunity-head-of-digital-partnerships-analytics,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,Yes,https://dominomusic.com/contact,,01/07/2026
-thameslinkrailway.com,info@railombudsman.org,customer.relations@nationalrail.co.uk,,info@railombudsman.org | customer.relations@nationalrail.co.uk,https://www.thameslinkrailway.com/help-and-support/contact-us,12,scraper,needs_manual_check,Travel,medium,yes,domain_mismatch,Yes,https://thameslinkrailway.com,,01/07/2026
-irishferries.com,info@irishferries.com,holidays@irishferries.com,marketing@irishferries.com,info@irishferries.com | holidays@irishferries.com | marketing@irishferries.com | groups@irishferries.com | ireland@irishferries.com | prenotazioni@irishferries.com | rezerwacje@irishferries.com | info@irishferries.fr | info@maharttours.com | info@promy.pl | irishferriesuk@four.agency | irishferries@sherrypr.com | holidays@irishferries.co.uk | groups@irishferries.co.uk | irishferries@geuther.com,https://irishferries.com/contact,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://irishferries.com,,01/07/2026
-iqmagazine.com,advertising@iqmagazine.com,news@iqmagazine.com,subscriptions@iqmagazine.com,advertising@iqmagazine.com | news@iqmagazine.com | subscriptions@iqmagazine.com,https://iqmagazine.com/contact-us,12,scraper,verified,Magazine,high,,,Yes,https://iqmagazine.com,,01/07/2026
-globaladventurechallenges.com,news@globaladventurechallenges.com,info@globaladventurechallenges.com,,news@globaladventurechallenges.com | info@globaladventurechallenges.com,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,01/07/2026
-highfieldqualifications.com,info@highfield.co.uk,recruitment@highfield.co.uk,customerservices@highfieldinternational.com,info@highfield.co.uk | recruitment@highfield.co.uk | customerservices@highfieldinternational.com,https://highfieldqualifications.com,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,01/07/2026
-rolecserv.com,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://rolecserv.com/contact,,01/07/2026
-ministryofsound.com,,,,,,0,blocked:ministry of,skipped_irrelevant,Government,,,,,,,01/07/2026
-milkyplant.com,,,,,,0,blocked:your cart,skipped_irrelevant,E-commerce / Online Shops,,,,,,,01/07/2026
-airtattoo.com,,,,,,12,smtp_catchall,no_email_found,Environment / Green,low,yes,smtp_catchall,,,,01/07/2026
-clarionevents.com,info@clarionevents.com,,,info@clarionevents.com,https://clarionevents.com,12,scraper,verified,Technology,high,,,,,,01/07/2026
-lesmis.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-thamesandhudson.com,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,01/07/2026
-talktofrank.com,,,,,,0,blocked:cannabis+thc,skipped_irrelevant,Cannabis / Dispensary,,,,,,,01/07/2026
-hydeparkwinterwonderland.com,wwhospitality@img.com,winterwonderland@fullycharged.agency,,wwhospitality@img.com | winterwonderland@fullycharged.agency,https://hydeparkwinterwonderland.com/contact,12,scraper,needs_manual_check,Travel,medium,yes,domain_mismatch,Yes,https://hydeparkwinterwonderland.com,,01/07/2026
-adsbexchange.com,media@adsbexchange.com,support@adsbexchange.com,,media@adsbexchange.com | support@adsbexchange.com,https://adsbexchange.com/contact,12,scraper,verified,News / Media,high,,,,,,01/07/2026
-gransino.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,01/07/2026
-britisheventing.com,press@britisheventing.com,media@britisheventing.com,hello@britisheventing.com,press@britisheventing.com | media@britisheventing.com | hello@britisheventing.com | info@britisheventing.com,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,01/07/2026
-realbuzz.com,partnership@realbuzz.com,charity@realbuzz.com,runner@realbuzz.com,partnership@realbuzz.com | charity@realbuzz.com | runner@realbuzz.com | marketing@realbuzz.com,https://www.realbuzz.com/media-centre/realbuzz-completes-major-partnership-with-the-copenhagen-marathon,12,scraper,verified,News / Media,high,,,,,,01/07/2026
-spectator.com,editor@spectator.co.uk,jobs@spectator.co.uk,,editor@spectator.co.uk | jobs@spectator.co.uk,https://spectator.com/about,12,scraper,needs_manual_check,Magazine,medium,yes,domain_mismatch,,,,01/07/2026
-forbiddenplanet.com,info@forbiddenplanet.com,,,info@forbiddenplanet.com,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,01/07/2026
-findingada.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-wishlistr.com,,,,,,12,smtp_catchall,no_email_found,Blog / Content Site,low,yes,smtp_catchall,Yes,https://wishlistr.com/contact,,01/07/2026
-factiva.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-neimagazine.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-nectar.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,01/07/2026
-mcmcomiccon.com,,,,,,12,smtp_catchall,no_email_found,Entertainment,low,yes,smtp_catchall,,,,01/07/2026
-ukconstructionweek.com,info@ukconstructionweek.com,,,info@ukconstructionweek.com,,12,smtp_guess,needs_manual_check,Technology,low,yes,smtp_guess,,,,01/07/2026
-jrni.com,partnerships@jrni.com,press@jrni.com,info@jrni.com,partnerships@jrni.com | press@jrni.com | info@jrni.com,,12,smtp_guess,needs_manual_check,Technology,low,yes,smtp_guess,,,,01/07/2026
-getthegloss.com,hello@getthegloss.com,,,hello@getthegloss.com,,12,smtp_guess,needs_manual_check,Health & Wellness,low,yes,smtp_guess,Yes,https://getthegloss.com,,01/07/2026
+kakupress.net,outreachwiggler@gmail.com,,,outreachwiggler@gmail.com,https://kakupress.net/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,03/07/2026
+derekdemars.com,visheshchaudhary122@gmail.com,,,visheshchaudhary122@gmail.com,https://derekdemars.com/contact/,12,scraper,needs_manual_check,Travel,medium,yes,domain_mismatch,Yes,https://derekdemars.com,,03/07/2026
+sportsdp.com,ankit@zestfulloutreach.com,ravi.outreach1@gmail.com,,ankit@zestfulloutreach.com | ravi.outreach1@gmail.com,https://sportsdp.com/contact,12,scraper,needs_manual_check,Sports,medium,yes,domain_mismatch,,,,03/07/2026
+iplscorestats.com,manoj@zestfulloutreach.com,,,manoj@zestfulloutreach.com,https://iplscorestats.com/contact-us,12,scraper,needs_manual_check,Travel,medium,yes,domain_mismatch,Yes,https://iplscorestats.com/contact-us,,03/07/2026
+sportsvirals.com,ankit.zestfulloutreach@gmail.com,,,ankit.zestfulloutreach@gmail.com,https://sportsvirals.com/contact,12,scraper,needs_manual_check,Sports,medium,yes,domain_mismatch,,,,03/07/2026
+cricketmach.com,avinluis06@gmail.com,,,avinluis06@gmail.com,https://cricketmach.com/contact,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,03/07/2026
+ballebazzi.com,justin.infomarketing@gmail.com,,,justin.infomarketing@gmail.com,https://ballebazzi.com/contact-us,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,Yes,https://ballebazzi.com/contact-us,,03/07/2026
+networthdetails.org,bahadurnarendra436@gmail.com,,,bahadurnarendra436@gmail.com,https://networthdetails.org/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+ehrmsmanavsampada.com,harish@zestfulloutreach.com,,,harish@zestfulloutreach.com,https://ehrmsmanavsampada.com/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,03/07/2026
+trippdiary.com,akhileshgp045@gmail.com,,,akhileshgp045@gmail.com,https://trippdiary.com,12,scraper,needs_manual_check,Travel,medium,yes,domain_mismatch,,,,03/07/2026
+cricketcupworld.com,advertise.cricketcupworld@gmail.com,,,advertise.cricketcupworld@gmail.com,https://cricketcupworld.com,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,Yes,https://cricketcupworld.com/contact-us,,03/07/2026
+theblindposts.com,akhileshgp045@gmail.com,u00a0akhileshgp045@gmail.com,,akhileshgp045@gmail.com | u00a0akhileshgp045@gmail.com,https://theblindposts.com/contact-us,12,scraper,needs_manual_check,Education / Resources,medium,yes,domain_mismatch,,,,03/07/2026
+thereaderstone.com,vikrant@zestfulloutreach.com,,,vikrant@zestfulloutreach.com,https://thereaderstone.com/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+iplwc.com,abhishekoutreach0@gmail.com,,,abhishekoutreach0@gmail.com,https://iplwc.com/contact-us,12,scraper,needs_manual_check,,medium,yes,unclassified_niche; domain_mismatch,,,,03/07/2026
+chronicalheroes.com,luishendry95@gmail.com,u00a0luishendry95@gmail.com,,luishendry95@gmail.com | u00a0luishendry95@gmail.com,https://chronicalheroes.com/contact,12,scraper,needs_manual_check,Education / Resources,medium,yes,domain_mismatch,,,,03/07/2026
+dailymagzines.co.uk,akhileshgp045@gmail.com,santoshkumar0880834@gmail.com,,akhileshgp045@gmail.com | santoshkumar0880834@gmail.com,https://dailymagzines.co.uk/contact,12,scraper,needs_manual_check,,medium,yes,unclassified_niche; domain_mismatch,,,,03/07/2026
+automobileinfoz.com,eryc@zestfulloutreach.com,ateesh224@gmail.com,,eryc@zestfulloutreach.com | ateesh224@gmail.com,https://automobileinfoz.com/contact,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,,,,03/07/2026
+madiraprice.com,leedev.arj@gmail.com,vikrant.outreach@gmail.com,,leedev.arj@gmail.com | vikrant.outreach@gmail.com,https://madiraprice.com,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+husbandsinfoz.com,vikrant.outreach@gmail.com,,,vikrant.outreach@gmail.com,https://husbandsinfoz.com,12,scraper,needs_manual_check,,medium,yes,unclassified_niche; domain_mismatch,,,,03/07/2026
+gambsino.com,gpsuraj88@gmail.com,,,gpsuraj88@gmail.com,https://gambsino.com/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+sonekabhav.in,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+shegossips.com,ychaudhry140@gmail.com,,,ychaudhry140@gmail.com,https://shegossips.com/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+islamicstatuses.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+sportuniweek.com,wickederveen202@gmail.com,,,wickederveen202@gmail.com,https://sportuniweek.com/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+unipostwire.com,vikrant@zestfulloutreach.com,,,vikrant@zestfulloutreach.com,https://unipostwire.com/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+thebioinfo.com,amit@zestfulloutreach.com,,,amit@zestfulloutreach.com,https://thebioinfo.com/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+educationalbaba.org,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,03/07/2026
+shayarizuban.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+shayaritou.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+shayari999.in,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+english-shayari.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+biospotz.com,avinluis06@gmail.com,u00a0avinluis06@gmail.com,,avinluis06@gmail.com | u00a0avinluis06@gmail.com,https://biospotz.com/contact,12,scraper,needs_manual_check,Finance / Business,medium,yes,domain_mismatch,,,,03/07/2026
+regionalpedias.com,juliandam07@gmail.com,,,juliandam07@gmail.com,https://regionalpedias.com/contact-us,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,03/07/2026
+biharbhumilandrecord.com,emutationbihar@gmail.com,charanram.0022@gmail.com,,emutationbihar@gmail.com | charanram.0022@gmail.com,https://biharbhumilandrecord.com,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,,,,03/07/2026
+unizupdates.com,prasadtriveni931@gmail.com,u00a0prasadtriveni931@gmail.com,,prasadtriveni931@gmail.com | u00a0prasadtriveni931@gmail.com,https://unizupdates.com/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+photosfinite.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+hkrn.co.in,hkrn.gov@gmail.com,bobbacklinks@gmail.com,,hkrn.gov@gmail.com | bobbacklinks@gmail.com,https://hkrn.co.in,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,,,,03/07/2026
+magazinesweekly.co.uk,janniksinneroutreach@gmail.com,,,janniksinneroutreach@gmail.com,https://magazinesweekly.co.uk/contact,12,scraper,needs_manual_check,Magazine,medium,yes,domain_mismatch,,,,03/07/2026
+wellhealthorganick.com,,,,,,0,blocked:doctor,skipped_irrelevant,Health / Medical,,,,,,,03/07/2026
+photosbulk.co.in,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+captionwali.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+nobitadp.com,gpsuraj88@gmail.com,u00a0gpsuraj88@gmail.com,,gpsuraj88@gmail.com | u00a0gpsuraj88@gmail.com,https://nobitadp.com/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,Yes,https://nobitadp.com/contact,,03/07/2026
+wifeof.org,alva@zestfulloutreach.com,himanshu24bloger@gmail.com,,alva@zestfulloutreach.com | himanshu24bloger@gmail.com,https://wifeof.org/contact,12,scraper,needs_manual_check,Finance / Business,medium,yes,domain_mismatch,,,,03/07/2026
+storyuniweek.com,uaeguestp@gmail.com,,,uaeguestp@gmail.com,https://storyuniweek.com/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+fullhandmehandidesign.com,janniksinneroutreach@gmail.com,,,janniksinneroutreach@gmail.com,https://fullhandmehandidesign.com/contact,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,03/07/2026
+newsdatainfo.com,wickederveen202@gmail.com,,,wickederveen202@gmail.com,https://newsdatainfo.com/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+storiteller.org,visheshchaudhary122@gmail.com,u00a0visheshchaudhary122@gmail.com,,visheshchaudhary122@gmail.com | u00a0visheshchaudhary122@gmail.com,https://storiteller.org/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+uniideaz.com,amangxp7@gmail.com,u00a0amangxp7@gmail.com,,amangxp7@gmail.com | u00a0amangxp7@gmail.com,https://uniideaz.com/contact,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,03/07/2026
+filmyflycom.com,ateesh224@gmail.com,,,ateesh224@gmail.com,https://filmyflycom.com/contact-us,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+magazinesdata.com,ankurvermaverma14@gmail.com,vikrant.outreach@gmail.com,,ankurvermaverma14@gmail.com | vikrant.outreach@gmail.com,https://magazinesdata.com,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+iplworldcup.com,mark@zestfulloutreach.com,,,mark@zestfulloutreach.com,https://iplworldcup.com/contact,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,,,,03/07/2026
+wifenamebio.com,,,,,,0,blocked:dental,skipped_irrelevant,Health / Medical,,,,,,,03/07/2026
+thetimespedia.com,brone.mack90@gmail.com,,,brone.mack90@gmail.com,https://thetimespedia.com/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+photosbull.com,admin@linkforgeit.com,,,admin@linkforgeit.com,https://photosbull.com/contact-us,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,03/07/2026
+instabionetwork.com,mark@zestfulloutreach.com,,,mark@zestfulloutreach.com,https://instabionetwork.com/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+allfunnypuns.com,,,,,,0,blocked:law firm,skipped_irrelevant,Law / Legal,,,,,,,03/07/2026
+magazinehubz.com,justin.infomarketing@gmail.com,,,justin.infomarketing@gmail.com,https://magazinehubz.com/contact,9,scraper,needs_manual_check,,medium,yes,unclassified_niche; domain_mismatch,,,,03/07/2026
+sportscreta.com,advertise.cricketcupworld@gmail.com,,,advertise.cricketcupworld@gmail.com,https://sportscreta.com/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,03/07/2026
+kappacourse.net,contact@w3webrank.com,,,contact@w3webrank.com,https://kappacourse.net/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,03/07/2026
+attitudeurdupoetry.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+socialpostbd.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+newzdp.com,jesslingp9454@gmail.com,,,jesslingp9454@gmail.com,https://newzdp.com/contact,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,03/07/2026
+photoscollection.in,admin@photoscollection.in,admin@linkforgeit.com,,admin@photoscollection.in | admin@linkforgeit.com,https://photoscollection.in/contact,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,03/07/2026
+thetrendyaura.com,charanram.0022@gmail.com,ravi.outreach1@gmail.com,,charanram.0022@gmail.com | ravi.outreach1@gmail.com,https://thetrendyaura.com/contact,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,,,,03/07/2026
+biographywise.com,admin@linkforgeit.com,,,admin@linkforgeit.com,https://biographywise.com/contact-us,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+staragepedia.com,deepak@zestfulloutreach.com,,,deepak@zestfulloutreach.com,https://staragepedia.com/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+biographyinfos.com,adarshkumaroffi21@gmail.com,aman@zestfulloutreach.com,juliandam07@gmail.com,adarshkumaroffi21@gmail.com | aman@zestfulloutreach.com | juliandam07@gmail.com,https://biographyinfos.com,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+mybestbios.com,admin@linkforgeit.com,,,admin@linkforgeit.com,https://mybestbios.com/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,Yes,https://mybestbios.com/contact,,03/07/2026
+cricketleaguestats.com,kumarprashant75055@gmail.com,,,kumarprashant75055@gmail.com,https://cricketleaguestats.com/contact-us,12,scraper,needs_manual_check,Sports,medium,yes,domain_mismatch,,,,03/07/2026
+northernlightss.com,kumarprashant75055@gmail.com,,,kumarprashant75055@gmail.com,https://northernlightss.com/contact,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,Yes,https://northernlightss.com,,03/07/2026
+pakurdupoetry.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+tglinkhub.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+bhulekhbhoomi.com,kumarprashant75055@gmail.com,,,kumarprashant75055@gmail.com,https://bhulekhbhoomi.com/contact,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,Yes,https://bhulekhbhoomi.com/contact,,03/07/2026
+wikilifeng.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+gamapost.com,bobbacklinks@gmail.com,,,bobbacklinks@gmail.com,https://gamapost.com/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+khelatoday.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+newzcenter.com,,,,,,0,blocked:dental,skipped_irrelevant,Health / Medical,,,,,,,03/07/2026
+bioinfolabe.com,,,,,,0,blocked:personal injury lawyer,skipped_irrelevant,Law / Legal,,,,,,,03/07/2026
+sportstrendzz.com,harish@zestfulloutreach.com,,,harish@zestfulloutreach.com,https://sportstrendzz.com/contact,12,scraper,needs_manual_check,Sports,medium,yes,domain_mismatch,,,,03/07/2026
+wikindians.com,victor@zestfulloutreach.com,,,victor@zestfulloutreach.com,https://wikindians.com/contact,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,03/07/2026
+cricbuzzr.com,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,03/07/2026
+lordofnames.com,,,,,,0,blocked:thc,skipped_irrelevant,Cannabis / Dispensary,,,,,,,03/07/2026
+hunkwhiz.com,admin@linkforgeit.com,kajp5850@gmail.com,,admin@linkforgeit.com | kajp5850@gmail.com,https://hunkwhiz.com/contact,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,,,,03/07/2026
+carupdatebd.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+ajkeridea.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+guestcollab.co.uk,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+megamagzines.com,jesslingp9454@gmail.com,,,jesslingp9454@gmail.com,https://megamagzines.com/contact-us,12,scraper,needs_manual_check,Magazine,medium,yes,domain_mismatch,,,,03/07/2026
+snostl.com,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,03/07/2026
+hindsayari.com,,,,,,0,blocked:medical practice+dentist,skipped_irrelevant,Health / Medical,,,,,,,03/07/2026
+allshayarii.in,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+biodetailshub.com,admin@linkforgeit.com,,,admin@linkforgeit.com,https://biodetailshub.com/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,Yes,https://biodetailshub.com/contact,,03/07/2026
+peacewithinn.com,,,,,,0,blocked:bed and breakfast,skipped_irrelevant,Hotels / Accommodation,,,,,,,03/07/2026
+businesssinfozone.com,uaeguestp@gmail.com,,,uaeguestp@gmail.com,https://businesssinfozone.com/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,03/07/2026
+londonlifemagazine.co.uk,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+trackmasti.com,admin@linkforgeit.com,,,admin@linkforgeit.com,https://trackmasti.com/contact,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,,,,03/07/2026
+banglayinfo.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+blooketg.com,joyitfirm@gmail.com,,,joyitfirm@gmail.com,https://blooketg.com/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+photosvibe.in,admin@linkforgeit.com,,,admin@linkforgeit.com,https://photosvibe.in/contact-us,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,03/07/2026
+iplt20pointstable.com,kumarprashant75055@gmail.com,,,kumarprashant75055@gmail.com,https://iplt20pointstable.com/contact-us,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,,,,03/07/2026
+sgmymenu.com,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,03/07/2026
+luascatering.com,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,03/07/2026
+husbandname.org,kumarprashant75055@gmail.com,,,kumarprashant75055@gmail.com,https://husbandname.org/contact-us,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,Yes,https://husbandname.org/contact-us,,03/07/2026
+lifedetailshub.com,,,,,,0,blocked:dental+dentist,skipped_irrelevant,Health / Medical,,,,,,,03/07/2026
+coolattitudecaptions.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+topinsures.com,,,,,,12,,no_email_found,Entertainment,,yes,no_email_found,,,,03/07/2026
+infobiosphere.com,,,,,,0,blocked:payroll,skipped_irrelevant,Invoicing / Payroll,,,,,,,03/07/2026
+lifehacksstory.com,luis@zestfulloutreach.com,,,luis@zestfulloutreach.com,https://lifehacksstory.com/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,03/07/2026
+celebblinks.com,,,,,,0,blocked:clinic,skipped_irrelevant,Health / Medical,,,,,,,03/07/2026
+informativevibes.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+thedigilocker.in,visheshchaudhary122@gmail.com,,,visheshchaudhary122@gmail.com,https://thedigilocker.in/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,03/07/2026
+mozydash.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+spiritualmeaningportal.com,admin@webtechglob.com,,,admin@webtechglob.com,https://spiritualmeaningportal.com/contact,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,Yes,https://spiritualmeaningportal.com/contact,,03/07/2026
+phlmenus.org,admin@phlmenus.org,,,admin@phlmenus.org,https://phlmenus.org/contact/,12,scraper,verified,Technology,high,,,,,,03/07/2026
+boxercontest.com,ankit@zestfulloutreach.com,,,ankit@zestfulloutreach.com,https://boxercontest.com/contact,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,Yes,https://boxercontest.com/contact,,03/07/2026
+trendlandmagazine.com,,,,,,0,blocked:dentist,skipped_irrelevant,Health / Medical,,,,,,,03/07/2026
+captionnotes.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+thecelebrityage.com,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,03/07/2026
+biojourneyhub.com,admin@linkforgeit.com,,,admin@linkforgeit.com,https://biojourneyhub.com/contact,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,,,,03/07/2026
+kedaiori.com,,,,,,0,blocked:hospital,skipped_irrelevant,Health / Medical,,,,,,,03/07/2026
+justweighingstuff.com,admin@webtechglob.com,,,admin@webtechglob.com,https://justweighingstuff.com/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,Yes,https://justweighingstuff.com/contact,,03/07/2026
+applebeesmenus.org,,,,,,0,blocked:restaurant+lunch menu,skipped_irrelevant,Restaurants / Food,,,,,,,03/07/2026
+levelattitudecaptions.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+azjankari.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+buzinessninja.com,,,,,,12,smtp_catchall,no_email_found,Technology,low,yes,smtp_catchall,,,,03/07/2026
+wittyrizz.com,admin@linkforgeit.com,,,admin@linkforgeit.com,https://wittyrizz.com/contact,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,,,,03/07/2026
+megasor.com,jaymarketing605@gmail.com,,,jaymarketing605@gmail.com,https://megasor.com/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+dimensionsscript.com,,,,,,0,blocked:dental,skipped_irrelevant,Health / Medical,,,,,,,03/07/2026
+applebemenu.com,,,,,,0,blocked:lunch menu,skipped_irrelevant,Restaurants / Food,,,,,,,03/07/2026
+banglacaption.co,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+answerthefolks.com,admin@webtechglob.com,,,admin@webtechglob.com,https://answerthefolks.com/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,03/07/2026
+brieflynews.co.uk,admin@linkforgeit.com,,,admin@linkforgeit.com,https://brieflynews.co.uk/contact,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,,,,03/07/2026
+fulcharmnames.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+marathiloveshayari.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+doctorfolk.com,,,,,,0,blocked:doctor,skipped_irrelevant,Health / Medical,,,,,,,03/07/2026
+golfreddit.com,,,,,,0,blocked:attorney,skipped_irrelevant,Law / Legal,,,,,,,03/07/2026
+trendoxygen.com,admin@webtechglob.com,,,admin@webtechglob.com,https://trendoxygen.com/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,Yes,https://trendoxygen.com/contact,,03/07/2026
+growveea.com,growveea@gmail.com,,,growveea@gmail.com,https://growveea.com/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+capsuleinfo.com,,,,,,0,blocked:doctor,skipped_irrelevant,Health / Medical,,,,,,,03/07/2026
+sarkarijobcom.com,kumarprashant75055@gmail.com,,,kumarprashant75055@gmail.com,https://sarkarijobcom.com/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,03/07/2026
+dunkin-donut.net,,,,,,0,blocked:psychology,skipped_irrelevant,Health / Medical,,,,,,,03/07/2026
+mumbaijournals.com,brijk9675@gmail.com,,,brijk9675@gmail.com,https://mumbaijournals.com/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,03/07/2026
+happigreet.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+celebeinfos.com,admin@linkforgeit.com,,,admin@linkforgeit.com,https://celebeinfos.com/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+groupslinky.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+bioscops.com,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,03/07/2026
+pikupsline.com,admin@webtechglob.com,,,admin@webtechglob.com,https://pikupsline.com/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,03/07/2026
+thecricketstadiums.com,himanshu24bloger@gmail.com,leedev.arj@gmail.com,,himanshu24bloger@gmail.com | leedev.arj@gmail.com,https://thecricketstadiums.com/contact-us,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,03/07/2026
+namesspark.com,admin@webtechglob.com,,,admin@webtechglob.com,https://namesspark.com/contact,12,scraper,needs_manual_check,Review Site,medium,yes,domain_mismatch,,,,03/07/2026
+sportspediaz.com,judethomas143@gmail.com,,,judethomas143@gmail.com,https://sportspediaz.com/contact,12,scraper,needs_manual_check,Sports,medium,yes,domain_mismatch,,,,03/07/2026
+metroj.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+salaryslip.org,iim.sudhanshu@gmail.com,georgelaviesoutreach@gmail.com,,iim.sudhanshu@gmail.com | georgelaviesoutreach@gmail.com,https://salaryslip.org,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,Yes,https://salaryslip.org/contact,,03/07/2026
+punscraze.com,admin@webtechglob.com,,,admin@webtechglob.com,https://punscraze.com/contact,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,Yes,https://punscraze.com/contact,,03/07/2026
+tticketpricing.com,,,,,,0,blocked:amusement park,skipped_irrelevant,Children's Entertainment,,,,,,,03/07/2026
+bangladisha.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+magazinesweeklys.com,harish@zestfulloutreach.com,,,harish@zestfulloutreach.com,https://magazinesweeklys.com/contact,12,scraper,needs_manual_check,Magazine,medium,yes,domain_mismatch,,,,03/07/2026
+magazinesbeta.com,deepakoutreachy@gmail.com,u00a0deepakoutreachy@gmail.com,,deepakoutreachy@gmail.com | u00a0deepakoutreachy@gmail.com,https://magazinesbeta.com/contact,12,scraper,needs_manual_check,Magazine,medium,yes,domain_mismatch,,,,03/07/2026
+thinkofgamess.com,visheshchaudhary122@gmail.com,,,visheshchaudhary122@gmail.com,https://thinkofgamess.com,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,Yes,https://thinkofgamess.com,,03/07/2026
+cricketstatus.com,saraswatpraveen999@gmail.com,,,saraswatpraveen999@gmail.com,https://cricketstatus.com/contact-us,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,03/07/2026
+roctulum.com,roctulum.business@gmail.com,,,roctulum.business@gmail.com,https://roctulum.com/contact-us,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+punsplanet.com,admin@webtechglob.com,,,admin@webtechglob.com,https://punsplanet.com/contact,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,Yes,https://punsplanet.com/contact,,03/07/2026
+thelitechauffeurs.co.uk,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+empirecaption.com,admin@linkforgeit.com,,,admin@linkforgeit.com,https://empirecaption.com/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,03/07/2026
+greenbeltdirectory.com,brijk9675@gmail.com,,,brijk9675@gmail.com,https://greenbeltdirectory.com,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,Yes,https://greenbeltdirectory.com/advertise.html,,03/07/2026
+mpbhulekhrcms.com,clrgwa@mp.nic.in,ravi.outreach1@gmail.com,santoshkumar0880824@gmail.com,clrgwa@mp.nic.in | ravi.outreach1@gmail.com | santoshkumar0880824@gmail.com | touchsantoshkumar0880824@gmail.com,https://mpbhulekhrcms.com,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,Yes,https://mpbhulekhrcms.com/contact-us,,03/07/2026
+hollydentalcare.com,,,,,,0,blocked:dental,skipped_irrelevant,Health / Medical,,,,,,,03/07/2026
+awesomepawsabilities.com,admin@webtechglob.com,,,admin@webtechglob.com,https://awesomepawsabilities.com,12,scraper,needs_manual_check,Education / Resources,medium,yes,domain_mismatch,,,,03/07/2026
+finditname.com,,,,,,0,blocked:dentist+dentistry,skipped_irrelevant,Health / Medical,,,,,,,03/07/2026
+gamexcodes.com,aman@zestfulloutreach.com,,,aman@zestfulloutreach.com,https://gamexcodes.com/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,03/07/2026
+alltimenames.com,admin@linkforgeit.com,,,admin@linkforgeit.com,https://alltimenames.com/contact,12,scraper,needs_manual_check,Review Site,medium,yes,domain_mismatch,,,,03/07/2026
+rizzapedia.com,admin@webtechglob.com,,,admin@webtechglob.com,https://rizzapedia.com/contact,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,,,,03/07/2026
+primewirehub.com,abhishekoutreach0@gmail.com,,,abhishekoutreach0@gmail.com,https://primewirehub.com/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+captionsskill.com,admin@linkforgeit.com,,,admin@linkforgeit.com,https://captionsskill.com/contact,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,Yes,https://captionsskill.com/contact,,03/07/2026
+croudmomentum.com,admin@webtechglob.com,,,admin@webtechglob.com,https://croudmomentum.com/contact,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,Yes,https://croudmomentum.com/contact,,03/07/2026
+seriocus.com,brijk9675@gmail.com,,,brijk9675@gmail.com,https://seriocus.com/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,Yes,https://seriocus.com/contact,,03/07/2026
+legendsbioworld.com,admin@linkforgeit.com,,,admin@linkforgeit.com,https://legendsbioworld.com/contact-us,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,03/07/2026
+cricketbaaji.com,siddhantsaraswat222@gmail.com,,,siddhantsaraswat222@gmail.com,https://cricketbaaji.com/contact-us,12,scraper,needs_manual_check,Sports,medium,yes,domain_mismatch,,,,03/07/2026
+punarchy.com,admin@webtechglob.com,,,admin@webtechglob.com,https://punarchy.com/contact,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,,,,03/07/2026
+cricketteamtimelines.com,siddhantsaraswat222@gmail.com,,,siddhantsaraswat222@gmail.com,https://cricketteamtimelines.com/contact-us,12,scraper,needs_manual_check,Sports,medium,yes,domain_mismatch,Yes,https://cricketteamtimelines.com/contact-us,,03/07/2026
+tymofff.com,bobbacklinks@gmail.com,,,bobbacklinks@gmail.com,https://tymofff.com/contact-us,12,scraper,needs_manual_check,Health & Wellness,medium,yes,domain_mismatch,,,,03/07/2026
+cricketpitchreports.com,ankit@zestfulloutreach.com,,,ankit@zestfulloutreach.com,https://cricketpitchreports.com/contact,12,scraper,needs_manual_check,Review Site,medium,yes,domain_mismatch,,,,03/07/2026
+talksknow.com,admin@webtechglob.com,,,admin@webtechglob.com,https://talksknow.com/contact-us,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,Yes,https://talksknow.com/contact,,03/07/2026
+shayari4life.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+tophindikahaniyan.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+lopbet.com,abhishekoutreach0@gmail.com,,,abhishekoutreach0@gmail.com,https://lopbet.com/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+newsdatafacts.com,kuldeep89blogger@gmail.com,,,kuldeep89blogger@gmail.com,https://newsdatafacts.com/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+ballebaaji.com,siddhantsaraswat222@gmail.com,,,siddhantsaraswat222@gmail.com,https://ballebaaji.com/contact,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,,,,03/07/2026
+menupricesus.com,admin@webtechglob.com,,,admin@webtechglob.com,https://menupricesus.com/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,Yes,https://menupricesus.com/contact,,03/07/2026
+newyorkcitymetro.com,,,,,,0,blocked:upcoming events,skipped_irrelevant,Local Events,,,,,,,03/07/2026
+bluvolta.com,saraswatpraveen999@gmail.com,,,saraswatpraveen999@gmail.com,https://bluvolta.com/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,Yes,https://bluvolta.com/contact,,03/07/2026
+meanzspot.com,,,,,,0,blocked:hvac,skipped_irrelevant,Construction / Trades,,,,,,,03/07/2026
+riddlor.com,admin@linkforgeit.com,,,admin@linkforgeit.com,https://riddlor.com/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,03/07/2026
+wizblix.com,saraswatpraveen999@gmail.com,,,saraswatpraveen999@gmail.com,https://wizblix.com/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,Yes,https://wizblix.com/contact,,03/07/2026
+sizecrafter.com,admin@webtechglob.com,,,admin@webtechglob.com,https://sizecrafter.com/contact,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,,,,03/07/2026
+zyffi.com,saraswatpraveen999@gmail.com,,,saraswatpraveen999@gmail.com,https://zyffi.com/contact,12,scraper,needs_manual_check,Health & Wellness,medium,yes,domain_mismatch,Yes,https://zyffi.com/contact,,03/07/2026
+startupstoryhub.com,bobbacklinks@gmail.com,,,bobbacklinks@gmail.com,https://startupstoryhub.com/contact-us,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,Yes,https://startupstoryhub.com/contact-us,,03/07/2026
+cryptocars.me,admin@procurementnation.com,info@seattlesportsonline.com,support@seattlesportsonline.com,admin@procurementnation.com | info@seattlesportsonline.com | support@seattlesportsonline.com | support@procurementnation.com | cryptocars.outreach@gmail.com,https://cryptocars.me/blog/procurementnation-com-contact/,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,03/07/2026
+fintechworldz.com,uaeguestp@gmail.com,,,uaeguestp@gmail.com,https://fintechworldz.com/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,03/07/2026
+hiyueyue.com,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,03/07/2026
+aniversarycaption.com,admin@linkforgeit.com,,,admin@linkforgeit.com,https://aniversarycaption.com/contact,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,,,,03/07/2026
+reptileguided.com,admin@webtechglob.com,,,admin@webtechglob.com,https://reptileguided.com/contact-us,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,Yes,https://reptileguided.com,,03/07/2026
+cookape.co.in,deepak@zestfulloutreach.com,u00a0deepak@zestfulloutreach.com,,deepak@zestfulloutreach.com | u00a0deepak@zestfulloutreach.com,https://cookape.co.in/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+rizzlineshub.com,admin@webtechglob.com,,,admin@webtechglob.com,https://rizzlineshub.com/contact,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,,,,03/07/2026
+munarigt.com,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,03/07/2026
+kirakaji.com,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,03/07/2026
+instafinstacom.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+blessingscore.com,admin@webtechglob.com,,,admin@webtechglob.com,https://blessingscore.com/contact,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,Yes,https://blessingscore.com/contact,,03/07/2026
+thefunnypuns.com,,,,,,0,blocked:dental,skipped_irrelevant,Health / Medical,,,,,,,03/07/2026
+blooketjoin.uk,joyitfirm@gmail.com,,,joyitfirm@gmail.com,https://blooketjoin.uk/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,03/07/2026
+livesrecords.com,admin@linkforgeit.com,,,admin@linkforgeit.com,https://livesrecords.com/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+biblepulze.com,admin@biblepulze.com,,,admin@biblepulze.com,https://biblepulze.com/contact,12,scraper,verified,Lifestyle,high,,,,,,03/07/2026
+scoopwheels.com,avinluis06@gmail.com,deepak@zestfulloutreach.com,,avinluis06@gmail.com | deepak@zestfulloutreach.com,https://scoopwheels.com/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,03/07/2026
+restpirestilosaperto.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+pickuplinlove.com,admin@pickuplinlove.com,,,admin@pickuplinlove.com,https://pickuplinlove.com/contact,12,scraper,verified,,high,yes,unclassified_niche,,,,03/07/2026
+starssbio.com,,,,,,0,blocked:resort,skipped_irrelevant,Hotels / Accommodation,,,,,,,03/07/2026
+fungroupsnames.com,admin@webtechglob.com,,,admin@webtechglob.com,https://fungroupsnames.com/contact,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,,,,03/07/2026
+photosbhai.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+sportytimeline.com,stl@sportytimeline.com,robert.brownoutreach@gmail.com,,stl@sportytimeline.com | robert.brownoutreach@gmail.com,https://sportytimeline.com/about,12,scraper,verified,Review Site,high,,,Yes,https://sportytimeline.com/contact,,03/07/2026
+qaptionsstats.com,admin@webtechglob.com,,,admin@webtechglob.com,https://qaptionsstats.com/contact,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,,,,03/07/2026
+worldcrickethub.com,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,03/07/2026
+photosrush.com,admin@webtechglob.com,,,admin@webtechglob.com,https://photosrush.com/contact-us,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+yourssstory.com,ads.xemphimon@gmail.com,ateesh224@gmail.com,,ads.xemphimon@gmail.com | ateesh224@gmail.com,https://yourssstory.com,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,03/07/2026
+sohobio.org,admin@linkforgeit.com,u00a0admin@linkforgeit.com,,admin@linkforgeit.com | u00a0admin@linkforgeit.com,https://sohobio.org/contact,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,Yes,https://sohobio.org/contact,,03/07/2026
+kingattitudcaptions.com,,,,,,13,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,2025-09-17,03/07/2026
+genxdaily.com,harish@zestfulloutreach.com,,,harish@zestfulloutreach.com,https://genxdaily.com/contact,12,scraper,needs_manual_check,Education / Resources,medium,yes,domain_mismatch,,,,03/07/2026
+magazinespros.com,justin.infomarketing@gmail.com,,,justin.infomarketing@gmail.com,https://magazinespros.com/contact,12,scraper,needs_manual_check,Magazine,medium,yes,domain_mismatch,,,,03/07/2026
+visitshot.com,visitshot.inquiry@gmail.com,,,visitshot.inquiry@gmail.com,https://visitshot.com/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+weeklyesports.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+gazettedupmu2.com,guestpost@w3webrank.com,,,guestpost@w3webrank.com,https://gazettedupmu2.com/contact,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,03/07/2026
+bigmagazine.net,admin@linkforgeit.com,info@designmode24.com,support@designmode24.com,admin@linkforgeit.com | info@designmode24.com | support@designmode24.com | business@designmode24.com,https://bigmagazine.net/contact-us,12,scraper,needs_manual_check,Magazine,medium,yes,domain_mismatch,Yes,https://bigmagazine.net/contact,,03/07/2026
+cookape.org.in,satya@zestfulloutreach.com,,,satya@zestfulloutreach.com,https://cookape.org.in/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,03/07/2026
+parivahansewa.io,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+unblockedfunzone.com,saraswatpraveen999@gmail.com,,,saraswatpraveen999@gmail.com,https://unblockedfunzone.com/contact,12,scraper,needs_manual_check,Magazine,medium,yes,domain_mismatch,Yes,https://unblockedfunzone.com/contact,,03/07/2026
+couriertrackings.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+cookape.in,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+tynvi.com,saraswatpraveen999@gmail.com,,,saraswatpraveen999@gmail.com,https://tynvi.com/contact,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,03/07/2026
+nexoish.com,saraswatpraveen999@gmail.com,,,saraswatpraveen999@gmail.com,https://nexoish.com/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,03/07/2026
+brbn.in,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+thingstodonearme.in,,,,,,12,,no_email_found,Travel,,yes,no_email_found,,,,03/07/2026
+photoslink.in,admin@linkforgeit.com,,,admin@linkforgeit.com,https://photoslink.in/contact-us,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,03/07/2026
+meidilite.com,bobbacklinks@gmail.com,,,bobbacklinks@gmail.com,https://meidilite.com/contact-us,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,03/07/2026
+wiremagazinesweekly.com,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+theunimail.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+hindishershayari.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+sportscrickt.com,sportscricketeditor@gmail.com,,,sportscricketeditor@gmail.com,https://sportscrickt.com/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,03/07/2026
+pryzomedia.com,saraswatpraveen999@gmail.com,,,saraswatpraveen999@gmail.com,https://pryzomedia.com/contact,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,,,,03/07/2026
+leaproll.com,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,03/07/2026
+ladli-behna-yojana.com,support@asthatechnologies.org,siddhantsaraswat222@gmail.com,siddhantsaraswat222@gmail.comworking,support@asthatechnologies.org | siddhantsaraswat222@gmail.com | siddhantsaraswat222@gmail.comworking,https://ladli-behna-yojana.com/about-us,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,Yes,https://ladli-behna-yojana.com/contact-us,,03/07/2026
+liftingmags.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+creckler.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+thepopularbirthdays.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+xuvola.com,,,,,,13,,no_email_found,Entertainment,,yes,no_email_found,Yes,https://xuvola.com/contact,2024-12-13,03/07/2026
+verzocity.com,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,03/07/2026
+scooptoop.com,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,03/07/2026
+gtownapts.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,03/07/2026
+sineshots.com,,,,,,12,,no_email_found,Entertainment,,yes,no_email_found,,,,03/07/2026
+tybozworld.com,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,03/07/2026
+fancytextgenerate.com,,,,,,12,,no_email_found,Technology,,yes,no_email_found,Yes,https://fancytextgenerate.com/blog/england-cricket-team-vs-india-national-cricket-team-timeline/,,03/07/2026
+shoutingtree.com,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,03/07/2026
