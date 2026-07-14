@@ -1,501 +1,801 @@
 domain,primary_email,email_2,email_3,all_emails,email_source_url,pages_checked,source,status,niche,confidence,review_flag,review_reason,contact_form,contact_form_url,wayback_snapshot_date,date_scraped
-muscleandfitness.com,,,,,,0,blocked:buy tickets,skipped_irrelevant,Visiting Places / Attractions,,,,,,,13/07/2026
-migogkbh.dk,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,13/07/2026
-finans.dk,finans@finans.dk,,,finans@finans.dk,https://finans.dk,12,scraper,verified,Technology,high,,,,,,13/07/2026
-lepetitjournal.com,damien.bouhours@lepetitjournal.com,theo.mancicidor@lepetitjournal.com,,damien.bouhours@lepetitjournal.com | theo.mancicidor@lepetitjournal.com,https://lepetitjournal.com/contact,12,scraper,verified,Travel,high,,,,,,13/07/2026
-heimwerker.de,info@heimwerker.de,,,info@heimwerker.de,https://heimwerker.de,12,scraper,verified,Education / Resources,high,,,Yes,https://www.heimwerker.de/airbrush-kompressor-test/,,13/07/2026
-comedy.co.uk,contact@comedy.co.uk,,,contact@comedy.co.uk,https://comedy.co.uk,12,scraper,verified,,high,yes,unclassified_niche,,,,13/07/2026
-seura.fi,digi@otavamedia.fi,asiakaspalvelu@otavamedia.fi,erkki.meriluoto@otava.fi,digi@otavamedia.fi | asiakaspalvelu@otavamedia.fi | erkki.meriluoto@otava.fi | etunimi.sukunimi@otava.fi,https://seura.fi,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,Yes,https://seura.fi,,13/07/2026
-nieuws.nl,redactie@nieuws.nl,adverteren@nieuws.nl,,redactie@nieuws.nl | adverteren@nieuws.nl,https://nieuws.nl/contact,12,scraper,verified,News / Media,high,,,,,,13/07/2026
-wowbiz.ro,pont@wowbiz.ro,publicitate@kanald.ro,,pont@wowbiz.ro | publicitate@kanald.ro,https://wowbiz.ro/contact,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,13/07/2026
-vesti.kz,press@vesti.kz,,,press@vesti.kz,https://vesti.kz,12,scraper,verified,Lifestyle,high,,,,,,13/07/2026
-tokfm.pl,pomoc@tok.fm,,,pomoc@tok.fm,https://tokfm.pl,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,13/07/2026
-mojposao.hr,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-mundiario.com,,,,,,12,smtp_catchall,no_email_found,Finance / Business,low,yes,smtp_catchall,,,,13/07/2026
-ajaxshowtime.com,,,,,,12,smtp_catchall,no_email_found,News / Media,low,yes,smtp_catchall,,,,13/07/2026
-film.at,,,,,,12,smtp_catchall,no_email_found,Entertainment,low,yes,smtp_catchall,,,,13/07/2026
-challenges.fr,,,,,,12,smtp_catchall,no_email_found,Finance / Business,low,yes,smtp_catchall,,,,13/07/2026
-beaute-test.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-ga.de,,,,,,12,,no_email_found,Finance / Business,,yes,no_email_found,Yes,https://ga.de,,13/07/2026
-cinepremiere.com.mx,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-myminifactory.com,info@myminifactory.com,creator-relations@myminifactory.com,,info@myminifactory.com | creator-relations@myminifactory.com,https://myminifactory.com,12,scraper,verified,Technology,high,,,,,,13/07/2026
-subrayado.com.uy,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-culture-rh.com,,,,,,12,smtp_catchall,no_email_found,News / Media,low,yes,smtp_catchall,Yes,https://culture-rh.com,,13/07/2026
-tennismajors.com,info@tennismajors.com,,,info@tennismajors.com,https://tennismajors.com/contact-us,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://www.tennismajors.com/wimbledon-news/sinners-team-yet-to-plan-masters-1000-run-as-history-looms-856063.html,,13/07/2026
-fashionchick.nl,contact@fashionchick.nl,,,contact@fashionchick.nl,https://fashionchick.nl,12,scraper,verified,Lifestyle,high,,,,,,13/07/2026
-film.wp.pl,,,,,,12,,no_email_found,Entertainment,,yes,no_email_found,,,,13/07/2026
-teraz.sk,oprava@tasr.sk,,,oprava@tasr.sk,https://teraz.sk,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,13/07/2026
-lekkertafelen.nl,info@lekkertafelen.nl,,,info@lekkertafelen.nl,https://lekkertafelen.nl,12,scraper,verified,News / Media,high,,,Yes,https://lekkertafelen.nl,,13/07/2026
-womansworld.com,contactus@womansworld.com,womansworld@mcclatchy.com,wwfeatures@womansworldmag.com,contactus@womansworld.com | womansworld@mcclatchy.com | wwfeatures@womansworldmag.com | circleofkindness@womansworldmag.com | angels@womansworldmag.com | loveandlaughter@womansworldmag.com | a360@wrightsmedia.com,https://womansworld.com,12,scraper,verified,Health & Wellness,high,,,Yes,https://womansworld.com,,13/07/2026
-wallstreetmojo.com,support@wallstreetmojo.com,,,support@wallstreetmojo.com,https://wallstreetmojo.com/contact,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://wallstreetmojo.com,,13/07/2026
-kitchenfunwithmy3sons.com,,,,,,12,smtp_catchall,no_email_found,Food & Drink,low,yes,smtp_catchall,Yes,https://kitchenfunwithmy3sons.com,,13/07/2026
-ammonnews.net,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-portalebambini.it,,,,,,12,,no_email_found,Magazine,,yes,no_email_found,,,,13/07/2026
-kaksplus.fi,digi@otavamedia.fi,asiakaspalvelu@otavamedia.fi,etunimi.sukunimi@otava.fi,digi@otavamedia.fi | asiakaspalvelu@otavamedia.fi | etunimi.sukunimi@otava.fi,https://kaksplus.fi,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,Yes,https://kaksplus.fi,,13/07/2026
-cadena100.es,,,,,,0,blocked:happy hour,skipped_irrelevant,Bar / Pub,,,,,,,13/07/2026
-laarena.com.ar,info@laarena.com.ar,,,info@laarena.com.ar,https://laarena.com.ar,12,scraper,verified,News / Media,high,,,,,,13/07/2026
-alkhaleej.ae,advertise@alkhaleej.ae,press@alkhaleej.ae,news@alkhaleej.ae,advertise@alkhaleej.ae | press@alkhaleej.ae | news@alkhaleej.ae | contact@alkhaleej.ae | info@alkhaleej.ae,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,13/07/2026
-stealthgram.net,info@backlinkexplore.com,,,info@backlinkexplore.com,https://stealthgram.net/contact,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,,,,13/07/2026
-gamekult.com,,,,,,12,,no_email_found,Technology,,yes,no_email_found,Yes,https://gamekult.com/contact,,13/07/2026
-familieoverdekook.nl,info@familieoverdekook.nl,,,info@familieoverdekook.nl,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,13/07/2026
-cyclismactu.net,contact@swar-agency.com,,,contact@swar-agency.com,https://cyclismactu.net,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,13/07/2026
-verkkouutiset.fi,news@verkkouutiset.fi,,,news@verkkouutiset.fi,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,13/07/2026
-africasoccer.com,editor@africasoccer.com,,,editor@africasoccer.com,https://africasoccer.com,12,scraper,verified,News / Media,high,,,Yes,https://africasoccer.com/contact-us,,13/07/2026
-illvet.se,,,,,,12,smtp_catchall,no_email_found,Magazine,low,yes,smtp_catchall,,,,13/07/2026
-supercars.net,,,,,,12,smtp_catchall,no_email_found,News / Media,low,yes,smtp_catchall,Yes,https://supercars.net,,13/07/2026
-rozrywka.spidersweb.pl,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,13/07/2026
-dostor.org,info@dostor.org,,,info@dostor.org,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,13/07/2026
-eltribuno.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-pearltrees.com,contact@pearltrees.net,education@pearltrees.net,,contact@pearltrees.net | education@pearltrees.net,https://pearltrees.com/contact,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,Yes,https://pearltrees.com,,13/07/2026
-kekmama.nl,redactie@kekmama.nl,klantenservice@kekmama.nl,,redactie@kekmama.nl | klantenservice@kekmama.nl,https://kekmama.nl/contact,12,scraper,verified,Lifestyle,high,,,,,,13/07/2026
-chicmagazine.com.mx,,,,,,12,,no_email_found,Magazine,,yes,no_email_found,,,,13/07/2026
-kinoundco.de,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,13/07/2026
-caminteresse.fr,,,,,,12,,no_email_found,Health & Wellness,,yes,no_email_found,,,,13/07/2026
-navarra.okdiario.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-vasekupony.cz,info@vasekupony.cz,,,info@vasekupony.cz,https://vasekupony.cz,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,13/07/2026
-whimsical.com,hello@whimsical.com,info@whimsical.com,,hello@whimsical.com | info@whimsical.com,,12,smtp_guess,needs_manual_check,News / Media,low,yes,smtp_guess,,,,13/07/2026
-bcc.nl,,,,,,12,smtp_catchall,no_email_found,Technology,low,yes,smtp_catchall,,,,13/07/2026
-canalshowsport.com.ar,administracion@canalshowsport.com.ar,comercial@canalshowsport.com.ar,contenidos@canalshowsport.com.ar,administracion@canalshowsport.com.ar | comercial@canalshowsport.com.ar | contenidos@canalshowsport.com.ar | redes@canalshowsport.com.ar | empleo@canalshowsport.com.ar,https://canalshowsport.com.ar/contact,12,scraper,verified,Sports,high,,,,,,13/07/2026
-agerpres.ro,office@agerpres.ro,,,office@agerpres.ro,https://agerpres.ro,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,13/07/2026
-polesine24.it,redazione.ro@lavoce-nuova.it,commerciale.ro@lavoce-nuova.it,,redazione.ro@lavoce-nuova.it | commerciale.ro@lavoce-nuova.it,https://polesine24.it,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,13/07/2026
-saarbruecker-zeitung.de,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,Yes,https://saarbruecker-zeitung.de,,13/07/2026
-avisendanmark.dk,,,,,,0,blocked:pub+pub,skipped_irrelevant,Bar / Pub,,,,,,,13/07/2026
-f1i.autojournal.fr,,,,,,10,,no_email_found,Travel,,yes,no_email_found,,,,13/07/2026
-4-pieds.com,info@4-pieds.com,,,info@4-pieds.com,,12,smtp_guess,needs_manual_check,Magazine,low,yes,smtp_guess,Yes,https://4-pieds.com,,13/07/2026
-carbu.com,press@carbu.com,,,press@carbu.com,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,13/07/2026
-henof.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,13/07/2026
-yucatan.com.mx,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-hnonline.sk,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-seen.de,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,13/07/2026
-allecijfers.nl,wouter@openinfo.nl,,,wouter@openinfo.nl,https://allecijfers.nl/contact,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,13/07/2026
-halodoctor.pl,,,,,,0,blocked:doctor,skipped_irrelevant,Health / Medical,,,,,,,13/07/2026
-redactiesommen.nl,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-alsoldelacosta.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-scinter.com.br,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-bpmoney.com.br,,,,,,12,smtp_catchall,no_email_found,Technology,low,yes,smtp_catchall,,,,13/07/2026
-diariocorreo.pe,johana.ugaz@prensmart.pe,fonoavisos@comercio.com.pe,,johana.ugaz@prensmart.pe | fonoavisos@comercio.com.pe,https://diariocorreo.pe,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,13/07/2026
-laleggepertutti.it,info@laleggepertutti.it,adv@laleggepertutti.it,,info@laleggepertutti.it | adv@laleggepertutti.it,https://laleggepertutti.it,12,scraper,verified,News / Media,high,,,,,,13/07/2026
-powrotroberta.pl,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,13/07/2026
-coisasdaleia.com.br,leiamcook@gmail.com,,,leiamcook@gmail.com,https://coisasdaleia.com.br,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,Yes,https://coisasdaleia.com.br,,13/07/2026
-eatertainment.nl,info@eatertainment.nl,,,info@eatertainment.nl,,12,smtp_guess,needs_manual_check,News / Media,low,yes,smtp_guess,,,,13/07/2026
-akhbarona.com,contact@akhbarona.com,,,contact@akhbarona.com,https://akhbarona.com/contact,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://akhbarona.com/contact,,13/07/2026
-alaraby.co.uk,wael.kandil@alaraby.co.uk,,,wael.kandil@alaraby.co.uk,https://alaraby.co.uk,9,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://alaraby.co.uk,,13/07/2026
-tennisactu.net,contact@swar-agency.com,,,contact@swar-agency.com,https://tennisactu.net,11,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,13/07/2026
-portal.abczdrowie.pl,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-forbes.com.mx,,,,,,0,blocked:hospital,skipped_irrelevant,Health / Medical,,,,,,,13/07/2026
-realitatea.net,webcontent@realitatea.net,,,webcontent@realitatea.net,https://realitatea.net/contact,12,scraper,verified,News / Media,high,,,,,,13/07/2026
-theclinic.cl,,,,,,0,blocked:clinic,skipped_irrelevant,Health / Medical,,,,,,,13/07/2026
-tiomovil.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-belarabyapps.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://belarabyapps.com/contact,,13/07/2026
-hierhebikpijn.nl,info@hierhebikpijn.nl,,,info@hierhebikpijn.nl,,12,smtp_guess,needs_manual_check,Blog / Content Site,low,yes,smtp_guess,Yes,https://www.hierhebikpijn.nl/contact,,13/07/2026
-radioimpuls.ro,office@radioimpuls.ro,,,office@radioimpuls.ro,https://radioimpuls.ro,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,13/07/2026
-lasicilia.it,redazione@lasicilia.it,,,redazione@lasicilia.it,https://lasicilia.it,12,scraper,verified,News / Media,high,,,,,,13/07/2026
-deavita.com,office@deavita.com,,,office@deavita.com,https://deavita.com,12,scraper,verified,Lifestyle,high,,,,,,13/07/2026
-nextplz.fr,contact@nextplz.fr,,,contact@nextplz.fr,,12,smtp_guess,needs_manual_check,Entertainment,low,yes,smtp_guess,,,,13/07/2026
-letemsvetemapplem.eu,info@textfactory.cz,,,info@textfactory.cz,https://letemsvetemapplem.eu,12,scraper,needs_manual_check,Magazine,medium,yes,domain_mismatch,,,,13/07/2026
-urlaubsguru.at,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,13/07/2026
-tradebrains.in,advertise@tradebrains.in,press@tradebrains.in,news@tradebrains.in,advertise@tradebrains.in | press@tradebrains.in | news@tradebrains.in | content@tradebrains.in | contact@tradebrains.in | info@tradebrains.in,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,13/07/2026
-wn.de,,,,,,12,smtp_catchall,no_email_found,News / Media,low,yes,smtp_catchall,,,,13/07/2026
-fxnewstoday.ae,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-papermag.com,,,,,,0,blocked:city hall,skipped_irrelevant,Government,,,,,,,13/07/2026
-definitions.net,jena121@inbox.com,,,jena121@inbox.com,https://definitions.net,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,Yes,https://definitions.net,,13/07/2026
-motoservices.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-radaronline.com,advertising@radaronline.com,media@radaronline.com,contact@radaronline.com,advertising@radaronline.com | media@radaronline.com | contact@radaronline.com | tips@radaronline.com,https://radaronline.com,12,scraper,verified,Entertainment,high,,,,,,13/07/2026
-fachanwalt.de,info@fachanwalt.de,,,info@fachanwalt.de,https://fachanwalt.de,12,scraper,verified,Magazine,high,,,,,,13/07/2026
-remistas.com.br,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-lent.az,newsroom@lent.az,,,newsroom@lent.az,https://lent.az,12,scraper,verified,Review Site,high,,,Yes,https://lent.az,,13/07/2026
-simoneskitchen.nl,info@simoneskitchen.nl,,,info@simoneskitchen.nl,https://simoneskitchen.nl/contact,12,scraper,verified,Food & Drink,high,,,Yes,https://simoneskitchen.nl,,13/07/2026
-dresscode.nl,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,13/07/2026
-iform.nu,,,,,,12,smtp_catchall,no_email_found,Technology,low,yes,smtp_catchall,Yes,https://iform.nu,,13/07/2026
-bilmagasinet.dk,,,,,,12,smtp_catchall,no_email_found,Technology,low,yes,smtp_catchall,,,,13/07/2026
-goerdetselv.dk,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,Yes,https://goerdetselv.dk,,13/07/2026
-kirandulastippek.hu,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-kafeteria.pl,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-itaincontri.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-quotidianodipuglia.it,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,13/07/2026
-haus-garten-test.de,,,,,,12,,no_email_found,Food & Drink,,yes,no_email_found,,,,13/07/2026
-spirulina.pl,sklep@spirulina.pl,,,sklep@spirulina.pl,https://spirulina.pl,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,13/07/2026
-globaltimeconverter.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-goclecd.fr,support@allkeyshop.com,,,support@allkeyshop.com,https://goclecd.fr,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,Yes,https://goclecd.fr,,13/07/2026
-bien.hu,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,Yes,https://bien.hu,,13/07/2026
-as.ro,contact@antenagroup.ro,site.sport@antenagroup.ro,,contact@antenagroup.ro | site.sport@antenagroup.ro,https://as.ro/contact,12,scraper,needs_manual_check,Sports,medium,yes,domain_mismatch,Yes,https://as.ro,,13/07/2026
-sport1.pl,,,,,,12,,no_email_found,Sports,,yes,no_email_found,,,,13/07/2026
-wasap-plus.plus,support@whatsapp.com,hola@josegaspard.dev,,support@whatsapp.com | hola@josegaspard.dev,https://wasap-plus.plus,12,scraper,needs_manual_check,Review Site,medium,yes,domain_mismatch,,,,13/07/2026
-folhamax.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-infocielo.com,,,,,,12,,no_email_found,Sports,,yes,no_email_found,,,,13/07/2026
-stiften.dk,maluk@stiften.dk,kridj@stiften.dk,jobau@stiften.dk,maluk@stiften.dk | kridj@stiften.dk | jobau@stiften.dk | emfi@stiften.dk | olias@stiften.dk | sowi@stiften.dk | khc@stiften.dk | klsc@stiften.dk | heho@stiften.dk | krkie@stiften.dk | chole@stiften.dk | matha@stiften.dk | heas@stiften.dk | kaje@stiften.dk | alkal@stiften.dk | jans@stiften.dk | ravn@stiften.dk | midho@jfm.dk | thtro@jfm.dk | kriso@jfm.dk | maf@jv.dk | johtj@jv.dk | siror@faa.dk | ahp@jfm.dk | matmu@jfm.dk | ar@jfmedier.dk,https://stiften.dk,12,scraper,verified,Entertainment,high,,,,,,13/07/2026
-sol.de,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-viivilla.no,,,,,,12,smtp_catchall,no_email_found,Technology,low,yes,smtp_catchall,,,,13/07/2026
-foggiatoday.it,,,,,,12,smtp_catchall,no_email_found,News / Media,low,yes,smtp_catchall,,,,13/07/2026
-tara.no,,,,,,12,smtp_catchall,no_email_found,Blog / Content Site,low,yes,smtp_catchall,,,,13/07/2026
-jvpnews.com,media@lankasri.com,news@lankasri.com,lankasri@lankasri.com,media@lankasri.com | news@lankasri.com | lankasri@lankasri.com | sales@lankasri.com | notice@lankasri.com | event@lankasri.com | pr@lankasri.com | legal@lankasri.com | legal@lankasi.com,https://jvpnews.com/contact,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,13/07/2026
-map24.com,info@map24.com,,,info@map24.com,https://map24.com/contact,12,scraper,verified,News / Media,high,,,,,,13/07/2026
-fiorentinanews.com,,,,,,12,,no_email_found,Sports,,yes,no_email_found,,,,13/07/2026
-zodiac-horoscoop.nl,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://zodiac-horoscoop.nl/contact,,13/07/2026
-sproetonline.nl,luus@sproetonline.nl,,,luus@sproetonline.nl,https://sproetonline.nl,12,scraper,verified,News / Media,high,,,,,,13/07/2026
-zf.ro,zf24@zf.ro,cristian.hostiuc@zf.ro,sorin.pislaru@zf.ro,zf24@zf.ro | cristian.hostiuc@zf.ro | sorin.pislaru@zf.ro | dana.ciriperu@zf.ro | adrian.seceleanu@zf.ro | bogdan.cojocar@zf.ro | iulian.anghel@zf.ro | loredana.fratila@zf.ro | alexandru.matei@zf.ro | abonat@m.ro | anisoara.dragu@m.ro | beatrice.cenusoiu@m.ro | manuela.panescu@m.ro | livia.flacau@m.ro | cristina.ivanovici@m.ro | daniela.gugiu@m.ro | alexandra.voicu@m.ro | virgil.stefan@m.ro,https://zf.ro/contact,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,13/07/2026
-ladylemonade.nl,info@ladylemonade.nl,,,info@ladylemonade.nl,https://ladylemonade.nl,12,scraper,verified,Magazine,high,,,Yes,https://ladylemonade.nl,,13/07/2026
-verdazzo.com.br,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-manners.nl,info@manners.nl,,,info@manners.nl,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,13/07/2026
-elonce.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-borsainside.com,,,,,,12,,no_email_found,Finance / Business,,yes,no_email_found,,,,13/07/2026
-diario.mx,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-hollywoodpq.com,info@hollywoodpq.com,medias@obox.group,,info@hollywoodpq.com | medias@obox.group,https://hollywoodpq.com/contact,12,scraper,verified,News / Media,high,,,,,,13/07/2026
-tonafama.ig.com.br,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-sitioandino.com.ar,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,13/07/2026
-readeverton.com,,,,,,12,smtp_catchall,no_email_found,Entertainment,low,yes,smtp_catchall,,,,13/07/2026
-panorama.it,,,,,,12,,no_email_found,Magazine,,yes,no_email_found,,,,13/07/2026
-cleanfleetreport.com,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,13/07/2026
-oggitreviso.it,news@oggitreviso.it,,,news@oggitreviso.it,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,13/07/2026
-newsweek.ro,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,13/07/2026
-sn.dk,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,13/07/2026
-jurnalul.ro,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,13/07/2026
-dicocitations.com,,,,,,12,smtp_catchall,no_email_found,Travel,low,yes,smtp_catchall,,,,13/07/2026
-france-mineraux.fr,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-misionesonline.net,info@misionesonline.net,,,info@misionesonline.net,,12,smtp_guess,needs_manual_check,News / Media,low,yes,smtp_guess,,,,13/07/2026
-turistipercaso.it,redazione@turistipercaso.it,,,redazione@turistipercaso.it,https://turistipercaso.it,12,scraper,verified,Travel,high,,,,,,13/07/2026
-salamancartvaldia.es,redaccion@salamancartvaldia.es,,,redaccion@salamancartvaldia.es,https://salamancartvaldia.es,12,scraper,verified,News / Media,high,,,,,,13/07/2026
-soufortaleza.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-antyweb.pl,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,13/07/2026
-acidadeon.com,,,,,,12,,no_email_found,Lifestyle,,yes,no_email_found,,,,13/07/2026
-kita.de,,,,,,0,blocked:kindergarten,skipped_irrelevant,Education,,,,,,,13/07/2026
-jp.beincrypto.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://jp.beincrypto.com,,13/07/2026
-tvguia.pt,,,,,,12,,no_email_found,Food & Drink,,yes,no_email_found,,,,13/07/2026
-travelbymexico.com,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,13/07/2026
-haqqin.az,news@haqqin.az,haqqin313@gmail.com,,news@haqqin.az | haqqin313@gmail.com,https://haqqin.az,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,13/07/2026
-longtake.it,redazione@longtake.it,,,redazione@longtake.it,https://longtake.it,12,scraper,verified,Review Site,high,,,,,,13/07/2026
-bresciaoggi.it,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,13/07/2026
-westfalen-blatt.de,,,,,,12,smtp_catchall,no_email_found,News / Media,low,yes,smtp_catchall,,,,13/07/2026
-klik.hr,,,,,,12,smtp_catchall,no_email_found,Blog / Content Site,low,yes,smtp_catchall,,,,13/07/2026
-elpais.com/chile,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-tvblik.nl,info@tvblik.nl,,,info@tvblik.nl,,12,smtp_guess,needs_manual_check,News / Media,low,yes,smtp_guess,,,,13/07/2026
-kieskeurig.nl,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,13/07/2026
-sexjobs.gr,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,13/07/2026
-francoischarron.com,aaa@aaa.com,aaaaaaa@aaa.aaa,,aaa@aaa.com | aaaaaaa@aaa.aaa,https://francoischarron.com/securite/fraude-et-arnaques-web/ajouter-aaaaaacom-a-vos-contacts-contre-t-il-vraiment-le-piratage-informatique/JHLe2os5tZ/,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,13/07/2026
-illvid.dk,,,,,,12,smtp_catchall,no_email_found,Technology,low,yes,smtp_catchall,,,,13/07/2026
-enterat.com,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-romaniatv.net,webcontent@rtv.net,office@rtv.net,catrinel.gheorghe@rtv.net,webcontent@rtv.net | office@rtv.net | catrinel.gheorghe@rtv.net | eugen.chelemen@rtv.net | roxana.niculescu@rtv.net | simona.gheorghe@rtv.net | roxana.lupuianu@rtv.net | letitia.badescu@rtv.net | iulian.udrea@rtv.net | sales@rtv.net | solange.albu@rtv.net | vanzari@rtv.net | stireata@rtv.net,https://romaniatv.net/contact,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,13/07/2026
-tekniikanmaailma.fi,digi@otavamedia.fi,asiakaspalvelu@otavamedia.fi,etunimi.sukunimi@otava.fi,digi@otavamedia.fi | asiakaspalvelu@otavamedia.fi | etunimi.sukunimi@otava.fi,https://tekniikanmaailma.fi,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,13/07/2026
-puntienergia.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://puntienergia.com,,13/07/2026
-debuik.nl,,,,,,12,smtp_catchall,no_email_found,News / Media,low,yes,smtp_catchall,,,,13/07/2026
-rpgfan.com,advertising@rpgfan.com,,,advertising@rpgfan.com,,12,smtp_guess,needs_manual_check,Entertainment,low,yes,smtp_guess,Yes,https://rpgfan.com/contact,,13/07/2026
-multimediostv.com,,,,,,12,,no_email_found,Magazine,,yes,no_email_found,,,,13/07/2026
-kuntoplus.fi,,,,,,12,smtp_catchall,no_email_found,Technology,low,yes,smtp_catchall,Yes,https://kuntoplus.fi,,13/07/2026
-kannammacooks.com,,,,,,12,,no_email_found,Food & Drink,,yes,no_email_found,Yes,https://kannammacooks.com/contact,,13/07/2026
-report.az,news@report.az,,,news@report.az,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,13/07/2026
-motorsportweek.com,advertising@motorsportweek.com,contact@motorsportweek.com,,advertising@motorsportweek.com | contact@motorsportweek.com,https://motorsportweek.com/about,12,scraper,verified,Review Site,high,,,,,,13/07/2026
-dose.ca,info@obox.group,request@obox.group,,info@obox.group | request@obox.group,https://dose.ca/about-us,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,13/07/2026
-technplay.com,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,13/07/2026
-news.az,editor@news.az,,,editor@news.az,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,13/07/2026
-calcionapoli1926.it,direttore@calcionapoli1926.it,,,direttore@calcionapoli1926.it,https://calcionapoli1926.it,12,scraper,verified,News / Media,high,,,,,,13/07/2026
-observatornews.ro,observator@antenagroup.ro,,,observator@antenagroup.ro,https://observatornews.ro,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,13/07/2026
-trekhunt.com/hu,,,,,,12,,no_email_found,Review Site,,yes,no_email_found,,,,13/07/2026
-nsmbl.nl,info@nsmbl.nl,,,info@nsmbl.nl,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,13/07/2026
-autotrader.co.nz,dealersupport@autotrader.co.nz,accounts@autotrader.co.nz,,dealersupport@autotrader.co.nz | accounts@autotrader.co.nz,https://autotrader.co.nz/contact,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://autotrader.co.nz/contact,,13/07/2026
-primasport.ro,contact@primasport.ro,,,contact@primasport.ro,,12,smtp_guess,needs_manual_check,Sports,low,yes,smtp_guess,,,,13/07/2026
-wij.nl,redactie@wij.nl,consumentenservice@wij.nl,sales@wij.nl,redactie@wij.nl | consumentenservice@wij.nl | sales@wij.nl,https://wij.nl/contact,12,scraper,verified,Review Site,high,,,,,,13/07/2026
-senenews.com,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,13/07/2026
-thebull.com.au,info@thebull.com.au,,,info@thebull.com.au,https://thebull.com.au/about,12,scraper,verified,Finance / Business,high,,,,,,13/07/2026
-horaires.lefigaro.fr,,,,,,0,blocked:dentist+pharma,skipped_irrelevant,Health / Medical,,,,,,,13/07/2026
-viva.ro,advertising@viva.ro,content@viva.ro,contact@viva.ro,advertising@viva.ro | content@viva.ro | contact@viva.ro | info@viva.ro,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,13/07/2026
-autopista.es,sportlifeiberica@slib.es,protecciondatos@slib.es,dpo@slib.es,sportlifeiberica@slib.es | protecciondatos@slib.es | dpo@slib.es,https://autopista.es,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,Yes,https://autopista.es,,13/07/2026
-allclash.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-sydan.fi,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://sydan.fi,,13/07/2026
-deepseek.ai,,,,,,12,,no_email_found,Review Site,,yes,no_email_found,,,,13/07/2026
-completesports.com,info@completesportsnigeria.com,solomon.ojeagbase@completesportsnigeria.com,solbase10@gmail.com,info@completesportsnigeria.com | solomon.ojeagbase@completesportsnigeria.com | solbase10@gmail.com,https://completesports.com,12,scraper,needs_manual_check,Sports,medium,yes,domain_mismatch,,,,13/07/2026
-portaltemponovo.com.br,comercial@portaltemponovo.com.br,,,comercial@portaltemponovo.com.br,https://portaltemponovo.com.br,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,13/07/2026
-queer.de,info@queer.de,,,info@queer.de,https://queer.de,12,scraper,verified,Entertainment,high,,,Yes,https://queer.de,,13/07/2026
-jeux.com,contact@jeux.com,,,contact@jeux.com,https://jeux.com,12,scraper,verified,Review Site,high,,,,,,13/07/2026
-bouwinfo.be,info@buildingimpact.be,,,info@buildingimpact.be,https://bouwinfo.be,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,Yes,https://bouwinfo.be,,13/07/2026
-latinaoggi.eu,redazionelt@editorialeoggi.info,abbonamenti@editorialeoggi.info,diffusione@editorialeoggi.info,redazionelt@editorialeoggi.info | abbonamenti@editorialeoggi.info | diffusione@editorialeoggi.info,https://latinaoggi.eu,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,13/07/2026
-juliebruun.com,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://juliebruun.com,,13/07/2026
-fmdos.cl,comercial@prisamedia.com,,,comercial@prisamedia.com,https://fmdos.cl,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,13/07/2026
-andaluciainformacion.es,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-influencersplace.com,info@influencersplace.com,support@influencersplace.com,,info@influencersplace.com | support@influencersplace.com,https://influencersplace.com,12,scraper,verified,Technology,high,,,Yes,https://influencersplace.com,,13/07/2026
-chandigarhmetro.com,hello@chandigarhmetro.com,ajay@chandigarhmetro.com,,hello@chandigarhmetro.com | ajay@chandigarhmetro.com,https://chandigarhmetro.com/contact,12,scraper,verified,Technology,high,,,Yes,https://chandigarhmetro.com/contact-us,,13/07/2026
-godisageek.com,pr@godisageek.com,u00a0pr@godisageek.com,,pr@godisageek.com | u00a0pr@godisageek.com,https://godisageek.com/contact,12,scraper,verified,Entertainment,high,,,,,,13/07/2026
-donaukurier.de,aboservice@donaukurier.de,,,aboservice@donaukurier.de,https://donaukurier.de,12,scraper,verified,News / Media,high,,,,,,13/07/2026
-holtankoljak.hu,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-neti.ee,,,,,,12,,no_email_found,Review Site,,yes,no_email_found,,,,13/07/2026
-haarlemsdagblad.nl,info@haarlemsdagblad.nl,,,info@haarlemsdagblad.nl,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,13/07/2026
-holistik.nl,info@holistik.nl,,,info@holistik.nl,https://holistik.nl/contact,12,scraper,verified,Magazine,high,,,Yes,https://holistik.nl/contact,,13/07/2026
-indiaonline.in,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,13/07/2026
-motosprint.it,segreteria@contieditore.it,,,segreteria@contieditore.it,https://motosprint.it,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,13/07/2026
-rd1.com.br,paullocarvalho19@gmail.com,jhonatas@gridmidia.com,,paullocarvalho19@gmail.com | jhonatas@gridmidia.com,https://rd1.com.br,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,13/07/2026
-diarioelnorte.com.ar,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,13/07/2026
-ottopagine.it,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-siviaggia.it,,,,,,0,blocked:wizz air,skipped_irrelevant,Flight Booking,,,,,,,13/07/2026
-applegazette.com,contact@adzomedia.com,,,contact@adzomedia.com,https://applegazette.com,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,13/07/2026
-moncloa.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-news.ro,news@news.ro,abonamente@news.ro,irinel.bucur@news.ro,news@news.ro | abonamente@news.ro | irinel.bucur@news.ro,https://news.ro/contact,12,scraper,verified,Sports,high,,,Yes,https://news.ro,,13/07/2026
-africa.businessinsider.com,,,,,,12,smtp_catchall,no_email_found,Lifestyle,low,yes,smtp_catchall,,,,13/07/2026
-snowplaza.nl,info@snowplaza.nl,info@steamboat.com,,info@snowplaza.nl | info@steamboat.com,https://snowplaza.nl/contact,12,scraper,verified,Magazine,high,,,,,,13/07/2026
-ciaotutti.nl,blog@ciaotutti.nl,,,blog@ciaotutti.nl,https://ciaotutti.nl,12,scraper,verified,News / Media,high,,,Yes,https://ciaotutti.nl/contact,,13/07/2026
-racingandsports.com.au,news@racingandsports.com.au,,,news@racingandsports.com.au,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,13/07/2026
-sfatulparintilor.ro,office@sfatulparintilor.ro,,,office@sfatulparintilor.ro,https://sfatulparintilor.ro/contact,12,scraper,verified,Health & Wellness,high,,,,,,13/07/2026
-aujardin.info,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-ekkofilm.dk,cc@ekkofilm.dk,sekretariat@ekkofilm.dk,merete@ekkofilm.dk,cc@ekkofilm.dk | sekretariat@ekkofilm.dk | merete@ekkofilm.dk,https://ekkofilm.dk,12,scraper,verified,News / Media,high,,,Yes,https://ekkofilm.dk,,13/07/2026
-maison-travaux.fr,contact@maison-travaux.fr,,,contact@maison-travaux.fr,,12,smtp_guess,needs_manual_check,News / Media,low,yes,smtp_guess,,,,13/07/2026
-sentimente.ro,publicitate@sentimente.ro,,,publicitate@sentimente.ro,https://sentimente.ro,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://sentimente.ro,,13/07/2026
-webgirondins.com,contact@webgirondins.com,,,contact@webgirondins.com,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,Yes,https://webgirondins.com/contact,,13/07/2026
-dnevnik.rs,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,13/07/2026
-iphon.fr,news@iphon.fr,contact@iphon.fr,,news@iphon.fr | contact@iphon.fr,,12,smtp_guess,needs_manual_check,News / Media,low,yes,smtp_guess,,,,13/07/2026
-sundayworld.co.za,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,13/07/2026
-cocktailicious.nl,cocktails@cocktailicious.nl,,,cocktails@cocktailicious.nl,https://cocktailicious.nl,12,scraper,verified,News / Media,high,,,Yes,https://cocktailicious.nl,,13/07/2026
-gjoerdetselv.com,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,Yes,https://gjoerdetselv.com,,13/07/2026
-thebbqbastard.com,bastardbbq@gmail.com,,,bastardbbq@gmail.com,https://thebbqbastard.com,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,Yes,https://thebbqbastard.com/contact,,13/07/2026
-eggradients.com,serhadiletir@gmail.com,,,serhadiletir@gmail.com,https://eggradients.com,12,scraper,needs_manual_check,Finance / Business,medium,yes,domain_mismatch,,,,13/07/2026
-laopinionaustral.com.ar,pauta@laopinionaustral.com.ar,contacto@lapinionaustral.com.ar,,pauta@laopinionaustral.com.ar | contacto@lapinionaustral.com.ar,https://laopinionaustral.com.ar,12,scraper,verified,News / Media,high,,,,,,13/07/2026
-protrainer.fr,,,,,,12,,no_email_found,Magazine,,yes,no_email_found,,,,13/07/2026
-acadomi.com,info@serpinsight.com,,,info@serpinsight.com,https://acadomi.com,12,scraper,needs_manual_check,Review Site,medium,yes,domain_mismatch,,,,13/07/2026
-pulsoslp.com.mx,erikac@pulsoslp.com.mx,replica@pulsoslp.com.mx,,erikac@pulsoslp.com.mx | replica@pulsoslp.com.mx,https://pulsoslp.com.mx,12,scraper,verified,News / Media,high,,,,,,13/07/2026
-sentieriselvaggi.it,info@sentieriselvaggi.it,,,info@sentieriselvaggi.it,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,13/07/2026
-verifsites.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,Yes,https://verifsites.com/contact,,13/07/2026
-parenting.pl,,,,,,12,,no_email_found,Lifestyle,,yes,no_email_found,,,,13/07/2026
-playmakerstats.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,13/07/2026
-noticias.perfil.com,perfilcom@perfil.com,,,perfilcom@perfil.com,https://noticias.perfil.com,12,scraper,verified,News / Media,high,,,,,,13/07/2026
-varesenews.it,redazione@varesenews.it,orlando.mastrillo@varesenews.it,francesco.mazzoleni@varesenews.it,redazione@varesenews.it | orlando.mastrillo@varesenews.it | francesco.mazzoleni@varesenews.it,https://varesenews.it,12,scraper,verified,,high,yes,unclassified_niche,Yes,https://varesenews.it/contact,,13/07/2026
-ultimasnoticias.com.ve,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,Yes,https://ultimasnoticias.com.ve,,13/07/2026
-panorama.nl,redactie@panorama.nl,,,redactie@panorama.nl,https://panorama.nl/contact,12,scraper,verified,News / Media,high,,,Yes,https://panorama.nl,,13/07/2026
-fakedetail.com,contact@fakedetail.com,,,contact@fakedetail.com,https://fakedetail.com/contact,12,scraper,verified,News / Media,high,,,Yes,https://fakedetail.com/contact,,13/07/2026
-radio3cadenapatagonia.com.ar,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-noi.md,editor@noi.md,press@noi.md,info@noi.md,editor@noi.md | press@noi.md | info@noi.md,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,Yes,https://noi.md,,13/07/2026
-vegolosi.it,scrivici@vegolosi.it,stampa@vegolosi.it,commerciale@viceversamedia.it,scrivici@vegolosi.it | stampa@vegolosi.it | commerciale@viceversamedia.it,https://vegolosi.it/about,12,scraper,verified,Food & Drink,high,,,,,,13/07/2026
-gds.se,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,Yes,https://gds.se,,13/07/2026
-clickpetroleoegas.com.br,contato@clickpetroleoegas.com.br,,,contato@clickpetroleoegas.com.br,https://clickpetroleoegas.com.br,12,scraper,verified,Technology,high,,,Yes,https://clickpetroleoegas.com.br,,13/07/2026
-laptopspirit.fr,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,13/07/2026
-jmouders.nl,info@jmouders.nl,,,info@jmouders.nl,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,13/07/2026
-diariolasamericas.com,info@diariolasamericas.com,,,info@diariolasamericas.com,,12,smtp_guess,needs_manual_check,Sports,low,yes,smtp_guess,,,,13/07/2026
-cdkeyit.it,support@allkeyshop.com,,,support@allkeyshop.com,https://cdkeyit.it,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,Yes,https://cdkeyit.it,,13/07/2026
-hsfo.dk,idf@hsfo.dk,ts@hsfo.dk,abl@hsfo.dk,idf@hsfo.dk | ts@hsfo.dk | abl@hsfo.dk | sopic@hsfo.dk | lepo@hsfo.dk | marry@hsfo.dk | ba@hsfo.dk | ta@hsfo.dk | liage@hsfo.dk | victl@hsfo.dk | nitmo@hsfo.dk | hj@hsfo.dk | mg@hsfo.dk | ja@hsfo.dk | itc@hsfo.dk | hensa@hsfo.dk | mp@hsfo.dk | nifri@hsfo.dk | aw@hsfo.dk | midho@jfm.dk | matmu@jfm.dk | thtro@jfm.dk | maf@jv.dk | johtj@jv.dk | siror@faa.dk | ar@jfmedier.dk | kriso@jfm.dk,https://hsfo.dk,12,scraper,verified,Entertainment,high,,,,,,13/07/2026
-saudiplatform.com,saudiplatform.com@gmail.com,,,saudiplatform.com@gmail.com,https://saudiplatform.com/contact,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,13/07/2026
-baenegocios.com,departamentocomercial@grupocronica.com.ar,,,departamentocomercial@grupocronica.com.ar,https://baenegocios.com,12,scraper,needs_manual_check,Finance / Business,medium,yes,domain_mismatch,,,,13/07/2026
-rahhal.wego.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-profit.ro,profit@profit.ro,redactie@profit.ro,anca@ead.ro,profit@profit.ro | redactie@profit.ro | anca@ead.ro,https://profit.ro/contact,12,scraper,verified,Lifestyle,high,,,Yes,https://profit.ro,,13/07/2026
-draugiem.lv,info@draugiem.lv,,,info@draugiem.lv,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,13/07/2026
-santistas.net,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-japantoday.com,editor@japantoday.com,editorial@japantoday.com,content@japantoday.com,editor@japantoday.com | editorial@japantoday.com | content@japantoday.com | contact@japantoday.com,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,13/07/2026
-ceroacero.es,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,13/07/2026
-hellapoliisi.fi,palaute@hellapoliisi.fi,,,palaute@hellapoliisi.fi,https://hellapoliisi.fi,12,scraper,verified,Lifestyle,high,,,,,,13/07/2026
-tnonline.uol.com.br,,,,,,12,,no_email_found,Magazine,,yes,no_email_found,,,,13/07/2026
-indeleiderstrui.nl,b.vanderploeg@indeleiderstrui.nl,redactie@indeleiderstrui.nl,t.vandersalm@indeleiderstrui.nl,b.vanderploeg@indeleiderstrui.nl | redactie@indeleiderstrui.nl | t.vandersalm@indeleiderstrui.nl | sales@valkeringmedia.nl,https://indeleiderstrui.nl/contact,12,scraper,verified,News / Media,high,,,,,,13/07/2026
-student.be,contact@student.be,,,contact@student.be,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,13/07/2026
-solutiontipster.com,,,,,,5,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-milli.az,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-schwanger.at,kontakt@fokuskind.com,,,kontakt@fokuskind.com,https://www.schwanger.at/impressum.html,12,scraper,needs_manual_check,Education / Resources,medium,yes,domain_mismatch,Yes,https://schwanger.at,,13/07/2026
-insideevs.de,info@insideevs.de,,,info@insideevs.de,,12,smtp_guess,needs_manual_check,Review Site,low,yes,smtp_guess,,,,13/07/2026
-zagreb.info,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-bolanarede.pt,geral@bolanarede.pt,,,geral@bolanarede.pt,https://bolanarede.pt,12,scraper,verified,Magazine,high,,,,,,13/07/2026
-zimo.fr,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,13/07/2026
-autovisie.nl,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-patentati.it,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-rondoniaovivo.com,redacao@rondoniaovivo.com,comercial@rondoniaovivo.com,publicacaolegal@rondoniaovivo.com,redacao@rondoniaovivo.com | comercial@rondoniaovivo.com | publicacaolegal@rondoniaovivo.com,https://rondoniaovivo.com,12,scraper,verified,Lifestyle,high,,,Yes,https://rondoniaovivo.com,,13/07/2026
-lyrics.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-2001online.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-aecom.org,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,13/07/2026
-spoki.lv,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,13/07/2026
-holdpont.hu,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-f1journaal.be,webmaster@f1journaal.be,,,webmaster@f1journaal.be,https://f1journaal.be/contact,12,scraper,verified,News / Media,high,,,,,,13/07/2026
-girlscene.nl,project@hilabel.nl,,,project@hilabel.nl,https://girlscene.nl,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,,,,13/07/2026
-parabrisas.perfil.com,,,,,,0,blocked:hospital,skipped_irrelevant,Health / Medical,,,,,,,13/07/2026
-citytourgirls.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,13/07/2026
-bignewsnetwork.com,,,,,,12,smtp_catchall,no_email_found,News / Media,low,yes,smtp_catchall,,,,13/07/2026
-sanovnik.bg,gradbg@gmail.com,,,gradbg@gmail.com,https://sanovnik.bg,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,13/07/2026
-zdnet.fr,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,13/07/2026
-nl.ign.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-nordlittoral.fr,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-correodelsur.com,redaccion@correodelsur.com,sucursalvirtual@correodelsur.com,direccion@correodelsur.com,redaccion@correodelsur.com | sucursalvirtual@correodelsur.com | direccion@correodelsur.com | gerencia@correodelsur.com,https://correodelsur.com,12,scraper,verified,News / Media,high,,,,,,13/07/2026
-scarehome.com,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,13/07/2026
-alba24.ro,redactie@alba24.ro,publicitate@alba24.ro,claudiu@independentmedia.ro,redactie@alba24.ro | publicitate@alba24.ro | claudiu@independentmedia.ro,https://alba24.ro,12,scraper,verified,Lifestyle,high,,,,,,13/07/2026
-clevescene.com,news@clevescene.com,,,news@clevescene.com,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,13/07/2026
-dreamandtravel.com,info@redhatmedia.net,,,info@redhatmedia.net,https://dreamandtravel.com/contact,12,scraper,needs_manual_check,Travel,medium,yes,domain_mismatch,Yes,https://dreamandtravel.com,,13/07/2026
-ritzau.dk,ritzau@ritzau.dk,,,ritzau@ritzau.dk,https://ritzau.dk,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,13/07/2026
-extra.ec,servicioalcliente@granasa.com.ec,,,servicioalcliente@granasa.com.ec,https://extra.ec,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,13/07/2026
-readastonvilla.com,,,,,,12,,no_email_found,Entertainment,,yes,no_email_found,,,,13/07/2026
-na.se,nyhet@na.se,,,nyhet@na.se,https://na.se,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,13/07/2026
-divahair.ro,razvan.radulescu@divahair.ro,corina.naftanaila@divainteractive.ro,,razvan.radulescu@divahair.ro | corina.naftanaila@divainteractive.ro,https://divahair.ro/contact,12,scraper,verified,Lifestyle,high,,,Yes,https://divahair.ro/contact,,13/07/2026
-elnueve.com.ar,,,,,,0,blocked:hospital,skipped_irrelevant,Health / Medical,,,,,,,13/07/2026
-maskinbladet.dk,redaktion@maskinbladet.dk,mail@fbg.dk,support@fbg.dk,redaktion@maskinbladet.dk | mail@fbg.dk | support@fbg.dk | reklamation@fbg.dk | annoncer@fbg.dk,https://maskinbladet.dk,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://maskinbladet.dk,,13/07/2026
-salernonotizie.it,info@salernonotizie.it,,,info@salernonotizie.it,https://salernonotizie.it,12,scraper,verified,News / Media,high,,,,,,13/07/2026
-filmeye.se,,,,,,12,,no_email_found,Entertainment,,yes,no_email_found,,,,13/07/2026
-theshaderoom.com,contact@theshaderoom.com,,,contact@theshaderoom.com,https://theshaderoom.com/contact,12,scraper,verified,Lifestyle,high,,,Yes,https://theshaderoom.com/contact,,13/07/2026
-tennisnet.com,,,,,,12,smtp_catchall,no_email_found,Pets,low,yes,smtp_catchall,,,,13/07/2026
-dailyexcelsior.com,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,13/07/2026
-lovedeco.ro,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,13/07/2026
-elcontribuyente.mx,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-beetrootbakery.dk,,,,,,12,smtp_catchall,no_email_found,Blog / Content Site,low,yes,smtp_catchall,Yes,https://beetrootbakery.dk,,13/07/2026
-sa.tqwem.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-lacremedugaming.fr,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-parismatch.be,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,13/07/2026
-dvhn.nl,redactie@dvhn.nl,,,redactie@dvhn.nl,https://dvhn.nl,12,scraper,verified,News / Media,high,,,,,,13/07/2026
-journaldesseniors.20minutes.fr,,,,,,12,,no_email_found,Review Site,,yes,no_email_found,,,,13/07/2026
-thearchitectsdiary.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-politykabezpieczenstwa.pl,biuro@politykabezpieczenstwa.pl,,,biuro@politykabezpieczenstwa.pl,https://politykabezpieczenstwa.pl,12,scraper,verified,Magazine,high,,,,,,13/07/2026
-lilleaddict.fr,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,Yes,https://lilleaddict.fr/contact,,13/07/2026
-timescolonist.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,13/07/2026
-primabergamo.it,redazione@primabergamo.it,pubblicita@opsmedia.it,,redazione@primabergamo.it | pubblicita@opsmedia.it,https://primabergamo.it,12,scraper,verified,News / Media,high,,,,,,13/07/2026
-dallashoopsjournal.com,info@dallashoopsjournal.com,,,info@dallashoopsjournal.com,https://dallashoopsjournal.com/join-the-team/,12,scraper,verified,Lifestyle,high,,,Yes,https://dallashoopsjournal.com/contact-us/,,13/07/2026
-economica.net,redactie@economica.net,,,redactie@economica.net,https://economica.net/contact,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,13/07/2026
-estoyhechouncocinillas.com,,,,,,0,blocked:hostel,skipped_irrelevant,Hotels / Accommodation,,,,,,,13/07/2026
-histoiresroyales.fr,info@histoiresroyales.fr,nnicolas@histoiresroyales.fr,,info@histoiresroyales.fr | nnicolas@histoiresroyales.fr,https://histoiresroyales.fr,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,13/07/2026
-pz-news.de,verlag@pz-news.de,,,verlag@pz-news.de,https://pz-news.de,12,scraper,verified,News / Media,high,,,,,,13/07/2026
-powerdmarc.com,support@powerdmarc.com,sales@powerdmarc.com,,support@powerdmarc.com | sales@powerdmarc.com,https://powerdmarc.com/contact-us,12,scraper,verified,Technology,high,,,,,,13/07/2026
-toro.it,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-gay.de,roney@gay.de,,,roney@gay.de,https://gay.de/about-us,12,scraper,verified,Magazine,high,,,,,,13/07/2026
-grandpeoples.com,info@grandpeoples.com,,,info@grandpeoples.com,https://grandpeoples.com/contact,12,scraper,verified,Entertainment,high,,,,,,13/07/2026
-numerics.gr,sitenumbers@gmail.com,,,sitenumbers@gmail.com,https://numerics.gr,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,13/07/2026
-sussexexpress.co.uk,advertiseajob@iconicmediagroup.co.uk,inquiries@ipso.co.uk,sam.morton@iconicmediagroup.co.uk,advertiseajob@iconicmediagroup.co.uk | inquiries@ipso.co.uk | sam.morton@iconicmediagroup.co.uk | elaine.hammond@iconicmediagroup.co.uk | lawrence.smith@iconicmediagroup.co.uk | megan.baker@iconicmediagroup.co.uk | sam.pole@iconicmediagroup.co.uk | richard.gladstone@iconicmediagroup.co.uk | nikki.jeffery@iconicmediagroup.co.uk | sam.woodman@iconicmediagroup.co.uk | katherine.hollisey@iconicmediagroup.co.uk | mark.dunford@iconicmediagroup.co.uk | mike.mackenzie@iconicmediagroup.co.uk | lesley.hixon@iconicmediagroup.co.uk | sport.sussex@iconicmediagroup.co.uk | derren.howard@iconicmediagroup.co.uk | phil.hewitt@iconicmediagroup.co.uk | julia.nash@iconicmediagroup.co.uk | liz.wiffin@iconicmediagroup.co.uk | ryan.curd@iconicmediagroup.co.uk | bmd@iconicmediagroup.co.uk | publicnotices@iconicmediagroup.co.uk | subscriptions@iconicmediagroup.co.uk | photosales@iconicmediagroup.co.uk,https://sussexexpress.co.uk/contact-us,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,Yes,https://sussexexpress.co.uk,,13/07/2026
-via.ritzau.dk,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,13/07/2026
-rootdent.com.tr/ar,,,,,,0,blocked:clinic+dental,skipped_irrelevant,Health / Medical,,,,,,,13/07/2026
-wordpire.co.uk,,,,,,0,blocked:resort,skipped_irrelevant,Hotels / Accommodation,,,,,,,13/07/2026
-gp1.com.br,redacao@gp1.com.br,comercial@gp1.com.br,,redacao@gp1.com.br | comercial@gp1.com.br,https://gp1.com.br,12,scraper,verified,Blog / Content Site,high,,,,,,13/07/2026
-jivochat.com,info@jivochat.com,pedro@jivochat.com,,info@jivochat.com | pedro@jivochat.com,https://jivochat.com,12,scraper,verified,Technology,high,,,Yes,https://www.jivochat.com/blog/tools/workforce-monitoring-techniques-for-remote-teams.html,,13/07/2026
-syria.tv,info@syria.tv,,,info@syria.tv,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,Yes,https://syria.tv,,13/07/2026
-brzn.de,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-albertestengaard.dk,,,,,,12,smtp_catchall,no_email_found,Blog / Content Site,low,yes,smtp_catchall,Yes,https://albertestengaard.dk,,13/07/2026
-fr-fans.nl,info@fr-fans.nl,,,info@fr-fans.nl,https://fr-fans.nl,12,scraper,verified,News / Media,high,,,,,,13/07/2026
-evpowered.co.uk,editorial.ev@cbmeg.co.uk,ralvin@cbmeg.co.uk,mallan@cbmeg.co.uk,editorial.ev@cbmeg.co.uk | ralvin@cbmeg.co.uk | mallan@cbmeg.co.uk | geast@cbmeg.co.uk | sales@cbmeg.co.uk | sjbanks@cbmeg.co.uk | gmoseley@cbmeg.co.uk,https://evpowered.co.uk/contact,7,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,Yes,https://evpowered.co.uk,,13/07/2026
-justshowbiz.net,contactus@justshowbiz.net,justshowbizpr@gmail.com,,contactus@justshowbiz.net | justshowbizpr@gmail.com,https://justshowbiz.net/contact,12,scraper,verified,Lifestyle,high,,,,,,13/07/2026
-ric.com.br,portal@gruporic.com.br,,,portal@gruporic.com.br,https://ric.com.br,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,13/07/2026
-abidjan.net,,,,,,12,smtp_catchall,no_email_found,Finance / Business,low,yes,smtp_catchall,,,,13/07/2026
-businesspeople.it,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-noticiasdecoimbra.pt,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,13/07/2026
-ebaumsworld.com,press@ebaumsworld.com,general@ebaumsworld.com,legal@ebaumsworld.com,press@ebaumsworld.com | general@ebaumsworld.com | legal@ebaumsworld.com,https://ebaumsworld.com/contact,12,scraper,verified,Entertainment,high,,,,,,13/07/2026
-indebergen.nl,info@indebergen.nl,contact@rhb.ch,info@nassfeld.at,info@indebergen.nl | contact@rhb.ch | info@nassfeld.at | info@glacierexpress.ch,https://indebergen.nl/contact,12,scraper,verified,Magazine,high,,,Yes,https://www.indebergen.nl/bezienswaardigheden/85-pressegger-see/,,13/07/2026
-spiseguidenaarhus.dk,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,13/07/2026
-readcrystalpalace.com,contact@readcrystalpalace.com,,,contact@readcrystalpalace.com,,12,smtp_guess,needs_manual_check,Entertainment,low,yes,smtp_guess,,,,13/07/2026
-betscanner.it,info@betscanner.it,,,info@betscanner.it,https://betscanner.it,12,scraper,verified,Sports,high,,,,,,13/07/2026
-fashionista.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,13/07/2026
-vafo.dk,mafpe@vafo.dk,viox@vafo.dk,nican@vafo.dk,mafpe@vafo.dk | viox@vafo.dk | nican@vafo.dk | toju@vafo.dk | jofli@vafo.dk | olsoe@vafo.dk | chrin@vafo.dk | ankyn@vafo.dk | lajen@vafo.dk | zaleg@vafo.dk | flla@vafo.dk | lasau@vafo.dk | greg@vafo.dk | thtro@jfm.dk | abj@jv.dk | abl@hsfo.dk | nitmo@hsfo.dk | ar@jfmedier.dk | lepo@hsfo.dk | maf@jv.dk | johtj@jv.dk | siror@faa.dk | kriso@jfm.dk | nifri@hsfo.dk | greg@vejleamtsfolkeblad.dk | kof@jfm.dk | alhe@jv.dk | ba@hsfo.dk,https://vafo.dk,11,scraper,verified,Entertainment,high,,,,,,13/07/2026
-infinity-area.com,press@infinity-area.com,contact@infinity-area.com,,press@infinity-area.com | contact@infinity-area.com,,12,smtp_guess,needs_manual_check,Entertainment,low,yes,smtp_guess,Yes,https://infinity-area.com/contactez-infinity-area,,13/07/2026
-dcnews.ro,admin@dcnews.ro,publicitate@dcnews.ro,,admin@dcnews.ro | publicitate@dcnews.ro,https://dcnews.ro/contact,12,scraper,verified,Lifestyle,high,,,,,,13/07/2026
-insuedthueringen.de,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-skillsyouneed.com,hello@skillsyouneed.com,rhubarb@skillsyouneed.com,,hello@skillsyouneed.com | rhubarb@skillsyouneed.com,https://www.skillsyouneed.com/team.html,12,scraper,verified,Blog / Content Site,high,,,Yes,https://www.skillsyouneed.com/contact.php,,13/07/2026
-slate.fr,,,,,,12,smtp_catchall,no_email_found,Magazine,low,yes,smtp_catchall,,,,13/07/2026
-supersoluce.com,loic.pomier@supersoluce.com,,,loic.pomier@supersoluce.com,https://supersoluce.com,12,scraper,verified,Entertainment,high,,,Yes,https://supersoluce.com/contact,,13/07/2026
-u-mama.ru,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-tag24.it,,,,,,12,,no_email_found,Entertainment,,yes,no_email_found,,,,13/07/2026
-sweetlicious.net,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,13/07/2026
-dehir.hu,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,13/07/2026
-divainbucatarie.ro,office@divainbucatarie.ro,,,office@divainbucatarie.ro,https://divainbucatarie.ro/contact,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://divainbucatarie.ro,,13/07/2026
-meuvozao.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-voquent.com,sales@voquent.com,talent@voquent.com,projects@voquent.com,sales@voquent.com | talent@voquent.com | projects@voquent.com | finance@voquent.com | ir@voquent.com | pr@voquent.com,https://voquent.com,12,scraper,verified,Entertainment,high,,,Yes,https://voquent.com,,13/07/2026
-diariodejerez.es,,,,,,0,blocked:hospital,skipped_irrelevant,Health / Medical,,,,,,,13/07/2026
-elestimulo.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,13/07/2026
-lc.nl,redactie@lc.nl,,,redactie@lc.nl,https://lc.nl,12,scraper,verified,News / Media,high,,,,,,13/07/2026
-homestudiobasics.com,,,,,,12,,no_email_found,Education / Resources,,yes,no_email_found,Yes,https://homestudiobasics.com,,13/07/2026
-hurtigmums.dk,kontakt@hurtigmums.dk,,,kontakt@hurtigmums.dk,https://hurtigmums.dk,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,13/07/2026
-tuttoc.com,info.system24@ilsole24ore.com,,,info.system24@ilsole24ore.com,https://tuttoc.com,12,scraper,needs_manual_check,Sports,medium,yes,domain_mismatch,,,,13/07/2026
-drwindows.de,martin@drwindows.de,,,martin@drwindows.de,https://drwindows.de,12,scraper,verified,Environment / Green,high,,,,,,13/07/2026
-laregion.es,esquelas@laregion.net,participa@laregion.net,,esquelas@laregion.net | participa@laregion.net,https://laregion.es,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,13/07/2026
-migogaalborg.dk,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,13/07/2026
-cricketername.com,jackreachertrueoutreach@gmail.com,u00a0jackreachertrueoutreach@gmail.com,,jackreachertrueoutreach@gmail.com | u00a0jackreachertrueoutreach@gmail.com,https://cricketername.com/contact,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,13/07/2026
-isgeschiedenis.nl,,,,,,0,blocked:museum,skipped_irrelevant,Museums / Culture,,,,,,,13/07/2026
-finanse.wp.pl,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-tutkit.com,,,,,,12,,no_email_found,Education / Resources,,yes,no_email_found,,,,13/07/2026
-computerworld.dk,,,,,,12,,no_email_found,Technology,,yes,no_email_found,Yes,https://computerworld.dk,,13/07/2026
-allgemeine-zeitung.de,leserbriefe@vrm.de,,,leserbriefe@vrm.de,https://allgemeine-zeitung.de,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,13/07/2026
-idmekp.my,supportidme@moe.gov.my,idmekpmm@gmail.com,,supportidme@moe.gov.my | idmekpmm@gmail.com,https://idmekp.my,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,13/07/2026
-d-addicts.com,d-addicts@freeemail.biz,,,d-addicts@freeemail.biz,https://d-addicts.com,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,13/07/2026
-amtsavisen.dk,jebtr@amtsavisen.dk,ansoe@amtsavisen.dk,zeboe@amtsavisen.dk,jebtr@amtsavisen.dk | ansoe@amtsavisen.dk | zeboe@amtsavisen.dk | fakri@amtsavisen.dk | laskk@amtsavisen.dk | lohs@amtsavisen.dk | kahe@amtsavisen.dk | tonod@amtsavisen.dk | evmjo@amtsavisen.dk | hov@amtsavisen.dk | list@amtsavisen.dk | midho@jfm.dk | thtro@jfm.dk | kriso@jfm.dk | maf@jv.dk | johtj@jv.dk | siror@faa.dk | ar@jfmedier.dk,https://amtsavisen.dk,12,scraper,verified,Sports,high,,,,,,13/07/2026
-tech.wp.pl,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,13/07/2026
-illvit.no,,,,,,12,smtp_catchall,no_email_found,Technology,low,yes,smtp_catchall,,,,13/07/2026
-pianetamilan.it,legalpianetamilan@gmail.com,,,legalpianetamilan@gmail.com,https://pianetamilan.it,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,13/07/2026
-matspar.se,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-mommyshomecooking.com,advertise@mommyshomecooking.com,,,advertise@mommyshomecooking.com,,12,smtp_guess,needs_manual_check,Food & Drink,low,yes,smtp_guess,Yes,https://mommyshomecooking.com/about,,13/07/2026
-romedic.ro,,,,,,0,blocked:clinic,skipped_irrelevant,Health / Medical,,,,,,,13/07/2026
-money.it,,,,,,12,smtp_catchall,no_email_found,Finance / Business,low,yes,smtp_catchall,,,,13/07/2026
-dsers.com,,,,,,6,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,13/07/2026
-coinkurier.de,info@coinkurier.de,,,info@coinkurier.de,,12,smtp_guess,needs_manual_check,Finance / Business,low,yes,smtp_guess,,,,13/07/2026
-thesun.ng,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-footboom1.com,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,13/07/2026
-dailyprincetonian.com,,,,,,0,blocked:university,skipped_irrelevant,University,,,,,,,13/07/2026
-esciclismo.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-aboutmsr.com,aboutmsr@gmail.com,,,aboutmsr@gmail.com,https://aboutmsr.com/contact,6,scraper,needs_manual_check,,medium,yes,unclassified_niche; domain_mismatch,,,,13/07/2026
-coincierge.de,info@coincierge.de,,,info@coincierge.de,https://coincierge.de,12,scraper,verified,Education / Resources,high,,,,,,13/07/2026
-gazzettadimantova.it,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-nacaotricolor.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-1001cocktails.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-ze.nl,,,,,,12,,no_email_found,Lifestyle,,yes,no_email_found,,,,13/07/2026
-romaniansoccer.ro,,,,,,12,,no_email_found,Sports,,yes,no_email_found,,,,13/07/2026
-fosspost.org,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,13/07/2026
-totuldespremame.ro,contact@totuldespremame.ro,shop@totuldespremame.ro,alexandra.ciordas@zyxgroup.ro,contact@totuldespremame.ro | shop@totuldespremame.ro | alexandra.ciordas@zyxgroup.ro,https://totuldespremame.ro/contact,12,scraper,verified,Lifestyle,high,,,,,,13/07/2026
-gastrofun.dk,,,,,,12,,no_email_found,Review Site,,yes,no_email_found,,,,13/07/2026
-historia.ro,mail.redactia@historia.ro,abonamente@adevarulholding.ro,dana.zamfir@adevarulholding.ro,mail.redactia@historia.ro | abonamente@adevarulholding.ro | dana.zamfir@adevarulholding.ro | vanzari@ead.ro | dpo@adevarulholding.ro,https://historia.ro/contact,12,scraper,verified,Magazine,high,,,,,,13/07/2026
-meemetoranje.nl,,,,,,12,smtp_catchall,no_email_found,News / Media,low,yes,smtp_catchall,,,,13/07/2026
-readmotorsport.com,,,,,,12,smtp_catchall,no_email_found,Entertainment,low,yes,smtp_catchall,,,,13/07/2026
-moonvalleynews.org,nextlevelseoagency@gmail.com,,,nextlevelseoagency@gmail.com,https://moonvalleynews.org/contact,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,,,,13/07/2026
-hang.hu,elofizetes@hang.hu,szerk@hang.hu,,elofizetes@hang.hu | szerk@hang.hu,https://hang.hu,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,13/07/2026
-nocturno.it,,,,,,12,,no_email_found,Magazine,,yes,no_email_found,Yes,https://nocturno.it,,13/07/2026
-targatocn.it,direttore@targatocn.it,redazione@targatocn.it,,direttore@targatocn.it | redazione@targatocn.it,https://targatocn.it,12,scraper,verified,News / Media,high,,,,,,13/07/2026
-ilroma.net,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-ultrasawt.com,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,Yes,https://ultrasawt.com/contact,,13/07/2026
-larecette.net,pub@sicesi.fr,,,pub@sicesi.fr,https://larecette.net,12,scraper,needs_manual_check,Food & Drink,medium,yes,domain_mismatch,,,,13/07/2026
-schalketotal.de,,,,,,12,,no_email_found,Sports,,yes,no_email_found,,,,13/07/2026
-granadahoy.com,,,,,,12,smtp_catchall,no_email_found,News / Media,low,yes,smtp_catchall,,,,13/07/2026
-eldiarioar.com,,,,,,12,smtp_catchall,no_email_found,Technology,low,yes,smtp_catchall,Yes,https://eldiarioar.com,,13/07/2026
-massaget.kz,massaget.kz@gmail.com,,,massaget.kz@gmail.com,https://massaget.kz,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,,,,13/07/2026
-lemessager.fr,contact@lemessager.fr,,,contact@lemessager.fr,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,13/07/2026
-pleinevie.fr,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-rus.tvnet.lv,,,,,,0,blocked:cbd,skipped_irrelevant,Cannabis / Dispensary,,,,,,,13/07/2026
-firenzeviola.it,info.system24@ilsole24ore.com,,,info.system24@ilsole24ore.com,https://firenzeviola.it,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,13/07/2026
-webbikeworld.com,,,,,,12,smtp_catchall,no_email_found,Magazine,low,yes,smtp_catchall,Yes,https://webbikeworld.com,,13/07/2026
-moviejones.de,,,,,,12,,no_email_found,Entertainment,,yes,no_email_found,,,,13/07/2026
-forbesargentina.com,,,,,,0,blocked:hospital,skipped_irrelevant,Health / Medical,,,,,,,13/07/2026
-eleftherostypos.gr,,,,,,12,,no_email_found,Lifestyle,,yes,no_email_found,Yes,https://eleftherostypos.gr,,13/07/2026
-todojujuy.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-pmnewsnigeria.com,kajibade@gmail.com,lanrebabs2006@yahoo.co.uk,osobayomi@yahoo.com,kajibade@gmail.com | lanrebabs2006@yahoo.co.uk | osobayomi@yahoo.com | aonanuga1957@yahoo.com | aonanuga1956@gmail.com,https://pmnewsnigeria.com/contact,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,,,,13/07/2026
-ellitoral.com.ar,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-donnaglamour.it,info@deltapictures.it,,,info@deltapictures.it,https://donnaglamour.it,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,13/07/2026
-podiuminfo.nl,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,13/07/2026
-celticnewsnow.com,david@celticnewsnow.com,,,david@celticnewsnow.com,https://celticnewsnow.com,12,scraper,verified,Blog / Content Site,high,,,,,,13/07/2026
-lejournaldelamaison.fr,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-niebonatalerzu.pl,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,13/07/2026
-abruzzoweb.it,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-medicine.lv,redakcija@heise.lv,serviss@heise.lv,,redakcija@heise.lv | serviss@heise.lv,https://medicine.lv,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,13/07/2026
-elliberal.com.ar,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-indiehackers.com,,,,,,12,smtp_catchall,no_email_found,Technology,low,yes,smtp_catchall,Yes,https://indiehackers.com,,13/07/2026
-toolify.ai,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-lfchistory.net,webmaster@lfchistory.net,,,webmaster@lfchistory.net,https://lfchistory.net,12,scraper,verified,Review Site,high,,,,,,13/07/2026
-colcampus.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-ugeavisen.dk,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-indianagazette.com,circulation@indianagazette.net,,,circulation@indianagazette.net,https://indianagazette.com,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,Yes,https://indianagazette.com,,13/07/2026
-julius.ai,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,13/07/2026
-gezondnu.nl,info@gezondnu.nl,,,info@gezondnu.nl,,12,smtp_guess,needs_manual_check,Lifestyle,low,yes,smtp_guess,Yes,https://gezondnu.nl,,13/07/2026
-wibnet.nl,abo.wib@vipmedia.nl,redactie@wetenschapinbeeld.nl,,abo.wib@vipmedia.nl | redactie@wetenschapinbeeld.nl,https://wibnet.nl/contact,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,13/07/2026
-urgente24.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-billetweb.fr,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,13/07/2026
-origineelovernachten.nl,info@origineelovernachten.nl,,,info@origineelovernachten.nl,https://origineelovernachten.nl,12,scraper,verified,Health & Wellness,high,,,Yes,https://origineelovernachten.nl,,13/07/2026
-elcorreoweb.es,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,13/07/2026
-diariodemocracia.com,redaccion@diariodemocracia.net,,,redaccion@diariodemocracia.net,https://diariodemocracia.com,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,13/07/2026
-tieku.fi,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,13/07/2026
-jalbitedrinks.org,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,13/07/2026
-barbedudaron.fr,,,,,,11,,no_email_found,Blog / Content Site,,yes,no_email_found,Yes,https://barbedudaron.fr/contact,,13/07/2026
-mrporngeek.com,admin@mrporngeek.com,,,admin@mrporngeek.com,https://mrporngeek.com/contact,12,scraper,verified,Entertainment,high,,,,,,13/07/2026
-buddymagazine.org,hello@buddymagazine.org,,,hello@buddymagazine.org,https://buddymagazine.org/contact,12,scraper,verified,Magazine,high,,,,,,13/07/2026
-googlerankseo.com,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-orangesport.ro,,,,,,12,,no_email_found,Sports,,yes,no_email_found,,,,13/07/2026
-sportauto.fr,contact@sportauto.fr,,,contact@sportauto.fr,,12,smtp_guess,needs_manual_check,Magazine,low,yes,smtp_guess,,,,13/07/2026
-teeitse.com,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,Yes,https://teeitse.com,,13/07/2026
-promi-geburtstage.de,,,,,,12,,no_email_found,Entertainment,,yes,no_email_found,,,,13/07/2026
-globovision.com,info@globovision.com,,,info@globovision.com,https://globovision.com,12,scraper,verified,News / Media,high,,,Yes,https://globovision.com,,13/07/2026
-faa.dk,sonep@faa.dk,migre@faa.dk,krroh@faa.dk,sonep@faa.dk | migre@faa.dk | krroh@faa.dk | dabe@faa.dk | kares@faa.dk | fier@faa.dk | kamjo@faa.dk | siror@faa.dk | olgr@faa.dk | hahd@faa.dk | thtro@jfm.dk | ahald@fyens.dk | sanni@fyens.dk | narah@fyens.dk | bakkaer@fyens.dk | mahjo@fyens.dk | pse@fyens.dk | lba@fyens.dk | toci@fyens.dk | camit@fyens.dk | maf@jv.dk | johtj@jv.dk | ljens@fyens.dk | rvjo@fyens.dk | sarak@fyens.dk,https://faa.dk,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,13/07/2026
-elchubut.com.ar,info@elchubut.com.ar,publicidad@elchubut.com.ar,elchubutmadryn2015@gmail.com,info@elchubut.com.ar | publicidad@elchubut.com.ar | elchubutmadryn2015@gmail.com | elchubutpmadmi@gmail.com,https://elchubut.com.ar,12,scraper,verified,Finance / Business,high,,,Yes,https://elchubut.com.ar,,13/07/2026
-startupcafe.ro,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,13/07/2026
-elfvoetbal.nl,info@elfvoetbal.nl,redactie@elfvoetbal.nl,mike@elf-panna.nl,info@elfvoetbal.nl | redactie@elfvoetbal.nl | mike@elf-panna.nl | rene@elf-panna.nl,https://elfvoetbal.nl/contact,12,scraper,verified,Magazine,high,,,Yes,https://elfvoetbal.nl/contact,,13/07/2026
-ricettedellanonna.net,,,,,,12,,no_email_found,Food & Drink,,yes,no_email_found,,,,13/07/2026
-aradon.ro,redactie@aradon.ro,,,redactie@aradon.ro,https://aradon.ro,12,scraper,verified,Lifestyle,high,,,,,,13/07/2026
-jeretiens.net,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,13/07/2026
-lapreferente.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-deutschlandtrikot.de,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,13/07/2026
-azscore.com,,,,,,12,,no_email_found,Travel,,yes,no_email_found,,,,13/07/2026
-promoalert.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-filmtekercs.hu,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-camo3blog.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
-eresmama.com,,,,,,12,,no_email_found,Magazine,,yes,no_email_found,,,,13/07/2026
-vtwonen.be,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,13/07/2026
-ondacinema.it,,,,,,12,,no_email_found,Review Site,,yes,no_email_found,,,,13/07/2026
-id.nl,press@id.nl,,,press@id.nl,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,13/07/2026
-bigbangnews.com,,,,,,12,smtp_catchall,no_email_found,News / Media,low,yes,smtp_catchall,,,,13/07/2026
-spynews.ro,info@spynews.ro,,,info@spynews.ro,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,13/07/2026
-dgmnews.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,13/07/2026
+zuloai.com,hello@zuloai.com,,,hello@zuloai.com,https://zuloai.com/contact-us,12,scraper,verified,Blog / Content Site,high,,,Yes,https://zuloai.com/contact-us,,14/07/2026
+beseyat.com,beseyat.sa@gmail.com,,,beseyat.sa@gmail.com,https://beseyat.com/contact,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,14/07/2026
+sapeople.com,alyson@blueskypublications.com,nicky@blueskypublications.com,nikita@blueskypublications.com,alyson@blueskypublications.com | nicky@blueskypublications.com | nikita@blueskypublications.com | gordon@blueskypublications.com,https://sapeople.com/advertise,12,scraper,needs_manual_check,Food & Drink,medium,yes,domain_mismatch,,,,14/07/2026
+myjoyonline.com,info@myjoyonline.com,,,info@myjoyonline.com,https://myjoyonline.com/advertise,12,scraper,verified,News / Media,high,,,Yes,https://myjoyonline.com/contact-us,,14/07/2026
+ebihoreanul.ro,redactia@bihormedia.ro,publicitate@bihormedia.ro,,redactia@bihormedia.ro | publicitate@bihormedia.ro,https://ebihoreanul.ro/contact,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,Yes,https://ebihoreanul.ro/contact,,14/07/2026
+sports247.ng,sports247ng@gmail.com,,,sports247ng@gmail.com,https://sports247.ng/contact-us,12,scraper,needs_manual_check,Sports,medium,yes,domain_mismatch,,,,14/07/2026
+techlekh.com,contact@techlekh.com,,,contact@techlekh.com,https://techlekh.com/contact,12,scraper,verified,Technology,high,,,Yes,https://techlekh.com,,14/07/2026
+madridiario.es,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+caras.pt,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+score.org,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+novagente.pt,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+vancouverisawesome.com,advertising@vancouverisawesome.com,contact@vancouverisawesome.com,hello@vancouverisawesome.com,advertising@vancouverisawesome.com | contact@vancouverisawesome.com | hello@vancouverisawesome.com,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,14/07/2026
+readchelsea.com,,,,,,12,smtp_catchall,no_email_found,Entertainment,low,yes,smtp_catchall,,,,14/07/2026
+amenteemaravilhosa.com.br,,,,,,12,,no_email_found,Magazine,,yes,no_email_found,,,,14/07/2026
+unjourunhomme.com,,,,,,12,,no_email_found,Travel,,yes,no_email_found,,,,14/07/2026
+vau.fi,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+bobedre.dk,,,,,,12,smtp_catchall,no_email_found,Technology,low,yes,smtp_catchall,Yes,https://bobedre.dk,,14/07/2026
+leben-und-erziehen.de,info@junior-medien.de,abo@junior-medien.de,,info@junior-medien.de | abo@junior-medien.de,https://leben-und-erziehen.de,12,scraper,needs_manual_check,Health & Wellness,medium,yes,domain_mismatch,,,,14/07/2026
+diariodemorelos.com,contacto@diariodemorelos.com,,,contacto@diariodemorelos.com,https://diariodemorelos.com,12,scraper,verified,News / Media,high,,,Yes,https://diariodemorelos.com,,14/07/2026
+juegosadn.es,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+vriendin.nl,webredactie@vriendin.nl,,,webredactie@vriendin.nl,https://vriendin.nl/contact,12,scraper,verified,Lifestyle,high,,,,,,14/07/2026
+zcj.ro,redactie@zcj.ro,,,redactie@zcj.ro,https://zcj.ro,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,14/07/2026
+elfagr.org,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+cosmoty.de,info@cosmoty.de,,,info@cosmoty.de,,12,smtp_guess,needs_manual_check,Health & Wellness,low,yes,smtp_guess,,,,14/07/2026
+varldenshistoria.se,,,,,,12,smtp_catchall,no_email_found,Magazine,low,yes,smtp_catchall,Yes,https://varldenshistoria.se,,14/07/2026
+letribunaldunet.fr,contact@sfmedia.fr,elsa@sfmedia.fr,,contact@sfmedia.fr | elsa@sfmedia.fr,https://letribunaldunet.fr,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,Yes,https://letribunaldunet.fr,,14/07/2026
+usa.inquirer.net,suggestions@inquirer.net,anthony@inquirer.net,,suggestions@inquirer.net | anthony@inquirer.net,https://usa.inquirer.net,12,scraper,verified,Travel,high,,,Yes,https://usa.inquirer.net,,14/07/2026
+min-mave.dk,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,Yes,https://min-mave.dk,,14/07/2026
+thekenyatimes.com,newsdesk@thekenyatimes.com,newstips@thekenyatimes.com,customercare@thekenyatimes.com,newsdesk@thekenyatimes.com | newstips@thekenyatimes.com | customercare@thekenyatimes.com | ads@thekenyatimes.com | corporate@thekenyatimes.com,https://thekenyatimes.com/contact,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+favorflav.com,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,14/07/2026
+crimesite.nl,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,Yes,https://crimesite.nl/contact,,14/07/2026
+datumprikker.nl,info@datumprikker.nl,,,info@datumprikker.nl,https://datumprikker.nl/about,12,scraper,verified,Blog / Content Site,high,,,,,,14/07/2026
+dzfoot.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+hockeyweb.de,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+canonrumors.com,themeruby@gmail.com,,,themeruby@gmail.com,https://canonrumors.com/contact,12,scraper,needs_manual_check,Review Site,medium,yes,domain_mismatch,,,,14/07/2026
+paperpapers.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+primalecco.it,redazione@primalecco.it,pubblicita@opsmedia.it,,redazione@primalecco.it | pubblicita@opsmedia.it,https://primalecco.it,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+maspero.eg,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+ts.fi,ts.verkkotoimitus@ts.fi,,,ts.verkkotoimitus@ts.fi,https://ts.fi,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,14/07/2026
+que.es,redaccion@que.es,,,redaccion@que.es,https://que.es,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+hobbikert.hu,,,,,,12,,no_email_found,Magazine,,yes,no_email_found,Yes,https://hobbikert.hu,,14/07/2026
+eva.ro,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,14/07/2026
+b1tv.ro,news@b1tv.ro,info@b1tv.ro,,news@b1tv.ro | info@b1tv.ro,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,14/07/2026
+habergazetesi.com.tr,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+saturdaydownsouth.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+peterboroughtoday.co.uk,,,,,,0,blocked:primary school,skipped_irrelevant,Education,,,,,,,14/07/2026
+d24am.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+gamereactor.eu,,,,,,0,blocked:museum,skipped_irrelevant,Museums / Culture,,,,,,,14/07/2026
+moesmeisje.nl,info@moesmeisje.nl,,,info@moesmeisje.nl,https://moesmeisje.nl,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+descopera.ro,contact@descopera.ro,ioana.scholler@descopera.ro,stefan.trepadus@descopera.ro,contact@descopera.ro | ioana.scholler@descopera.ro | stefan.trepadus@descopera.ro | mihaela.horchidan@descopera.ro | roxana.ancuta@descopera.ro | suport@2222.ro | sales@2222.ro,https://descopera.ro/contact,12,scraper,verified,Technology,high,,,,,,14/07/2026
+cineulagam.com,media@lankasri.com,news@lankasri.com,lankasri@lankasri.com,media@lankasri.com | news@lankasri.com | lankasri@lankasri.com | sales@lankasri.com | notice@lankasri.com | event@lankasri.com | pr@lankasri.com | legal@lankasri.com | legal@lankasi.com,https://cineulagam.com/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,14/07/2026
+science-et-vie.com,,,,,,12,,no_email_found,Magazine,,yes,no_email_found,,,,14/07/2026
+ziaruldeiasi.ro,redactie@ziaruldeiasi.ro,diana.balta@ziaruldeiasi.ro,catalin.hopulele@ziaruldeiasi.ro,redactie@ziaruldeiasi.ro | diana.balta@ziaruldeiasi.ro | catalin.hopulele@ziaruldeiasi.ro | dan.constantin@ziaruldeiasi.ro | claudiu.raus@ziaruldeiasi.ro | patrick.andrei@ziaruldeiasi.ro | alex.bresug@ziaruldeiasi.ro | cosmin.pasca@ziaruldeiasi.ro | ana-maria.dobre@ziaruldeiasi.ro | radu.mesnita@ziaruldeiasi.ro | ovidiu.minea@ziaruldeiasi.ro | cristina.petrache@ziaruldeiasi.ro | ancuta.popa@ziaruldeiasi.ro | andreea.popa@ziaruldeiasi.ro | florentina.sandu@ziaruldeiasi.ro | andreea.timofte@ziaruldeiasi.ro | alexandru.zanoaga@ziaruldeiasi.ro | valentin.ghiorghiu@ziaruldeiasi.ro | ionut.harasim@ziaruldeiasi.ro | nicoleta.nastase@ziaruldeiasi.ro | marian.chiriac@ziaruldeiasi.ro | cristina.nicodim@ziaruldeiasi.ro | ana.epure@ziaruldeiasi.ro | gabriela.pisaltu@ziaruldeiasi.ro,https://www.ziaruldeiasi.ro/contact,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,14/07/2026
+tvrinfo.ro,stiriletvr@tvr.ro,comercial@tvr.ro,relatiicupublicul@tvr.ro,stiriletvr@tvr.ro | comercial@tvr.ro | relatiicupublicul@tvr.ro,https://tvrinfo.ro/contact,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,14/07/2026
+eldiadecordoba.es,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+rugby-scapulaire.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,Yes,https://rugby-scapulaire.com/contact,,14/07/2026
+palsawa.com,palsawa2@gmail.com,osamattar@gmail.com,,palsawa2@gmail.com | osamattar@gmail.com,https://palsawa.com/contact,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,14/07/2026
+les-energies-renouvelables.eu,contact@ecoinfosenergies.fr,,,contact@ecoinfosenergies.fr,https://les-energies-renouvelables.eu,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,Yes,https://les-energies-renouvelables.eu/contact,,14/07/2026
+noticiaalminuto.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,Yes,https://noticiaalminuto.com/contact,,14/07/2026
+historianet.nl,,,,,,12,smtp_catchall,no_email_found,News / Media,low,yes,smtp_catchall,,,,14/07/2026
+burbujadelespanol.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+tweaktown.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+rugby-addict.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+thiswaytoparadise.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+arabfinance.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+darelhilal.com,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+primeraedicion.com.ar,primeraedicionweb@gmail.com,diarioprimera@gmail.com,,primeraedicionweb@gmail.com | diarioprimera@gmail.com,https://primeraedicion.com.ar,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,14/07/2026
+alwatanvoice.com,news@alwatanvoice.com,info@alwatanvoice.com,,news@alwatanvoice.com | info@alwatanvoice.com,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,14/07/2026
+eltucumano.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+business-cool.com,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,14/07/2026
+pu.nl,contact@pu.nl,redactie@pu.nl,,contact@pu.nl | redactie@pu.nl,https://pu.nl,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+ac24horas.com,faleconosco@ac24horas.com,thaisfariasmoura5@gmail.com,,faleconosco@ac24horas.com | thaisfariasmoura5@gmail.com,https://ac24horas.com,12,scraper,verified,Blog / Content Site,high,,,,,,14/07/2026
+themarketperiodical.com,contact@themarketperiodical.com,,,contact@themarketperiodical.com,https://themarketperiodical.com/contact,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+tv7dias.pt,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+grammar.com,,,,,,12,,no_email_found,Education / Resources,,yes,no_email_found,,,,14/07/2026
+bedrock.nl,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+newarab.com,editorial-english@alaraby.co.uk,info@alaraby.co.uk,submissions@alaraby.co.uk,editorial-english@alaraby.co.uk | info@alaraby.co.uk | submissions@alaraby.co.uk | public.relations@alaraby.co.uk,https://newarab.com/contact_us,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,Yes,https://newarab.com/contact,,14/07/2026
+press.lv,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+clavecd.es,contact@allkeyshop.com,,,contact@allkeyshop.com,https://clavecd.es,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,Yes,https://clavecd.es,,14/07/2026
+crealine.eu,,,,,,7,,no_email_found,,,yes,unclassified_niche; no_email_found,,,2013-06-02,14/07/2026
+gartenforum.de,,,,,,13,,no_email_found,,,yes,unclassified_niche; no_email_found,,,1999-11-26,14/07/2026
+solowrestling.com,info@solowrestling.com,,,info@solowrestling.com,,13,smtp_guess,needs_manual_check,News / Media,low,yes,smtp_guess,Yes,https://solowrestling.com,2005-04-25,14/07/2026
+colo-colo.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+opencollective.com,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,Yes,https://opencollective.com/contact,,14/07/2026
+exafm.com,anunciateen@exafm.com,,,anunciateen@exafm.com,https://exafm.com,12,scraper,verified,Magazine,high,,,,,,14/07/2026
+theshieldofwrestling.com,info@theshieldofwrestling.com,,,info@theshieldofwrestling.com,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,14/07/2026
+24-horas.mx,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,Yes,https://24-horas.mx,,14/07/2026
+consoglobe.com,,,,,,12,smtp_catchall,no_email_found,Health & Wellness,low,yes,smtp_catchall,,,,14/07/2026
+migogaarhus.dk,anders@sommersangdigital.dk,,,anders@sommersangdigital.dk,https://migogaarhus.dk,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,14/07/2026
+theclutch.com.br,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://theclutch.com.br/noticias/tft/teamfight-tactics-migrara-para-unreal-engine-em-agosto/,,14/07/2026
+thetravelista.net,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,14/07/2026
+psicologia-online.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+bilhandel.dk,support@bilhandel.dk,goderaad@bilhandel.dk,,support@bilhandel.dk | goderaad@bilhandel.dk,https://bilhandel.dk,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,14/07/2026
+nj1015.com,newsjerz@nj1015.com,wade@wpst.com,dan.tantillo@townsquaremedia.com,newsjerz@nj1015.com | wade@wpst.com | dan.tantillo@townsquaremedia.com | tom.trembly@townsquaremedia.com | jessica.schwartz@townsquaremedia.com | bob.giaquinto@townsquaremedia.com | annette.petriccione@townsquaremedia.com | sergio.bichao@townsquaremedia.com | bill.spadea@townsquaremedia.com | eric.scott@townsquaremedia.com | dennis.malloy@townsquaremedia.com | judi.franco@townsquaremedia.com | jeff.deminski@townsquaremedia.com | kylie.moore@townsquaremedia.com | bigjoe@bigjoehenry.com,https://nj1015.com/contact,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+dehippevegetarier.nl,redactie@dehippevegetarier.nl,,,redactie@dehippevegetarier.nl,https://dehippevegetarier.nl,7,scraper,verified,News / Media,high,,,,,,14/07/2026
+pansamolocik.pl,,,,,,0,blocked:ryanair,skipped_irrelevant,Flight Booking,,,,,,,14/07/2026
+diariojornada.com.ar,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+clickpentrufemei.ro,dpo@adevarulholding.ro,dragos.stan@adevarulholding.ro,abonamente@adevarulholding.ro,dpo@adevarulholding.ro | dragos.stan@adevarulholding.ro | abonamente@adevarulholding.ro,https://clickpentrufemei.ro/contact,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,,,,14/07/2026
+pauta.cl,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+northantstelegraph.co.uk,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,14/07/2026
+malijet.com,contact@malijet.com,clients@malijet.com,,contact@malijet.com | clients@malijet.com,https://malijet.com,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+dxtcampeon.elidealgallego.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+mariasilje.dk,,,,,,12,smtp_catchall,no_email_found,Blog / Content Site,low,yes,smtp_catchall,Yes,https://mariasilje.dk,,14/07/2026
+laverdad.com,web@laverdad.com,ventas@laverdad.com,noticias@laverdad.com,web@laverdad.com | ventas@laverdad.com | noticias@laverdad.com,https://laverdad.com,12,scraper,verified,Sports,high,,,,,,14/07/2026
+tribunavalladolid.com,redaccion@tribunagrupo.com,,,redaccion@tribunagrupo.com,https://tribunavalladolid.com,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,14/07/2026
+euroreizen.be,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,14/07/2026
+driverscloud.com,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,14/07/2026
+nairametrics.com,info@nairametrics.com,outreach@nairametrics.com,ads@nairametrics.com,info@nairametrics.com | outreach@nairametrics.com | ads@nairametrics.com | contact@yourwebsite.com,https://nairametrics.com/contact-us,12,scraper,verified,News / Media,high,,,Yes,https://nairametrics.com/about,,14/07/2026
+tysol.pl,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,14/07/2026
+ar.ldplayer.net,ldplayer_ar@ldplayer.net,ldgame@ldplayer.net,iris.z@ldplayer.net,ldplayer_ar@ldplayer.net | ldgame@ldplayer.net | iris.z@ldplayer.net,https://ar.ldplayer.net,12,scraper,verified,Entertainment,high,,,,,,14/07/2026
+bonapeti.rs,gradbg@gmail.com,,,gradbg@gmail.com,https://bonapeti.rs,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,14/07/2026
+maemequer.pt,,,,,,12,smtp_catchall,no_email_found,Magazine,low,yes,smtp_catchall,,,,14/07/2026
+birthdaywishesinhindi.in,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+thesportsnewsblitz.com,,,,,,12,,no_email_found,Sports,,yes,no_email_found,,,,14/07/2026
+fetisch.de,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+infiernorojo.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+inforegio.be,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,14/07/2026
+bernabeudigital.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+annajah.net,adservice@annajah.net,,,adservice@annajah.net,https://annajah.net,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,14/07/2026
+steuergo.de,,,,,,12,smtp_catchall,no_email_found,Finance / Business,low,yes,smtp_catchall,,,,14/07/2026
+focimagazin.hu,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+travelvalley.nl,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,Yes,https://travelvalley.nl,,14/07/2026
+stadindex.nl,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,14/07/2026
+anniebabymonitor.com,,,,,,12,,no_email_found,Education / Resources,,yes,no_email_found,Yes,https://anniebabymonitor.com/contact,,14/07/2026
+auto.dziennik.pl,bok@infor.pl,,,bok@infor.pl,https://auto.dziennik.pl,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,14/07/2026
+raadsels.nu,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,14/07/2026
+alghad.com,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+nettv4u.com,advertise@nettv4u.com,contact@nettv4u.com,,advertise@nettv4u.com | contact@nettv4u.com,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,14/07/2026
+apprendre-reviser-memoriser.fr,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+northamptonchron.co.uk,editor@northantsnews.co.uk,advertiseajob@iconicmediagroup.co.uk,privateadvertising@iconicmediagroup.co.uk,editor@northantsnews.co.uk | advertiseajob@iconicmediagroup.co.uk | privateadvertising@iconicmediagroup.co.uk | inquiries@ipso.co.uk | david.summers@iconicmediagroup.co.uk | alice.dyer@iconicmediagroup.co.uk | carly.odell@iconicmediagroup.co.uk | jeremy.casey@iconicmediagroup.co.uk | logan.macleod@iconicmediagroup.co.uk | katie.wheatley@iconicmediagroup.co.uk | james.heneghan@iconicmediagroup.co.uk | tom.vickers@iconicmediagroup.co.uk | peter.ormerod@iconicmediagroup.co.uk | davidtjackson@outlook.com | jack.ramsden@iconicmediagroup.co.uk | bmd@iconicmediagroup.co.uk | fdnorth@iconicmediagroup.co.uk | publicnotices@iconicmediagroup.co.uk | subscriptions@iconicmediagroup.co.uk | photosales@iconicmediagroup.co.uk,https://northamptonchron.co.uk/contact-us,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,Yes,https://northamptonchron.co.uk,,14/07/2026
+automobile-sportive.com,contact@automobile-sportive.com,,,contact@automobile-sportive.com,,12,smtp_guess,needs_manual_check,Review Site,low,yes,smtp_guess,,,,14/07/2026
+prensa.com,redaccion@prensa.com,suscripciones@prensa.com,,redaccion@prensa.com | suscripciones@prensa.com,https://prensa.com,12,scraper,verified,Technology,high,,,,,,14/07/2026
+clicandfit.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+diariodearousa.elidealgallego.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+elnuevosiglo.com.co,,,,,,12,smtp_catchall,no_email_found,News / Media,low,yes,smtp_catchall,,,,14/07/2026
+lep.co.uk,lep.newsdesk@lep.co.uk,advertising.north@iconicmediagroup.co.uk,advertiseajob@iconicmediagroup.co.uk,lep.newsdesk@lep.co.uk | advertising.north@iconicmediagroup.co.uk | advertiseajob@iconicmediagroup.co.uk | privateadvertising@iconicmediagroup.co.uk | inquiries@ipso.co.uk | nicola.adam@iconicmediagroup.co.uk | catherine.musgrove@iconicmediagroup.co.uk | emma.downey@iconicmediagroup.co.uk | aimee.seddon@iconicmediagroup.co.uk | matthew.calderbank@iconicmediagroup.co.uk | paul.faulkner@iconicmediagroup.co.uk | george.hodgson@iconicmediagroup.co.uk | bmd@iconicmediagroup.co.uk | fdnorth@iconicmediagroup.co.uk | publicnotices@iconicmediagroup.co.uk | subscriptions@iconicmediagroup.co.uk | photosales@iconicmediagroup.co.uk,https://lep.co.uk/contact-us,12,scraper,verified,News / Media,high,,,Yes,https://lep.co.uk,,14/07/2026
+gebuehren-rechner.info,info@gebuehren-rechner.info,,,info@gebuehren-rechner.info,https://gebuehren-rechner.info/impressum,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,14/07/2026
+costume.no,,,,,,12,smtp_catchall,no_email_found,Technology,low,yes,smtp_catchall,Yes,https://costume.no,,14/07/2026
+motociclismo.es,sportlifeiberica@slib.es,protecciondatos@slib.es,dpo@slib.es,sportlifeiberica@slib.es | protecciondatos@slib.es | dpo@slib.es | motociclismo@mpib.es,https://motociclismo.es,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,Yes,https://motociclismo.es,,14/07/2026
+diritto.it,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,Yes,https://diritto.it,,14/07/2026
+cornucopia.se,info@cornucopia.se,,,info@cornucopia.se,,13,smtp_guess,needs_manual_check,Blog / Content Site,low,yes,smtp_guess,,,2006-06-13,14/07/2026
+wakelet.com,support@wakelet.com,,,support@wakelet.com,https://wakelet.com,12,scraper,verified,Technology,high,,,,,,14/07/2026
+supporters.nl,,,,,,13,smtp_catchall,no_email_found,News / Media,low,yes,smtp_catchall,,,2003-01-28,14/07/2026
+we-wealth.com,,,,,,12,smtp_catchall,no_email_found,Magazine,low,yes,smtp_catchall,Yes,https://we-wealth.com,,14/07/2026
+dutchnews.nl,editor@dutchnews.nl,advertise@dutchnews.nl,molly@dutchnews.nl,editor@dutchnews.nl | advertise@dutchnews.nl | molly@dutchnews.nl,https://dutchnews.nl/contact,12,scraper,verified,Finance / Business,high,,,,,,14/07/2026
+nnz-online.de,redaktion@nnz-online.de,,,redaktion@nnz-online.de,https://nnz-online.de,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+wigantoday.net,advertising.north@iconicmediagroup.co.uk,advertiseajob@iconicmediagroup.co.uk,privateadvertising@iconicmediagroup.co.uk,advertising.north@iconicmediagroup.co.uk | advertiseajob@iconicmediagroup.co.uk | privateadvertising@iconicmediagroup.co.uk | newsroom.wigan@jpress.co.uk | inquiries@ipso.co.uk | charles.graham@iconicmediagroup.co.uk | paul.kendrick@iconicmediagroup.co.uk | gaynor.clarke@iconicmediagroup.co.uk | jessica.lees@iconicmediagroup.co.uk | drew.darbyshire@iconicmediagroup.co.uk | bmd@iconicmediagroup.co.uk | fdnorth@iconicmediagroup.co.uk | publicnotices@iconicmediagroup.co.uk | subscriptions@iconicmediagroup.co.uk | photosales@iconicmediagroup.co.uk,https://wigantoday.net/contact-us,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,Yes,https://wigantoday.net,,14/07/2026
+reis-expert.nl,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+montagnadiviaggi.it,,,,,,4,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+cba24n.com.ar,ventas@srtunc.com.ar,social@tvcanal10.com.ar,comunicacion@srtunc.com.ar,ventas@srtunc.com.ar | social@tvcanal10.com.ar | comunicacion@srtunc.com.ar,https://cba24n.com.ar,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,14/07/2026
+tennis.bg,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+liderendeportes.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+startupitalia.eu,press@startupitalia.eu,info@startupitalia.eu,,press@startupitalia.eu | info@startupitalia.eu,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,14/07/2026
+radforum.de,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+xgn.nl,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+backloggd.com,business@backloggd.com,,,business@backloggd.com,https://backloggd.com/contact,12,scraper,verified,Entertainment,high,,,Yes,https://backloggd.com/contact,,14/07/2026
+pless.pl,redakcja@pless.pl,biuro@pless-intermedia.pl,,redakcja@pless.pl | biuro@pless-intermedia.pl,https://pless.pl,12,scraper,verified,Technology,high,,,,,,14/07/2026
+mimibazar.cz,podpora@mimibazar.cz,reklama@mimibazar.cz,,podpora@mimibazar.cz | reklama@mimibazar.cz,https://mimibazar.cz,12,scraper,verified,Technology,high,,,Yes,https://mimibazar.cz,,14/07/2026
+pplware.sapo.pt,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,14/07/2026
+coincheckup.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+apa.az,newsroom@apa.az,news@apa.az,info@apa.az,newsroom@apa.az | news@apa.az | info@apa.az | info@apagroup.az,https://apa.az,12,scraper,verified,Review Site,high,,,Yes,https://apa.az/contact,,14/07/2026
+442.perfil.com,perfilcom@perfil.com,,,perfilcom@perfil.com,https://442.perfil.com,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+smartliving.ro,contact@smartliving.go-vip.net,ileana.dragomirescu@zyxgroup.ro,,contact@smartliving.go-vip.net | ileana.dragomirescu@zyxgroup.ro,https://smartliving.ro/contact,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,Yes,https://smartliving.ro,,14/07/2026
+mijngezondheidsgids.nl,info@mijngezondheidsgids.nl,,,info@mijngezondheidsgids.nl,https://mijngezondheidsgids.nl,12,scraper,verified,Magazine,high,,,Yes,https://mijngezondheidsgids.nl/contact,,14/07/2026
+modern.az,info@modern.az,info.@modern.az,,info@modern.az | info.@modern.az,https://modern.az,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,14/07/2026
+ecobnb.it,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,14/07/2026
+ilcineocchio.it,redazione@ilcineocchio.it,,,redazione@ilcineocchio.it,https://ilcineocchio.it,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+pctidningen.se,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+trucks.nl,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+iwoman.bg,editors@webground.bg,reklama@webground.bg,,editors@webground.bg | reklama@webground.bg,https://iwoman.bg,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,14/07/2026
+restograf.ro,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,14/07/2026
+ojo.pe,fonoavisos@comercio.com.pe,,,fonoavisos@comercio.com.pe,https://ojo.pe,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,14/07/2026
+newsletter.co.uk,newsdesk@newsletter.co.uk,ben.lowry@newsletter.co.uk,roderick.mcmurray@newsletter.co.uk,newsdesk@newsletter.co.uk | ben.lowry@newsletter.co.uk | roderick.mcmurray@newsletter.co.uk | pictures@newsletter.co.uk | letters@newsletter.co.uk | michael.cousins@newsletter.co.uk | sport@newsletter.co.uk | bmds@newsletter.co.uk | advertiseajob@iconicmediagroup.co.uk | inquiries@ipso.co.uk | diane.burke@iconicmediagroup.co.uk | grace.clements@iconicmediagroup.co.uk | lisa.irvine@iconicmediagroup.co.uk | sinead.faulkner@iconicmediagroup.co.uk | publicnoticesni@iconicmediagroup.co.uk | gillian.devaney@iconicmediagroup.co.uk | subscriptions@iconicmediagroup.co.uk | photosales@iconicmediagroup.co.uk | marketing.inbound@iconicmediagroup.co.uk,https://newsletter.co.uk/contact-us,12,scraper,verified,News / Media,high,,,Yes,https://newsletter.co.uk,,14/07/2026
+rozali.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+pisowifipause.com,swsol.net@gmail.com,,,swsol.net@gmail.com,https://pisowifipause.com/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,14/07/2026
+digitalt.tv,,,,,,13,,no_email_found,Technology,,yes,no_email_found,Yes,https://digitalt.tv,,14/07/2026
+vrum.com.br,paladinoenrico89@gmail.com,,,paladinoenrico89@gmail.com,https://www.vrum.com.br/avaliacoes/2026/06/7439236-primeiras-impressoes-como-e-dirigir-o-novo-hyundai-i20.html,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,14/07/2026
+lahora.cl,,,,,,12,smtp_catchall,no_email_found,Technology,low,yes,smtp_catchall,,,,14/07/2026
+thenewspaper.gr,info@thenewspaper.gr,,,info@thenewspaper.gr,https://thenewspaper.gr,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,14/07/2026
+mostlyblogging.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+hymy.fi,digi@otavamedia.fi,asiakaspalvelu@otavamedia.fi,etunimi.sukunimi@otava.fi,digi@otavamedia.fi | asiakaspalvelu@otavamedia.fi | etunimi.sukunimi@otava.fi,https://hymy.fi,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,14/07/2026
+lared.am,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+formule1nieuws.nl,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+byaranka.nl,info@byaranka.nl,20info@byaranka.nl,,info@byaranka.nl | 20info@byaranka.nl,https://byaranka.nl/contact,12,scraper,verified,Lifestyle,high,,,Yes,https://byaranka.nl/contact,,14/07/2026
+wordfeudsnyd.dk,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+jeuxetcompagnie.fr,,,,,,12,,no_email_found,Travel,,yes,no_email_found,Yes,https://jeuxetcompagnie.fr/contact,,14/07/2026
+derekdemars.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+asia-basket.com,,,,,,12,,no_email_found,Sports,,yes,no_email_found,,,,14/07/2026
+godstart.dk,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+tipplap.hu,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+nouveau.nl,redactie@nouveau.nl,,,redactie@nouveau.nl,https://nouveau.nl/contact,12,scraper,verified,Lifestyle,high,,,Yes,https://nouveau.nl,,14/07/2026
+shababy4us.com,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,14/07/2026
+dire.it,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+libertateapentrufemei.ro,advertising@libertateapentrufemei.ro,content@libertateapentrufemei.ro,contact@libertateapentrufemei.ro,advertising@libertateapentrufemei.ro | content@libertateapentrufemei.ro | contact@libertateapentrufemei.ro | info@libertateapentrufemei.ro,,12,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,,14/07/2026
+wheonx.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+profil.at,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+episodi.fi,episodi@popmedia.fi,,,episodi@popmedia.fi,https://episodi.fi,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,14/07/2026
+consumidorglobal.com,,,,,,12,smtp_catchall,no_email_found,News / Media,low,yes,smtp_catchall,,,,14/07/2026
+galluraoggi.it,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,Yes,https://galluraoggi.it,,14/07/2026
+misterprepa.net,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+uploadblog.com.co,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+pirsch.de,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+diariodeferrol.elidealgallego.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+keukenvansou.be,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,14/07/2026
+tribunasalamanca.com,,,,,,0,blocked:hospital,skipped_irrelevant,Health / Medical,,,,,,,14/07/2026
+diarionorte.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+eluniversal.com,eluniversa@eluniversal.com,,,eluniversa@eluniversal.com,https://eluniversal.com,12,scraper,verified,News / Media,high,,,Yes,https://eluniversal.com,,14/07/2026
+viborg-folkeblad.dk,mkjer@viborgfolkeblad.dk,habje@viborgfolkeblad.dk,norup@viborgfolkeblad.dk,mkjer@viborgfolkeblad.dk | habje@viborgfolkeblad.dk | norup@viborgfolkeblad.dk | kriso@jfm.dk | matoh@viborgfolkeblad.dk | jekam@viborgfolkeblad.dk | chrih@viborgfolkeblad.dk | thmie@viborgfolkeblad.dk | thtro@jfm.dk | uffe@viborgfolkeblad.dk | ar@jfmedier.dk | mafpe@vafo.dk | hed@jv.dk | hoj@jv.dk | jenps@viborgfolkeblad.dk | lapre@viborgfolkeblad.dk | oleb@viborgfolkeblad.dk | lapun@viborgfolkeblad.dk | loneweinreich@gmail.com | pohan@viborgfolkeblad.dk | matmu@jfm.dk | sarga@jfm.dk | dakr@viborgfolkeblad.dk,https://viborg-folkeblad.dk,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,14/07/2026
+toutsurlehockey.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+4-4-2.com,redaktion@4-4-2.com,,,redaktion@4-4-2.com,https://4-4-2.com,12,scraper,verified,Sports,high,,,,,,14/07/2026
+lesinrocks.com,geekxmedia@gmail.com,support@lesinrockuptibles.fr,,geekxmedia@gmail.com | support@lesinrockuptibles.fr,https://lesinrocks.com,12,scraper,needs_manual_check,Magazine,medium,yes,domain_mismatch,,,,14/07/2026
+ondarock.it,,,,,,12,,no_email_found,Review Site,,yes,no_email_found,,,,14/07/2026
+startupopinions.com,shrayan.lakhna456@gmail.com,,,shrayan.lakhna456@gmail.com,https://startupopinions.com/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,14/07/2026
+andc.tv,info@andcthebrandstudio.nl,redactie@andcmedia.nl,sales@andcmedia.nl,info@andcthebrandstudio.nl | redactie@andcmedia.nl | sales@andcmedia.nl | marketing@andcmedia.nl | mariska@mariskadegraaf.nl,https://andc.tv/about,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,,,,14/07/2026
+depedtambayan.net,support@depedtambayan.net,,,support@depedtambayan.net,https://depedtambayan.net,12,scraper,verified,Education / Resources,high,,,Yes,https://depedtambayan.net/contact,,14/07/2026
+kurier.de,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+valutaomregneren.dk,hello@valutaomregneren.dk,,,hello@valutaomregneren.dk,https://valutaomregneren.dk,12,scraper,verified,Blog / Content Site,high,,,Yes,https://valutaomregneren.dk,,14/07/2026
+autostrada.uz,hello@autostrada.uz,,,hello@autostrada.uz,https://autostrada.uz,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,14/07/2026
+thelakewoodscoop.com,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+realtotal.de,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+styleupyourlife.at,,,,,,12,,no_email_found,Lifestyle,,yes,no_email_found,,,,14/07/2026
+legitpredict.com,legitpredict.com@gmail.com,,,legitpredict.com@gmail.com,https://legitpredict.com,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,,,,14/07/2026
+schwulissimo.de,,,,,,13,,no_email_found,Entertainment,,yes,no_email_found,,,2005-03-06,14/07/2026
+popularhistoria.se,,,,,,12,smtp_catchall,no_email_found,Magazine,low,yes,smtp_catchall,Yes,https://popularhistoria.se,,14/07/2026
+capital.ro,coordonare@evzgroup.ro,publicitate@evzgroup.ro,marketing@evzgroup.ro,coordonare@evzgroup.ro | publicitate@evzgroup.ro | marketing@evzgroup.ro,https://capital.ro,12,scraper,needs_manual_check,Magazine,medium,yes,domain_mismatch,,,,14/07/2026
+infobierzo.com,redaccion@infobierzo.com,,,redaccion@infobierzo.com,https://infobierzo.com,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+komputer.dk,,,,,,13,smtp_catchall,no_email_found,Technology,low,yes,smtp_catchall,,,1998-12-06,14/07/2026
+aminiya.ng,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+fmaspen.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+cotidianul.ro,contact@cotidianul.ro,,,contact@cotidianul.ro,https://cotidianul.ro/contact,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+holidayguru.ch,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,14/07/2026
+tuttocagliari.net,,,,,,13,,no_email_found,News / Media,,yes,no_email_found,,,2009-02-09,14/07/2026
+stuttcars.com,info@stuttcars.com,,,info@stuttcars.com,https://stuttcars.com/contact,12,scraper,verified,Blog / Content Site,high,,,Yes,https://stuttcars.com,,14/07/2026
+leballonrond.fr,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+diariodopeixe.com.br,,,,,,12,,no_email_found,Magazine,,yes,no_email_found,,,,14/07/2026
+np-coburg.de,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+magg.sapo.pt,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,14/07/2026
+chickslovefood.com,info@chickslovefood.com,shop@chickslovefood.com,janna@amillionfaces.nl,info@chickslovefood.com | shop@chickslovefood.com | janna@amillionfaces.nl,https://chickslovefood.com/contact,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,14/07/2026
+reggio2000.it,redazione@reggio2000.it,,,redazione@reggio2000.it,https://reggio2000.it,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+jb.com.br,redacao@jb.com.br,gilberto.cortes@jb.com.br,,redacao@jb.com.br | gilberto.cortes@jb.com.br,https://www.jb.com.br/mundo/2026/06/1060068-senado-dos-eua-aprova-resolucao-contra-guerra-no-ira-e-pressiona-trump.html,12,scraper,verified,Technology,high,,,,,,14/07/2026
+radiohamburg.de,news@radiohamburg.de,info@radiohamburg.de,,news@radiohamburg.de | info@radiohamburg.de,,12,smtp_guess,needs_manual_check,Entertainment,low,yes,smtp_guess,,,,14/07/2026
+meusport.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+assamtribune.com,contact@assamtribune.com,,,contact@assamtribune.com,https://assamtribune.com/contact,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+kicksta.co,support@kicksta.co,,,support@kicksta.co,https://kicksta.co/es/contact,12,scraper,verified,Technology,high,,,,,,14/07/2026
+e-consulta.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+comozero.it,,,,,,12,,no_email_found,Entertainment,,yes,no_email_found,,,,14/07/2026
+emprendedor.com,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,14/07/2026
+maison.20minutes.fr,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://maison.20minutes.fr/contact,,14/07/2026
+cidadeverde.com,redacao@cidadeverde.com,,,redacao@cidadeverde.com,https://cidadeverde.com,12,scraper,verified,Magazine,high,,,,,,14/07/2026
+portaldarmc.com.br,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+vremeanoua.ro,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+chattestdu.de,,,,,,12,,no_email_found,Education / Resources,,yes,no_email_found,,,,14/07/2026
+wonenmetlef.nl,sander@sw-marketing.nl,,,sander@sw-marketing.nl,https://wonenmetlef.nl,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,Yes,https://wonenmetlef.nl/contact,,14/07/2026
+wantedbabes.com,,,,,,12,,no_email_found,Lifestyle,,yes,no_email_found,Yes,https://wantedbabes.com/contact,,14/07/2026
+wetter.net,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+offerilla.com,info@offerilla.com,,,info@offerilla.com,https://offerilla.com,12,scraper,verified,Health & Wellness,high,,,,,,14/07/2026
+b365.ro,office@b365.ro,anamaria.lembrau@b365.ro,alexandra.ciordas@zyxgroup.ro,office@b365.ro | anamaria.lembrau@b365.ro | alexandra.ciordas@zyxgroup.ro,https://b365.ro/contact,12,scraper,verified,Magazine,high,,,,,,14/07/2026
+epic7x.com,,,,,,12,,no_email_found,Entertainment,,yes,no_email_found,,,,14/07/2026
+motorgiga.com,info@motorgiga.com,,,info@motorgiga.com,,6,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,14/07/2026
+italiaoggi.it,dpo@italiaoggi.it,,,dpo@italiaoggi.it,https://italiaoggi.it,12,scraper,verified,Magazine,high,,,,,,14/07/2026
+betondingen.nl,info@betondingen.nl,bestellingen@betondingen.nl,,info@betondingen.nl | bestellingen@betondingen.nl,https://betondingen.nl,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,14/07/2026
+eldiariodetandil.com,,,,,,9,,no_email_found,News / Media,,yes,no_email_found,Yes,https://www.eldiariodetandil.com/contacto.php,,14/07/2026
+blackpoolgazette.co.uk,editorial@blackpoolgazette.co.uk,vanessa.sims@blackpoolgazette.co.uk,advertising.north@iconicmediagroup.co.uk,editorial@blackpoolgazette.co.uk | vanessa.sims@blackpoolgazette.co.uk | advertising.north@iconicmediagroup.co.uk | advertiseajob@iconicmediagroup.co.uk | privateadvertising@iconicmediagroup.co.uk | inquiries@ipso.co.uk | richard.hunt@iconicmediagroup.co.uk | claire.lark@iconicmediagroup.co.uk | tony.durkin@iconicmediagroup.co.uk | lucinda.herbert@iconicmediagroup.co.uk | amos.wynn@iconicmediagroup.co.uk | bmd@iconicmediagroup.co.uk | fdnorth@iconicmediagroup.co.uk | publicnotices@iconicmediagroup.co.uk | subscriptions@iconicmediagroup.co.uk | photosales@iconicmediagroup.co.uk,https://blackpoolgazette.co.uk/contact-us,12,scraper,verified,News / Media,high,,,Yes,https://blackpoolgazette.co.uk,,14/07/2026
+derbyshiretimes.co.uk,,,,,,0,blocked:hospital,skipped_irrelevant,Health / Medical,,,,,,,14/07/2026
+spaziotennis.com,vibesmedia25@gmail.com,,,vibesmedia25@gmail.com,https://spaziotennis.com,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,14/07/2026
+twtd.co.uk,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+moroccoworldnews.com,contact@mwn.ma,,,contact@mwn.ma,https://moroccoworldnews.com/contact,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,Yes,https://moroccoworldnews.com/contact,,14/07/2026
+svetevity.sk,nina.kosecka@mafraslovakia.sk,,,nina.kosecka@mafraslovakia.sk,https://svetevity.sk,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,14/07/2026
+lanuovaprovincia.it,info@lanuovaprovincia.it,f.lavina@lanuovaprovincia.it,segreteria@lanuovaprovincia.it,info@lanuovaprovincia.it | f.lavina@lanuovaprovincia.it | segreteria@lanuovaprovincia.it | sito@lanuovaprovincia.it,https://lanuovaprovincia.it,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+eroti.dk,kontakt@eroti.dk,,,kontakt@eroti.dk,https://eroti.dk,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,14/07/2026
+manager.ro,,,,,,12,,no_email_found,Technology,,yes,no_email_found,Yes,https://manager.ro,,14/07/2026
+hathalyoum.net,info@hathalyoum.net,,,info@hathalyoum.net,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,14/07/2026
+diariodelaltoaragon.es,,,,,,0,blocked:hospital,skipped_irrelevant,Health / Medical,,,,,,,14/07/2026
+borsaefinanza.it,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+thefootballfaithful.com,commercial@moveup.media,,,commercial@moveup.media,https://thefootballfaithful.com/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,14/07/2026
+misbar.com,info@misbar.com,,,info@misbar.com,https://misbar.com,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://misbar.com/contact-us,,14/07/2026
+amayzine.com,info@amayzine.com,,,info@amayzine.com,https://amayzine.com/contact,12,scraper,verified,Lifestyle,high,,,,,,14/07/2026
+pokemonkaart.nl,info@pokemonkaart.nl,,,info@pokemonkaart.nl,https://pokemonkaart.nl/contact,12,scraper,verified,News / Media,high,,,Yes,https://pokemonkaart.nl/contact,,14/07/2026
+papodecinema.com.br,papodecinema@papodecinema.com.br,,,papodecinema@papodecinema.com.br,https://papodecinema.com.br,12,scraper,verified,Entertainment,high,,,Yes,https://papodecinema.com.br,,14/07/2026
+bibamagazine.fr,,,,,,12,,no_email_found,Magazine,,yes,no_email_found,,,,14/07/2026
+autozine.nl,,,,,,12,,no_email_found,Magazine,,yes,no_email_found,Yes,https://www.autozine.nl/contact,,14/07/2026
+pudahuel.cl,radio@pudahuel.cl,,,radio@pudahuel.cl,https://web.archive.org/web/19981206132427/http://www.pudahuel.cl:80/,13,wayback_unsure,needs_manual_check,News / Media,low,yes,wayback_archive,,,1998-12-06,14/07/2026
+monjardinmamaison.maison-travaux.fr,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+commentfer.fr,contact@commentfer.fr,,,contact@commentfer.fr,https://commentfer.fr,12,scraper,verified,Blog / Content Site,high,,,,,,14/07/2026
+suomenluonto.fi,palaute@suomenluonto.fi,tilaajapalvelu@sll.fi,,palaute@suomenluonto.fi | tilaajapalvelu@sll.fi,https://suomenluonto.fi,12,scraper,verified,Blog / Content Site,high,,,Yes,https://suomenluonto.fi,,14/07/2026
+tamaracamerablog.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+echo-online.de,leserbriefe@vrm.de,,,leserbriefe@vrm.de,https://echo-online.de,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,14/07/2026
+handyhand.dk,support@handyhand.dk,,,support@handyhand.dk,https://handyhand.dk,12,scraper,verified,Pets,high,,,,,,14/07/2026
+puheenvuoro.uusisuomi.fi,us.yllapito@almamedia.fi,kl.asiakaspalvelu@almatalent.fi,,us.yllapito@almamedia.fi | kl.asiakaspalvelu@almatalent.fi,https://puheenvuoro.uusisuomi.fi,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,Yes,https://puheenvuoro.uusisuomi.fi/eerojuhani-vaarala/three-impressions-16-6-2026/,,14/07/2026
+citygreen.hu,,,,,,12,,no_email_found,Magazine,,yes,no_email_found,,,,14/07/2026
+ni.dk,,,,,,12,smtp_catchall,no_email_found,Review Site,low,yes,smtp_catchall,,,,14/07/2026
+funuploads.com,info@funuploads.com,,,info@funuploads.com,https://funuploads.com,12,scraper,verified,Food & Drink,high,,,,,,14/07/2026
+altonivel.com.mx,loramirez@g21.com.mx,,,loramirez@g21.com.mx,https://altonivel.com.mx/contact,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,14/07/2026
+elfarodeceuta.es,ceuta@grupofaro.es,,,ceuta@grupofaro.es,https://elfarodeceuta.es,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,14/07/2026
+turistamagazin.hu,erdeivasut@zalaerdo.hu,program.kiralyret@gmail.com,,erdeivasut@zalaerdo.hu | program.kiralyret@gmail.com,https://www.turistamagazin.hu/hir/hetvegetol-ujra-zakatol-a-mikulas-expressz-a-zalai-dombok-kozott,12,scraper,needs_manual_check,Magazine,medium,yes,domain_mismatch,,,,14/07/2026
+sport365.fr,,,,,,12,,no_email_found,Sports,,yes,no_email_found,Yes,https://sport365.fr,,14/07/2026
+planetegrandesecoles.com,,,,,,13,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+weekend-online.nl,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+ocafezinho.com,comercial@ocafezinho.com,,,comercial@ocafezinho.com,https://ocafezinho.com,12,scraper,verified,Technology,high,,,,,,14/07/2026
+techzeel.net,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+desmaakvanitalie.nl,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+reporteconfidencial.info,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,14/07/2026
+infonu.nl,,,,,,12,,no_email_found,Lifestyle,,yes,no_email_found,,,,14/07/2026
+curacao.nu,info@abconlinemedia.com,,,info@abconlinemedia.com,https://curacao.nu,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,14/07/2026
+coincarp.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+profm.ro,profm@profm.ro,redactie@profm.ro,publicitate@profm.ro,profm@profm.ro | redactie@profm.ro | publicitate@profm.ro | marketing@profm.ro | publicitate.online@profm.ro,https://profm.ro/contact,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://profm.ro/contact,,14/07/2026
+livementor.com,presse@livementor.com,masterclass@livementor.com,,presse@livementor.com | masterclass@livementor.com,https://livementor.com/contact,12,scraper,verified,Technology,high,,,,,,14/07/2026
+diarioversionfinal.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+motorbox.com,redazione@motorbox.com,,,redazione@motorbox.com,https://motorbox.com,12,scraper,verified,Magazine,high,,,,,,14/07/2026
+fashionunited.nl,,,,,,0,blocked:resort,skipped_irrelevant,Hotels / Accommodation,,,,,,,14/07/2026
+cryptoticker.io,press@cryptoticker.io,news@cryptoticker.io,content@cryptoticker.io,press@cryptoticker.io | news@cryptoticker.io | content@cryptoticker.io,,12,smtp_guess,needs_manual_check,Finance / Business,low,yes,smtp_guess,,,,14/07/2026
+playplay.com,contact@playplay.com,hello@playplay.com,,contact@playplay.com | hello@playplay.com,,12,smtp_guess,needs_manual_check,Education / Resources,low,yes,smtp_guess,Yes,https://playplay.com,,14/07/2026
+furansujapon.com,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+bielsko.biala.pl,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+notitarde.com.ve,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,14/07/2026
+kienyke.com,editor@kienyke.com,,,editor@kienyke.com,,12,smtp_guess,needs_manual_check,News / Media,low,yes,smtp_guess,,,,14/07/2026
+luchtvaartnieuws.nl,,,,,,13,,no_email_found,News / Media,,yes,no_email_found,Yes,https://luchtvaartnieuws.nl,,14/07/2026
+playtv.fr,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+ballebazzi.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+thousandtravelmiles.nl,info@thousandtravelmiles.nl,,,info@thousandtravelmiles.nl,https://thousandtravelmiles.nl/contact,12,scraper,verified,News / Media,high,,,Yes,https://thousandtravelmiles.nl,,14/07/2026
+magazinezhub.com,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+elmanana.com.mx,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+ligablatt.de,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+pleno.news,,,,,,12,,no_email_found,Magazine,,yes,no_email_found,Yes,https://pleno.news,,14/07/2026
+valioliiga.com,toimitus@valioliiga.com,,,toimitus@valioliiga.com,https://valioliiga.com,12,scraper,verified,Technology,high,,,,,,14/07/2026
+monitorulcj.ro,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+vroomvroom.fr,contact@vroomvroom.fr,,,contact@vroomvroom.fr,https://vroomvroom.fr,12,scraper,verified,Blog / Content Site,high,,,,,,14/07/2026
+theprimenames.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+dinavis.dk,redaktion@dinavis.dk,,,redaktion@dinavis.dk,https://dinavis.dk,12,scraper,verified,Review Site,high,,,,,,14/07/2026
+joinmyquiz.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+echo24.cz,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,14/07/2026
+passioneinter.com,info@passioneinter.com,,,info@passioneinter.com,https://passioneinter.com,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+heftfilme.com,,,,,,12,,no_email_found,Entertainment,,yes,no_email_found,,,,14/07/2026
+furacao.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+homify.it,,,,,,12,,no_email_found,Food & Drink,,yes,no_email_found,,,,14/07/2026
+kuchnia.wp.pl,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,14/07/2026
+campen.de,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+nudie.dk,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://nudie.dk,,14/07/2026
+revueconflits.com,contact@revueconflits.com,,,contact@revueconflits.com,https://revueconflits.com,12,scraper,verified,Magazine,high,,,Yes,https://revueconflits.com/contact,,14/07/2026
+ganztagsschule-niedersachsen.de,,,,,,12,,no_email_found,Education / Resources,,yes,no_email_found,,,,14/07/2026
+primatreviglio.it,redazione@primatreviglio.it,pubblicita@opsmedia.it,,redazione@primatreviglio.it | pubblicita@opsmedia.it,https://primatreviglio.it,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+lebanon24.com,info@lebanon24.com,leb24@lebanon24.com,,info@lebanon24.com | leb24@lebanon24.com,https://www.lebanon24.com/contact,12,scraper,verified,News / Media,high,,,Yes,https://lebanon24.com,,14/07/2026
+want.nl,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+eggertspiele.de,,,,,,12,,no_email_found,Education / Resources,,yes,no_email_found,,,,14/07/2026
+atelier-colette.fr,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,14/07/2026
+linuxsecurity.com,info@linuxsecurity.com,contribute@linuxsecurity.com,,info@linuxsecurity.com | contribute@linuxsecurity.com,https://linuxsecurity.com/about,12,scraper,verified,Education / Resources,high,,,Yes,https://linuxsecurity.com/contact,,14/07/2026
+mukachevo.net,news@mukachevo.net,,,news@mukachevo.net,https://mukachevo.net,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,14/07/2026
+thesportstime.co.uk,casinosandwich@gmail.com,,,casinosandwich@gmail.com,https://thesportstime.co.uk/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,14/07/2026
+griechenland.net,,,,,,0,blocked:ryanair,skipped_irrelevant,Flight Booking,,,,,,,14/07/2026
+revistafama.com,,,,,,12,,no_email_found,Magazine,,yes,no_email_found,,,,14/07/2026
+singletrackworld.com,editor@singletrackworld.com,editorial@singletrackworld.com,,editor@singletrackworld.com | editorial@singletrackworld.com,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,14/07/2026
+gazetablic.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+simpele-recepten.nl,miranda@simpele-recepten.nl,,,miranda@simpele-recepten.nl,https://www.simpele-recepten.nl/contact,12,scraper,verified,News / Media,high,,,Yes,https://simpele-recepten.nl,,14/07/2026
+aostasera.it,redazione@aostasera.it,s.savoye@piupress.it,publiaosta@netweek.it,redazione@aostasera.it | s.savoye@piupress.it | publiaosta@netweek.it,https://aostasera.it,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+csid.ro,,,,,,0,blocked:doctor,skipped_irrelevant,Health / Medical,,,,,,,14/07/2026
+fetish.com,,,,,,12,,no_email_found,Magazine,,yes,no_email_found,,,,14/07/2026
+toolshero.com,,,,,,0,blocked:psychologist+psychology,skipped_irrelevant,Health / Medical,,,,,,,14/07/2026
+8boobs.com,,,,,,12,,no_email_found,Lifestyle,,yes,no_email_found,Yes,https://8boobs.com/contactus,,14/07/2026
+ceskenoviny.cz,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+euroman.dk,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,14/07/2026
+theapplelounge.com,info@isayblog.com,,,info@isayblog.com,https://theapplelounge.com,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,Yes,https://theapplelounge.com,,14/07/2026
+wealthylike.com,info@wealthylike.com,,,info@wealthylike.com,https://wealthylike.com/contact-us,12,scraper,verified,Entertainment,high,,,,,,14/07/2026
+unoentrerios.com.ar,uno@uno.com.ar,,,uno@uno.com.ar,https://unoentrerios.com.ar,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,14/07/2026
+returnofthecaferacers.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+seostudio.tools,support@seostudio.tools,,,support@seostudio.tools,https://seostudio.tools/contact,12,scraper,verified,Technology,high,,,Yes,https://seostudio.tools/contact,,14/07/2026
+treinreiziger.nl,contact@treinreiziger.nl,valse.email@ns.nl,support@tranzer.com,contact@treinreiziger.nl | valse.email@ns.nl | support@tranzer.com | klantenservice@connexxion.nl,https://treinreiziger.nl/contact,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+bvbwld.de,,,,,,12,,no_email_found,Sports,,yes,no_email_found,,,,14/07/2026
+madad2.com,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,14/07/2026
+elle.ro,advertising@elle.ro,content@elle.ro,contact@elle.ro,advertising@elle.ro | content@elle.ro | contact@elle.ro | info@elle.ro,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,14/07/2026
+historienet.dk,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,Yes,https://historienet.dk,,14/07/2026
+abcreporter.com.br,redacao@jornalabcreporter.com.br,comercial@jornalabcreporter.com.br,,redacao@jornalabcreporter.com.br | comercial@jornalabcreporter.com.br,https://abcreporter.com.br,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,14/07/2026
+playboy.nl,redactie@playboy.nl,,,redactie@playboy.nl,https://playboy.nl/contact,12,scraper,verified,Technology,high,,,Yes,https://playboy.nl,,14/07/2026
+gardencentreguide.co.uk,,,,,,0,blocked:garden centre,skipped_irrelevant,Gardening,,,,,,,14/07/2026
+noticialdia.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+huelvahoy.com,,,,,,0,blocked:hospital,skipped_irrelevant,Health / Medical,,,,,,,14/07/2026
+taddlr.com,taddlrteam@gmail.com,,,taddlrteam@gmail.com,https://taddlr.com/contact,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,,,,14/07/2026
+musavat.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+valseriananews.it,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+nudebabes.sexy,,,,,,12,,no_email_found,Lifestyle,,yes,no_email_found,,,,14/07/2026
+canalnet.tv,contacto@canalnet.tv,prensa@canalnet.tv,,contacto@canalnet.tv | prensa@canalnet.tv,https://canalnet.tv,12,scraper,verified,Technology,high,,,Yes,https://canalnet.tv,,14/07/2026
+horrornews.net,advertising@horrornews.net,news@horrornews.net,new@horrornews.net,advertising@horrornews.net | news@horrornews.net | new@horrornews.net | joyhorror@msn.com | janelspiegel@outlook.com,https://horrornews.net/contact,12,scraper,verified,Entertainment,high,,,Yes,https://horrornews.net/about-us,,14/07/2026
+oradesibiu.ro,redactia@oradesibiu.ro,promovare@oradesibiu.ro,sebastian.david@oradesibiu.ro,redactia@oradesibiu.ro | promovare@oradesibiu.ro | sebastian.david@oradesibiu.ro | dragos.popescu@oradesibiu.ro | madalina.rosu@oradesibiu.ro | magdalena.ceausescu@oradesibiu.ro | anca.toma@oradesibiu.ro | oradesibiu@gmail.com,https://oradesibiu.ro,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://oradesibiu.ro,,14/07/2026
+mosfilmgold.ru,contact@signalmedia.ru,fedsales@nra.media,rageeva@vgtrk.ru,contact@signalmedia.ru | fedsales@nra.media | rageeva@vgtrk.ru | razizova@digitalrussia.tv | dtr@digitalrussia.tv,https://mosfilmgold.ru,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,14/07/2026
+ujszo.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+cryptonaute.fr,presse@cryptonaute.fr,,,presse@cryptonaute.fr,https://cryptonaute.fr/contact,12,scraper,verified,News / Media,high,,,Yes,https://cryptonaute.fr/contact,,14/07/2026
+mexawy.online,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+hippson.se,info@hippson.se,,,info@hippson.se,https://hippson.se,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,14/07/2026
+attitude.co.uk,firstname.surname@attitude.co.uk,firstname.surname@streampublishing.co.uk,,firstname.surname@attitude.co.uk | firstname.surname@streampublishing.co.uk,https://attitude.co.uk/about,12,scraper,verified,Magazine,high,,,,,,14/07/2026
+wintotal.de,,,,,,11,,no_email_found,Technology,,yes,no_email_found,Yes,https://wintotal.de/about,,14/07/2026
+ptd.verdao.net,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+countryle.com,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+suomifutis.com,toimitus@suomifutis.com,,,toimitus@suomifutis.com,https://suomifutis.com,12,scraper,verified,Technology,high,,,,,,14/07/2026
+burcler.az,info@burcler.az,azeriprojects@gmail.com,vbunyadzade@gmail.com,info@burcler.az | azeriprojects@gmail.com | vbunyadzade@gmail.com,https://burcler.az/contact,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,14/07/2026
+europafm.ro,stiri@europafm.ro,marketing@europafm.ro,cariere@europafm.ro,stiri@europafm.ro | marketing@europafm.ro | cariere@europafm.ro | sesizari.concursuri@europafm.ro | gdpr@europafm.ro | office@europafm.ro | office@rrm.ro | online@rrm.ro,https://europafm.ro/contact,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,14/07/2026
+spanjevandaag.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+emptycharacter.com,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,14/07/2026
+tehsil.com.az,azeriprojects@gmail.com,,,azeriprojects@gmail.com,https://tehsil.com.az,12,scraper,needs_manual_check,Travel,medium,yes,domain_mismatch,,,,14/07/2026
+keskipohjanmaa.fi,,,,,,12,,no_email_found,Entertainment,,yes,no_email_found,,,,14/07/2026
+brandenburger-bote.de,,,,,,12,smtp_catchall,no_email_found,Finance / Business,low,yes,smtp_catchall,,,,14/07/2026
+xcelerategyms.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+cosepercrescere.it,info@cosepercrescere.it,,,info@cosepercrescere.it,https://cosepercrescere.it,12,scraper,verified,Food & Drink,high,,,,,,14/07/2026
+matzav.com,bitachon4life@gmail.com,,,bitachon4life@gmail.com,https://matzav.com,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,Yes,https://matzav.com/contact,,14/07/2026
+findatopdoc.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+forbes.at,,,,,,0,blocked:chemist,skipped_irrelevant,Pharmacy,,,,,,,14/07/2026
+my-local-escorts.co.uk,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://my-local-escorts.co.uk,,14/07/2026
+modaes.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+manly.nl,info@manly.nl,redactie@manly.nl,info@fullscreenmedia.nl,info@manly.nl | redactie@manly.nl | info@fullscreenmedia.nl,https://manly.nl,12,scraper,verified,Magazine,high,,,,,,14/07/2026
+tomshardware.fr,,,,,,12,,no_email_found,Technology,,yes,no_email_found,Yes,https://tomshardware.fr/contact,,14/07/2026
+auto.it,segreteria@contieditore.it,,,segreteria@contieditore.it,https://auto.it,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,14/07/2026
+les-calories.com,,,,,,13,smtp_catchall,no_email_found,Health & Wellness,low,yes,smtp_catchall,Yes,https://les-calories.com,2003-06-07,14/07/2026
+patmypets.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+foodfromportugal.com,,,,,,12,,no_email_found,Food & Drink,,yes,no_email_found,Yes,https://foodfromportugal.com/contact-us,,14/07/2026
+galiciamaxica.eu,info@galciamaxica.eu,,,info@galciamaxica.eu,https://galiciamaxica.eu,12,scraper,needs_manual_check,Travel,medium,yes,domain_mismatch,,,,14/07/2026
+daleeeel.com,,,,,,12,smtp_catchall,no_email_found,Technology,low,yes,smtp_catchall,,,,14/07/2026
+cdkeynl.nl,,,,,,0,blocked:online shop,skipped_irrelevant,E-commerce / Online Shops,,,,,,,14/07/2026
+paesionline.it,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+reismonkey.nl,info@reismonkey.nl,,,info@reismonkey.nl,https://reismonkey.nl/contact,12,scraper,verified,Blog / Content Site,high,,,Yes,https://reismonkey.nl,,14/07/2026
+scooter-system.fr,,,,,,12,smtp_catchall,no_email_found,Magazine,low,yes,smtp_catchall,,,,14/07/2026
+thetechsslash.com,saytoazlan@gmail.com,,,saytoazlan@gmail.com,https://thetechsslash.com/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,14/07/2026
+recensiamomusica.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+economedia.ro,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,14/07/2026
+redactie24.be,pers@redactie24.be,info@media-24.be,,pers@redactie24.be | info@media-24.be,https://redactie24.be/contact,12,scraper,verified,News / Media,high,,,Yes,https://redactie24.be/contact,,14/07/2026
+footballtransferleague.co.uk,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+bzb.ro,bzb@bzb.ro,bunaziuabrasov@gmail.com,,bzb@bzb.ro | bunaziuabrasov@gmail.com,https://bzb.ro,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://bzb.ro/contact,,14/07/2026
+clubdoria46.it,infoclubdoria46@gmail.com,,,infoclubdoria46@gmail.com,https://clubdoria46.it,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,14/07/2026
+techtimes.com,info@techtimes.com,,,info@techtimes.com,https://techtimes.com/contact-us,12,scraper,verified,Technology,high,,,,,,14/07/2026
+lucesdelsiglo.com,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+lamenteemeravigliosa.it,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,14/07/2026
+mamnewsa.pl,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+goonerdaily.com,support@goonerdaily.com,,,support@goonerdaily.com,https://goonerdaily.com/contact,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,14/07/2026
+motor16.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+cittadellaspezia.com,redazione@cittadellaspezia.com,commerciale@ligurianews.com,,redazione@cittadellaspezia.com | commerciale@ligurianews.com,https://cittadellaspezia.com,12,scraper,verified,Technology,high,,,,,,14/07/2026
+inmoto.it,segreteria@contieditore.it,,,segreteria@contieditore.it,https://inmoto.it,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,14/07/2026
+convert.net,,,,,,12,,no_email_found,Food & Drink,,yes,no_email_found,,,,14/07/2026
+thefutureofthings.com,kris@thefutureofthings.com,,,kris@thefutureofthings.com,https://thefutureofthings.com/contact,12,scraper,verified,Magazine,high,,,Yes,https://thefutureofthings.com/contact,,14/07/2026
+bihon.ro,redactie@bihon.ro,,,redactie@bihon.ro,https://bihon.ro,12,scraper,verified,Lifestyle,high,,,Yes,https://bihon.ro,,14/07/2026
+timisoreni.ro,contact@timisoreni.ro,peter@roportal.ro,,contact@timisoreni.ro | peter@roportal.ro,https://timisoreni.ro/contact,12,scraper,verified,Magazine,high,,,Yes,https://timisoreni.ro/contact,,14/07/2026
+photosbulk.co.in,admin@masteritfirm.com,,,admin@masteritfirm.com,https://photosbulk.co.in/contact-us,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,14/07/2026
+marieclaire.perfil.com,perfilcom@perfil.com,,,perfilcom@perfil.com,https://marieclaire.perfil.com,12,scraper,verified,Lifestyle,high,,,,,,14/07/2026
+clifford.at,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,14/07/2026
+oozo.nl,info@oozo.nl,,,info@oozo.nl,https://oozo.nl,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+jornaleconomico.sapo.pt,online@medianove.com,,,online@medianove.com,https://jornaleconomico.sapo.pt,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,14/07/2026
+blunote.it,redazione@blunote.it,,,redazione@blunote.it,https://blunote.it,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+cpstest.click,contact@cpstest.click,,,contact@cpstest.click,,12,smtp_guess,needs_manual_check,Entertainment,low,yes,smtp_guess,,,,14/07/2026
+babyopkomst.nl,info@babyopkomst.nl,,,info@babyopkomst.nl,https://babyopkomst.nl,12,scraper,verified,Magazine,high,,,Yes,https://babyopkomst.nl/contact,,14/07/2026
+stadionews.it,posta@stadionews.it,redazione@stadionews.it,,posta@stadionews.it | redazione@stadionews.it,https://stadionews.it,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+kuwaitlocal.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+venturebeat.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+rosaelyoussef.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+events.at,,,,,,8,,no_email_found,Entertainment,,yes,no_email_found,,,,14/07/2026
+eldiaonline.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+thepushwiki.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+casertace.net,redazione.casertace@gmail.com,guarino.gianluigi@pec.it,,redazione.casertace@gmail.com | guarino.gianluigi@pec.it,https://casertace.net,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,14/07/2026
+lutontoday.co.uk,,,,,,0,blocked:hospital,skipped_irrelevant,Health / Medical,,,,,,,14/07/2026
+harmonet.hu,harmonet@24-7digital.hu,,,harmonet@24-7digital.hu,https://www.harmonet.hu/impresszum,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,14/07/2026
+docteur-fitness.com,,,,,,12,,no_email_found,Health & Wellness,,yes,no_email_found,Yes,https://docteur-fitness.com/contact,,14/07/2026
+gwiazdy.wp.pl,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,14/07/2026
+zodiacsigns-horoscope.com,info@zodiacsigns-horoscope.com,,,info@zodiacsigns-horoscope.com,https://zodiacsigns-horoscope.com/contact,12,scraper,verified,Blog / Content Site,high,,,Yes,https://zodiacsigns-horoscope.com/contact,,14/07/2026
+tweetdeleter.com,info@tweetdeleter.com,,,info@tweetdeleter.com,https://tweetdeleter.com,12,scraper,verified,Entertainment,high,,,,,,14/07/2026
+heraldo.mx,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+notiziaoggi.it,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+zerogpt.plus,,,,,,12,smtp_catchall,no_email_found,Technology,low,yes,smtp_catchall,,,,14/07/2026
+gamehag.com,support@gamehag.com,,,support@gamehag.com,https://gamehag.com,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,14/07/2026
+bitvalve.com,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+sehatok.com,info@sehatok.com,health@sehatok.com,mahmoud.diab@sehatok.com,info@sehatok.com | health@sehatok.com | mahmoud.diab@sehatok.com,https://sehatok.com/contact,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://sehatok.com,,14/07/2026
+pureluxe.nl,info@pureluxe.nl,redactie@pureluxe.nl,pers@pureluxe.nl,info@pureluxe.nl | redactie@pureluxe.nl | pers@pureluxe.nl | project@hilabel.nl,https://pureluxe.nl/contact,12,scraper,verified,Magazine,high,,,,,,14/07/2026
+kittentekoop.nl,,,,,,12,smtp_catchall,no_email_found,News / Media,low,yes,smtp_catchall,Yes,https://kittentekoop.nl,,14/07/2026
+femalefirst.co.uk,,,,,,12,,no_email_found,Lifestyle,,yes,no_email_found,Yes,https://femalefirst.co.uk/contact-us,,14/07/2026
+gardenweb.com,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+realite-virtuelle.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+hpdetijd.nl,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+meteoweb.eu,,,,,,4,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+sportsmania.jp,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+krypto-magazin.de,,,,,,12,,no_email_found,Finance / Business,,yes,no_email_found,,,,14/07/2026
+kfetele.ro,,,,,,12,,no_email_found,Lifestyle,,yes,no_email_found,,,,14/07/2026
+usaudience.com,lesley.official47@gmail.com,,,lesley.official47@gmail.com,https://usaudience.com,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,Yes,https://usaudience.com/contact-us,,14/07/2026
+franciskasvakreverden.no,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+pumpkin.pt,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://pumpkin.pt,,14/07/2026
+football.fr,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+portalsm.ro,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,14/07/2026
+audiosuite.me,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+diariodepontevedra.es,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+mondoprimavera.com,,,,,,12,,no_email_found,Sports,,yes,no_email_found,,,,14/07/2026
+bancaynegocios.com,info@bancaynegocios.com,aristimunocesar@gmail.com,armandojpernia@gmail.com,info@bancaynegocios.com | aristimunocesar@gmail.com | armandojpernia@gmail.com,https://bancaynegocios.com/contact,12,scraper,verified,News / Media,high,,,Yes,https://bancaynegocios.com/contact,,14/07/2026
+dagbladet-holstebro-struer.dk,sibhe@dagbladetholstebro.dk,jema@dagbladetholstebro.dk,najen@dagbladetholstebro.dk,sibhe@dagbladetholstebro.dk | jema@dagbladetholstebro.dk | najen@dagbladetholstebro.dk | siror@faa.dk | anet@dagbladetholstebro.dk | meja@dagbladetholstebro.dk | gade@folkebladetlemvig.dk | mmst@dagbladetholstebro.dk | makro@dagbladetholstebro.dk | jelu@folkebladetlemvig.dk | mafpe@vafo.dk | hed@jv.dk | hoj@jv.dk | pabr@dagbladetholstebro.dk | ar@jfmedier.dk | ankja@dagbladetholstebro.dk | maler@dagbladetholstebro.dk,https://dagbladet-holstebro-struer.dk,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,14/07/2026
+safa.ps,edit@safa.ps,,,edit@safa.ps,https://safa.ps/contact,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://safa.ps/contact,,14/07/2026
+pi-news.net,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+offside.kz,info@offside.kz,,,info@offside.kz,https://offside.kz,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,14/07/2026
+invenglobal.com,ads@invenglobal.com,,,ads@invenglobal.com,https://invenglobal.com,12,scraper,verified,Entertainment,high,,,,,,14/07/2026
+radinmalinblog.com,contact@radinmalinblog.com,imprensa.brasil@aliexpress.com,,contact@radinmalinblog.com | imprensa.brasil@aliexpress.com,https://radinmalinblog.com,12,scraper,verified,Finance / Business,high,,,Yes,https://radinmalinblog.com/vos-dosettes-de-cafe-senseo-nespresso-4x-moins-cher,,14/07/2026
+newsprima.it,redazione@newsprima.it,pubblicita@opsmedia.it,,redazione@newsprima.it | pubblicita@opsmedia.it,https://newsprima.it,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+lanotiziagiornale.it,antonio.pitoni@lanotiziagiornale.it,stefano.rizzuti@lanotiziagiornale.it,andrea.sparaciari@lanotiziagiornale.it,antonio.pitoni@lanotiziagiornale.it | stefano.rizzuti@lanotiziagiornale.it | andrea.sparaciari@lanotiziagiornale.it | raffaella.malito@lanotiziagiornale.it | davidemanlio.ruffolo@lanotiziagiornale.it | giulio@giuliocavalli.net,https://lanotiziagiornale.it,12,scraper,verified,Technology,high,,,,,,14/07/2026
+leidschdagblad.nl,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+gazetaolsztynska.pl,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+penzu.com,info@penzu.com,support@penzu.com,refund@penzu.com,info@penzu.com | support@penzu.com | refund@penzu.com,https://penzu.com/aboutus,12,scraper,verified,Technology,high,,,,,,14/07/2026
+halifaxcourier.co.uk,,,,,,0,blocked:hospital,skipped_irrelevant,Health / Medical,,,,,,,14/07/2026
+biogooglies.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+makeover.nl,contact@makeover.nl,martijn@makeover.nl,cynthia@makeover.nl,contact@makeover.nl | martijn@makeover.nl | cynthia@makeover.nl,https://makeover.nl,12,scraper,verified,Lifestyle,high,,,,,,14/07/2026
+metropoliabierta.elespanol.com,admin@metropoliabierta.com,,,admin@metropoliabierta.com,https://metropoliabierta.elespanol.com,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,14/07/2026
+baressp.com.br,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,14/07/2026
+escapetalk.nl,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,Yes,https://escapetalk.nl/escaperoom/teamescape-leipzig/der-meisterdieb/,,14/07/2026
+sanjuan8.com,,,,,,0,blocked:hospital,skipped_irrelevant,Health / Medical,,,,,,,14/07/2026
+quarule.com,seamus@quarule.com,ochwalabonface85@gmail.com,,seamus@quarule.com | ochwalabonface85@gmail.com,https://quarule.com/contact,12,scraper,verified,Technology,high,,,,,,14/07/2026
+gamesurf.it,redazione@gamesurf.it,,,redazione@gamesurf.it,https://gamesurf.it,12,scraper,verified,Entertainment,high,,,,,,14/07/2026
+kobenhavnliv.dk,olivia@kobenhavnliv.dk,kocra@kobenhavnliv.dk,rene@kobenhavnliv.dk,olivia@kobenhavnliv.dk | kocra@kobenhavnliv.dk | rene@kobenhavnliv.dk | sara@kobenhavnliv.dk | simon@kobenhavnliv.dk | rebecca@kobenhavnliv.dk | alberte@kobenhavnliv.dk | mads@kbhliv.dk | siba@jfmedier.dk | kh@jfmedier.dk | tze@helsingordagblad.dk | ar@jfmedier.dk | mafpe@vafo.dk | hed@jv.dk | hoj@jv.dk | bo@frederiksbergliv.dk,https://kobenhavnliv.dk,12,scraper,verified,Sports,high,,,,,,14/07/2026
+football24.bg,office@football24.bg,,,office@football24.bg,https://football24.bg,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://football24.bg,,14/07/2026
+neozone.org,,,,,,12,smtp_catchall,no_email_found,Technology,low,yes,smtp_catchall,,,,14/07/2026
+banklesstimes.com,contact@banklesstimes.com,,,contact@banklesstimes.com,https://banklesstimes.com/contact,12,scraper,verified,Review Site,high,,,,,,14/07/2026
+ahlmasrnews.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+lechasseurfrancais.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,Yes,https://lechasseurfrancais.com,,14/07/2026
+gooieneemlander.nl,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+freedomforallamericans.org,office@freedomforallamericans.org,info@robertjonesphoto.com,,office@freedomforallamericans.org | info@robertjonesphoto.com,https://freedomforallamericans.org,12,scraper,verified,Magazine,high,,,Yes,https://freedomforallamericans.org/contact/,,14/07/2026
+presasm.ro,redactia@presasm.ro,,,redactia@presasm.ro,https://presasm.ro/contact,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+urbantoronto.ca,,,,,,12,smtp_catchall,no_email_found,General / Other,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+zamilco.com,info@zamilco.com,,,info@zamilco.com,https://zamilco.com,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://zamilco.com,,14/07/2026
+the-models.de,info@the-models.de,a.steinke@the-models.de,,info@the-models.de | a.steinke@the-models.de,https://the-models.de,12,scraper,verified,Lifestyle,high,,,Yes,https://the-models.de/contact,,14/07/2026
+bien-dans-ma-ville.fr,,,,,,13,,no_email_found,,,yes,unclassified_niche; no_email_found,,,2017-10-20,14/07/2026
+thelemonkitchen.nl,maurice@talent-ave.nl,,,maurice@talent-ave.nl,https://thelemonkitchen.nl/contact,12,scraper,needs_manual_check,,medium,yes,unclassified_niche; domain_mismatch,Yes,https://thelemonkitchen.nl,,14/07/2026
+samanews.ps/ar,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+bestereistijd.nl,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+maliweb.net,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,Yes,https://maliweb.net,,14/07/2026
+azh.kz,support@azh.kz,,,support@azh.kz,https://azh.kz,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,14/07/2026
+monaco-tribune.com,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+banenrijklimburg.nl,vacature@banenrijklimburg.nl,ilona.gumuljo@hur.com,hr@vanheesbv.com,vacature@banenrijklimburg.nl | ilona.gumuljo@hur.com | hr@vanheesbv.com | petrie@echtebakkerfleuren.nl | j.hikspoors@stichtinglvo.nl | y.vanderbeek@pergamijn.org | recruitment@pergamijn.org | nvdham@spring-kinderopvang.nl | carl.hamelers@mediahuis.nl | amber.kessels@mediahuis.nl,https://www.banenrijklimburg.nl/werkgevers/contact,12,scraper,verified,News / Media,high,,,Yes,https://banenrijklimburg.nl,,14/07/2026
+wereldreisgids.nl,,,,,,5,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+doggo.nl,info@doggo.nl,,,info@doggo.nl,,12,smtp_guess,needs_manual_check,News / Media,low,yes,smtp_guess,Yes,https://doggo.nl,,14/07/2026
+bo-bedre.no,,,,,,12,smtp_catchall,no_email_found,Technology,low,yes,smtp_catchall,Yes,https://bo-bedre.no,,14/07/2026
+gadgetbridge.com,edit@gadgetbridge.com,contact@yamedianetworks.com,edit@yamedianetworks.com,edit@gadgetbridge.com | contact@yamedianetworks.com | edit@yamedianetworks.com | sales@yamedianetworks.com,https://gadgetbridge.com/contact,12,scraper,verified,Technology,high,,,,,,14/07/2026
+zerozero.com.mx,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+filathlos.gr,blog@filathlos.gr,,,blog@filathlos.gr,https://filathlos.gr,12,scraper,verified,Lifestyle,high,,,,,,14/07/2026
+parfum-inspiration.com,info@parfum-inspiration.com,,,info@parfum-inspiration.com,https://parfum-inspiration.com,12,scraper,verified,Blog / Content Site,high,,,,,,14/07/2026
+beleske.com,,,,,,13,,no_email_found,Technology,,yes,no_email_found,,,2010-05-09,14/07/2026
+csports.se,linus@sport247.se,,,linus@sport247.se,https://csports.se,12,scraper,needs_manual_check,Sports,medium,yes,domain_mismatch,,,,14/07/2026
+ninefornews.nl,,,,,,12,smtp_catchall,no_email_found,News / Media,low,yes,smtp_catchall,Yes,https://ninefornews.nl/contact,,14/07/2026
+clacified.com,crm@teclone.com,,,crm@teclone.com,https://clacified.com/about-us,12,scraper,needs_manual_check,Lifestyle,medium,yes,domain_mismatch,Yes,https://clacified.com/contact-us,,14/07/2026
+mfor.hu,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,14/07/2026
+huleymantel.com,,,,,,12,smtp_catchall,no_email_found,News / Media,low,yes,smtp_catchall,,,,14/07/2026
+muropaketti.com,toimitus@muropaketti.com,digi@otavamedia.fi,asiakaspalvelu@otavamedia.fi,toimitus@muropaketti.com | digi@otavamedia.fi | asiakaspalvelu@otavamedia.fi | sami.rainisto@otava.fi | tatu.junni@otava.fi | kai.taipale@otava.fi,https://muropaketti.com/contact-us,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,14/07/2026
+arab48.com,info@arab48.com,,,info@arab48.com,https://arab48.com,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://arab48.com,,14/07/2026
+sabcsport.com,sport@sabc.co.za,sabcsales@sabc.co.za,,sport@sabc.co.za | sabcsales@sabc.co.za,https://sabcsport.com/contact,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,Yes,https://sabcsport.com/contact,,14/07/2026
+zauberer-in-stuttgart.de,,,,,,12,,no_email_found,Entertainment,,yes,no_email_found,,,,14/07/2026
+s1noticias.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+ahora.com.pe,ahorahco@ahora.com.pe,,,ahorahco@ahora.com.pe,https://ahora.com.pe,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+temok.com,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,14/07/2026
+hartlepoolmail.co.uk,,,,,,0,blocked:town council,skipped_irrelevant,Government,,,,,,,14/07/2026
+roselalune.com,,,,,,12,,no_email_found,Travel,,yes,no_email_found,,,,14/07/2026
+biogpt.io,hello@biogpt.io,,,hello@biogpt.io,https://biogpt.io/contact-us,12,scraper,verified,Blog / Content Site,high,,,,,,14/07/2026
+burnleyexpress.net,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,14/07/2026
+vocegiallorossa.it,info.system24@ilsole24ore.com,,,info.system24@ilsole24ore.com,https://vocegiallorossa.it,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,14/07/2026
+frenchfootballweekly.com,mail@frenchfootballweekly.com,,,mail@frenchfootballweekly.com,https://frenchfootballweekly.com,12,scraper,verified,Travel,high,,,Yes,https://frenchfootballweekly.com,,14/07/2026
+riverfronttimes.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+doncasterfreepress.co.uk,,,,,,0,blocked:cannabis,skipped_irrelevant,Cannabis / Dispensary,,,,,,,14/07/2026
+bedeutungonline.de,,,,,,12,,no_email_found,Entertainment,,yes,no_email_found,,,,14/07/2026
+media.rtp.pt,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+folketidende.dk,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+quever.news,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,14/07/2026
+eladelantado.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+stasher.com,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,14/07/2026
+melusinecosmetics.com,,,,,,12,,no_email_found,Travel,,yes,no_email_found,Yes,https://melusinecosmetics.com/contact,,14/07/2026
+m3luma.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+bestforandroid.com,info@bestforandroid.com,,,info@bestforandroid.com,https://bestforandroid.com/contact,12,scraper,verified,Entertainment,high,,,Yes,https://bestforandroid.com,,14/07/2026
+futuresbytes.co.uk,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+corazon.cl,socialmedia@corazon.cl,contacto@corazon.cl,comercial@prisamedia.com,socialmedia@corazon.cl | contacto@corazon.cl | comercial@prisamedia.com,https://corazon.cl/contact,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+lamaisondessultans.com,,,,,,12,,no_email_found,Travel,,yes,no_email_found,,,,14/07/2026
+turystyka.wp.pl,,,,,,12,,no_email_found,Magazine,,yes,no_email_found,,,,14/07/2026
+ra2ej.com,info@ra2ej.com,,,info@ra2ej.com,https://ra2ej.com,12,scraper,verified,Review Site,high,,,Yes,https://ra2ej.com/contact,,14/07/2026
+sportstatistik.nu,info@sportstatistik.nu,,,info@sportstatistik.nu,https://sportstatistik.nu,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,14/07/2026
+gamegrin.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+sadshayarihindi.com,agencylinkify@gmail.com,,,agencylinkify@gmail.com,https://sadshayarihindi.com/contact-us,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,,,,14/07/2026
+lejean.nl,info@lejean.nl,,,info@lejean.nl,https://lejean.nl,12,scraper,verified,Blog / Content Site,high,,,,,,14/07/2026
+folhadelondrina.com.br,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+feltet.dk,camilla.boraghi@feltet.dk,redaktion@feltet.dk,kundeservice@feltet.dk,camilla.boraghi@feltet.dk | redaktion@feltet.dk | kundeservice@feltet.dk,https://feltet.dk,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,14/07/2026
+ringsidenews.com,news@ringsidenews.com,hjenkins@ringsidenews.com,felix@ringsidenews.com,news@ringsidenews.com | hjenkins@ringsidenews.com | felix@ringsidenews.com | derek@ringsidenews.com | carrierlp@hotmail.com | subrotomookherjeeadvocate@gmail.com | sanjaychaturbhujthakur@gmail.com,https://ringsidenews.com,12,scraper,verified,Sports,high,,,Yes,https://ringsidenews.com/contact,,14/07/2026
+pokemaster.es,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+modelocurriculum.net,,,,,,12,,no_email_found,Magazine,,yes,no_email_found,,,,14/07/2026
+lefaso.net,contact@lefaso.net,,,contact@lefaso.net,,12,smtp_guess,needs_manual_check,Technology,low,yes,smtp_guess,,,,14/07/2026
+nonsprecare.it,,,,,,12,,no_email_found,Travel,,yes,no_email_found,,,,14/07/2026
+elcierredigital.com,elcierre@elcierredigital.com,contacto@cierredigital.com,,elcierre@elcierredigital.com | contacto@cierredigital.com,https://elcierredigital.com/contacto/,12,scraper,verified,News / Media,high,,,Yes,https://elcierredigital.com,,14/07/2026
+linterista.it,,,,,,12,,no_email_found,Sports,,yes,no_email_found,,,,14/07/2026
+frankenpost.de,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+daddylicious.de,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+elperiodic.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+leaders-in-law.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+tvprogram.nu,,,,,,12,,no_email_found,Entertainment,,yes,no_email_found,,,,14/07/2026
+siege.gg,,,,,,12,,no_email_found,Magazine,,yes,no_email_found,,,,14/07/2026
+thehike.nl,info@theoutdoors.nl,,,info@theoutdoors.nl,https://thehike.nl/contact,12,scraper,needs_manual_check,Magazine,medium,yes,domain_mismatch,Yes,https://thehike.nl,,14/07/2026
+firmsuggest.com,,,,,,13,smtp_catchall,no_email_found,Technology,low,yes,smtp_catchall,Yes,https://firmsuggest.com/contact-us,2022-11-19,14/07/2026
+earlygame.com,partnerships@earlygame.com,press@earlygame.com,info@earlygame.com,partnerships@earlygame.com | press@earlygame.com | info@earlygame.com | marketing@earlygame.com,https://earlygame.com/about-us,12,scraper,verified,Entertainment,high,,,Yes,https://earlygame.com,,14/07/2026
+betmentor.co.za,,,,,,13,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+el9nou.cat,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+weekbladparty.nl,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+store.zamilco.com,info@zamilco.com,online@zamilco.com,,info@zamilco.com | online@zamilco.com,https://store.zamilco.com,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,14/07/2026
+natchezdemocrat.com,newsroom@natchezdemocrat.com,stacy.graning@natchezdemocrat.com,jan.griffey@natchezdemocrat.com,newsroom@natchezdemocrat.com | stacy.graning@natchezdemocrat.com | jan.griffey@natchezdemocrat.com | sabrina.robertson@natchezdemocrat.com | justin.clarkston@natchezdemocrat.com | lisa.sanders@natchezdemocrat.com | denora.stewart@natchezdemocrat.com | theresa.davis@natchezdemocrat.com | ko.bennett@natchezdemocrat.com,https://natchezdemocrat.com/contact-us,12,scraper,verified,News / Media,high,,,Yes,https://natchezdemocrat.com,,14/07/2026
+unimedia.info,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,14/07/2026
+thesaigontimes.vn,tto@tuoitre.com.vn,,,tto@tuoitre.com.vn,https://thesaigontimes.vn,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,14/07/2026
+gamekyo.com,,,,,,12,,no_email_found,Magazine,,yes,no_email_found,,,,14/07/2026
+cricbites.com,hello@togwe.com,marketing@togwe.com,,hello@togwe.com | marketing@togwe.com,https://cricbites.com/contact-us,12,scraper,needs_manual_check,Review Site,medium,yes,domain_mismatch,Yes,https://cricbites.com/contact-us,,14/07/2026
+mondosonoro.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+tonight.de,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+kribbelbunt.de,,,,,,12,,no_email_found,Food & Drink,,yes,no_email_found,,,,14/07/2026
+nsnews.com,editor@nsnews.com,,,editor@nsnews.com,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,14/07/2026
+papao.com.br,,,,,,13,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,2003-08-05,14/07/2026
+ww-kurier.de,redaktion@ww-kurier.de,,,redaktion@ww-kurier.de,https://ww-kurier.de,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+condoleante.ro,contact@condoleante.ro,contact@transport-decedati.ro,comenzi@buchet-express.ro,contact@condoleante.ro | contact@transport-decedati.ro | comenzi@buchet-express.ro,https://condoleante.ro,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://www.condoleante.ro/contact,,14/07/2026
+automarket.ro,contact@automarket.ro,,,contact@automarket.ro,https://automarket.ro,12,scraper,verified,Review Site,high,,,,,,14/07/2026
+ng.se,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+mr-online.nl,media-advies@mr-magazine.nl,redactie@mr-magazine.nl,,media-advies@mr-magazine.nl | redactie@mr-magazine.nl,https://mr-online.nl/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,14/07/2026
+rusradio.ru,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+koaci.com,contact@koaci.com,cameroun@koaci.com,koaci@yahoo.fr,contact@koaci.com | cameroun@koaci.com | koaci@yahoo.fr,https://www.koaci.com/contact.html,12,scraper,verified,,high,yes,unclassified_niche,Yes,https://www.koaci.com/contact.html,,14/07/2026
+baseballegg.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+nospensees.fr,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,14/07/2026
+maxi-mag.fr,,,,,,12,,no_email_found,Magazine,,yes,no_email_found,,,,14/07/2026
+lavozdealmeria.com,,,,,,12,smtp_catchall,no_email_found,News / Media,low,yes,smtp_catchall,,,,14/07/2026
+europasur.es,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+jp.ldplayer.net,support_jp@ldplayer.net,ldgame@ldplayer.net,,support_jp@ldplayer.net | ldgame@ldplayer.net,https://jp.ldplayer.net,12,scraper,verified,Technology,high,,,,,,14/07/2026
+themoviejunkie.com,yadav.venug@gmail.com,yadav@marketingmadhava.com,,yadav.venug@gmail.com | yadav@marketingmadhava.com,https://themoviejunkie.com/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,Yes,https://themoviejunkie.com/contact,,14/07/2026
+mittelhessen.de,leserbriefe@vrm.de,,,leserbriefe@vrm.de,https://mittelhessen.de,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,14/07/2026
+suomif1.com,toimitus@suomif1.com,,,toimitus@suomif1.com,https://suomif1.com,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,14/07/2026
+leijonat.com,toimitus@leijonat.com,,,toimitus@leijonat.com,https://leijonat.com,12,scraper,verified,Technology,high,,,,,,14/07/2026
+dotmovie.com.in,contact@buytextlinks.com,blooginga@gmail.com,,contact@buytextlinks.com | blooginga@gmail.com,https://dotmovie.com.in,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,Yes,https://dotmovie.com.in/contact-us,,14/07/2026
+termalonline.hu,,,,,,12,,no_email_found,Health & Wellness,,yes,no_email_found,,,,14/07/2026
+selar.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+baby.unica.ro,dana.enache@ringier.ro,andreea.catrina@ringier.ro,raluca.vitu@ringier.ro,dana.enache@ringier.ro | andreea.catrina@ringier.ro | raluca.vitu@ringier.ro | narcis.anton@ringier.ro | luciano.panaitescu@ringier.ro,https://baby.unica.ro/contact,12,scraper,needs_manual_check,Magazine,medium,yes,domain_mismatch,,,,14/07/2026
+utforsksinnet.no,,,,,,12,,no_email_found,Blog / Content Site,,yes,no_email_found,,,,14/07/2026
+computing.es,info@bps.com.es,,,info@bps.com.es,https://computing.es,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,14/07/2026
+esmeraldino.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+rovigo.news,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+como.fi,como@popmedia.fi,,,como@popmedia.fi,https://como.fi,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,14/07/2026
+sportlive.bg,editors@webground.bg,reklama@webground.bg,,editors@webground.bg | reklama@webground.bg,https://www.sportlive.bg/contact,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,14/07/2026
+viss.lv,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://viss.lv,,14/07/2026
+schrijvenonline.org,info@schrijvenonline.org,,,info@schrijvenonline.org,https://schrijvenonline.org,12,scraper,verified,News / Media,high,,,Yes,https://schrijvenonline.org,,14/07/2026
+gomhuriaonline.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+sophie-energie.com,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+womeninbalance.org,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+indojunkie.com,,,,,,0,blocked:hotel,skipped_irrelevant,Hotels / Accommodation,,,,,,,14/07/2026
+vivecamino.com,,,,,,12,smtp_catchall,no_email_found,News / Media,low,yes,smtp_catchall,,,,14/07/2026
+stackademic.com,,,,,,12,smtp_catchall,no_email_found,Technology,low,yes,smtp_catchall,,,,14/07/2026
+fatora.io,info@fatora.io,support@fatora.io,sales@fatora.io,info@fatora.io | support@fatora.io | sales@fatora.io | waleed@fatora.com,https://fatora.io/ar/contact-sales-ar/,12,scraper,verified,General / Other,high,yes,unclassified_niche,Yes,https://fatora.io/ar/contact/,,14/07/2026
+elancasti.com.ar,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+loopcv.pro,support@loopcv.com,,,support@loopcv.com,https://loopcv.pro,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,14/07/2026
+wiesbadener-kurier.de,leserbriefe@vrm.de,,,leserbriefe@vrm.de,https://wiesbadener-kurier.de,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,14/07/2026
+omaringa.com.br,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+modesettravaux.fr,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+pro-football-history.com,feedback@pro-football-history.com,,,feedback@pro-football-history.com,https://pro-football-history.com,12,scraper,verified,Blog / Content Site,high,,,,,,14/07/2026
+ibctamil.com,news@ibctamil.com,info@ibctamil.com,events@ibctamil.com,news@ibctamil.com | info@ibctamil.com | events@ibctamil.com | sales@ibctamil.com,https://ibctamil.com/contact,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+wall-street.ro,redactie@wall-street.ro,,,redactie@wall-street.ro,https://wall-street.ro,12,scraper,verified,Magazine,high,,,,,,14/07/2026
+aprendiendoconjulia.com,info@aprendiendoconjulia.com,,,info@aprendiendoconjulia.com,https://aprendiendoconjulia.com/contact,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+obviousmag.com,,,,,,12,smtp_catchall,no_email_found,Lifestyle,low,yes,smtp_catchall,Yes,https://obviousmag.com/contact-us,,14/07/2026
+boligpluss.no,,,,,,12,smtp_catchall,no_email_found,Technology,low,yes,smtp_catchall,Yes,https://boligpluss.no,,14/07/2026
+tvhappy.ro,,,,,,12,,no_email_found,Lifestyle,,yes,no_email_found,,,,14/07/2026
+estense.com,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+opencart.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+webtrh.cz,info@webtrh.cz,,,info@webtrh.cz,,12,smtp_guess,needs_manual_check,Technology,low,yes,smtp_guess,,,,14/07/2026
+careeraddict.com,editor@careeraddict.com,support@careeraddict.com,marketing@careeraddict.com,editor@careeraddict.com | support@careeraddict.com | marketing@careeraddict.com | jobs@careeraddict.com | cv@careeraddict.com,https://careeraddict.com/contact,12,scraper,verified,Education / Resources,high,,,,,,14/07/2026
+kitchenandmore.nl,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+nitreo.com,,,,,,12,smtp_catchall,no_email_found,Technology,low,yes,smtp_catchall,,,,14/07/2026
+samsungmagazine.eu,info@textfactory.cz,,,info@textfactory.cz,https://samsungmagazine.eu,12,scraper,needs_manual_check,Magazine,medium,yes,domain_mismatch,,,,14/07/2026
+lambocars.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+funinformatique.com,support@funinformatique.com,redaction@funinformatique.com,partenariats@funinformatique.com,support@funinformatique.com | redaction@funinformatique.com | partenariats@funinformatique.com,https://funinformatique.com/contact,12,scraper,verified,Technology,high,,,Yes,https://funinformatique.com,,14/07/2026
+calciofemminileitaliano.it,info@calciofemminileitaliano.it,,,info@calciofemminileitaliano.it,https://calciofemminileitaliano.it,12,scraper,verified,Sports,high,,,,,,14/07/2026
+readmancity.com,,,,,,12,smtp_catchall,no_email_found,Entertainment,low,yes,smtp_catchall,,,,14/07/2026
+readnewcastle.com,,,,,,12,smtp_catchall,no_email_found,Entertainment,low,yes,smtp_catchall,,,,14/07/2026
+doctornewsweb.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+avisen.dk,,,,,,13,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+ligeher.nu,aalborg@dnmh.dk,annoncer@dnmh.dk,,aalborg@dnmh.dk | annoncer@dnmh.dk,https://ligeher.nu,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,14/07/2026
+leftlion.co.uk,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+marieclaire.be,,,,,,12,,no_email_found,Lifestyle,,yes,no_email_found,,,,14/07/2026
+valsassinanews.com,info@valsassinanews.com,redazione@lecconews.lc,amministrazione@iperg.net,info@valsassinanews.com | redazione@lecconews.lc | amministrazione@iperg.net,https://valsassinanews.com,12,scraper,verified,Technology,high,,,,,,14/07/2026
+almrj3.com,info@almrj3.com,marketing@almrj3.com,adv@almrj3.com,info@almrj3.com | marketing@almrj3.com | adv@almrj3.com | jobs@almrj3.com | u00a0marketing@almrj3.com,https://almrj3.com/contact-us,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,14/07/2026
+businessam.be,hello@medianation.be,redactie@medianation.be,marketing@medianation.be,hello@medianation.be | redactie@medianation.be | marketing@medianation.be | businessam@idecommedia.be,https://businessam.be/contact,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,14/07/2026
+startups.uk.com,,,,,,12,,no_email_found,Technology,,yes,no_email_found,Yes,https://startups.uk.com/contact-us,,14/07/2026
+leonino.pt,geral@leonino.pt,,,geral@leonino.pt,https://leonino.pt,12,scraper,verified,Lifestyle,high,,,,,,14/07/2026
+lagersalg.com,info@lagersalg.com,,,info@lagersalg.com,https://lagersalg.com,12,scraper,verified,Lifestyle,high,,,Yes,https://lagersalg.com,,14/07/2026
+myfinal11.in,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+ceoworld.biz,managingeditor@ceoworld.biz,advertising@ceoworld.biz,press@ceoworld.biz,managingeditor@ceoworld.biz | advertising@ceoworld.biz | press@ceoworld.biz | info@ceoworld.biz | amanda.webb@ceoworld.biz | support@ceoworld.biz | lisa@ceoworld.biz | mindy-wright@ceoworld.biz | anna@ceoworld.biz | careers@ceoworld.biz | business@ceoworld.biz | finance@ceoworld.biz | leadership@ceoworld.biz | tech@ceoworld.biz | lifestyle@ceoworld.biz | travel@ceoworld.biz | pr@ceoworld.biz | ir@ceoworld.biz | ny@ceoworld.biz | latam@ceoworld.biz | emea@ceoworld.biz | apac@ceoworld.biz | chief@ceoworld.biz | strategy@ceoworld.biz | governance@ceoworld.biz | policy@ceoworld.biz | future@ceoworld.biz | sustainability@ceoworld.biz | wealth@ceoworld.biz | partners@ceoworld.biz | submissions@ceoworld.biz | events@ceoworld.biz | legal@ceoworld.biz | amar@ceoworld.biz | bettina.padurano@ceoworld.biz | caroline.mittermair@ceoworld.biz | sophia.lindgren@ceoworld.biz | jonas.eriksen@ceoworld.biz | aisha.rahman@ceoworld.biz | richard.moreau@ceoworld.biz | richard.oconnell@ceoworld.biz | victor.mensah@ceoworld.biz | elizabeth.haggar@ceoworld.biz | alfred.reed@ceoworld.biz | chloe.robinson@ceoworld.biz | jamie.wells@ceoworld.biz | emily.wells@ceoworld.biz | kenji.watanabe@ceoworld.biz | alexander.novak@ceoworld.biz | gabriela.torres@ceoworld.biz | michael.anderson@ceoworld.biz | michael.chan@ceoworld.biz | elena.petrova@ceoworld.biz | daniel.stein@ceoworld.biz | priya.nair@ceoworld.biz | amelie.dubois@ceoworld.biz | faya.montazer@ceoworld.biz | anne.khachiyants@ceoworld.biz | kristin.hatch@ceoworld.biz | norman.pleszczynski@ceoworld.biz | fernando.liu@ceoworld.biz | david.williams@ceoworld.biz | paul.corrigan@ceoworld.biz | michael.lydall@ceoworld.biz | john.summers@ceoworld.biz | gary.gardner@ceoworld.biz | nikki.lowe@ceoworld.biz | helen.matsuda@ceoworld.biz | george.watts@ceoworld.biz | thomas.becker@ceoworld.biz | leanne.bennison@ceoworld.biz | christopher.williams@ceoworld.biz | oscar.zan@ceoworld.biz | dibyajoti.biswas@ceoworld.biz | david.connelly@ceoworld.biz | mark.everhart@ceoworld.biz | deborah.avignone@ceoworld.biz | carl.haynes@ceoworld.biz | corbin.cowan@ceoworld.biz | daniel.smith@ceoworld.biz | ruth.sopinska@ceoworld.biz | clara.rossi@ceoworld.biz | andrei.popescu@ceoworld.biz | julia.carter@ceoworld.biz | fatima.almansouri@ceoworld.biz | markus.vogel@ceoworld.biz | catherine.liu@ceoworld.biz | anna.richter@ceoworld.biz | david.kim@ceoworld.biz | licensing@ceoworld.biz,https://ceoworld.biz/about/,12,scraper,verified,Magazine,high,,,,,,14/07/2026
+frdb.dk,vijen@frdb.dk,naha@frdb.dk,pefau@frdb.dk,vijen@frdb.dk | naha@frdb.dk | pefau@frdb.dk | sivis@frdb.dk | klma@frdb.dk | gurpe@frdb.dk | ert@fyens.dk | mahjo@fyens.dk | ryand@jfm.dk | kriso@jfm.dk | kof@jfm.dk | ibeso@jfm.dk | nab@fyens.dk | thtro@jfm.dk | mafpe@vafo.dk | hed@jv.dk | hoj@jv.dk | peh@jfm.dk | chrin@vafo.dk | rerma@fyens.dk | nvpe@fyens.dk | rvjo@fyens.dk | flla@vafo.dk | soehu@fyens.dk | jofli@vafo.dk | ar@jfmedier.dk,https://frdb.dk,12,scraper,verified,Entertainment,high,,,,,,14/07/2026
+kanald2.ro,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,14/07/2026
+camping-car.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+dutchitchannel.nl,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+fontmirror.com,,,,,,12,,no_email_found,Technology,,yes,no_email_found,,,,14/07/2026
+alagoasalerta.com.br,comercial@alagoasalerta.com.br,,,comercial@alagoasalerta.com.br,https://alagoasalerta.com.br,12,scraper,verified,Lifestyle,high,,,,,,14/07/2026
+torrents-proxy.com,joeyriggson@gmail.com,,,joeyriggson@gmail.com,https://torrents-proxy.com/contact,12,scraper,needs_manual_check,Entertainment,medium,yes,domain_mismatch,,,,14/07/2026
+finextra.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+letoltokozpont.hu,,,,,,12,,no_email_found,Entertainment,,yes,no_email_found,,,,14/07/2026
+concierto.cl,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+reggionline.com,redazione@reggionline.com,,,redazione@reggionline.com,https://reggionline.com,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+novacircle.com,,,,,,0,blocked:restaurant,skipped_irrelevant,Restaurants / Food,,,,,,,14/07/2026
+herkkusuut.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+la7tv.es,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+beaumonde.nl,redactie@beaumonde.nl,,,redactie@beaumonde.nl,https://beaumonde.nl/contact,12,scraper,verified,Lifestyle,high,,,Yes,https://beaumonde.nl,,14/07/2026
+la-librairie-musulmane.com,contact@la-librairie-musulmane.com,,,contact@la-librairie-musulmane.com,https://la-librairie-musulmane.com,12,scraper,verified,Blog / Content Site,high,,,Yes,https://la-librairie-musulmane.com,,14/07/2026
+replicaonline.ro,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+wielerrevue.nl,redactie@wielerrevue.nl,klantenservice@aboland.nl,,redactie@wielerrevue.nl | klantenservice@aboland.nl,https://wielerrevue.nl/contact,12,scraper,verified,News / Media,high,,,Yes,https://wielerrevue.nl,,14/07/2026
+revu.nl,redactie@revu.nl,,,redactie@revu.nl,https://revu.nl/contact,12,scraper,verified,News / Media,high,,,Yes,https://revu.nl,,14/07/2026
+wizardofvegas.com,,,,,,12,,no_email_found,Entertainment,,yes,no_email_found,Yes,https://wizardofvegas.com/contact,,14/07/2026
+alsbbora.info,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+lyricsgoo.com,,,,,,0,blocked:pest control,skipped_irrelevant,Construction / Trades,,,,,,,14/07/2026
+lascimmiapensa.com,,,,,,12,,no_email_found,Review Site,,yes,no_email_found,Yes,https://lascimmiapensa.com,,14/07/2026
+forbes.co,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+pianetabasket.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+newsrimini.it,redazione@newsrimini.it,,,redazione@newsrimini.it,https://newsrimini.it,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+qds.it,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+toronto.com,onstorm@ec.gc.ca,,,onstorm@ec.gc.ca,https://toronto.com,12,scraper,needs_manual_check,,medium,yes,unclassified_niche; domain_mismatch,Yes,https://toronto.com/advertise,,14/07/2026
+invezz.com/sv,contact@invezz.com,,,contact@invezz.com,https://invezz.com/sv,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,14/07/2026
+bestbeginnermotorcycles.com,,,,,,12,,no_email_found,Review Site,,yes,no_email_found,Yes,https://bestbeginnermotorcycles.com,,14/07/2026
+silvias-trips.com,,,,,,6,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+lv12.com.ar,,,,,,0,blocked:hospital,skipped_irrelevant,Health / Medical,,,,,,,14/07/2026
+portugalresident.com,news@portugalresident.com,info@portugalresident.com,subscriptions@portugalresident.com,news@portugalresident.com | info@portugalresident.com | subscriptions@portugalresident.com | sales@portugalresident.com,https://portugalresident.com/about-us,12,scraper,verified,Lifestyle,high,,,Yes,https://portugalresident.com,,14/07/2026
+redestelecom.es,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,14/07/2026
+morbidlybeautiful.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+hasepost.de,,,,,,12,smtp_catchall,no_email_found,Blog / Content Site,low,yes,smtp_catchall,,,,14/07/2026
+fortniteinsider.gg,newsdesk@fortniteinsider.gg,business@pmg.gg,,newsdesk@fortniteinsider.gg | business@pmg.gg,https://fortniteinsider.gg/contact-us,12,scraper,verified,News / Media,high,,,Yes,https://fortniteinsider.gg/contact-us,,14/07/2026
+lkeria.com,communication.lkeria@gmail.com,,,communication.lkeria@gmail.com,https://lkeria.com,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,14/07/2026
+ukchat.com,,,,,,12,,no_email_found,Technology,,yes,no_email_found,Yes,https://ukchat.com/contact,,14/07/2026
+netsundhedsplejerske.dk,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,Yes,https://netsundhedsplejerske.dk,,14/07/2026
+mamanetbebenature.fr,contact@mamanetbebenature.fr,,,contact@mamanetbebenature.fr,https://mamanetbebenature.fr,12,scraper,verified,Food & Drink,high,,,Yes,https://mamanetbebenature.fr,,14/07/2026
+player.hu,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+lingobright.com,hi@lingobright.com,,,hi@lingobright.com,https://lingobright.com,12,scraper,verified,Blog / Content Site,high,,,Yes,https://lingobright.com/contact,,14/07/2026
+dagens.dk,redaktion@dagens.dk,,,redaktion@dagens.dk,https://dagens.dk,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,14/07/2026
+retete.unica.ro,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+media1.hu,,,,,,12,,no_email_found,Lifestyle,,yes,no_email_found,,,,14/07/2026
+knoozi.com,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+gamergen.com,,,,,,12,,no_email_found,Finance / Business,,yes,no_email_found,Yes,https://gamergen.com/contact,,14/07/2026
+naijanews.com,newsroom@naijanews.com,advert@naijanews.com,jobs@naijanews.com,newsroom@naijanews.com | advert@naijanews.com | jobs@naijanews.com | busayo@naijanews.com | justina@naijanews.com,https://naijanews.com,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+robthecoins.net,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+anglerboard.de,,,,,,12,,no_email_found,Travel,,yes,no_email_found,Yes,https://anglerboard.de,,14/07/2026
+boerderij.nl,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+zoom.nl,,,,,,0,blocked:zoo,skipped_irrelevant,Zoo / Wildlife,,,,,,,14/07/2026
+tenngrand.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+ragusanews.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+washingtoncitypaper.com,,,,,,0,blocked:things to do in,skipped_irrelevant,Visiting Places / Attractions,,,,,,,14/07/2026
+mauinews.com,opinions@mauinews.com,citydesk@mauinews.com,sports@mauinews.com,opinions@mauinews.com | citydesk@mauinews.com | sports@mauinews.com | adsales@mauinews.com | class@mauinews.com | legals@mauinews.com | obits@mauinews.com | circ@mauinews.com | jdefouw@mauinews.com | ganderson@mauinews.com | accounting@mauinews.com,https://mauinews.com/contact-us,12,scraper,verified,Entertainment,high,,,,,,14/07/2026
+magyarfutball.hu,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+haziallat.hu,news@haziallat.hu,info@haziallat.hu,,news@haziallat.hu | info@haziallat.hu,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,14/07/2026
+digitalcoinprice.com,contact@digitalcoinprice.com,,,contact@digitalcoinprice.com,https://digitalcoinprice.com/contact,12,scraper,verified,Technology,high,,,,,,14/07/2026
+bedrijfspand.com,info@bedrijfspand.com,,,info@bedrijfspand.com,https://bedrijfspand.com,12,scraper,verified,News / Media,high,,,Yes,https://bedrijfspand.com/contact,,14/07/2026
+rockfm.fm,rockfm@rockfm.fm,,,rockfm@rockfm.fm,https://rockfm.fm,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+readarsenal.com,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+wetterbote.de,info@qmet.de,,,info@qmet.de,https://wetterbote.de,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,14/07/2026
+tribunadosertao.com.br,comercial@tribunadosertao.com.br,redacao@tribunadosertao.com.br,,comercial@tribunadosertao.com.br | redacao@tribunadosertao.com.br,https://tribunadosertao.com.br,12,scraper,verified,Entertainment,high,,,,,,14/07/2026
+thegreenlist.nl,saskia@thegreenlist.nl,,,saskia@thegreenlist.nl,https://thegreenlist.nl,12,scraper,verified,Lifestyle,high,,,,,,14/07/2026
+jakiwniosek.pl,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+via41.com.br,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,14/07/2026
+madrid24horas.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+racingline.hu,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+gioconews.it,,,,,,12,smtp_catchall,no_email_found,,low,yes,unclassified_niche; smtp_catchall,,,,14/07/2026
+jmonline.com.br,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+biccy.it,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+gpacalculate.com,contact@gpacalculate.com,gpacalculateny@gmail.com,,contact@gpacalculate.com | gpacalculateny@gmail.com,https://gpacalculate.com/contact-us,12,scraper,verified,Technology,high,,,,,,14/07/2026
+aswaqinformation.com,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+suomenkuvalehti.fi,digi@otavamedia.fi,asiakaspalvelu@otavamedia.fi,matti.kalliokoski@otava.fi,digi@otavamedia.fi | asiakaspalvelu@otavamedia.fi | matti.kalliokoski@otava.fi | etunimi.sukunimi@otava.fi,https://suomenkuvalehti.fi,12,scraper,needs_manual_check,General / Other,medium,yes,unclassified_niche; domain_mismatch,,,,14/07/2026
+szeged.hu,info@szeged.hu,,,info@szeged.hu,,12,smtp_guess,needs_manual_check,Magazine,low,yes,smtp_guess,,,,14/07/2026
+boekenkrant.com,info@boekenkrant.com,redactie@boekenkrant.com,vrienden@boekenkrant.com,info@boekenkrant.com | redactie@boekenkrant.com | vrienden@boekenkrant.com | roeland@boekenkrant.com | antal@boekenkrant.com | piet@boekenkrant.com | rita@boekenkrant.com | henk@boekenkrant.com | demi@boekenkrant.com | kelly@boekenkrant.com | info@annahusson.com | previer@virtumedia.nl | tvandijk@virtumedia.nl,https://boekenkrant.com,12,scraper,verified,News / Media,high,,,Yes,https://boekenkrant.com,,14/07/2026
+swebbtv.se,,,,,,12,,no_email_found,General / Other,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+monitorulsv.ro,contact@monitorulsv.ro,redactie@monitorulsv.ro,publicitate@monitorulsv.ro,contact@monitorulsv.ro | redactie@monitorulsv.ro | publicitate@monitorulsv.ro | ioanmanole2010@gmail.com,https://monitorulsv.ro/contact,12,scraper,verified,Entertainment,high,,,,,,14/07/2026
+kakupress.net,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+kartuzy.info,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+lfootball.it,redazione@lfootball.it,,,redazione@lfootball.it,https://lfootball.it/about,12,scraper,verified,Magazine,high,,,,,,14/07/2026
+serveur-prive.net,contact@serveur-prive.net,,,contact@serveur-prive.net,,12,smtp_guess,needs_manual_check,News / Media,low,yes,smtp_guess,Yes,https://serveur-prive.net/contact,,14/07/2026
+objectif-ast.fr,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+lazionews24.com,info@sportreview.it,,,info@sportreview.it,https://lazionews24.com,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,14/07/2026
+rutlandherald.com,customerservices@rutlandherald.com,,,customerservices@rutlandherald.com,https://rutlandherald.com,12,scraper,verified,Magazine,high,,,,,,14/07/2026
+agenzianova.com,info@agenzianova.com,,,info@agenzianova.com,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,14/07/2026
+naarcuracao.com,info@naarcuracao.com,,,info@naarcuracao.com,https://naarcuracao.com,12,scraper,verified,Blog / Content Site,high,,,,,,14/07/2026
+xbets.ro,office@tipzor-media.com,,,office@tipzor-media.com,https://xbets.ro/contact,12,scraper,needs_manual_check,Sports,medium,yes,domain_mismatch,,,,14/07/2026
+dk-online.de,,,,,,12,smtp_catchall,no_email_found,Sports,low,yes,smtp_catchall,,,,14/07/2026
+turnulsfatului.ro,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,14/07/2026
+phoneinfo.fr,contact@phoneinfo.fr,,,contact@phoneinfo.fr,https://phoneinfo.fr/contact,12,scraper,verified,Technology,high,,,Yes,https://phoneinfo.fr/contact,,14/07/2026
+trwho.com,trwho@mediapublisher360.com,,,trwho@mediapublisher360.com,https://trwho.com/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,14/07/2026
+rfm.fr,sdolet@lagarderenews.com,publicite@force1publicite.com,rachel.jamois@regieradioregions.fr,sdolet@lagarderenews.com | publicite@force1publicite.com | rachel.jamois@regieradioregions.fr | laurent.porcher@regieradioregions.fr | christophe@mediarun.fr | carole.factory@orange.fr | s.pesque@ci-media.fr | sylvain@rem-publicite.fr | jacques.iribarren@centpourcent.com | mickael.rouanet@centpourcent.com | laurent@lbmedia.fr | fdonval@lagarderenews.com,https://rfm.fr/contact,12,scraper,needs_manual_check,Technology,medium,yes,domain_mismatch,,,,14/07/2026
+pandurul.ro,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,14/07/2026
+netizenschoice.com,info@netizenschoice.com,,,info@netizenschoice.com,,13,smtp_guess,needs_manual_check,General / Other,low,yes,unclassified_niche; smtp_guess,,,2017-05-15,14/07/2026
+webbygram.com,staff@revuwire.com,,,staff@revuwire.com,https://webbygram.com/about,12,scraper,needs_manual_check,Blog / Content Site,medium,yes,domain_mismatch,Yes,https://webbygram.com,,14/07/2026
+kommunalwiki.boell.de,,,,,,12,,no_email_found,Magazine,,yes,no_email_found,,,,14/07/2026
+siljannews.se,,,,,,12,,no_email_found,Food & Drink,,yes,no_email_found,,,,14/07/2026
+ivg.it,,,,,,0,blocked:pub,skipped_irrelevant,Bar / Pub,,,,,,,14/07/2026
+grazia.nl,redactie@grazia.nl,,,redactie@grazia.nl,https://grazia.nl/contact,12,scraper,verified,Lifestyle,high,,,Yes,https://grazia.nl,,14/07/2026
+dicloak.com,business@dicloak.com,,,business@dicloak.com,https://dicloak.com,12,scraper,verified,Technology,high,,,,,,14/07/2026
+infomotori.com,redazione@infomotori.com,,,redazione@infomotori.com,https://infomotori.com,12,scraper,verified,Review Site,high,,,,,,14/07/2026
+madridnorte24horas.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+cronachesalerno.it,cronacasalerno@gmail.com,,,cronacasalerno@gmail.com,https://cronachesalerno.it,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,,,,14/07/2026
+italiani.it,,,,,,12,,no_email_found,Food & Drink,,yes,no_email_found,,,,14/07/2026
+baku.ws,news@baku.ws,info@baku.ws,,news@baku.ws | info@baku.ws,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,14/07/2026
+dbrs.dk,seplo@dbrs.dk,chba@dbrs.dk,peso@dbrs.dk,seplo@dbrs.dk | chba@dbrs.dk | peso@dbrs.dk | brum@dbrs.dk | maxe@dbrs.dk | skaa@dbrs.dk | polo@dbrs.dk | jeben@dbrs.dk | asdyr@jv.dk | meja@dagbladetholstebro.dk | mafpe@vafo.dk | hed@jv.dk | hoj@jv.dk | matmu@jfm.dk,https://dbrs.dk,12,scraper,verified,General / Other,high,yes,unclassified_niche,,,,14/07/2026
+babyspullen-advies.nl,info@babyspullen-advies.nl,,,info@babyspullen-advies.nl,https://babyspullen-advies.nl/contact,12,scraper,verified,News / Media,high,,,Yes,https://babyspullen-advies.nl/contact,,14/07/2026
+radioactiva.cl,contacto@radioactiva.cl,,,contacto@radioactiva.cl,https://radioactiva.cl,12,scraper,verified,News / Media,high,,,,,,14/07/2026
+progotirbangla.com,fastnewsfeed2017@gmail.com,,,fastnewsfeed2017@gmail.com,https://progotirbangla.com/contact,12,scraper,needs_manual_check,News / Media,medium,yes,domain_mismatch,Yes,https://progotirbangla.com/about,,14/07/2026
+fan.at,,,,,,12,,no_email_found,Sports,,yes,no_email_found,,,,14/07/2026
+yenisabah.az,info@yenisabah.az,,,info@yenisabah.az,,12,smtp_guess,needs_manual_check,,low,yes,unclassified_niche; smtp_guess,,,,14/07/2026
+ma-grande-taille.com,,,,,,12,smtp_catchall,no_email_found,Travel,low,yes,smtp_catchall,,,,14/07/2026
+azfanpage.nl,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,Yes,https://www.azfanpage.nl/jong-az-sluit-seizoen-af-met-overwinning-en-titel-beste-beloftenteam,,14/07/2026
+blitzquotidiano.it,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,,,,14/07/2026
+leipziger-romantik.de,,,,,,12,,no_email_found,Entertainment,,yes,no_email_found,,,,14/07/2026
+homestudiocafe.fr,,,,,,12,,no_email_found,Health & Wellness,,yes,no_email_found,Yes,https://homestudiocafe.fr/contact,,14/07/2026
+billboard.it,,,,,,12,,no_email_found,Magazine,,yes,no_email_found,,,,14/07/2026
+pichinchaesturismo.com,,,,,,12,,no_email_found,News / Media,,yes,no_email_found,Yes,https://pichinchaesturismo.com,,14/07/2026
+betclan.com,,,,,,12,,no_email_found,Review Site,,yes,no_email_found,,,,14/07/2026
+poskok.info,,,,,,12,,no_email_found,,,yes,unclassified_niche; no_email_found,,,,14/07/2026
+thenipslip.com,,,,,,12,,no_email_found,Entertainment,,yes,no_email_found,,,,14/07/2026
+italpress.com,,,,,,8,,no_email_found,Sports,,yes,no_email_found,,,,14/07/2026
